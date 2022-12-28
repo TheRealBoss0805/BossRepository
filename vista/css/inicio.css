@@ -1,0 +1,351 @@
+.contenedor-inicio{
+    height: 100%;
+    border: 5px solid black;
+    width: 100%;
+}
+
+.inicio-1, .inicio-2, .inicio-3, .inicio-4{
+    border: 5px solid green;
+    height: 550px;
+}
+
+/*Slider Simple Top*/
+
+.formulario-1{
+    width: 100%;
+    overflow: hidden; 
+}
+
+.formulario-1 ul{
+    width: 400%;
+    display: flex;  
+    animation: cambio 16s infinite alternate;
+    animation-timing-function: linear;   
+} 
+
+.formulario-1 li{
+    width: 100%;
+    list-style: none;   
+}
+
+.formulario-1 img{
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    position: static;
+    border: 1px solid #4b6584;
+    cursor: pointer;   
+}
+
+@keyframes cambio{
+    0% {margin-left:0;}
+    21% {margin-left:0;}
+    
+    26% {margin-left:-100%;}
+    47% {margin-left:-100%;}
+    
+    52% {margin-left:-200%;}
+    73% {margin-left:-200%;}
+    
+    78% {margin-left:-300%;}
+    100% {margin-left:-300%;}
+}
+
+
+/*Slider Next Level middle*/
+
+.content-slider{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+/*.content-slider #titulo_slider_Rivera{
+    position: absolute;
+    top: 0;
+    left: 15.5%;
+    font-size: 1.1em;
+}*/
+
+.slider-top{
+    width: 100%;
+    min-width: 800px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.slider-top #div-slider-top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 7px #dcdde1, 0 0 10px #dcdde1, 0 0 17px #dcdde1;  
+}
+
+.section-slider{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;  
+}
+
+.section-slider .slider{
+    border: 100px solid brown !important;
+    height: 100%;
+    width: 100%;
+    background: #000 !important;
+}
+
+.section-slider .slide{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: none;
+    animation: slide 2s ease;
+}
+
+.section-slider .slide.active{
+    display: flex;
+}
+
+@keyframes slide{
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.container{
+    position: absolute;
+    top: 70%;
+    width: 150px;   
+}
+
+.section-slider .container{
+    flex-grow: 1;
+}
+
+.section-slider .caption{
+    width: 100%;
+}
+
+.section-slider .caption a{
+    display: inline-block;
+    padding: 10px 30px;
+    width: 100%;
+    background: linear-gradient(to left, #2c2c54, #130f40) ;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;   
+}
+
+.section-slider .caption a:hover{
+    background: #171a21;
+}
+
+.section-slider .slide.active .caption a{
+    opacity: 0;
+    animation:  captionText .5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes captionText{
+    0%{
+        opacity: 0; transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1; transform: translateX(0px);
+    }
+}
+
+.slider-top .controls{
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 300px;
+}
+
+.slider-top .icon-left-open, .icon-right-open{
+    position: absolute;
+    z-index: 2;
+    height: 50%;
+    width: 100%;
+    color: #ffffff;
+    background-color: #222f3e;
+    font-size: 36px;
+    cursor: pointer;
+    transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #3c6382, 0 0 15px #3c6382, 0 0 22px #3c6382; 
+}
+
+.slider-top .icon-left-open:hover, .slider-top .icon-right-open:hover{
+    background-color: #3c6382;
+}
+
+.slider-top .icon-left-open{
+    top: 0;
+}
+
+.slider-top .icon-right-open{
+    bottom: 0;
+}
+
+.slider-top .indicator{
+    position: absolute;
+    z-index: 2;
+    /*transform: translateX(-50%);*/
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-top .indicator div{
+    display: inline-block;
+    width: 3%;
+    height: 40px;
+    color: #ffffff;
+    background: linear-gradient(to right, #84817a, #535c68);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 3px;
+}
+
+.slider-top .indicator div.active{
+    background: #2f3640;
+}
+
+
+
+
+
+
+
+
+/*
+.div_juegos_vendidos{
+    width: 35%;
+    height: 353px;
+    background: linear-gradient(to top, #4b4b4b, #171a21);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_juegos_vendidos .div_titulo_jv{
+    height: 15%;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.div_titulo_jv p{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.div_juegos_vendidos .plataforma_juegos{
+    height: 50%;
+    width: 100%; 
+}
+
+.div_juegos_vendidos .plataforma_juegos .plataforma_1, .plataforma_2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;    
+}
+
+.plataforma_1 a, .plataforma_2 a{
+    width: 48%;
+    height: 100%;
+    margin-top: 5px; 
+}
+
+.plataforma_1 img, .plataforma_2 img{
+    width: 100%;   
+    height: 100%;
+    display: block;
+    border: 1px solid #A3CB38;   
+}
+
+.plataforma_1 img:hover, .plataforma_2 img:hover{
+    transform: scale(1.03);
+    transition: all 0.2s ease-in;
+    box-shadow: 0 0 15px #A3CB38; 
+    z-index: 100; 
+}
+
+.div_juegos_vendidos .div_descripcion_juegos_vendidos{
+    height: 25%;
+    width: 95%;  
+}
+
+.div_descripcion_juegos_vendidos #p{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.div_descripcion_juegos_vendidos div p{
+    margin-top: 10px;
+    background: #171a21;
+    display: inline-block;
+    font-size: 13px;
+    padding: 2px;
+    padding-right: 5px;
+}
+
+.div_juegos_vendidos .div_precio_plus{
+    height: 10%;
+    width: 95%;    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+    position: relative;
+}
+
+.div_precio_plus p{
+    font-size: 13px;
+    text-transform: uppercase;
+    background: #A3CB38;
+    padding: 2px;
+    padding-right: 5px;
+}
+
+.div_precio_plus .icon-windows{
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+}*/

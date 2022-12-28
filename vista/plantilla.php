@@ -10,6 +10,7 @@
 
       if($_GET["ruta"] == "nosotros" ||
          $_GET["ruta"] == "contactanos" ||
+         $_GET["ruta"] == "inicio" ||
          $_GET["ruta"] == "perfiles"
          ){
 
@@ -23,7 +24,7 @@
 
     }else{
 
-      echo '<title>Contactanos</title>';
+      echo '<title>inicio</title>';
 
     }
   ?>
@@ -92,6 +93,7 @@
 
       if($_GET["ruta"] == "nosotros" ||
          $_GET["ruta"] == "contactanos" ||
+         $_GET["ruta"] == "inicio" ||
          $_GET["ruta"] == "perfiles"
          ){
 
@@ -106,7 +108,7 @@
 
     }else{
 
-      include "php/contactanos.php";
+      include "php/inicio.php";
 
     }
 
