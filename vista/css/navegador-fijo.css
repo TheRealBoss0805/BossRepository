@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Lobster&display=swap');
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.7s;
+    z-index: 10;
+    background: #fff;
+    margin-top: 60px;
+}
+
+.info-fijo{
+    background: #222222;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-fijo div:nth-child(1){
+    color: #fff;
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Lobster', cursive;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-fijo div:nth-child(2) span{
+    background: #58be61;
+    border-radius: 5px;
+}
+
+.info-fijo div:nth-child(2) span:hover{
+    background: #3d8143;
+}
+
+.info-fijo div:nth-child(3) span:hover{
+    background: #00258f;
+}
+
+.info-fijo div:nth-child(2){
+    color: #fff;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+
+}
+
+.info-fijo div:nth-child(3) span{
+    background: #0063c9;
+    border-radius: 5px;
+}
+
+.info-fijo div:nth-child(3){
+    color: #fff;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header.abajo{
+    background: #fff;
+    padding: 15px 20px;
+}
+
+/*
+header .logo{
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+*/
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header nav ul li:hover > a{
+    color: #1C7BD1;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 60px;
+    background: #e9efe9;
+    box-shadow: inset 20px 20px 60px #cfcfcf,
+            inset -20px -20px 60px #e9efe9;
+}
+
+header ul li{
+    list-style: none;
+    padding: 0px 0px 10px 0px;
+}
+
+header ul li:hover{
+    border-bottom: 4px solid #1C7BD1;
+}
+
+header ul li a{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #253743;
+}
+
+header ul .contactanos:hover > a{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#253743), to(#253743));
+    background: -moz-linear-gradient(top, #253743, #253743);
+    color: #fff;
+    opacity: 1;
+}
+
+header ul .contactanos a{
+    padding: 10px;
+    border-radius: 7px;
+    background: #253743;
+    color: #fff;
+    opacity: 0.9;
+}
+
+header ul .contactanos{
+    padding: 10px;
+}
+
+header ul .contactanos:hover{
+    border: none;
+}
+/*
+.zona1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../imagenes/cerdo.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: #000;
+}
+*/
+
+.contenedor-logo{
+    width: 15%;
+    min-width: 188px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+header .svg-img{
+    position: relative;
+    width: 160px;
+    height: 160px;
+}
+
+header .svg-img svg{
+    position: absolute;
+}
+
+header .svg-img img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+svg{
+    filter:drop-shadow(1px 1px 3px rgb(206, 202, 202))
+}
