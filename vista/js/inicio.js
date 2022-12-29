@@ -1,6 +1,6 @@
 const slides = document.querySelector(".slider").children;
-const prev = document.querySelector(".icon-left-open");
-const next = document.querySelector(".icon-right-open");
+const prev = document.querySelector(".icon-left-dir");
+const next = document.querySelector(".icon-right-dir");
 const indicator = document.querySelector(".indicator");
 let index = 0;
 

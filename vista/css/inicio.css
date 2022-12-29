@@ -1,15 +1,15 @@
 .contenedor-inicio{
     height: 100%;
-    border: 5px solid black;
+    border: 1px solid black;
     width: 100%;
 }
 
 .inicio-1, .inicio-2, .inicio-3, .inicio-4{
-    border: 5px solid green;
+    border: 1px solid green;
     height: 550px;
 }
 
-/*Slider Simple Top*/
+/*Slider Simple Top
 
 .formulario-1{
     width: 100%;
@@ -49,7 +49,7 @@
     
     78% {margin-left:-300%;}
     100% {margin-left:-300%;}
-}
+}*/
 
 
 /*Slider Next Level middle*/
@@ -97,19 +97,18 @@
 }
 
 .section-slider .slider{
-    border: 100px solid brown !important;
-    height: 100%;
+}
+
+.section-slider .slider img{
     width: 100%;
-    background: #000 !important;
+    height: 100%;
 }
 
 .section-slider .slide{
     position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     z-index: 1;
     display: none;
@@ -122,7 +121,7 @@
 
 @keyframes slide{
     0%{
-        transform: scale(1.1);
+        transform: scale(1.5);
     }
     100%{
         transform: scale(1);
@@ -131,8 +130,13 @@
 
 .container{
     position: absolute;
-    top: 70%;
-    width: 150px;   
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-slider .container{
@@ -141,35 +145,55 @@
 
 .section-slider .caption{
     width: 100%;
+    opacity: 0.9;
+}
+
+.section-slider .caption:hover{
+    opacity: 1;
 }
 
 .section-slider .caption a{
     display: inline-block;
-    padding: 10px 30px;
+    height: 110px;
     width: 100%;
-    background: linear-gradient(to left, #2c2c54, #130f40) ;
+    background: #151515;
     text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 5px;   
+    border-radius: 0 8px 8px 0;
+    text-align: center;   
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-.section-slider .caption a:hover{
-    background: #171a21;
+.section-slider .caption a p{
+    text-align: justify;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+}
+
+.section-slider .caption a h1{
+    color: #395d75;
+    z-index: 100;
 }
 
 .section-slider .slide.active .caption a{
     opacity: 0;
-    animation:  captionText .5s ease forwards;
-    animation-delay: 0.5s;
+    animation: captionText .5s ease forwards;
+    animation-delay: 0.3s;
 }
 
 @keyframes captionText{
     0%{
-        opacity: 0; transform: translateX(-100px);
+        opacity: 0; 
+        transform: translateX(-100px);
     }
     100%{
-        opacity: 1; transform: translateX(0px);
+        opacity: 1; 
+        transform: translateX(0px);
     }
 }
 
@@ -181,35 +205,39 @@
     align-items: center;
     justify-content: center;
     width: 100px;
-    height: 300px;
+    height: 113px;
 }
 
-.slider-top .icon-left-open, .icon-right-open{
+.slider-top .icon-left-dir, .icon-right-dir{
     position: absolute;
     z-index: 2;
-    height: 50%;
-    width: 100%;
-    color: #ffffff;
-    background-color: #222f3e;
-    font-size: 36px;
+    height: 45%;
+    width: 50%;
+    color: #222222;
+    background-color: #dcefff;
+    font-size: 30px;
     cursor: pointer;
     transition: all .5s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px #3c6382, 0 0 15px #3c6382, 0 0 22px #3c6382; 
+    box-shadow: 0 0 5px #222222, 0 0 7px #222222, 0 0 11px #222222; 
 }
 
-.slider-top .icon-left-open:hover, .slider-top .icon-right-open:hover{
-    background-color: #3c6382;
+.slider-top .icon-left-dir:hover, .slider-top .icon-right-dir:hover{
+    background-color: #222222;
+    color: #fff;
 }
 
-.slider-top .icon-left-open{
-    top: 0;
-}
-
-.slider-top .icon-right-open{
+.slider-top .icon-left-dir{
     bottom: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.slider-top .icon-right-dir{
+    top: 0;
+    border-radius: 10px 10px 0 0;
+
 }
 
 .slider-top .indicator{
@@ -230,18 +258,22 @@
 
 .slider-top .indicator div{
     display: inline-block;
-    width: 3%;
-    height: 40px;
+    width: 4%;
+    height: 9px;
     color: #ffffff;
-    background: linear-gradient(to right, #84817a, #535c68);
-    border-radius: 50%;
+    background-color: #b1b1b1;
     text-align: center;
     line-height: 25px;
     margin: 0 3px;
+    border: none !important;
+}
+
+.slider-top .indicator div:hover{
+    background-color: #222222;
 }
 
 .slider-top .indicator div.active{
-    background: #2f3640;
+    background-color: #222222;
 }
 
 

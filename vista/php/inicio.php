@@ -9,7 +9,7 @@
 
 <body>
     <div class="contenedor-inicio">
-        <div class="inicio-1">
+        <!--<div class="inicio-1">
             <form class="formulario-1">
                 <ul>
                     <li><a href="#"><img src="vista/imagenes/extras/img-1.png"></a></li>
@@ -18,7 +18,7 @@
                     <li><a href="#"><img src="vista/imagenes/extras/img-4.jpg"></a></li>
                 </ul>
             </form>
-        </div>
+        </div>-->
         <div class="inicio-2">
             <div class="content-slider">
                 <img src="../../../../../Users/Usuario/AppData/Local/Temp/imagencab3.jpg" alt="" />
@@ -32,7 +32,8 @@
                                         <div class="caption">
                                             <!--<h1>1. Winter Collection 2020</h1>
                                             <p>lorem ipsumm dummy text goes here.</p>-->
-                                            <a href="#">Ver Trailer</a>
+                                            <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -41,7 +42,9 @@
                                         <div class="caption">
                                             <!--<h1>2. Winter Collection 2020</h1>
                                              <p>lorem ipsumm dummy text goes here.</p>-->
-                                            <a href="#">Ver Trailer</a>
+                                             <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
+                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +53,9 @@
                                         <div class="caption">
                                             <!--<h1>3. Winter Collection 2020</h1>
                                               <p>lorem ipsumm dummy text goes here.</p>-->
-                                            <a href="#">Ver Trailer</a>
+                                              <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
+                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -59,7 +64,9 @@
                                         <div class="caption">
                                             <!--<h1>4. Winter Collection 2020</h1>
                                                <p>lorem ipsumm dummy text goes here.</p>-->
-                                            <a href="#">Ver Trailer</a>
+                                               <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
+                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +75,9 @@
                                         <div class="caption">
                                             <!--<h1>5. Winter Collection 2020</h1>
                                               <p>lorem ipsumm dummy text goes here.</p>-->
-                                            <a href="#">Ver Trailer</a>
+                                              <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
+                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -77,7 +86,9 @@
                                         <div class="caption">
                                             <!--<h1>6. Winter Collection 2020</h1>
                                             <p>lorem ipsumm dummy text goes here.</p>-->
-                                            <a href="#">Ver Trailer</a>
+                                            <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
+                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -86,7 +97,9 @@
                                         <div class="caption">
                                             <!--<h1>7. Winter Collection 2020</h1>
                                               <p>lorem ipsumm dummy text goes here.</p>-->
-                                            <a href="#">Ver Trailer</a>
+                                              <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
+                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +108,9 @@
                                         <div class="caption">
                                             <!--<h1>8. Winter Collection 2020</h1>
                                             <p>lorem ipsumm dummy text goes here.</p>-->
-                                            <a href="#">Ver Trailer</a>
+                                            <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
+                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +119,9 @@
                                         <div class="caption">
                                             <!--<h1>9. Winter Collection 2020</h1>
                                               <p>lorem ipsumm dummy text goes here.</p>-->
-                                            <a href="#">Ver Trailer</a>
+                                              <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
+                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +130,9 @@
                                         <div class="caption">
                                             <!--<h1>10. Winter Collection 2020</h1>
                                             <p>lorem ipsumm dummy text goes here.</p>-->
-                                            <a href="#">Ver Trailer</a>
+                                            <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
+                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -154,8 +173,8 @@
                         </div>-->
                     </div>
                     <div class="controls">
-                        <div class="icon-left-open"></div>
-                        <div class="icon-right-open"></div>
+                        <div class="icon-left-dir"></div>
+                        <div class="icon-right-dir"></div>
                     </div>
                     <div class="indicator">
                     </div>
