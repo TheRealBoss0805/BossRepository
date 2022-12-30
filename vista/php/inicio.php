@@ -9,17 +9,7 @@
 
 <body>
     <div class="contenedor-inicio">
-        <!--<div class="inicio-1">
-            <form class="formulario-1">
-                <ul>
-                    <li><a href="#"><img src="vista/imagenes/extras/img-1.png"></a></li>
-                    <li><a href="#"><img src="vista/imagenes/extras/img-2.png"></a></li>
-                    <li><a href="#"><img src="vista/imagenes/extras/img-3.png"></a></li>
-                    <li><a href="#"><img src="vista/imagenes/extras/img-4.jpg"></a></li>
-                </ul>
-            </form>
-        </div>-->
-        <div class="inicio-2">
+        <div class="inicio-1">
             <div class="content-slider">
                 <img src="../../../../../Users/Usuario/AppData/Local/Temp/imagencab3.jpg" alt="" />
                 <!--<label id="titulo_slider_Rivera">DESTACADOS Y RECOMENDADOS</label>-->
@@ -172,8 +162,82 @@
                 </div>
             </div>
         </div>
+       <div class="inicio-2">
+            <div class="title-inicio">
+                <h2>NUESTROS SERVICIOS</h2>
+            </div>
+            <div class="content-service">
+                <div class="service-1">
+                    <a href="#">
+                        <span>
+                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                        </span>
+                        <div class="div-plus">
+                            <div class="icon-plus-1"></div>
+                            <div class="div-plus-txt">Ver más...</div>
+                        </div>
+                    </a>
+                    <div class="description-service">
+                        <h3>PLANIFICACIÓN</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur 
+                            adipisicing elit. Necessitatibus repellat 
+                            numquam doloremque libero quibusdam aut.</p>
+                    </div>    
+                </div>
+                <div class="service-2">
+                    <a href="#">
+                        <span>
+                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                        </span>
+                        <div class="div-plus add-btn">
+                            <div class="add-icon"></div>
+                            <div class="btn-txt"></div>
+                        </div>
+                    </a>
+                    <div class="description-service">
+                        <h3>PRE-INVERSIÓN</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur 
+                            adipisicing elit. Necessitatibus repellat 
+                            numquam doloremque libero quibusdam aut.</p>
+                    </div> 
+                </div>
+                <div class="service-3">
+                    <a href="#">
+                        <span>
+                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                        </span>
+                        <div class="div-plus add-btn">
+                            <div class="add-icon"></div>
+                            <div class="btn-txt"></div>
+                        </div>
+                    </a>
+                    <div class="description-service">
+                        <h3>EXPEDIENTES DE OBRA</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur 
+                            adipisicing elit. Necessitatibus repellat 
+                            numquam doloremque libero quibusdam aut.</p>
+                    </div> 
+                </div>
+                <div class="service-4">
+                    <a href="#">
+                        <span>
+                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                        </span>
+                        <div class="div-plus add-btn">
+                            <div class="add-icon"></div>
+                            <div class="btn-txt"></div>
+                        </div>
+                    </a>
+                    <div class="description-service">
+                        <h3>SUPERVISIÓN</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur 
+                            adipisicing elit. Necessitatibus repellat 
+                            numquam doloremque libero quibusdam aut.</p>
+                    </div> 
+                </div>
+            </form>
+        </div>
         <div class="inicio-3">
-
         </div>
         <div class="inicio-4">
 
