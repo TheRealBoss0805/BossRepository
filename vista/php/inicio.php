@@ -43,8 +43,7 @@
                                             <!--<h1>2. Winter Collection 2020</h1>
                                              <p>lorem ipsumm dummy text goes here.</p>-->
                                              <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
-                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -54,8 +53,7 @@
                                             <!--<h1>3. Winter Collection 2020</h1>
                                               <p>lorem ipsumm dummy text goes here.</p>-->
                                               <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
-                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -65,8 +63,7 @@
                                             <!--<h1>4. Winter Collection 2020</h1>
                                                <p>lorem ipsumm dummy text goes here.</p>-->
                                                <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
-                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -76,8 +73,7 @@
                                             <!--<h1>5. Winter Collection 2020</h1>
                                               <p>lorem ipsumm dummy text goes here.</p>-->
                                               <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
-                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -87,8 +83,7 @@
                                             <!--<h1>6. Winter Collection 2020</h1>
                                             <p>lorem ipsumm dummy text goes here.</p>-->
                                             <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
-                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -98,8 +93,7 @@
                                             <!--<h1>7. Winter Collection 2020</h1>
                                               <p>lorem ipsumm dummy text goes here.</p>-->
                                               <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
-                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -109,8 +103,7 @@
                                             <!--<h1>8. Winter Collection 2020</h1>
                                             <p>lorem ipsumm dummy text goes here.</p>-->
                                             <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
-                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -120,8 +113,7 @@
                                             <!--<h1>9. Winter Collection 2020</h1>
                                               <p>lorem ipsumm dummy text goes here.</p>-->
                                               <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
-                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur.</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -131,8 +123,7 @@
                                             <!--<h1>10. Winter Collection 2020</h1>
                                             <p>lorem ipsumm dummy text goes here.</p>-->
                                             <a href="#"><h1>Nombre de Servicio</h1><p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur, 
-                                                mollitia illo suscipit labore deserunt impedit quidem, officia, officiis.</p></a>
+                                                Nam voluptates autem aliquid quia eum quod facere corrupti rem tenetur.</p></a>
                                         </div>
                                     </div>
                                 </div>

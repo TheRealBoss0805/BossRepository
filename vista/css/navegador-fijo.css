@@ -97,6 +97,7 @@ nav{
 
 header nav ul li:hover > a{
     color: #1C7BD1;
+    transition: all 0.7s ease-out;
 }
 
 header ul{
@@ -107,43 +108,79 @@ header ul{
     gap: 15px;
     width: 100%;
     height: 60px;
-    background: #e9efe9;
-    box-shadow: inset 20px 20px 60px #cfcfcf,
-            inset -20px -20px 60px #e9efe9;
+    background: #fff;
+    box-shadow: inset 22px -22px 71px #bec9ba,
+                inset -22px 22px 71px #ffffff;
+
 }
 
 header ul li{
     list-style: none;
+}
+
+header ul .nav-li{
+    /*list-style: none;
     padding: 0px 0px 10px 0px;
+    border: 5px solid black;
+    position: relative;*/
+    padding: 0px 0px 10px 0px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    /*color: #1C7BD1;*/
 }
 
-header ul li:hover{
-    border-bottom: 4px solid #1C7BD1;
+header ul .nav-li::before{
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 90%;
+    right: 100%;
+    transform: translate(100%);
+    background: #1C7BD1;
+    transition: .8s ease;
+    display: block;
+    z-index: -1;
 }
 
+header ul .nav-li:hover::before {
+    width: 105%;
+}
+   
+header ul .nav-li:hover {
+    color: #111;
+}
+   
 header ul li a{
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 15px;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
     color: #253743;
+    text-transform: uppercase;
 }
 
 header ul .contactanos:hover > a{
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#253743), to(#253743));
     background: -moz-linear-gradient(top, #253743, #253743);
     color: #fff;
-    opacity: 1;
+    background: #1e3a4d;
 }
 
 header ul .contactanos a{
     padding: 10px;
     border-radius: 7px;
-    background: #253743;
+    background: #344d5e;
     color: #fff;
-    opacity: 0.9;
 }
 
 header ul .contactanos{
@@ -170,6 +207,8 @@ header.abajo ul li a{
 }
 */
 
+
+
 .contenedor-logo{
     width: 15%;
     min-width: 188px;
@@ -179,17 +218,55 @@ header.abajo ul li a{
     position: absolute;
     left: 0;
     z-index: 1;
+
 }
 
 header .svg-img{
     position: relative;
     width: 160px;
     height: 160px;
+
 }
 
 header .svg-img svg{
     position: absolute;
 }
+
+header .svg-img:hover > svg{
+    animation: mover 1s linear;
+}
+
+@keyframes mover{
+    0% {
+     -webkit-transform: translate(0);
+     transform: translate(0);
+    }
+   
+    20% {
+     -webkit-transform: translate(-5px, 5px);
+     transform: translate(-5px, 5px);
+    }
+   
+    40% {
+     -webkit-transform: translate(-5px, -5px);
+     transform: translate(-5px, -5px);
+    }
+   
+    60% {
+     -webkit-transform: translate(5px, 5px);
+     transform: translate(5px, 5px);
+    }
+   
+    80% {
+     -webkit-transform: translate(5px, -5px);
+     transform: translate(5px, -5px);
+    }
+   
+    100% {
+     -webkit-transform: translate(0);
+     transform: translate(0);
+    }
+   }
 
 header .svg-img img{
     width: 100px;
