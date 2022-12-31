@@ -2,10 +2,10 @@
     height: 100%;
     border: 1px solid black;
     width: 100%;
+    background: #fff;
 }
 
 .inicio-1, .inicio-2, .inicio-3, .inicio-4{
-    border: 7px solid green;
     height: 680px;
     position: relative;
 }
@@ -53,7 +53,7 @@
 }*/
 
 
-/*Slider Next Level middle*/
+/*INICIO 1*/
 
 .content-slider{
     width: 100%;
@@ -63,13 +63,6 @@
     align-items: center; 
     position: relative;
 }
-
-/*.content-slider #titulo_slider_Rivera{
-    position: absolute;
-    top: 0;
-    left: 15.5%;
-    font-size: 1.1em;
-}*/
 
 .slider-top{
     width: 100%;
@@ -97,6 +90,7 @@
 }
 
 .section-slider .slider{
+    /**/
 }
 
 .section-slider .slider img{
@@ -276,119 +270,32 @@
     background-color: #222222;
 }
 
+/*INICIO 2*/
 
-
-
-
-
-
-
-/*
-.div_juegos_vendidos{
-    width: 35%;
-    height: 353px;
-    background: linear-gradient(to top, #4b4b4b, #171a21);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.title-inicio{
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    color: #253743;
 }
 
-.div_juegos_vendidos .div_titulo_jv{
-    height: 15%;
-    width: 95%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.div_titulo_jv p{
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.div_juegos_vendidos .plataforma_juegos{
-    height: 50%;
-    width: 100%; 
-}
-
-.div_juegos_vendidos .plataforma_juegos .plataforma_1, .plataforma_2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;    
-}
-
-.plataforma_1 a, .plataforma_2 a{
-    width: 48%;
-    height: 100%;
-    margin-top: 5px; 
-}
-
-.plataforma_1 img, .plataforma_2 img{
-    width: 100%;   
-    height: 100%;
-    display: block;
-    border: 1px solid #A3CB38;   
-}
-
-.plataforma_1 img:hover, .plataforma_2 img:hover{
-    transform: scale(1.03);
-    transition: all 0.2s ease-in;
-    box-shadow: 0 0 15px #A3CB38; 
-    z-index: 100; 
-}
-
-.div_juegos_vendidos .div_descripcion_juegos_vendidos{
-    height: 25%;
-    width: 95%;  
-}
-
-.div_descripcion_juegos_vendidos #p{
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.div_descripcion_juegos_vendidos div p{
-    margin-top: 10px;
-    background: #171a21;
-    display: inline-block;
-    font-size: 13px;
-    padding: 2px;
-    padding-right: 5px;
-}
-
-.div_juegos_vendidos .div_precio_plus{
-    height: 10%;
-    width: 95%;    
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;  
+.title-inicio h2{
     position: relative;
 }
 
-.div_precio_plus p{
-    font-size: 13px;
-    text-transform: uppercase;
-    background: #A3CB38;
-    padding: 2px;
-    padding-right: 5px;
-}
-
-.div_precio_plus .icon-windows{
-    color: black;
-    font-size: 25px;
+.title-inicio h2::before{
+    content: '';
     position: absolute;
-    right: 0;
-}*/
-
-.title-inicio{
-    border: 6px solid black;
-    position: absolute;
-    top: 0;
+    bottom: -5px;
     left: 0;
+    width: 100px;
+    height: 4px;
+    background: crimson;
 }
 
+.contenedores{
+    margin-top: 60px;
+}
 
 .content-service{
     height: 100%;
@@ -534,6 +441,7 @@
     font-weight: 700;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    color: #253743;
 }
 
 .description-service p{
@@ -542,9 +450,22 @@
     font-style: italic;
     font-weight: 200;
     font-size: 18px;
-    color: #000000;
+    color: #253743;
 }
 
+
+
+/*INICIO 3*/
+
+.content-trabajos{
+    border: 5px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.title-inicio h4{
+    margin-top: 20px;
+}
 
 
 
