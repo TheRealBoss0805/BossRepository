@@ -143,7 +143,17 @@
 .icon-plus-outline:before { content: '\e88d'; } /* '' */
 .icon-plus-circled-1:before { content: '\e88e'; } /* '' */
 .icon-plus-squared-1:before { content: '\e88f'; } /* '' */
+.icon-info-circled:before { content: '\e890'; } /* '' */
+.icon-info-circled-1:before { content: '\e891'; } /* '' */
+.icon-info-1:before { content: '\e892'; } /* '' */
+.icon-info-outline:before { content: '\e893'; } /* '' */
+.icon-info-2:before { content: '\e894'; } /* '' */
+.icon-info-3:before { content: '\e895'; } /* '' */
+.icon-info-4:before { content: '\e896'; } /* '' */
+.icon-info-circled-3:before { content: '\e897'; } /* '' */
 .icon-right-open-3:before { content: '\f006'; } /* '' */
+.icon-info-circled-2:before { content: '\f085'; } /* '' */
+.icon-info-circled-alt:before { content: '\f086'; } /* '' */
 .icon-phone-squared:before { content: '\f098'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-left-circled:before { content: '\f0a8'; } /* '' */
@@ -159,6 +169,7 @@
 .icon-quote-right:before { content: '\f10e'; } /* '' */
 .icon-reply:before { content: '\f112'; } /* '' */
 .icon-star-half-alt:before { content: '\f123'; } /* '' */
+.icon-info:before { content: '\f129'; } /* '' */
 .icon-angle-circled-left:before { content: '\f137'; } /* '' */
 .icon-angle-circled-right:before { content: '\f138'; } /* '' */
 .icon-angle-circled-up:before { content: '\f139'; } /* '' */

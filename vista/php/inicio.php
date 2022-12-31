@@ -167,72 +167,84 @@
                 <h2>NUESTROS SERVICIOS</h2>
             </div>
             <div class="content-service">
-                <div class="service-1">
+                <div class="service-1 div">
                     <a href="#">
                         <span>
                             <img src="vista/imagenes/extras/img-1.png" alt="">
                         </span>
                         <div class="div-plus">
                             <div class="icon-plus-1"></div>
-                            <div class="div-plus-txt">Ver más...</div>
+                            <div class="div-plus-txt">
+                                <span class="icon-info-circled"></span>
+                                <span class="icon-building"></span>
+                            </div>
                         </div>
                     </a>
                     <div class="description-service">
                         <h3>PLANIFICACIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur 
                             adipisicing elit. Necessitatibus repellat 
-                            numquam doloremque libero quibusdam aut.</p>
+                            numquam.</p>
                     </div>    
                 </div>
-                <div class="service-2">
+                <div class="service-2 div">
                     <a href="#">
                         <span>
                             <img src="vista/imagenes/extras/img-1.png" alt="">
                         </span>
-                        <div class="div-plus add-btn">
-                            <div class="add-icon"></div>
-                            <div class="btn-txt"></div>
+                        <div class="div-plus">
+                            <div class="icon-plus-1"></div>
+                            <div class="div-plus-txt">
+                                <span class="icon-info-circled"></span>
+                                <span class="icon-building"></span>
+                            </div>
                         </div>
                     </a>
                     <div class="description-service">
                         <h3>PRE-INVERSIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur 
                             adipisicing elit. Necessitatibus repellat 
-                            numquam doloremque libero quibusdam aut.</p>
+                            numquam.</p>
                     </div> 
                 </div>
-                <div class="service-3">
+                <div class="service-3 div">
                     <a href="#">
                         <span>
                             <img src="vista/imagenes/extras/img-1.png" alt="">
                         </span>
-                        <div class="div-plus add-btn">
-                            <div class="add-icon"></div>
-                            <div class="btn-txt"></div>
+                        <div class="div-plus">
+                            <div class="icon-plus-1"></div>
+                            <div class="div-plus-txt">
+                                <span class="icon-info-circled"></span>
+                                <span class="icon-building"></span>
+                            </div>
                         </div>
                     </a>
                     <div class="description-service">
                         <h3>EXPEDIENTES DE OBRA</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur 
                             adipisicing elit. Necessitatibus repellat 
-                            numquam doloremque libero quibusdam aut.</p>
+                            numquam.</p>
                     </div> 
                 </div>
-                <div class="service-4">
+                <div class="service-4 div">
                     <a href="#">
                         <span>
                             <img src="vista/imagenes/extras/img-1.png" alt="">
                         </span>
-                        <div class="div-plus add-btn">
-                            <div class="add-icon"></div>
-                            <div class="btn-txt"></div>
+                        <div class="div-plus">
+                            <div class="icon-plus-1"></div>
+                            <div class="div-plus-txt">
+                                <span class="icon-info-circled"></span>
+                                <span class="icon-building"></span>
+                            </div>
                         </div>
                     </a>
                     <div class="description-service">
                         <h3>SUPERVISIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur 
                             adipisicing elit. Necessitatibus repellat 
-                            numquam doloremque libero quibusdam aut.</p>
+                            numquam.</p>
                     </div> 
                 </div>
             </form>

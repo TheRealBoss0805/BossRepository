@@ -1129,12 +1129,6 @@
       "src": "elusive"
     },
     {
-      "uid": "63e91725cfc5751fe4d772325fd50830",
-      "css": "plus-1",
-      "code": 59528,
-      "src": "mfglabs"
-    },
-    {
       "uid": "hbvhbnoivp3qj8xpyqrxa7dvq9ntnci3",
       "css": "plus-2",
       "code": 59529,
@@ -1175,6 +1169,78 @@
       "css": "plus-squared-1",
       "code": 59535,
       "src": "entypo"
+    },
+    {
+      "uid": "63e91725cfc5751fe4d772325fd50830",
+      "css": "plus-1",
+      "code": 59528,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "e82cedfa1d5f15b00c5a81c9bd731ea2",
+      "css": "info-circled",
+      "code": 59536,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3d4ea8a78dc34efe891f3a0f3d961274",
+      "css": "info",
+      "code": 61737,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7e4164950ffa4990961958b2d6318658",
+      "css": "info-circled-1",
+      "code": 59537,
+      "src": "entypo"
+    },
+    {
+      "uid": "63b86fedd4ee9ad2105f54f4888e7088",
+      "css": "info-1",
+      "code": 59538,
+      "src": "entypo"
+    },
+    {
+      "uid": "6364d85e960f23b9a843a506387e7970",
+      "css": "info-outline",
+      "code": 59539,
+      "src": "typicons"
+    },
+    {
+      "uid": "85fda3129wk4amvn25wrq843sbj3yzl0",
+      "css": "info-2",
+      "code": 59540,
+      "src": "typicons"
+    },
+    {
+      "uid": "ccd52a22af21fbaa98a9c85fb50fca6b",
+      "css": "info-3",
+      "code": 59541,
+      "src": "iconic"
+    },
+    {
+      "uid": "a66a6e088038a1881d532b6675bf8412",
+      "css": "info-4",
+      "code": 59542,
+      "src": "modernpics"
+    },
+    {
+      "uid": "8f25d96c5665c84e4403538eef14ec2c",
+      "css": "info-circled-2",
+      "code": 61573,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "15ba51cbb4d05e6fb88f03a31a7c711c",
+      "css": "info-circled-alt",
+      "code": 61574,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "2355991b4045d64b08fb82988109c0ee",
+      "css": "info-circled-3",
+      "code": 59543,
+      "src": "elusive"
     }
   ]
 }
