@@ -45,7 +45,6 @@
 
   <!-- Fontello -->
   <link rel="stylesheet" href="vista/internet-components/idc-fontello/css/fontello.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- Plantilla -->
   <link rel="stylesheet" href="vista/css/plantilla.css">
@@ -121,8 +120,9 @@
     echo '</div>';
 
   ?>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
+
 
 
 

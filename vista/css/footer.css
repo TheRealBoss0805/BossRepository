@@ -39,6 +39,7 @@ footer .container_2 h2{
     color: #fff;
     font-weight: 500;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 footer .container_2 h2::before{
@@ -46,7 +47,7 @@ footer .container_2 h2::before{
     position: absolute;
     bottom: -5px;
     left: 0;
-    width: 50px;
+    width: 100px;
     height: 2px;
     background: #f00;
 }
@@ -143,7 +144,7 @@ footer p{
 .copyrightText{
     width: 100%;
     background: #181818;
-    padding: 8px 100px;
+    padding: 15px;
     text-align: center;
     color: #999;
 }
@@ -163,7 +164,7 @@ footer .div-on .on{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px 10px 4px 4px;
+    border-radius: 50%;
     text-decoration: none;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }

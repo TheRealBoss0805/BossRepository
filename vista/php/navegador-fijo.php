@@ -14,11 +14,11 @@
             </div>
             <div>
                 <span><a href="#"><i class="fa icon-whatsapp"></i></a></span>
-                <p>994848338</p>
+                <p>Whatsapp</p>
             </div>
             <div>
                 <span><a href="#"><i class="fa icon-phone"></i></a></span>
-                <p>942664307</p>
+                <p>Teléfono</p>
             </div>
         </div>
         <header>

@@ -8,50 +8,12 @@
 .inicio-1, .inicio-2, .inicio-3, .inicio-4{
     height: 680px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    border: 5px solid orange;
 }
-
-/*Slider Simple Top
-
-.formulario-1{
-    width: 100%;
-    overflow: hidden; 
-}
-
-.formulario-1 ul{
-    width: 400%;
-    display: flex;  
-    animation: cambio 16s infinite alternate;
-    animation-timing-function: linear;   
-} 
-
-.formulario-1 li{
-    width: 100%;
-    list-style: none;   
-}
-
-.formulario-1 img{
-    width: 100%;
-    height: 550px;
-    background-size: cover;
-    position: static;
-    border: 1px solid #4b6584;
-    cursor: pointer;   
-}
-
-@keyframes cambio{
-    0% {margin-left:0;}
-    21% {margin-left:0;}
-    
-    26% {margin-left:-100%;}
-    47% {margin-left:-100%;}
-    
-    52% {margin-left:-200%;}
-    73% {margin-left:-200%;}
-    
-    78% {margin-left:-300%;}
-    100% {margin-left:-300%;}
-}*/
-
 
 /*INICIO 1*/
 
@@ -208,7 +170,7 @@
     height: 45%;
     width: 50%;
     color: #222222;
-    background-color: #dcefff;
+    background-color: #fff;
     font-size: 30px;
     cursor: pointer;
     transition: all .5s ease;
@@ -225,12 +187,14 @@
 
 .slider-top .icon-left-dir{
     bottom: 0;
-    border-radius: 0 0 10px 10px;
+    border-radius: 50%;
+ 
 }
 
 .slider-top .icon-right-dir{
     top: 0;
-    border-radius: 10px 10px 0 0;
+    border-radius: 50%;
+
 
 }
 
@@ -454,49 +418,138 @@
 }
 
 
-
 /*INICIO 3*/
 
-.content-trabajos{
-    border: 5px solid black;
-    width: 100%;
-    height: 100%;
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/*
+body{
+
+}*/
+
+.slide3{
+  position: relative;  
+  height: 450px;
+  width: 1075px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: 3px solid red;
 }
 
-.title-inicio h4{
-    margin-top: 20px;
+.swiper{
+  width: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
-/*prueba
-.icon-btn {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #cdcdcd;
-  background: white;
-  border-radius: 25px;
-  overflow: hidden;
+.card{
   position: relative;
-  transition: width 0.4s ease-in-out;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #7d2ae8;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+  height: 185px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.card .card-content:hover{
+    height: 400px;
+
+}
+
+.card .card-content:hover > .image{
+    height: 140px;
+    width: 90%;
+}
+
+.slide3 .card .image{
+  height: 250px;
+  width: 250px;
+  padding: 3px;
+  background: #7d2ae8;
+}
+
+.slide3 .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+.card .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #eeeedd;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 7px;
+} 
+
+.name-profession .name{
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #253743;
+  font-style: italic;
+}
+
+.name-profession .profession{
+  font-size:15px;
   font-weight: 500;
-  font-family: inherit;
+  text-align: justify;
+  color: #253743;
 }
 
-.add-btn:hover {
-  width: 120px;
+.swiper-pagination{
+  position: absolute;
 }
 
-.btn-txt {
-  opacity: 0;
-  transition: opacity 0.2s;
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
 }
 
-.add-btn:hover .btn-txt {
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #7d2ae8;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
   opacity: 1;
+  color: #7d2ae8;
 }
-
-*/
-
-

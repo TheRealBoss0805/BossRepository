@@ -1,10 +1,13 @@
 
-body{
+.content-perfiles{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #222;
+    background: #222222;
+    height: 900px;
+    width: 100%;
+    border: 10px solid yellow;
 }
 
 .container{
@@ -13,6 +16,7 @@ body{
     height: 600px;
     border: 2px solid #fff;
     border-radius: 50%;
+    background: #222;
 }
 
 .container .icon{
@@ -211,3 +215,4 @@ body{
 .contentBx .card .textBx .sci li a:hover{
     background: #2196f3;
 }
+

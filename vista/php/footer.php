@@ -13,10 +13,10 @@
                     <p>INDECONSULT S.A. es una empresa de Ingeniería que realiza Planificación, Desarrollo de Ideas de Inversión, Formulación y Evaluación de Proyectos, Desarrollo de Expedientes Técnicos y Supervisiones de Obra.
                     Nos especializamos en Proyectos de Salud, Portuarios, Sociales y de Transporte.</p>
                     <ul class="sci_2">
-                        <li><a href="#"><ion-icon name="logo-facebook" class="fa"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-twitter" class="fa"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-linkedin" class="fa"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-instagram" class="fa"></ion-icon></a></li>
+                        <li><a href="#"><i class="fa icon-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa icon-linkedin-rect"></i></a></li>
+                        <li><a href="#"><i class="fa icon-instagram"></i></a></li>
                     </ul>
                 </div>
                 <div class="sec quickLinks">
@@ -34,17 +34,17 @@
                     <h2>Información de Contacto</h2>
                     <ul class="info">
                         <li>
-                            <span><ion-icon name="location-outline" class="fa"></ion-icon></span>
+                            <span><i class="fa icon-telegram"></i></span>
                             <span>Jr. Monterosa 233 of.507<br>
                             Santiago de Surco, Lima</span>
                         </li>
                         <li>
-                            <span><ion-icon name="call-outline" class="fa"></ion-icon></span>
+                            <span><i class="fa icon-phone-squared"></i></span>
                             <p><a href="tel:123456789">(51)(1) 2439211</a><br>
                                 <a href="tel:123456789">(51)(1) 2439212</a></p>
                         </li>
                         <li>
-                            <span><ion-icon name="mail-outline" class="fa"></ion-icon></span>
+                            <span><i class="fa icon-mail-alt"></i></span>
                             <p>
                                 <a href="secretaria@indeconsult.pe">secretaria@indeconsult.pe</a><br>
                                 <a href="comercial@indeconsult.pe">comercial@indeconsult.pe</a><br>

@@ -20,7 +20,6 @@ next.addEventListener("click", function () {
 function circleIndicator() {
     for (let i = 0; i < slides.length; i++) {
         const div = document.createElement("div");
-        /*div.innerHTML = i + 1;*/
         div.setAttribute("onclick", "indicateSlide(this)");
         div.id = i;
         if (i === 0) {
@@ -93,3 +92,34 @@ function autoPlay() {
 }
 
 let timer = setInterval(autoPlay, 6000);
+
+
+/*
+const before = document.querySelector('.before');
+const after = document.querySelector('.after');
+const carusel = document.querySelector('.slider-inicio-tercero');
+
+before.addEventListener('click', () => {
+    carusel.scrollLeft -=400
+})
+
+after.addEventListener('click', () => {
+    carusel.scrollLeft += 400
+})
+*/
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
