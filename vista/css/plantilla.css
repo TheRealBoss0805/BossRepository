@@ -6,14 +6,29 @@
     /*border: 1px solid black;*/
 }
 
+.inicio-1, .inicio-2, .inicio-3, .inicio-4, .inicio-5, .inicio-6, .inicio-7, .inicio-8{
+    height: 680px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 3px solid green;
+}
+
+.inicio-3{
+    background: darkseagreen;
+}
+
 body{
     width: 100%;
     height: 100%;
+    background: #f2f2f2;
 }
 
 
 .contenedorPadre{
-    border: 10px solid green;
 }
 
 .fa{

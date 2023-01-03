@@ -251,6 +251,10 @@
             </div>
         </div>
         <div class="inicio-3">
+            <div class="title-inicio">
+                <h2>Trabajos recientes</h2>
+                <p>Últimos trabajos realizados por la Empresa.</p>
+            </div>
             <section class="slide3">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper content">
@@ -371,7 +375,114 @@
             </section>
         </div>
         <div class="inicio-4">
-
+            <div class="title-inicio">
+                <h2>Noticias sobre la empresa y el sector</h2>
+            </div>
+            <div class="contenedor-4">
+                <div class="content4-ct0">
+                    <div class="ct0-texto">
+                        <h2>NEWS</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur 
+                        adipisicing elit. Est in at aspernatur 
+                        optio id ipsam illo veritatis tempore quod 
+                        similique itaque, magni omnis inventore, 
+                        qui consectetur neque cumque, voluptate praesentium.
+                        </p>
+                    </div>
+                    <div class="ct0-button">
+                        <a href="#">Ver más noticias</a>
+                    </div>
+                </div>
+                <div class="content4-ct">
+                    <div class="ct-child1">
+                        <div class="child1-min">
+                            <div class="child1-img">
+                                <div>Sábado, 11 de Junio 2016</div>
+                                <a href="#">
+                                    <img src="vista/imagenes/extras/img-1.png" alt="">
+                                    <p>título de la imagen</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="child1-min">
+                            <div class="child1-img">
+                                <div>Día, Fechas y año</div>
+                                <a href="#">
+                                    <img src="vista/imagenes/extras/img-1.png" alt="">
+                                    <p>título de la imagen</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ct-child1">
+                        <div class="child1-min">
+                            <div class="child1-img">
+                                <div>Día, Fechas y año</div>
+                                <a href="#">
+                                    <img src="vista/imagenes/extras/img-1.png" alt="">
+                                    <p>título de la imagen</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="child1-min">
+                            <div class="child1-img">
+                                <div>Día, Fechas y año</div>
+                                <a href="#">
+                                    <img src="vista/imagenes/extras/img-1.png" alt="">
+                                    <p>título de la imagen</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inicio-5">
+            <div class="title-inicio">
+                <h2>Instituto de consultoría S.A</h2>
+            </div>
+            <div class="contenedor-5">
+                <div class="content-5">
+                    <div class="content-5-min1">
+                        <p>Promover la Inversión Pública y Privada en una marco<br> de Competencia y Eficiencia.</p>
+                        <img src="vista/imagenes/valores/Mision.png" alt="" class="valor1">
+                    </div>
+                    <div class="content-5-min2 min2-1"><h1>MISIÓN</h1></div>
+                </div>
+                <div class="content-5">
+                    <div class="content-5-min2 min2-2"><h1>VISIÓN</h1></div>
+                    <div class="content-5-min1">
+                        <p>Convertirnos en la empresa Líder en Consultoría de<br> Inversión Pública y Privada.</p>
+                        <img src="vista/imagenes/valores/vision.png" alt="" class="valor2">
+                    </div>
+                </div>
+                <div class="content-5">
+                    <div class="content-5-min3">
+                        <div class="value-circle">
+                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                            <h6>Pésimo</h6>
+                        </div>
+                        <div class="value-circle">
+                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                            <h6>Regular</h6>
+                        </div>
+                        <div class="value-circle">
+                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                            <h6>Bueno</h6>
+                        </div>
+                        <div class="value-circle">
+                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                            <h6>Excelente</h6>
+                        </div>
+                    </div>
+                    <div class="content-5-min3">
+                        <h1>NUESTROS VALORES</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inicio-6">
+            
         </div>
     </div>
 </body>
