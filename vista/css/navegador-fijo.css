@@ -207,8 +207,6 @@ header.abajo ul li a{
 }
 */
 
-
-
 .contenedor-logo{
     width: 15%;
     min-width: 188px;
@@ -218,14 +216,12 @@ header.abajo ul li a{
     position: absolute;
     left: 0;
     z-index: 1;
-
 }
 
 header .svg-img{
     position: relative;
     width: 160px;
     height: 160px;
-
 }
 
 header .svg-img svg{
