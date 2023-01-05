@@ -34,11 +34,35 @@
             <nav>
                 <ul>
                     <li class="nav-li"><a href="">Inicio</a></li>
-                    <li class="nav-li"><a href="">Nosotros</a></li>
-                    <li class="nav-li"><a href="">Servicios</a></li>
-                    <li class="nav-li"><a href="">Proyectos</a></li>
-                    <li class="nav-li"><a href="">Blog</a></li>
-                    <li class="contactanos"><a href="">Contáctenos</a></li>
+                    <li class="nav-li">
+                        <a href="">Nosotros</a>
+                        <ul>
+                            <li><a href="#">Quiénes Somos</a></li>
+                            <li><a href="#">Políticas de Gestión</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Servicios</a>
+                        <ul>
+                            <li><a href="#">Planificación</a></li>
+                            <li><a href="#">Pre - Inversión</a></li>
+                            <li><a href="#">Expedientes de Obra</a></li>
+                            <li><a href="#">Supervisión</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-li">
+                        <a href="">Proyectos</a>
+                        <ul>
+                            <li><a href="#">Por Tipo</a></li>
+                            <li><a href="#">Por Sector</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-li"><a href="#">Blog</a></li>
+                    <li class="contactanos">
+                        <span class="transition"></span>
+                        <span class="gradient"></span>
+                        <a href="#" class="label">Contáctenos</a>
+                    </li>
                 </ul>
             </nav>
         </header>

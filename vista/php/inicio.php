@@ -495,141 +495,88 @@
             <div class="contenedor-inicio-6">
                 <div class="title-inicio">
                     <h2>Normas ISO</h2>
-                    <p>Sistema de Gestión de la Calidad cumple con los requisitos de la Norma ISO.</p>
+                    <p>SGC cumple con los requisitos de la Norma ISO.</p>
                 </div>
-                <div class="contenedor-6">
-                    <div class="content6-1">
-                        <div class="imgBx active" style="--i:1;" data-id="contenedor1">
-                            <img src="vista/imagenes/isos/26.png">
-                        </div>
-                        <div class="imgBx" style="--i:2;" data-id="contenedor2">
-                            <img src="vista/imagenes/isos/9001.png">
-                        </div>
-                        <div class="imgBx" style="--i:3;" data-id="contenedor3">
-                            <img src="vista/imagenes/isos/14001.png">
-                        </div>
-                        <div class="imgBx" style="--i:4;" data-id="contenedor4">
-                            <img src="vista/imagenes/isos/37001.png">
-                        </div>
-                        <div class="imgBx" style="--i:5;" data-id="contenedor5">
-                            <img src="vista/imagenes/isos/45001.png">
-                        </div>
-                        <!--<div class="imgBx" style="--i:6;" data-id="contenedor6">
-                        <img src="../imagenes/img6.jpg">
-                    </div>
-                    <div class="imgBx" style="--i:7;" data-id="contenedor7">
-                        <img src="../imagenes/img7.jpg">
-                    </div>
-                    <div class="imgBx" style="--i:8;" data-id="contenedor8">
-                        <img src="../imagenes/img8.jpg">
-                    </div>-->
-                    </div>
-                    <div class="content6-2">
-                        <div class="contentBx active" id="contenedor1">
-                            <div class="card-content6-2">
-                                <div class="imgBx">
-                                    <img src="vista/imagenes/isos/26.png">
-                                </div>
-                                <div class="textBx">
-                                    <h2>Aniversario<br><span>26 Años de servicio en todo el Perú</span></h2>
-                                    <!--<ul class="sci-6">
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>-->
-                                </div>
+                <div class="title-inicio-2">
+                    <h2>SOMOS INDECONSULT S.A</h2>
+                </div>
+                <div class="contenedor-padre-6">
+                    <div class="contenedor-6">
+                        <div class="content6-1">
+                            <div class="imgBx active" style="--i:1;" data-id="contenedor1">
+                                <img src="vista/imagenes/isos/26.png">
+                            </div>
+                            <div class="imgBx" style="--i:2;" data-id="contenedor2">
+                                <img src="vista/imagenes/isos/9001.png">
+                            </div>
+                            <div class="imgBx" style="--i:3;" data-id="contenedor3">
+                                <img src="vista/imagenes/isos/14001.png">
+                            </div>
+                            <div class="imgBx" style="--i:4;" data-id="contenedor4">
+                                <img src="vista/imagenes/isos/37001.png">
+                            </div>
+                            <div class="imgBx" style="--i:5;" data-id="contenedor5">
+                                <img src="vista/imagenes/isos/45001.png">
                             </div>
                         </div>
-                        <div class="contentBx" id="contenedor2">
-                            <div class="card-content6-2">
-                                <div class="imgBx">
-                                    <img src="vista/imagenes/isos/9001.png">
-                                </div>
-                                <div class="textBx">
-                                    <h2>ISO 9001:2015<br><span>Sistemas de Gestión de calidad (SGC)</span></h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx" id="contenedor3">
-                            <div class="card-content6-2">
-                                <div class="imgBx">
-                                    <img src="vista/imagenes/isos/14001.png">
-                                </div>
-                                <div class="textBx">
-                                    <h2>ISO 14001:2015<br><span>Sistemas de Gestión Ambiental (SGA)</span></h2>
+                        <div class="content6-2">
+                            <div class="contentBx active" id="contenedor1">
+                                <div class="card-content6-2">
+                                    <div class="imgBx">
+                                        <img src="vista/imagenes/isos/26.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>Aniversario<br><span>26 Años de servicio en todo el Perú</span></h2>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="contentBx" id="contenedor4">
-                            <div class="card-content6-2">
-                                <div class="imgBx">
-                                    <img src="vista/imagenes/isos/37001.png">
-                                </div>
-                                <div class="textBx">
-                                    <h2>ISO 37001:2016<br><span>Sistemas de Gestión Antisoborno</span></h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contentBx" id="contenedor5">
-                            <div class="card-content6-2">
-                                <div class="imgBx">
-                                    <img src="vista/imagenes/isos/45001.png">
-                                </div>
-                                <div class="textBx">
-                                    <h2>ISO 45001:2018<br><span>Sistemas de Gestión de la Seguridad y Salud en el Trabajo</span></h2>
+                            <div class="contentBx" id="contenedor2">
+                                <div class="card-content6-2">
+                                    <div class="imgBx">
+                                        <img src="vista/imagenes/isos/9001.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>ISO 9001:2015<br><span>Sistemas de Gestión de calidad (SGC)</span></h2>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--<div class="contentBx" id="contenedor6">
-                        <div class="card-content6-2">
-                            <div class="imgBx">
-                                <img src="../imagenes/img6.jpg">
+                            <div class="contentBx" id="contenedor3">
+                                <div class="card-content6-2">
+                                    <div class="imgBx">
+                                        <img src="vista/imagenes/isos/14001.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>ISO 14001:2015<br><span>Sistemas de Gestión Ambiental (SGA)</span></h2>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="textBx">
-                                <h2>Someone Famous<br><span>Product Designer</span></h2>
-                                <ul class="sci-6">
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
+                            <div class="contentBx" id="contenedor4">
+                                <div class="card-content6-2">
+                                    <div class="imgBx">
+                                        <img src="vista/imagenes/isos/37001.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>ISO 37001:2016<br><span>Sistemas de Gestión Antisoborno</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contentBx" id="contenedor5">
+                                <div class="card-content6-2">
+                                    <div class="imgBx">
+                                        <img src="vista/imagenes/isos/45001.png">
+                                    </div>
+                                    <div class="textBx">
+                                        <h2>ISO 45001:2018<br><span>Sistemas de Gestión de la Seguridad y Salud en el
+                                                Trabajo</span></h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="contentBx" id="contenedor7">
-                        <div class="card-content6-2">
-                            <div class="imgBx">
-                                <img src="../imagenes/img7.jpg">
-                            </div>
-                            <div class="textBx">
-                                <h2>Someone Famous<br><span>Product Designer</span></h2>
-                                <ul class="sci-6">
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
+                    <div class="contenedor-6-2">
+                        <div class="content6-3">
+                            
                         </div>
-                    </div>
-                    <div class="contentBx" id="contenedor8">
-                        <div class="card-content6-2">
-                            <div class="imgBx">
-                                <img src="../imagenes/img8.jpg">
-                            </div>
-                            <div class="textBx">
-                                <h2>Someone Famous<br><span>Product Designer</span></h2>
-                                <ul class="sci-6">
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
                     </div>
                 </div>
             </div>
@@ -640,6 +587,21 @@
                     <h2>INFORMACIÓN GENERAL</h2>
                 </div>
                 <div class="content7-1">
+
+                    <div class="content7-rep">
+                        <div class="represent-img">
+                            <img src="vista/imagenes/extras/mujer.jpg" alt="" class="img">
+                            <div class="represent-think">
+                                <img src="vista/imagenes/extras/vineta.png" alt="">
+                                <p>" ¡Vive la Vida y no dejes que la Vida te Viva! "</p>
+                            </div>
+                        </div>
+                        <div class="represent-info">
+                            <h3>Danitza Zulema Echandia Moreno</h3>
+                            <h2>GERENTE GENERAL</h2>
+                            <a href="#" title="Linkedin"><span class="icon-linkedin-rect"></span></a>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="content7-2">
