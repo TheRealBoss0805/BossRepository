@@ -146,3 +146,40 @@ for(let i=0; i<imgBx.length; i++){
         this.className = 'imgBx active';
     })
 }
+
+/*Contador de proyecto, etc*/
+
+let count1 = document.getElementById('count1'),
+count2 = document.getElementById('count2'),
+count3 = document.getElementById('count3'),
+count4 = document.getElementById('count4');
+let time = 50;
+let contador1 = 0, contador2 = 0, contador3 = 0, contador4 = 0;
+
+let tiempo1 = setInterval(() => {
+    count1.textContent = contador1 += 20
+    if(contador1 === 1500){
+        clearInterval(tiempo1)
+    }
+}, `${time}`);
+
+let tiempo2 = setInterval(() => {
+    count2.textContent = contador2 += 19
+    if(contador2 === 1995){
+        clearInterval(tiempo2)
+    }
+}, `${time}`);
+
+let tiempo3 = setInterval(() => {
+    count3.textContent = contador3 += 5
+    if(contador3 === 100){
+        clearInterval(tiempo3)
+    }
+}, `${time}`);
+
+let tiempo4 = setInterval(() => {
+    count4.textContent = contador4 += 1
+    if(contador4 === 28){
+        clearInterval(tiempo4)
+    }
+}, `${time}`);

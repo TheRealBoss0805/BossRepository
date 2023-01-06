@@ -575,7 +575,30 @@
                     </div>
                     <div class="contenedor-6-2">
                         <div class="content6-3">
-                            
+                            <div class="padre-contador">
+                                <div class="hijo-contador">
+                                    <span></span>
+                                    <span>Proyectos completados</span>
+                                    <span id="count1">0</span>
+                                </div>
+                                <div class="hijo-contador">
+                                    <span></span>
+                                    <span>Año de Fundación</span>
+                                    <span id="count2">0</span>
+                                </div>
+                            </div>
+                            <div class="padre-contador">
+                                <div class="hijo-contador">
+                                    <span></span>
+                                    <span>Profesionales</span>
+                                    <span id="count3">0</span>
+                                </div>
+                                <div class="hijo-contador">
+                                    <span></span>
+                                    <span>Años de experiencia</span>
+                                    <span id="count4">0</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
