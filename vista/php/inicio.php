@@ -260,6 +260,9 @@
                     <div class="swiper-wrapper content">
                         <!--aqui-->
                         <div class="swiper-slide card">
+
+
+
                             <div class="card-content">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
@@ -273,7 +276,12 @@
                             <!--aqui-->
                         </div>
                         <div class="swiper-slide card">
-                            <div class="card-content">
+
+                            <input type="checkbox" id="name-profession">
+                            <label for="name-profession"><div class="vermas">Ver +</div></label>
+
+
+                            <div class="card-content" id="despegar-profession">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
@@ -289,7 +297,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <div class="card-content">
+                            <div class="card-content" id="cambiarH">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
@@ -301,7 +309,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <div class="card-content">
+                            <div class="card-content" id="cambiarH">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
@@ -313,7 +321,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <div class="card-content">
+                            <div class="card-content" id="cambiarH">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
@@ -325,7 +333,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <div class="card-content">
+                            <div class="card-content" id="cambiarH">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
@@ -337,7 +345,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <div class="card-content">
+                            <div class="card-content" id="cambiarH">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
@@ -349,7 +357,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <div class="card-content">
+                            <div class="card-content" id="cambiarH">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
@@ -361,7 +369,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <div class="card-content">
+                            <div class="card-content" id="cambiarH">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
@@ -574,29 +582,36 @@
                         </div>
                     </div>
                     <div class="contenedor-6-2">
+                        <img src="vista/imagenes/extras/img-1.png" alt="" class="face-content6">
                         <div class="content6-3">
                             <div class="padre-contador">
-                                <div class="hijo-contador">
-                                    <span></span>
+                                <div class="hijo-contador hideee">
+                                    <span><img src="vista/imagenes/extras/proyecto.png" alt=""></span>
                                     <span>Proyectos completados</span>
-                                    <span id="count1">0</span>
+                                    <span class="count-cantidad-padre">
+                                        <span id="count1" class="count-cantidad" data-cantidad-total = "1500">0</span>
+                                        <i class="icon-plus"></i>
+                                    </span>
                                 </div>
-                                <div class="hijo-contador">
-                                    <span></span>
+                                <div class="hijo-contador hideee">
+                                    <span><img src="vista/imagenes/extras/fundacion.png" alt=""></span>
                                     <span>Año de Fundación</span>
-                                    <span id="count2">0</span>
+                                    <span id="count2" class="count-cantidad" data-cantidad-total = "1995">0</span>
                                 </div>
                             </div>
                             <div class="padre-contador">
-                                <div class="hijo-contador">
-                                    <span></span>
+                                <div class="hijo-contador hideee">
+                                    <span><img src="vista/imagenes/extras/profesional.png" alt=""></span>
                                     <span>Profesionales</span>
-                                    <span id="count3">0</span>
+                                    <span class="count-cantidad-padre">
+                                        <span id="count3" class="count-cantidad" data-cantidad-total = "100">0</span>
+                                        <i class="icon-plus"></i>
+                                    </span>
                                 </div>
-                                <div class="hijo-contador">
-                                    <span></span>
+                                <div class="hijo-contador hideee">
+                                    <span><img src="vista/imagenes/extras/experience.png" alt=""></span>
                                     <span>Años de experiencia</span>
-                                    <span id="count4">0</span>
+                                    <span id="count4" class="count-cantidad" data-cantidad-total = "26">0</span>
                                 </div>
                             </div>
                         </div>

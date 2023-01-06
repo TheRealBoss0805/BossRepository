@@ -9,6 +9,7 @@
     top: 0;
     left: 30px;
     color: #253743;
+    z-index: 1;
 }
 
 .title-inicio-2{
@@ -16,6 +17,7 @@
     top: 0;
     right: 30px;
     color: #253743;
+    z-index: 1;
 }
 
 .title-inicio-2 h2{
@@ -449,7 +451,7 @@ body{
 
 .slide3{
   position: relative;  
-  height: 450px;
+  height: 550px;
   width: 1075px;
   display: flex !important;
   justify-content: center !important;
@@ -494,15 +496,38 @@ body{
   transition: all 0.8s;
 }
 
-.card .card-content:hover{
-    height: 400px;
+.card-content #name-profession{
+    display: none;
+}
 
+#name-profession:checked ~ #despegar-profession{     
+    height: 450px;    
+}
+
+#name-profession:checked ~ #despegar-profession > .image{     
+    height: 140px;
+    width: 90%;    
+}
+
+.card .vermas{
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 30px;
+    border: 5px solid red;
+    color: #fff;
+    z-index: 100;
+    cursor: pointer;
+}
+
+/*.card .card-content:hover{
+    height: 400px;
 }
 
 .card .card-content:hover > .image{
     height: 140px;
     width: 90%;
-}
+}*/
 
 .slide3 .card .image{
   height: 250px;
@@ -859,7 +884,6 @@ body{
 .contenedor-padre-6{
     width: 100%;
     height: 100%;
-    border: 3px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -868,42 +892,121 @@ body{
 .contenedor-6-2{
     width: 50%;
     height: 100%;
-    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.contenedor-6-2 .face-content6{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    opacity: .85;
 }
 
 .contenedor-6-2 .content6-3{
-    border: 3px solid blue;
     width: 90%;
-    height: 70%;
-    background: #fff;
+    height: 85%;
+    background: #1a1a1a;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    opacity: .95;
+    border-radius: 100px 20px 100px 20px;
 }
 
 .content6-3 .padre-contador{
     width: 100%;
     height: 100%;
-    border: 1px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .content6-3 .padre-contador .hijo-contador{
-    border: 1px solid yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 48%;
     height: 95%;
+    position: relative;
 }
 
+.hijo-contador .count-cantidad-padre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo-contador .count-cantidad-padre .icon-plus{
+    color: #F3CC23;
+    font-size: 25px;
+}
+
+.hijo-contador .count-cantidad-padre span{
+    width: auto !important;
+    height: 100% !important;
+}
+
+.content6-3 .padre-contador .hijo-contador span{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgb(230, 224, 224);
+}
+
+.content6-3 .padre-contador .hijo-contador span:nth-child(1){
+    height: 32%;
+}
+
+.content6-3 .padre-contador .hijo-contador span:nth-child(3){
+    height: 43%;
+}
+
+.hijo-contador .count-cantidad{
+    color: #F3CC23 !important;
+    font-size: 80px !important;
+    font-weight: 700;
+}
+
+.content6-3 .padre-contador .hijo-contador span img{
+    height: 95%;
+    width: 80px;
+}
+
+.content6-3 .padre-contador .hijo-contador:nth-child(1) span img{
+    width: 110px;
+}
+
+@keyframes nohideeen{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hideee{
+    opacity: 0;
+}
+
+.jugar{
+    animation: nohideeen 1.3s;
+}
 
 
 .contenedor-6{
