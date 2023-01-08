@@ -137,9 +137,7 @@ for (let i = 0; i < imgBx.length; i++) {
         for (let i = 0; i < contentBx.length; i++) {
             contentBx[i].className = 'contentBx';
         }
-        document.getElementById(this.dataset.id).
-            className = 'contentBx active';
-
+        document.getElementById(this.dataset.id).className = 'contentBx active';
         for (let i = 0; i < imgBx.length; i++) {
             imgBx[i].className = 'imgBx';
         }

@@ -64,7 +64,7 @@
             </div>
         </footer>
         <div class="copyrightText">
-            <p>Copyright © 2022 Rivera & Cipriani. Todos los derechos reservados.</p>
+            <p>Copyright © 2023 Rivera & Cipriani. Todos los derechos reservados.</p>
         </div>
         <script src="vista/js/footer.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

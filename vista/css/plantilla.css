@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
     /*border: 1px solid blue;*/
 }
 
-.inicio-1, .inicio-2, .inicio-3, .inicio-4, .inicio-5, .inicio-6, .inicio-7{
+.inicio-1, .inicio-2, .inicio-3, .inicio-4, .inicio-6, .inicio-7{
     height: 680px;
     width: 100%;
     position: relative;
@@ -19,6 +21,17 @@
 
 .inicio-3{
     background: darkseagreen;
+}
+
+.inicio-5{
+    height: 850px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 3px solid green;
 }
 
 .inicio-8{
