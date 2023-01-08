@@ -258,34 +258,16 @@
             <section class="slide3">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper content">
-                        <!--aqui-->
+
                         <div class="swiper-slide card">
-
-
-
-                            <div class="card-content">
-                                <div class="image">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                </div>
-
-                                <div class="name-profession">
-                                    <span class="name">Fulanito</span>
-                                    <span class="profession">Desarrollador Web</span>
-                                </div>
-                            </div>
-                            <!--aqui-->
-                        </div>
-                        <div class="swiper-slide card">
-
-                            <input type="checkbox" id="name-profession">
-                            <label for="name-profession"><div class="vermas">Ver +</div></label>
-
-
+                            <input type="checkbox" id="name-profession1">
+                            <label for="name-profession1">
+                                <div class="vermas">Ver +</div>
+                            </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
-
                                 <div class="name-profession">
                                     <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
                                         de Moquegua</span>
@@ -296,87 +278,163 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide card">
-                            <div class="card-content" id="cambiarH">
+                            <input type="checkbox" id="name-profession2">
+                            <label for="name-profession2">
+                                <div class="vermas">Ver +</div>
+                            </label>
+                            <div class="card-content" id="despegar-profession">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
-
                                 <div class="name-profession">
-                                    <span class="name">Fulanito</span>
-                                    <span class="profession">Desarrollador Web</span>
+                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
+                                        de Moquegua</span>
+                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
+                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
+                                        se desarrolló los anteproyectos y estudios definitivos de todas las
+                                        especialidades.</span>
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide card">
-                            <div class="card-content" id="cambiarH">
+                            <input type="checkbox" id="name-profession3">
+                            <label for="name-profession3">
+                                <div class="vermas">Ver +</div>
+                            </label>
+                            <div class="card-content" id="despegar-profession">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
-
                                 <div class="name-profession">
-                                    <span class="name">Fulanito</span>
-                                    <span class="profession">Desarrollador Web</span>
+                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
+                                        de Moquegua</span>
+                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
+                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
+                                        se desarrolló los anteproyectos y estudios definitivos de todas las
+                                        especialidades.</span>
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide card">
-                            <div class="card-content" id="cambiarH">
+                            <input type="checkbox" id="name-profession4">
+                            <label for="name-profession4">
+                                <div class="vermas">Ver +</div>
+                            </label>
+                            <div class="card-content" id="despegar-profession">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
-
                                 <div class="name-profession">
-                                    <span class="name">Fulanito</span>
-                                    <span class="profession">Desarrollador Web</span>
+                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
+                                        de Moquegua</span>
+                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
+                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
+                                        se desarrolló los anteproyectos y estudios definitivos de todas las
+                                        especialidades.</span>
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide card">
-                            <div class="card-content" id="cambiarH">
+                            <input type="checkbox" id="name-profession5">
+                            <label for="name-profession5">
+                                <div class="vermas">Ver +</div>
+                            </label>
+                            <div class="card-content" id="despegar-profession">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
-
                                 <div class="name-profession">
-                                    <span class="name">Fulanito</span>
-                                    <span class="profession">Desarrollador Web</span>
+                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
+                                        de Moquegua</span>
+                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
+                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
+                                        se desarrolló los anteproyectos y estudios definitivos de todas las
+                                        especialidades.</span>
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide card">
-                            <div class="card-content" id="cambiarH">
+                            <input type="checkbox" id="name-profession6">
+                            <label for="name-profession6">
+                                <div class="vermas">Ver +</div>
+                            </label>
+                            <div class="card-content" id="despegar-profession">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
-
                                 <div class="name-profession">
-                                    <span class="name">Fulanito</span>
-                                    <span class="profession">Desarrollador Web</span>
+                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
+                                        de Moquegua</span>
+                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
+                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
+                                        se desarrolló los anteproyectos y estudios definitivos de todas las
+                                        especialidades.</span>
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide card">
-                            <div class="card-content" id="cambiarH">
+                            <input type="checkbox" id="name-profession7">
+                            <label for="name-profession7">
+                                <div class="vermas">Ver +</div>
+                            </label>
+                            <div class="card-content" id="despegar-profession">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
-
                                 <div class="name-profession">
-                                    <span class="name">Fulanito</span>
-                                    <span class="profession">Desarrollador Web</span>
+                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
+                                        de Moquegua</span>
+                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
+                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
+                                        se desarrolló los anteproyectos y estudios definitivos de todas las
+                                        especialidades.</span>
                                 </div>
                             </div>
                         </div>
+
                         <div class="swiper-slide card">
-                            <div class="card-content" id="cambiarH">
+                            <input type="checkbox" id="name-profession8">
+                            <label for="name-profession8">
+                                <div class="vermas">Ver +</div>
+                            </label>
+                            <div class="card-content" id="despegar-profession">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
                                 </div>
-
                                 <div class="name-profession">
-                                    <span class="name">Fulanito</span>
-                                    <span class="profession">Desarrollador Web</span>
+                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
+                                        de Moquegua</span>
+                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
+                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
+                                        se desarrolló los anteproyectos y estudios definitivos de todas las
+                                        especialidades.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <input type="checkbox" id="name-profession9">
+                            <label for="name-profession9">
+                                <div class="vermas">Ver +</div>
+                            </label>
+                            <div class="card-content" id="despegar-profession">
+                                <div class="image">
+                                    <img src="vista/imagenes/extras/img-1.png" alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
+                                        de Moquegua</span>
+                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
+                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
+                                        se desarrolló los anteproyectos y estudios definitivos de todas las
+                                        especialidades.</span>
                                 </div>
                             </div>
                         </div>
@@ -589,14 +647,14 @@
                                     <span><img src="vista/imagenes/extras/proyecto.png" alt=""></span>
                                     <span>Proyectos completados</span>
                                     <span class="count-cantidad-padre">
-                                        <span id="count1" class="count-cantidad" data-cantidad-total = "1500">0</span>
+                                        <span id="count1" class="count-cantidad" data-cantidad-total="1500">0</span>
                                         <i class="icon-plus"></i>
                                     </span>
                                 </div>
                                 <div class="hijo-contador hideee">
                                     <span><img src="vista/imagenes/extras/fundacion.png" alt=""></span>
                                     <span>Año de Fundación</span>
-                                    <span id="count2" class="count-cantidad" data-cantidad-total = "1995">0</span>
+                                    <span id="count2" class="count-cantidad" data-cantidad-total="1995">0</span>
                                 </div>
                             </div>
                             <div class="padre-contador">
@@ -604,14 +662,14 @@
                                     <span><img src="vista/imagenes/extras/profesional.png" alt=""></span>
                                     <span>Profesionales</span>
                                     <span class="count-cantidad-padre">
-                                        <span id="count3" class="count-cantidad" data-cantidad-total = "100">0</span>
+                                        <span id="count3" class="count-cantidad" data-cantidad-total="100">0</span>
                                         <i class="icon-plus"></i>
                                     </span>
                                 </div>
                                 <div class="hijo-contador hideee">
                                     <span><img src="vista/imagenes/extras/experience.png" alt=""></span>
                                     <span>Años de experiencia</span>
-                                    <span id="count4" class="count-cantidad" data-cantidad-total = "26">0</span>
+                                    <span id="count4" class="count-cantidad" data-cantidad-total="26">0</span>
                                 </div>
                             </div>
                         </div>

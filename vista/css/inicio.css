@@ -496,18 +496,101 @@ body{
   transition: all 0.8s;
 }
 
-.card-content #name-profession{
+.card #name-profession1, #name-profession2, #name-profession3, #name-profession4, #name-profession5, #name-profession6, #name-profession7, #name-profession8, #name-profession9{
     display: none;
 }
 
-#name-profession:checked ~ #despegar-profession{     
+.card label, input:checked ~ #despegar-profession{     
     height: 450px;    
 }
 
-#name-profession:checked ~ #despegar-profession > .image{     
+.card label, input:checked ~ #despegar-profession > .image{     
     height: 140px;
     width: 90%;    
 }
+
+/*
+.card #name-profession1:checked ~ #despegar-profession{     
+    height: 450px;    
+}
+
+.card #name-profession1:checked ~ #despegar-profession > .image{     
+    height: 140px;
+    width: 90%;    
+}
+
+.card #name-profession2:checked ~ #despegar-profession{     
+    height: 450px;    
+}
+
+.card #name-profession2:checked ~ #despegar-profession > .image{     
+    height: 140px;
+    width: 90%;    
+}
+
+.card #name-profession3:checked ~ #despegar-profession{     
+    height: 450px;    
+}
+
+.card #name-profession3:checked ~ #despegar-profession > .image{     
+    height: 140px;
+    width: 90%;    
+}
+
+.card #name-profession4:checked ~ #despegar-profession{     
+    height: 450px;    
+}
+
+.card #name-profession4:checked ~ #despegar-profession > .image{     
+    height: 140px;
+    width: 90%;    
+}
+
+.card #name-profession5:checked ~ #despegar-profession{     
+    height: 450px;    
+}
+
+.card #name-profession5:checked ~ #despegar-profession > .image{     
+    height: 140px;
+    width: 90%;    
+}
+
+.card #name-profession6:checked ~ #despegar-profession{     
+    height: 450px;    
+}
+
+.card #name-profession6:checked ~ #despegar-profession > .image{     
+    height: 140px;
+    width: 90%;    
+}
+
+.card #name-profession7:checked ~ #despegar-profession{     
+    height: 450px;    
+}
+
+.card #name-profession7:checked ~ #despegar-profession > .image{     
+    height: 140px;
+    width: 90%;    
+}
+
+.card #name-profession8:checked ~ #despegar-profession{     
+    height: 450px;    
+}
+
+.card #name-profession8:checked ~ #despegar-profession > .image{     
+    height: 140px;
+    width: 90%;    
+}
+
+.card #name-profession9:checked ~ #despegar-profession{     
+    height: 450px;    
+}
+
+.card #name-profession9:checked ~ #despegar-profession > .image{     
+    height: 140px;
+    width: 90%;    
+}
+*/
 
 .card .vermas{
     position: absolute;
@@ -520,6 +603,8 @@ body{
     cursor: pointer;
 }
 
+
+
 /*.card .card-content:hover{
     height: 400px;
 }
@@ -528,6 +613,9 @@ body{
     height: 140px;
     width: 90%;
 }*/
+
+
+
 
 .slide3 .card .image{
   height: 250px;
