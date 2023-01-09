@@ -93,6 +93,7 @@
       if($_GET["ruta"] == "nosotros" ||
          $_GET["ruta"] == "contactanos" ||
          $_GET["ruta"] == "inicio" ||
+         $_GET["ruta"] == "nosotros" ||
          $_GET["ruta"] == "perfiles"
          ){
 
@@ -107,7 +108,7 @@
 
     }else{
 
-      include "php/inicio.php";
+      include "php/nosotros.php";
 
     }
 
