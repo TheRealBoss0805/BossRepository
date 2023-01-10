@@ -72,34 +72,41 @@
 
                 <div class="mvsion-div">
                     <div>
-                        <p>Misión: Promover la Inversión Pública y Privada en una marco de Competencia y Eficiencia.</p>
+                        <p>
+                            Instituto de Consultoría S.A. es una institución que desde su creación en 1995 viene contribuyendo al esfuerzo que los sectores público y privado realizan para el desarrollo de nuestro país.
+                        </p>
                     </div>
                     <div>
-                        <p>Visión: Convertirnos en la empresa Líder en Consultoría de Inversión Pública y Privada.</p>
+                        <p>
+                            Instituto de Consultoría S.A. participa en los siguientes tipos de proyectos de desarrollo:<br><br>
+
+                            Mega Inversiones.<br>
+                            Inversión en Infraestructura Social.<br>
+                            Estudios de Transporte.<br>
+                            Estudios Territoriales Y Aplicaciones a Infraestructuras.<br>
+                            Estudios Económicos Sociales.<br>
+                            Estudios Ambientales.
+                        </p>
                     </div>
                 </div>
 
                 <div class="mvsion-div">
 
                     <div class="card-mvsion">
-                        <div class="mvsion-img"></div>
+                        <div class="mvsion-img">Misión</div>
                         <div class="mvsion-info">
                             <p>
-INSTITUTO DE CONSULTORÍA S.A. es una institución que desde su creación en 1995 viene contribuyendo al esfuerzo que los sectores público y privado realizan para el desarrollo de nuestro país</p>
+                                Promover la Inversión Pública y Privada en una marco de Competencia y Eficiencia.
+                            </p>
                         </div>
                     </div>
 
                     <div class="card-mvsion">
-                        <div class="mvsion-img"></div>
+                        <div class="mvsion-img">Visión</div>
                         <div class="mvsion-info">
-                            <p>INSTITUTO DE CONSULTORÍA S.A. participa en los siguientes tipos de proyectos de desarrollo:
-
-MEGAINVERSIONES
-INVERSIÓN EN INFRAESTRUCTURA SOCIAL
-ESTUDIOS DE TRANSPORTE
-ESTUDIOS TERRITORIALES Y APLICACIONES A INFRAESTRUCTURAS
-ESTUDIOS ECONÓMICOS Y SOCIALES
-ESTUDIOS AMBIENTALES</p>
+                            <p>
+                                Convertirnos en la empresa Líder en Consultoría de Inversión Pública y Privada.
+                            </p>
                         </div>
                     </div>
 

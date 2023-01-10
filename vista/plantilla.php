@@ -108,7 +108,7 @@
 
     }else{
 
-      include "php/nosotros.php";
+      include "php/inicio.php";
 
     }
 

@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    background: #fff;
 }
 
 .content-us:nth-child(1){
@@ -93,7 +94,6 @@
 
 .content-us .title-us{
     height: 10%;
-    border: 4px solid yellow;
 }
 
 .content-us .title-us h2{
@@ -180,14 +180,12 @@
 
   .content-us:nth-child(3){
     height: 500px;
-    border: 5px solid red;
     flex-direction: column;
   }
 
   .content-us:nth-child(3) .us-mvsion{
-    height: 80%;
+    height: 85%;
     width: 95%;
-    border: 5px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -196,7 +194,8 @@
   .content-us:nth-child(3) .us-mvsion .mvsion-div{
     height: 95%;
     width: 45%;
-    border: 5px solid blue;
+    background: #222222;
+    border-radius: 25px;
   }
 
   .mvsion-div:nth-child(1){
@@ -204,13 +203,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
   }
 
   .mvsion-div:nth-child(1) div{
-    border: 2px solid magenta;
     width: 95%;
-    height: 45%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .mvsion-div:nth-child(1) div:nth-child(2){
+    height: 65%;
   }
 
   .mvsion-div:nth-child(2){
@@ -231,14 +238,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid green;
+    border: 3px solid #d64a42;
+    border-radius: 10px;
    }
    
    .mvsion-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 20px;
     padding: 0 1rem;
    }
    
@@ -252,6 +260,10 @@
     background: linear-gradient(to bottom, #42caff 0%, #e81aff 100%);
     position: relative;
     transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
    }
    
    .mvsion-img::before {
@@ -263,7 +275,7 @@
     width: 90%;
     height: 90%;
     transform: translate(-50%, -50%);
-    border: 1rem solid #e8e8e8;
+    border: 1rem solid #222222;
    }
    
    /*Text
@@ -275,11 +287,18 @@
    }*/
    
    .mvsion-info p:nth-child(1){
-    font-size: .5em;
+    font-size: 1em;
     text-align: center;
-    color: #6f6d78;
+    color: #253743;
     font-weight: 400;
     font-style: italic;
+   }
+
+   .mvsion-info p:nth-child(2){
+    color: #253743;
+    font-weight: 600;
+    font-size: 1.2em;
+    border: 1px solid red;
    }
    
    /*Hover*/
