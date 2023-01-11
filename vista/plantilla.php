@@ -92,9 +92,9 @@
 
       if($_GET["ruta"] == "nosotros" ||
          $_GET["ruta"] == "contactanos" ||
-         $_GET["ruta"] == "inicio" ||
-         $_GET["ruta"] == "nosotros" ||
-         $_GET["ruta"] == "perfiles"
+         $_GET["ruta"] == "servicios" ||
+         $_GET["ruta"] == "servicios-eleccion" ||
+         $_GET["ruta"] == "inicio"
          ){
 
 

@@ -163,7 +163,12 @@
 .icon-install:before { content: '\e8a1'; } /* '' */
 .icon-key-outline:before { content: '\e8a2'; } /* '' */
 .icon-home:before { content: '\e8a3'; } /* '' */
+.icon-location-1:before { content: '\e8a4'; } /* '' */
+.icon-location-circled:before { content: '\e8a5'; } /* '' */
+.icon-location-2:before { content: '\e8a6'; } /* '' */
+.icon-location-3:before { content: '\e8a7'; } /* '' */
 .icon-right-open-3:before { content: '\f006'; } /* '' */
+.icon-location:before { content: '\f031'; } /* '' */
 .icon-info-circled-2:before { content: '\f085'; } /* '' */
 .icon-info-circled-alt:before { content: '\f086'; } /* '' */
 .icon-phone-squared:before { content: '\f098'; } /* '' */

@@ -20,6 +20,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 
@@ -29,52 +30,56 @@ header{
     font-style: italic;
     font-weight: 500;
     font-family: 'Lobster', cursive;
-    width: 40%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.info-fijo div:nth-child(2) span{
-    background: #58be61;
-    border-radius: 5px;
-}
-
-.info-fijo div:nth-child(2) span:hover{
-    background: #3d8143;
-}
-
-.info-fijo div:nth-child(3) span:hover{
-    background: #00258f;
-}
-
 .info-fijo div:nth-child(2){
     color: #fff;
-    width: 10%;
+    width: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-right: 30px;
-
+    gap: 5px;
 }
 
-.info-fijo div:nth-child(3) span{
-    background: #0063c9;
-    border-radius: 5px;
-}
 
 .info-fijo div:nth-child(3){
     color: #fff;
-    width: 10%;
+    width: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 5px;
 }
+
+.info-fijo div:nth-child(2) div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    font-size: 12px;
+}
+
+.info-fijo div:nth-child(3) div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    font-size: 12px;
+}
+
+
 
 .header.abajo{
     background: #fff;
     padding: 15px 20px;
 }
+
 
 /*
 header .logo{
@@ -129,6 +134,7 @@ header ul .nav-li{
     transition: .3s;
     z-index: 1;
     font-family: inherit;
+    border: 2px solid transparent;
 }
 
 header ul .nav-li:hover{
@@ -140,13 +146,16 @@ header ul .nav-li ul{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 7px;
+    padding: 10px 20px 10px 10px;
     position: absolute;
     top: 30px;
     height: auto;
     width: auto;
     z-index: 2;
     border-radius: 0 0 7px 7px;
+    border-right: 3px solid #959994;
+    border-left: 3px solid #959994;
+    border-bottom: 3px solid #959994;
 }
 
 header ul .nav-li ul li{
@@ -158,10 +167,12 @@ header ul .nav-li ul li{
 
 header ul .nav-li ul li a{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     margin: 0px !important;
     text-align: left;
     white-space: nowrap;
+    text-transform: capitalize;
+    font-weight: 500;
 }
 
 
@@ -247,8 +258,8 @@ header ul .contactanos{
    
 .transition {
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    transition-duration: 700ms;
-    background-color: rgba(66, 10, 73, 0.6);
+    transition-duration: 900ms;
+    background-color: rgba(145, 24, 160, 0.6);
     border-radius: 9999px;
     width: 0;
     height: 0;

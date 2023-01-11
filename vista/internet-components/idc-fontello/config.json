@@ -1505,6 +1505,36 @@
       "css": "home",
       "code": 59555,
       "src": "iconic"
+    },
+    {
+      "uid": "291e2e127efe7a6bc580af6d3ead3771",
+      "css": "location",
+      "code": 61489,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "22cfc7af2c4f158b37317c65c92b48c2",
+      "css": "location-1",
+      "code": 59556,
+      "src": "elusive"
+    },
+    {
+      "uid": "c54c00a5b7fba94b9fbc940de38a7beb",
+      "css": "location-circled",
+      "code": 59557,
+      "src": "elusive"
+    },
+    {
+      "uid": "1ea8ad6dbe1ae9a73565ad16cf88de19",
+      "css": "location-2",
+      "code": 59558,
+      "src": "linecons"
+    },
+    {
+      "uid": "69f76f7134f721d16c28ab23f84d4882",
+      "css": "location-3",
+      "code": 59559,
+      "src": "websymbols"
     }
   ]
 }
