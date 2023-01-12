@@ -65,8 +65,8 @@
                 <li class="nav-li">
                     <a href="">Proyectos</a>
                     <ul>
-                        <li><a href="#">Por Tipo</a></li>
-                        <li><a href="#">Por Sector</a></li>
+                        <li><a href="proyecto-tipo">Por Tipo</a></li>
+                        <li><a href="proyecto-sector">Por Sector</a></li>
                     </ul>
                 </li>
                 <li class="nav-li"><a href="#">Blog</a></li>

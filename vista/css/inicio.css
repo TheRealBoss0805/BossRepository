@@ -1572,6 +1572,23 @@ body{
     cursor: pointer;
 }
 
+
+.contenedor-7 .content7-1 .content7-rep .represent-img .img::before{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 255);
+    top: 0;
+    left: -150px;
+    transform: skewX(-30deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.contenedor-7 .content7-1 .content7-rep .represent-img .img:hover::before{
+    left: 350px
+}
+
 .contenedor-7 .content7-1 .content7-rep .represent-img .img:hover ~ .represent-think{
     transform: scale(1);
 }

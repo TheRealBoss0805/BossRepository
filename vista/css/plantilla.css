@@ -75,6 +75,26 @@
     flex-direction: column;
 }
 
+/*PROYECTO TIPO & SECTOR*/
+
+.contenedor-proyecto{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*PROYECTO TIPO & SECTOR - ELECCION*/
+
+.contenedor-eleccion-proyecto{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 body{
     width: 100%;
