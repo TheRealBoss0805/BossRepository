@@ -34,7 +34,7 @@
                     <h2>Información de Contacto</h2>
                     <ul class="info">
                         <li>
-                            <span><i class="fa icon-telegram"></i></span>
+                            <span><i class="fa icon-location"></i></span>
                             <span>Jr. Monterosa 233 of.507<br>
                             Santiago de Surco, Lima</span>
                         </li>

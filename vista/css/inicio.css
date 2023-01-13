@@ -1516,15 +1516,20 @@ body{
     height: 90%;
     border-radius: 100px;
     background: #F4ECFF;
+    position: relative;
 }
 
 .contenedor-7 .content7-1 .content7-rep .represent-img{
-    height: 70%;
-    width: 95%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 50%;
+    box-shadow:  4px -4px 5px #aa75e6,
+    -6px 6px 7px #6b409b;
+    overflow: hidden;
+
 }
 
 .contenedor-7 .content7-1 .content7-rep .represent-think{
@@ -1566,30 +1571,48 @@ body{
     border-radius: 50%;
     background-size: cover;
     background: linear-gradient(45deg, #f0f0f0, #cacaca);
-    box-shadow:  4px -4px 5px #aa75e6,
-                 -6px 6px 7px #6b409b;
     filter: contrast(1.3);
     cursor: pointer;
 }
 
 
-.contenedor-7 .content7-1 .content7-rep .represent-img .img::before{
+
+
+/*EFECTO DE BRILLO*/
+
+.contenedor-7 .content7-1 .content7-rep .represent-img::before{
     position: absolute;
     content: '';
     width: 100px;
     height: 100%;
-    background-color: rgba(255, 255, 255, 255);
+    background-color: rgba(255, 255, 255, .7);
     top: 0;
     left: -150px;
     transform: skewX(-30deg);
-    transition: all 0.5s ease-in-out;
+    z-index: 100;
+    animation: brillo 0.8s infinite alternate;
 }
 
-.contenedor-7 .content7-1 .content7-rep .represent-img .img:hover::before{
+
+@keyframes brillo{
+    from{
+        left: -150px;
+    }
+    to{
+        left: 350px;
+    }
+}
+
+/*.contenedor-7 .content7-1 .content7-rep .represent-img:hover::before{
     left: 350px
-}
+}*/
 
-.contenedor-7 .content7-1 .content7-rep .represent-img .img:hover ~ .represent-think{
+/*END EFECTO DE BRILLO*/
+
+
+
+
+.contenedor-7 .content7-1 .content7-rep:hover .represent-think{
     transform: scale(1);
 }
 

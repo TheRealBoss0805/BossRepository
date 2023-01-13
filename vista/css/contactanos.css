@@ -4,14 +4,13 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    border-radius: 100px 20px 100px 20px;
-    border-radius: 50px;
+    border-radius: 20px;
     background: #ffffff;
     box-shadow: inset -50px 50px 90px #c4c4c4,
                 inset 50px -50px 90px #ffffff;
     margin-bottom: 20px;
-    border-left: 40px solid #253743;
-    border-right: 40px solid #253743;
+    border-left: 80px solid #253743;
+    border-right: 80px solid #253743;
     margin-top: 50px;
     position: relative;
     padding: 20px;
@@ -95,7 +94,7 @@
     background: transparent;
     position: absolute;
     right: 0;
-    bottom: 20px;
+    bottom: 40px;
 }
 
 .contact{
@@ -108,6 +107,7 @@
     flex-direction: column;
     background: #fff;
     width: 100% !important;
+    gap: 20px;
 }
 
 .contact .content{
@@ -128,12 +128,13 @@
     font-family: "Archivo", Sans-serif;
 }
 
+/*INFORMACIÓN DE CONTACTO*/
+
 .container{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 50px;
     margin-top: 30px;
 }
 
@@ -141,15 +142,28 @@
     display: flex;
     flex-direction: column;
     background: #eaeee5;
-    padding: 0 70px 0 70px;
-    border-radius: 10px;
+    border-radius: 50px;
+    gap: 30px;
+    padding: 70px 30px 70px 30px;
+    box-shadow:  5px 5px 6px #5a5a5a,
+    -5px -5px 6px #5a5a5a;
+}
+
+.container .contactInfo h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: #253743;
+    user-select: none;
 }
 
 .container .contactInfo .box{
     position: relative;
-    padding: 20px 0;
     display: flex;
     cursor: pointer;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .container .contactInfo .box .icon{
@@ -174,24 +188,32 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    font-size: 1.1em;
+    font-size: 1.05em;
     color: #253743;
     font-weight: 300;
+    gap: 5px;
 }
 
 .container .contactInfo .box .text h3{
     font-weight: 600;
-    color: #00bcd4;
+    color: #253743;
+}
+
+.container .contactInfo .box .text p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
 }
 
 .container .contactInfo .box .text p span{
     color: #253743;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .container .contactInfo .txt{
     color: #253743;
-    margin-top: 50px;
     font-weight: 500;
     padding-left: 10px;
     border-left: 50px solid #e91e63;
@@ -201,8 +223,7 @@
 .sci{
     position: relative;
     display: flex;
-    gap: 30px;
-    margin: 20px 0;
+    gap: 20px;
 }
 
 .sci li{
@@ -225,7 +246,7 @@
     background: #222222;
     min-height: 100px;
     padding: 60px;
-    border-radius: 10px;
+    border-radius: 40px;
 }
 
 .container .contactForm h2{
@@ -243,7 +264,7 @@
 .container .contactForm .inputBox input,
 .container .contactForm .inputBox textarea{
     width: 100%;
-    padding: 5px 0;
+    padding: 7px 0;
     font-size: 1.1em;
     margin: 10px 0;
     border: none;

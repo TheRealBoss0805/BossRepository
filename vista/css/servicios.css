@@ -40,6 +40,7 @@
     padding: 30px;
     border-radius: 10px;
     font-size: 20px;
+    user-select: none;
 }
 
 .content-services-1 .services:nth-child(1) h1, h2{
@@ -47,6 +48,7 @@
     font-family: 'Staatliches', cursive;
     text-shadow: black 0.08em 0.08em 0.1em;
     width: 90%;
+    user-select: none;
 }
 
 .content-services-1 .services:nth-child(1) h1{
@@ -88,6 +90,7 @@
     background: rgb(236, 231, 231);
     color: #222222;
     width: 280px;
+    cursor: pointer;
 }
 
 .content-services-1 .services:nth-child(2) ul li button{
@@ -112,6 +115,9 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
+    box-shadow:  -5px 5px 5px #222222,
+    5px -5px 5px #222222, 5px 5px 5px #222222,
+    -5px -5px 5px #222222;
 }
 
 .content-services-2{

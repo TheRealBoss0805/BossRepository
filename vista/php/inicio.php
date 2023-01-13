@@ -747,13 +747,18 @@
                 <div class="content7-1">
 
                     <div class="content7-rep">
+                        <div class="represent-think">
+                            <img src="vista/imagenes/extras/vineta.png" alt="">
+                            <p>" ¡Vive la Vida y no dejes que la Vida te Viva! "</p>
+                        </div>
                         <div class="represent-img">
                             <img src="vista/imagenes/extras/mujer.jpg" alt="" class="img">
-                            <div class="represent-think">
+                            <!--<div class="represent-think">
                                 <img src="vista/imagenes/extras/vineta.png" alt="">
                                 <p>" ¡Vive la Vida y no dejes que la Vida te Viva! "</p>
-                            </div>
+                            </div>-->
                         </div>
+
                         <div class="represent-info">
                             <h3>Danitza Zulema Echandia Moreno</h3>
                             <h2>GERENTE GENERAL</h2>

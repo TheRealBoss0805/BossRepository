@@ -31,6 +31,8 @@
             </div>
         </div>
     </div>
+
+    
     <header>
         <div class="contenedor-logo">
             <div class="svg-img">
@@ -78,6 +80,8 @@
             </ul>
         </nav>
     </header>
+
+
 </body>
 <script src="vista/js/navegador-fijo.js"></script>
 
