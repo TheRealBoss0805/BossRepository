@@ -16,7 +16,7 @@
         </div>
         <div>
             <!--<span><a href="#"><i class="fa icon-whatsapp"></i></a></span>-->
-            <span class="icon-location" style="font-size: 35px; color: #a5214b;"></span>
+            <span class="icon-location" style="font-size: 35px; color: rgb(104, 102, 102);"></span>
             <div>
                 <p>Dirección</p>
                 <p>Jr. Monterosa 233 Of. 507, Santiago de Surco, Lima.</p>
@@ -24,15 +24,15 @@
         </div>
         <div>
             <!--<span><a href="#"><i class="fa icon-phone"></i></a></span>-->
-            <span class="icon-clock" style="font-size: 35px; color: #a5214b;"></span>
+            <span class="icon-clock" style="font-size: 35px; color: rgb(104, 102, 102);"></span>
             <div>
                 <p>Horario</p>
-                <p>L-S de 8:00 a 20:00 Horas</p>
+                <p>L-S de 08:00 a 20:00 Horas</p>
             </div>
         </div>
     </div>
 
-    
+
     <header>
         <div class="contenedor-logo">
             <div class="svg-img">
@@ -52,7 +52,7 @@
                     <a href="">Nosotros</a><span class="icon-plus"></span>
                     <ul>
                         <li><a href="nosotros">Quiénes Somos</a></li>
-                        <li><a href="nosotros">Políticas de Gestión</a></li>
+                        <li><a href="nosotros" style="border-bottom: none;">Políticas de Gestión</a></li>
                     </ul>
                 </li>
                 <li class="nav-li">
@@ -61,21 +61,25 @@
                         <li><a href="servicios">Planificación</a></li>
                         <li><a href="servicios">Pre - Inversión</a></li>
                         <li><a href="servicios">Expedientes de Obra</a></li>
-                        <li><a href="servicios">Supervisión</a></li>
+                        <li><a href="servicios" style="border-bottom: none;">Supervisión</a></li>
                     </ul>
                 </li>
                 <li class="nav-li">
                     <a href="">Proyectos</a><span class="icon-plus"></span>
                     <ul>
                         <li><a href="proyecto-tipo">Por Tipo</a></li>
-                        <li><a href="proyecto-sector">Por Sector</a></li>
+                        <li><a href="proyecto-sector" style="border-bottom: none;">Por Sector</a></li>
                     </ul>
                 </li>
                 <li class="nav-li"><a href="#">Blog</a></li>
-                <li class="contactanos">
+                <li>
+                    <!--
                     <span class="transition"></span>
                     <span class="gradient"></span>
-                    <a href="contactanos" class="label">Contáctenos</a>
+                    <a href="contactanos" class="label">Contáctenos</a>-->
+                    <a href="contactanos" class="contactanos">
+                        <span class="label">Contáctenos</span>
+                    </a>
                 </li>
             </ul>
         </nav>

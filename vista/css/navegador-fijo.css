@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    user-select: none;
 }
 
 
@@ -66,9 +67,31 @@
 
 /*ESTILO MUY IMPORTANTE*/
 header.abajo {
-    background: purple;
+    background-color: #222;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
     margin-top: -0px;
 }
+
+header.abajo ul{
+    height: 50px;
+}
+
+header.abajo .contenedor-logo{
+    transform: scale(0);
+}
+
+header.abajo nav ul .nav-li a{
+    font-size: 12px;
+}
+
+header.abajo nav ul li .contactanos{
+    padding: .5em .5em;
+}
+
+header.abajo nav ul li .contactanos .label{
+    font-size: 12px;
+}
+
 
 
 header{
@@ -84,18 +107,8 @@ header{
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
     margin-top: 60px;
     z-index: 10;
+    user-select: none;
 }
-/*
-header .logo{
-    position: relative;
-    color: #fff;
-    font-weight: bold;
-    font-size: 2em;
-    letter-spacing: 2px;
-    transition: 1.5s;
-    text-decoration: none;
-}
-*/
 
 nav{
     display: flex;
@@ -168,7 +181,7 @@ header ul .nav-li ul li{
 
 }
 
-header ul .nav-li ul li a{
+header nav ul .nav-li ul li a{
     text-decoration: none;
     font-size: 15px;
     width: 100%;
@@ -178,17 +191,12 @@ header ul .nav-li ul li a{
     text-transform: capitalize;
     font-weight: 500;
     padding: 15px 30px 15px 10px;
-    border-bottom: 1px solid #fff;
-}
-
-header ul .nav-li ul li a:nth-child(4){
-    background: #851a3b;
+    border-bottom: 1px solid rgb(199, 197, 197);
 }
 
 header ul .nav-li ul li a:hover{
     background: #253743;
 }
-
 
 header ul .nav-li::before{
     content: '';
@@ -219,53 +227,30 @@ header ul li a{
     text-transform: uppercase;
 }
 
-header ul .contactanos{
 
+header ul .contactanos{
     font-family: "Roboto", sans-serif;
     font-size: 15px;
-    padding: 1em 1em;
     font-weight: 500;
-    background: #851a3b;
-    color: white;
-    border: none;
+    border: 2px solid #851a3b;
     position: relative;
-    overflow: hidden;
     border-radius: 0.6em;
+    padding: 1em 1em;
+    transition: all .5s ease;
+
 }
 
-.gradient {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 0.6em;
-    margin-top: -0.25em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-   }
-   
-.label {
-    position: relative;
-    top: -1px;
+header ul .contactanos:hover{
+    background: rgb(73,29,42);
+    background: linear-gradient(0deg, rgb(92, 36, 53) 0%, rgba(133,26,59,1) 100%);
+}
+
+header ul .contactanos:hover .label{
     color: #fff;
-   }
-   
-.transition {
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    transition-duration: 900ms;
-    background-color: rgba(145, 24, 160, 0.6);
-    border-radius: 9999px;
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-   }
-   
-.contactanos:hover .transition {
-    width: 14em;
-    height: 14em;
+}
+
+.label {
+    color: #c72357;
    }
    
 .contactanos:active {
@@ -275,22 +260,6 @@ header ul .contactanos{
 header ul .contactanos:hover{
     border: none;
 }
-/*
-.zona1{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(../imagenes/cerdo.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-
-header.abajo .logo,
-header.abajo ul li a{
-    color: #000;
-}
-*/
 
 .contenedor-logo{
     width: 15%;
@@ -301,6 +270,7 @@ header.abajo ul li a{
     position: absolute;
     left: 0;
     z-index: 1;
+    transition: all .5s ease-in;
 }
 
 header .svg-img{
