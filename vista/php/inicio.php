@@ -13,6 +13,9 @@
 
 <body>
     <div class="contenedor-inicio">
+
+        <!--INICIO 1-->
+
         <div class="inicio-1">
             <div class="content-slider">
                 <img src="../../../../../Users/Usuario/AppData/Local/Temp/imagencab3.jpg" alt="" />
@@ -163,93 +166,113 @@
                 </div>
             </div>
         </div>
+
+        <!--INICIO 2-->
+
         <div class="inicio-2">
             <div class="title-inicio">
                 <h2>NUESTROS SERVICIOS</h2>
             </div>
+
             <div class="content-service contenedores">
                 <div class="service-1 div">
-                    <a href="#">
+                    <a href="#" class="hola">
+                        <div class="glass-div"></div>
                         <span>
                             <img src="vista/imagenes/extras/img-1.png" alt="">
                         </span>
-                        <div class="div-plus">
+                        <div class="div-plus" style="background: #9b133e;">
                             <div class="icon-plus-1"></div>
                             <div class="div-plus-txt">
                                 <span class="icon-info-circled"></span>
-                                <span class="icon-building"></span>
+                                <span>Ver más</span>
                             </div>
                         </div>
                     </a>
-                    <div class="description-service">
-                        <h3>PLANIFICACIÓN</h3>
+                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #9b133e,
+            inset 5px 5px 7px #9b133e;">
+                        <h3 style="color: #253743;">PLANIFICACIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
                             numquam.</p>
                     </div>
                 </div>
+
                 <div class="service-2 div">
                     <a href="#">
+                        <div class="glass-div"></div>
                         <span>
                             <img src="vista/imagenes/extras/img-1.png" alt="">
                         </span>
-                        <div class="div-plus">
+                        <div class="div-plus" style="background: #8011a4;">
                             <div class="icon-plus-1"></div>
                             <div class="div-plus-txt">
                                 <span class="icon-info-circled"></span>
-                                <span class="icon-building"></span>
+                                <span>Ver más</span>
                             </div>
                         </div>
                     </a>
-                    <div class="description-service">
-                        <h3>PRE-INVERSIÓN</h3>
+                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #8011a4,
+            inset 5px 5px 7px #8011a4;">
+                        <h3 style="color: #253743;">PRE-INVERSIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
                             numquam.</p>
                     </div>
                 </div>
+
                 <div class="service-3 div">
                     <a href="#">
+                        <div class="glass-div"></div>
                         <span>
                             <img src="vista/imagenes/extras/img-1.png" alt="">
                         </span>
-                        <div class="div-plus">
+                        <div class="div-plus" style="background: #1289bc;">
                             <div class="icon-plus-1"></div>
                             <div class="div-plus-txt">
                                 <span class="icon-info-circled"></span>
-                                <span class="icon-building"></span>
+                                <span>Ver más</span>
                             </div>
                         </div>
                     </a>
-                    <div class="description-service">
-                        <h3>EXPEDIENTES DE OBRA</h3>
+                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #1289bc,
+            inset 5px 5px 7px #1289bc;">
+                        <h3 style="color: #253743;">EXPEDIENTES DE OBRA</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
                             numquam.</p>
                     </div>
                 </div>
+
                 <div class="service-4 div">
                     <a href="#">
+                        <div class="glass-div"></div>
                         <span>
                             <img src="vista/imagenes/extras/img-1.png" alt="">
                         </span>
-                        <div class="div-plus">
+                        <div class="div-plus" style="background: #aa8e1c;">
                             <div class="icon-plus-1"></div>
                             <div class="div-plus-txt">
                                 <span class="icon-info-circled"></span>
-                                <span class="icon-building"></span>
+                                <span>Ver más</span>
                             </div>
                         </div>
                     </a>
-                    <div class="description-service">
-                        <h3>SUPERVISIÓN</h3>
+                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #aa8e1c,
+            inset 5px 5px 7px #aa8e1c;">
+                        <h3 style="color: #253743;">SUPERVISIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
                             numquam.</p>
                     </div>
                 </div>
+
             </div>
+
         </div>
+
+        <!--INICIO 3-->
+
         <div class="inicio-3">
             <div class="title-inicio">
                 <h2>Trabajos recientes</h2>
@@ -619,14 +642,17 @@
                 </div>
             </div>
         </div>
+
+        <!--INICIO 6-->
+
         <div class="inicio-6">
             <div class="contenedor-inicio-6">
                 <div class="title-inicio">
-                    <h2>Normas ISO</h2>
-                    <p>SGC cumple con los requisitos de la Norma ISO.</p>
+                    <h2 style="color: #fff">Normas ISO</h2>
+                    <p style="color: #fff">SGC cumple con los requisitos de la Norma ISO.</p>
                 </div>
                 <div class="title-inicio-2">
-                    <h2>SOMOS INDECONSULT S.A</h2>
+                    <h2 style="color: #fff">SOMOS INDECONSULT S.A</h2>
                 </div>
                 <div class="contenedor-padre-6">
                     <div class="contenedor-6">
@@ -702,7 +728,6 @@
                         </div>
                     </div>
                     <div class="contenedor-6-2">
-                        <img src="vista/imagenes/extras/img-1.png" alt="" class="face-content6">
                         <div class="content6-3">
                             <div class="padre-contador">
                                 <div class="hijo-contador hideee">
@@ -739,6 +764,9 @@
                 </div>
             </div>
         </div>
+
+        <!--INICIO 7-->
+
         <div class="inicio-7">
             <div class="contenedor-7">
                 <div class="title-inicio">
@@ -777,6 +805,9 @@
                 </div>
             </div>
         </div>
+
+        <!--INICIO 8-->
+
         <div class="inicio-8">
             <div class="contenedor-8">
                 <div class="title-inicio">
