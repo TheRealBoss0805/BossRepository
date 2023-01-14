@@ -1,20 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caramel&family=Lobster&display=swap');
-
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    transition: 0.7s;
-    background: #fff;
-    margin-top: 60px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100&display=swap');
 
 .info-fijo{
-    background: #222222;
+    background: #f8f8f8;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -24,11 +12,11 @@ header{
 
 
 .info-fijo div:nth-child(1){
-    color: #fff;
+    color: #253743;
     font-size: 1.4em;
+    font-weight: 600;
     font-style: italic;
-    font-weight: 500;
-    font-family: 'Lobster', cursive;
+    font-family: "Roboto", sans-serif;
     width: auto;
     display: flex;
     justify-content: center;
@@ -36,7 +24,7 @@ header{
 }
 
 .info-fijo div:nth-child(2){
-    color: #fff;
+    color: #253743;
     width: auto;
     display: flex;
     justify-content: center;
@@ -46,7 +34,7 @@ header{
 
 
 .info-fijo div:nth-child(3){
-    color: #fff;
+    color: #253743;
     width: auto;
     display: flex;
     justify-content: center;
@@ -60,7 +48,8 @@ header{
     justify-content: center;
     align-items: flex-start;
     width: auto;
-    font-size: 12px;
+    font-size: .85em;
+    font-family: "Roboto", sans-serif;
 }
 
 .info-fijo div:nth-child(3) div{
@@ -69,17 +58,33 @@ header{
     justify-content: center;
     align-items: flex-start;
     width: auto;
-    font-size: 12px;
+    font-size: .85em;
+    font-family: "Roboto", sans-serif;
 }
 
 
 
-.header.abajo{
-    background: #fff;
-    padding: 15px 20px;
+/*ESTILO MUY IMPORTANTE*/
+header.abajo {
+    background: purple;
+    margin-top: -0px;
 }
 
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.7s;
+    background-color: #222;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 60px;
+    z-index: 10;
+}
 /*
 header .logo{
     position: relative;
@@ -100,7 +105,7 @@ nav{
 }
 
 header nav ul li:hover > a:not(.label){
-    color: #1C7BD1;
+    color: #fff;
     transition: all 0.7s ease-out;
 }
 
@@ -111,22 +116,18 @@ header ul{
     align-items: center;
     gap: 15px;
     width: 100%;
-    height: 60px;
-    background: #fff;
-    box-shadow: inset 22px -22px 71px #bec9ba,
-                inset -22px 22px 71px #ffffff;
-
+    height: 90px;
 }
 
 header ul li{
     list-style: none;
+    color: #fff;
 }
 
 header ul .nav-li{
     padding: 0px 0px 10px 0px;
     position: relative;
     overflow: hidden;
-    background-color: transparent;
     text-align: center;
     text-transform: uppercase;
     font-size: 16px;
@@ -136,25 +137,27 @@ header ul .nav-li{
     border: 2px solid transparent;
 }
 
+header ul .nav-li span{
+    font-size: 12px;
+    color: #a5214b;
+}
+
 header ul .nav-li:hover{
     overflow: visible;
 }
 
 header ul .nav-li ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px 20px 10px 10px;
+    display: grid;
+    /*padding: 10px 20px 10px 10px;*/
     position: absolute;
     top: 30px;
     height: auto;
     width: auto;
     z-index: 2;
     border-radius: 0 0 7px 7px;
-    border-right: 3px solid #959994;
-    border-left: 3px solid #959994;
-    border-bottom: 3px solid #959994;
+    background: #222;
+    gap: 0;
+
 }
 
 header ul .nav-li ul li{
@@ -162,16 +165,28 @@ header ul .nav-li ul li{
     list-style: none;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 header ul .nav-li ul li a{
     text-decoration: none;
     font-size: 15px;
+    width: 100%;
     margin: 0px !important;
     text-align: left;
     white-space: nowrap;
     text-transform: capitalize;
     font-weight: 500;
+    padding: 15px 30px 15px 10px;
+    border-bottom: 1px solid #fff;
+}
+
+header ul .nav-li ul li a:nth-child(4){
+    background: #851a3b;
+}
+
+header ul .nav-li ul li a:hover{
+    background: #253743;
 }
 
 
@@ -183,7 +198,7 @@ header ul .nav-li::before{
     top: 90%;
     right: 100%;
     transform: translate(100%);
-    background: #1C7BD1;
+    background: #851a3b;
     transition: .8s ease;
     display: block;
     z-index: -1;
@@ -193,44 +208,24 @@ header ul .nav-li:hover::before {
     width: 105%;
 }
    
-header ul .nav-li:hover {
-    color: #111;
-}
-   
 header ul li a{
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0 15px;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    color: #253743;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
     text-transform: uppercase;
 }
 
-/*header ul .contactanos:hover > a{
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#253743), to(#253743));
-    background: -moz-linear-gradient(top, #253743, #253743);
-    color: #fff;
-    background: #1e3a4d;
-}*/
-
-header ul .contactanos a{
-    /*padding: 10px;
-    border-radius: 7px;
-    background: #344d5e;
-    color: #fff;*/
-}
-
 header ul .contactanos{
-    /*padding: 10px;
-    position: relative;
-    overflow: hidden;*/
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     padding: 1em 1em;
     font-weight: 500;
-    background: #253743;
+    background: #851a3b;
     color: white;
     border: none;
     position: relative;

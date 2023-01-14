@@ -16,7 +16,7 @@
         </div>
         <div>
             <!--<span><a href="#"><i class="fa icon-whatsapp"></i></a></span>-->
-            <span class="icon-location" style="font-size: 35px; color: #aac87c"></span>
+            <span class="icon-location" style="font-size: 35px; color: #a5214b;"></span>
             <div>
                 <p>Dirección</p>
                 <p>Jr. Monterosa 233 Of. 507, Santiago de Surco, Lima.</p>
@@ -24,7 +24,7 @@
         </div>
         <div>
             <!--<span><a href="#"><i class="fa icon-phone"></i></a></span>-->
-            <span class="icon-clock" style="font-size: 35px; color: #6b8ba2"></span>
+            <span class="icon-clock" style="font-size: 35px; color: #a5214b;"></span>
             <div>
                 <p>Horario</p>
                 <p>L-S de 8:00 a 20:00 Horas</p>
@@ -49,14 +49,14 @@
             <ul>
                 <li class="nav-li"><a href="inicio">Inicio</a></li>
                 <li class="nav-li">
-                    <a href="">Nosotros</a>
+                    <a href="">Nosotros</a><span class="icon-plus"></span>
                     <ul>
                         <li><a href="nosotros">Quiénes Somos</a></li>
                         <li><a href="nosotros">Políticas de Gestión</a></li>
                     </ul>
                 </li>
                 <li class="nav-li">
-                    <a href="">Servicios</a>
+                    <a href="">Servicios</a><span class="icon-plus"></span>
                     <ul>
                         <li><a href="servicios">Planificación</a></li>
                         <li><a href="servicios">Pre - Inversión</a></li>
@@ -65,7 +65,7 @@
                     </ul>
                 </li>
                 <li class="nav-li">
-                    <a href="">Proyectos</a>
+                    <a href="">Proyectos</a><span class="icon-plus"></span>
                     <ul>
                         <li><a href="proyecto-tipo">Por Tipo</a></li>
                         <li><a href="proyecto-sector">Por Sector</a></li>
