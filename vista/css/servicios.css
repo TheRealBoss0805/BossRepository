@@ -12,9 +12,6 @@
 .content-services-1 .services ul li select{
     font-family: 'Verdana', sans-serif;
     font-size: 15px;
-    border: 2px solid #253743 !important;
-    color: #1b262e !important;
-    background: #fff;
 }
 
 .content-services-1 .services:nth-child(1){
@@ -41,6 +38,7 @@
     border-radius: 10px;
     font-size: 20px;
     user-select: none;
+    text-align: justify;
 }
 
 .content-services-1 .services:nth-child(1) h1, h2{
@@ -85,10 +83,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #253743;
+    border: 3px solid #851a3b;
     padding: 17px;
-    background: rgb(236, 231, 231);
-    color: #222222;
+    background: #222222;
+    color: #fff;
     width: 280px;
     cursor: pointer;
 }

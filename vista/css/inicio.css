@@ -135,7 +135,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +156,7 @@
 
 .section-slider .caption a {
     display: inline-block;
-    height: 110px;
+    height: 160px;
     width: 100%;
     background: #151515;
     text-decoration: none;
@@ -173,13 +173,15 @@
 
 .section-slider .caption a p {
     text-align: justify;
-    z-index: 100;
+    z-index: 4;
     color: rgb(255, 255, 255);
+    font-size: 1.2em;
 }
 
 .section-slider .caption a h1 {
-    color: #395d75;
-    z-index: 100;
+    color: #851a3b;
+    z-index: 4;
+    font-size: 1.8em;
 }
 
 .section-slider .slide.active .caption a {
@@ -217,7 +219,7 @@
     z-index: 2;
     height: 45%;
     width: 50%;
-    color: #222222;
+    color: #851a3b;
     background-color: #fff;
     font-size: 30px;
     cursor: pointer;
@@ -225,12 +227,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 5px #222222, 0 0 7px #222222, 0 0 11px #222222;
+    box-shadow: 0 0 5px #851a3b, 0 0 7px #851a3b, 0 0 11px #851a3b;
 }
 
 .slider-top .icon-left-dir:hover,
 .slider-top .icon-right-dir:hover {
-    background-color: #222222;
+    background-color: #851a3b;
     color: #fff;
 }
 
@@ -273,11 +275,11 @@
 }
 
 .slider-top .indicator div:hover {
-    background-color: #222222;
+    background-color: #851a3b;
 }
 
 .slider-top .indicator div.active {
-    background-color: #222222;
+    background-color: #851a3b;
 }
 
 /*INICIO 2*/
@@ -434,6 +436,11 @@
     height: 100%;
     width: 100%;
     border-radius: 0 80px 0 0;
+    transition: all .4s ease-in-out;
+}
+
+.content-service .div a:hover span img{
+    transform: scale(1.2);
 }
 
 .content-service .div .description-service {
@@ -734,28 +741,35 @@ input:checked~#despegar-profession>.image {
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background: #e4f8b7;
+    background: #e8f6f5;
     border-radius: 12px;
 }
 
 .content4-ct0 .ct0-texto {
-    height: 75%;
+    height: 65%;
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #253743;
+    gap: 30px;
+}
+
+.content4-ct0 .ct0-texto h2{
+    font-size: 1.5em;
+    letter-spacing: 2px;
 }
 
 .content4-ct0 .ct0-texto p {
     text-align: justify;
+    font-size: 1.2em;
 }
 
 .content4-ct0 .ct0-button {
-    height: 15%;
+    height: 25%;
     width: 90%;
     display: flex;
     justify-content: center;
@@ -810,7 +824,9 @@ input:checked~#despegar-profession>.image {
     justify-content: space-around;
     align-items: center;
     border-radius: 15px;
-    background-color: #e4d7d7;
+
+    background: rgb(133,26,59);
+    background: linear-gradient(135deg, rgba(133,26,59,1) 49%, rgba(34,34,34,1) 49%);
 }
 
 .contenedor-4 .content4-ct .ct-child1 {
@@ -819,8 +835,8 @@ input:checked~#despegar-profession>.image {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #cdc4c4;
     border-radius: 12px;
+
 }
 
 .contenedor-4 .content4-ct .ct-child1 .child1-min {
@@ -876,13 +892,18 @@ input:checked~#despegar-profession>.image {
 
 .child1-img .back {
     background: linear-gradient(120deg, #e7e7da 30%, #e7e7da 88%,
-            #222222 40%, #222222 78%);
+    #e7e7da 40%, #e7e7da 78%);
     transform: rotateY(180deg);
 }
 
 .child1-img .back {
-    color: black;
-    border: 2px solid #222222;
+    color: #253743;
+    border: none;
+}
+
+.child1-img .back a{
+    text-decoration: none;
+    color: #253743;
 }
 
 .child1-img .back span {
@@ -1231,7 +1252,7 @@ input:checked~#despegar-profession>.image {
 
 .content6-3 .padre-contador .hijo-contador {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     width: 48%;
@@ -1289,10 +1310,18 @@ input:checked~#despegar-profession>.image {
     width: 70px;
 }
 
+.hideee {
+    opacity: 0;
+}
+
+.jugar {
+    animation: nohideeen 1.3s;
+}
+
 @keyframes nohideeen {
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(-100px);
     }
 
     100% {
@@ -1301,13 +1330,7 @@ input:checked~#despegar-profession>.image {
     }
 }
 
-.hideee {
-    opacity: 0;
-}
 
-.jugar {
-    animation: nohideeen 1.3s;
-}
 
 .contenedor-6 {
     position: relative;
@@ -1738,9 +1761,8 @@ input:checked~#despegar-profession>.image {
 .contenedor-8 {
     width: 75vw;
     overflow: hidden;
-    border-bottom: 1px solid #e0e4c2;
-    box-shadow: 5px -5px 5px #5a5a5a,
-        -5px 5px 5px #ffffff;
+    box-shadow:  0px -5px 4px #5a5a5a,
+    -5px 5px 4px #ffffff;
 }
 
 .contenedor-8 .content8 {

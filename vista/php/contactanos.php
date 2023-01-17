@@ -52,6 +52,12 @@
                         <div class="text">
                             <h3>Escríbenos a:</h3>
                             <p>
+                            <span>secretaria@indeconsult.pe</span> 
+                            <span>institutodeconsultoriasa@yahoo.com</span> 
+                            <span>institutodeconsultoriasa@gmail.com</span> 
+                            </p>
+                            <h3 class="br">O también a:</h3>
+                            <p>
                             <span>Información: secretaria@indeconsult.pe</span> 
                             <span>Licitaciones: comercial@indeconsult.pe</span> 
                             <span>Ingeniería: ingenieria@indeconsult.pe</span> 

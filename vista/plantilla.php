@@ -98,6 +98,7 @@
          $_GET["ruta"] == "proyecto-sector" ||
          $_GET["ruta"] == "proyecto-eleccion" ||
          $_GET["ruta"] == "servicios-sector" ||
+         $_GET["ruta"] == "blog" ||
          $_GET["ruta"] == "inicio"
          ){
 

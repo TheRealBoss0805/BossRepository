@@ -71,7 +71,7 @@
                         <li><a href="proyecto-sector" style="border-bottom: none;">Por Sector</a></li>
                     </ul>
                 </li>
-                <li class="nav-li"><a href="#">Blog</a></li>
+                <li class="nav-li"><a href="blog">Blog</a></li>
                 <li>
                     <!--
                     <span class="transition"></span>

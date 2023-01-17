@@ -67,7 +67,7 @@
     -moz-border-radius: 0 20% / 0 50%;
     -webkit-border-radius: 0 20% / 0 50%;
     border-radius: 0 20% / 0 50%;
-    background: #5cb85c;
+    background: #c02053;
     box-shadow:  5px 5px 10px #222222,
     -5px -5px 10px #222222;
 }
@@ -192,6 +192,10 @@
     color: #253743;
     font-weight: 300;
     gap: 5px;
+}
+
+.container .contactInfo .box .text .br{
+   margin-top: 20px;
 }
 
 .container .contactInfo .box .text h3{
