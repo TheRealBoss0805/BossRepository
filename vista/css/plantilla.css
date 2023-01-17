@@ -8,6 +8,25 @@
 }
 
 
+::-webkit-scrollbar {
+    width: 0.3em;
+    background: rgb(139, 11, 54);
+    background: linear-gradient(0deg, rgba(185, 17, 73, 1) 0%, rgba(112, 17, 17, 1) 100%);
+}
+
+::-webkit-scrollbar-track {
+    background: #eee7cb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #882a47;
+    /*border: .25em solid #882a47;*/
+}
+
+::-webkit-scrollbar:hover {
+    width: 1.5em;
+}
+
 /*INICIO*/
 
 .inicio-1,
@@ -23,7 +42,6 @@
     align-items: center;
     justify-content: center;
     background: transparent;
-    border: 3px solid green;
 }
 
 .inicio-2 {
@@ -109,13 +127,12 @@
 
 
 /*Contenedor-Blog*/
-.contenedor-blog{
+.contenedor-blog {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border: 5px solid magenta;
 }
 
 

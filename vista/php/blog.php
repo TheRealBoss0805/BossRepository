@@ -16,36 +16,38 @@
                     <h2>Todas las Categorías</h2>
                     <a href="#">
                         <span>Todos</span>
-                        <span></span>
+                        <img src="vista/imagenes/blog/todo.png" alt="">
                     </a>
                     <a href="#">
                         <span>Construcción</span>
-                        <span></span>
+                        <img src="vista/imagenes/blog/construccion.png" alt="">
                     </a>
                     <a href="#">
                         <span>Economía</span>
-                        <span></span>
+                        <img src="vista/imagenes/blog/economia.png" alt="">
                     </a>
                     <a href="#">
                         <span>Educación</span>
-                        <span></span>
+                        <img src="vista/imagenes/blog/educacion.png" alt=""> 
                     </a>
                     <a href="#">
                         <span>Indeconsult</span>
-                        <span></span>
+                        <img src="vista/imagenes/blog/edificio.png" alt="">
                     </a>
                     <a href="#">
                         <span>Salud</span>
-                        <span></span>
+                        <img src="vista/imagenes/blog/salud.png" alt="">
                     </a>
                 </div>
-                <img src="vista/imagenes/blog/blog.jpg" alt="">
+                <img src="vista/imagenes/blog/blog.jpg" alt="" class="img-abs">
             </div>
+
+
             <div class="blog-1">
                 <h1>Posteos Recientes</h1>
                 <div class="div-posteosR">
                     <div>
-                        <img src="vista/imagenes/extras/img-1.png" alt="">
+                        <img src="vista/imagenes/extras/img-1.png" alt="" class="img-posteosR">
                         <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing
                             elit. Fuga, nihil corporis. Consequuntur ullam, repellat
                             praesentium dignissimos eveniet perferendis ut.</a>
@@ -56,13 +58,15 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="blog-1">
                 <h1>Redes Sociales</h1>
                 <div>
-                    <div class="icon-whatsapp" style="color: green;"></div>
-                    <div class="icon-twitter" style="color: skyblue;"></div>
-                    <div class="icon-linkedin-rect" style="color: blue;"></div>
-                    <div class="icon-instagram" style="color: red;"></div>
+                    <a href="#" class="icon-whatsapp" style="--color: #1d9337;" title="Whatsapp"></a>
+                    <a href="#" class="icon-twitter" style="--color: #2990be;" title="Twitter"></a>
+                    <a href="#" class="icon-linkedin-rect" style="--color: #00586e;" title="Linkedin"></a>
+                    <a href="#" class="icon-instagram" style="--color: #d33641;" title="Instagram"></a>
                 </div>
             </div>
         </div>
@@ -90,27 +94,31 @@
                         <img src="vista/imagenes/extras/img-1.png" alt="">
                     </div>
                     <div>
-                        <span>Día, Mes - Año</span>
-                        <span>Interno</span>
-                        <span>Categoría</span>
+                        <span>Día, Mes - Año<i class="icon-plus"></i></span>
+                        <span>Interno<i class="icon-plus"></i></span>
+                        <span>Categoría<i class="icon-plus"></i></span>
                     </div>
                     <div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, quidem corporis! Cum ad, iusto optio excepturi</p>
-                        <a href="#">Leer más</a>
+                        <a href="blog-seleccion"><span>Leer más</span></a>
                     </div>
                 </div>
             </div>
 
             <div class="blog-2">
                 <div>
-                    <a href=""></a><a href=""></a>
+                    <a href=""><span class="icon-left-open"></span>Regresar</a>
+                    <a href="">Continuar<span class="icon-right-open"></span></a>
                 </div>
                 <div>
-                    <span></span>
-                    <span></span>
+                    <span>0</span>
+                    <span>/</span>
+                    <span>0</span>
                 </div>
             </div>
+
             <div class="blog-2">
+                <h1>Video Informativo de IDC</h1>
                 <video src="">
 
                 </video>

@@ -99,6 +99,7 @@
          $_GET["ruta"] == "proyecto-eleccion" ||
          $_GET["ruta"] == "servicios-sector" ||
          $_GET["ruta"] == "blog" ||
+         $_GET["ruta"] == "blog-seleccion" ||
          $_GET["ruta"] == "inicio"
          ){
 
