@@ -5,23 +5,28 @@
     background: #f8f8f8;
     height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 30px;
     user-select: none;
+    border: 2px solid yellow;
 }
 
 
+
 .info-fijo div:nth-child(1){
-    color: #253743;
-    font-size: 1.4em;
-    font-weight: 600;
-    font-style: italic;
-    font-family: "Roboto", sans-serif;
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.info-fijo div:nth-child(1) p{
+    color: #253743;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
 }
 
 .info-fijo div:nth-child(2){
@@ -41,6 +46,7 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+    margin-right: 50px;
 }
 
 .info-fijo div:nth-child(2) div{
@@ -62,8 +68,6 @@
     font-size: .85em;
     font-family: "Roboto", sans-serif;
 }
-
-
 
 /*ESTILO MUY IMPORTANTE*/
 header.abajo {
@@ -91,8 +95,6 @@ header.abajo nav ul li .contactanos{
 header.abajo nav ul li .contactanos .label{
     font-size: 12px;
 }
-
-
 
 header{
     position: fixed;
@@ -261,29 +263,25 @@ header ul .contactanos:hover{
     border: none;
 }
 
+/*Contendor Logo*/
+
 .contenedor-logo{
-    width: 15%;
-    min-width: 188px;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0;
+    left: 20px;
+    top: -31px;
     z-index: 1;
     transition: all .5s ease-in;
 }
 
-header .svg-img{
-    position: relative;
-    width: 160px;
-    height: 160px;
-}
-
-header .svg-img svg{
+/*header .svg-img svg{
     position: absolute;
-}
+}*/
 
-header .svg-img:hover > svg{
+header .svg-img a img:hover{
     animation: mover 1s linear;
 }
 
@@ -320,16 +318,8 @@ header .svg-img:hover > svg{
    }
 
 header .svg-img img{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
+    width: 290px;
+    filter: drop-shadow(0 0 0.35rem #565958);
 }
 
-svg{
-    filter:drop-shadow(1px 1px 3px rgb(206, 202, 202))
-}
+/*End Logo*/
