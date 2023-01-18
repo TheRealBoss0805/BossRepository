@@ -9,10 +9,7 @@
     align-items: center;
     gap: 30px;
     user-select: none;
-    border: 2px solid yellow;
 }
-
-
 
 .info-fijo div:nth-child(1){
     width: auto;

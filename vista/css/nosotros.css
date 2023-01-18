@@ -119,6 +119,8 @@
     align-items: center;
 }
 
+/*animación de cards a través de universe*/
+
 .content-us .us-pdf .pdf-div {
     width: 254px;
     height: 194px;
@@ -155,7 +157,9 @@
     background: rgb(199, 77, 69);
     inset: 5px;
     border-radius: 15px;
-  } 
+  }
+
+  /*END*/
 
   .content-us .us-pdf div img{
     position: absolute;
