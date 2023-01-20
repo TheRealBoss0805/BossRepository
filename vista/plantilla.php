@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <?php
+    <?php
     if(isset($_GET["ruta"])){
 
       if($_GET["ruta"] == "nosotros" ||
@@ -29,36 +30,36 @@
     }
   ?>
 
-  <!--<title>IDC</title>-->
+    <!--<title>IDC</title>-->
 
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-  <link rel="icon" href="vista/imagenes/extras/logo-indeconsult.ico">
+    <link rel="icon" href="vista/imagenes/extras/logo-indeconsult.ico">
 
-   <!--=====================================
+    <!--=====================================
   PLUGINS DE CSS
   ======================================-->
 
-  <!-- Bootstrap 3.3.7 -->
+    <!-- Bootstrap 3.3.7 -->
 
 
-  <!-- Fontello -->
-  <link rel="stylesheet" href="vista/internet-components/idc-fontello/css/fontello.css">
+    <!-- Fontello -->
+    <link rel="stylesheet" href="vista/internet-components/idc-fontello/css/fontello.css">
 
-  <!-- Plantilla -->
-  <link rel="stylesheet" href="vista/css/plantilla.css">
+    <!-- Plantilla -->
+    <link rel="stylesheet" href="vista/css/plantilla.css">
 
-  <!--=====================================
+    <!--=====================================
   PLUGINS DE JAVASCRIPT
   ======================================-->
 
-  <!-- jQuery 3 -->
-  
-  <!-- Bootstrap 3.3.7 -->
+    <!-- jQuery 3 -->
+
+    <!-- Bootstrap 3.3.7 -->
 
 
-  <!-- Plantilla -->
+    <!-- Plantilla -->
 
 
 </head>
@@ -68,8 +69,8 @@
 ======================================-->
 
 <body>
- 
-  <?php
+
+    <?php
   if(isset($_GET["ruta"])){
     
     echo '<input type="hidden" class="ruta" value="'.$_GET["ruta"].'" >';
@@ -127,11 +128,6 @@
     echo '</div>';
 
   ?>
-  
-
-
-
-
-
-
-
+</body>
+  <script src="vista/js/imagen-modal-seleccion.js"></script>
+</html>

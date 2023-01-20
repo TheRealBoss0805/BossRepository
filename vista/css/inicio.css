@@ -2,6 +2,11 @@
     height: 100%;
     width: 100%;
     background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .title-inicio {
@@ -34,7 +39,7 @@
     content: '';
     position: absolute;
     bottom: -5px;
-    left: 0;
+    right: 0;
     width: 100px;
     height: 4px;
     background: crimson;
@@ -284,16 +289,12 @@
 
 /*INICIO 2*/
 
-.contenedores {
-    margin-top: 60px;
-}
-
 .content-service {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 20px;
 }
 
@@ -304,9 +305,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
     border-radius: 0 83px 20px 20px;
     user-select: none;
+    position: relative;
+}
+
+.content-service .muneco-service{
+    position: absolute;
+    top: -250px;
+    z-index: 1 !important;
+    height: 250px !important;
+    filter: grayscale(1);
+    transition: all 0.3s ease-in;
 }
 
 .content-service .div .glass-div {
@@ -314,7 +324,6 @@
     height: 100%;
     position: absolute;
     top: 0;
-    z-index: 3;
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.6px);
@@ -326,44 +335,10 @@
     height: 65%;
     width: 100%;
     position: relative;
-    border-radius: 0 83px 0 0;
+    border-radius: 25px 83px 0 0;
     overflow: hidden;
-    /*filter: grayscale(80%);*/
 }
 
-/*
-.content-service .div a:hover{
-    animation: aclarar 0.2s forwards;
-}
-
-@keyframes aclarar{
-    0%{
-        filter: grayscale(80%);
-    }
-    20%{
-        filter: grayscale(69%);
-    }
-    25%{
-        filter: grayscale(58%);
-    }
-    45%{
-        filter: grayscale(47%);
-    }
-    50%{
-        filter: grayscale(36%);
-    }
-    70%{
-        filter: grayscale(25%);
-    }
-    75%{
-        filter: grayscale(14%);
-    }
-    100%{
-        filter: grayscale(0);
-        filter: contrast(1.7);
-    }
-}
-*/
 
 .content-service .div a:hover .glass-div{
     backdrop-filter: inherit;
@@ -393,6 +368,10 @@
     width: 100px;
     border-radius: 20px 0 0 0;
     height: 50px;
+}
+
+.content-service .div a:hover ~ .muneco-service {
+    filter: grayscale(0);
 }
 
 .content-service .div a:hover>.div-plus>.icon-plus-1 {

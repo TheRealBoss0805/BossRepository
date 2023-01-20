@@ -91,6 +91,21 @@
     cursor: pointer;
 }
 
+.content-services-1 .services:nth-child(2) ul li:nth-child(1) select option, .content-services-1 .services:nth-child(2) ul li:nth-child(2) select option{
+    background: transparent;
+    border-radius: 0px 0px 0px 0px !important;
+    border: none !important;
+}
+
+.content-services-1 .services:nth-child(2) ul li:nth-child(1) select, .content-services-1 .services:nth-child(2) ul li:nth-child(2) select:focus{
+    outline: none;
+}
+
+.content-services-1 .services:nth-child(2) ul li:nth-child(1) select, .content-services-1 .services:nth-child(2) ul li:nth-child(2) select:active{
+    outline: none;
+}
+
+
 .content-services-1 .services:nth-child(2) ul li button{
     display: flex;
     justify-content: center;

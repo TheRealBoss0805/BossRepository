@@ -8,6 +8,7 @@
     user-select: none;
 }
 
+/*Estilos al Scrollbar*/
 
 ::-webkit-scrollbar {
     width: 0.3em;
@@ -28,14 +29,18 @@
     width: 1.5em;
 }
 
+/*END*/
+
 /*INICIO*/
 
 .inicio-1,
 .inicio-2,
 .inicio-3,
+.inicio-5,
 .inicio-4,
 .inicio-6,
-.inicio-7 {
+.inicio-7,
+.inicio-8 {
     height: 680px;
     width: 100%;
     position: relative;
@@ -48,144 +53,88 @@
 .inicio-2 {
     background: rgb(255, 255, 255);
     background: linear-gradient(45deg, rgba(255, 255, 255, 1) 51%, rgba(156, 56, 56, 1) 51%);
+    height: 750px;
 }
 
 .inicio-6 {
     background: #1a1a1a;
+    height: 700px !important;
 }
 
 .inicio-5 {
-    height: 850px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
+    height: 850px !important;
+    width: 100% !important;
 }
 
 .inicio-8 {
-    height: 340px;
+    height: 340px !important;
+    width: 100% !important;
+}
+
+
+.contenedor-us,
+.contenedor-services,
+.contenedor-services-n,
+.contenedor-proyecto,
+.contenedor-eleccion-proyecto,
+.contenedor-blog-seleccion,
+.contenedor-blog{
+    height: 100%;
     width: 100%;
-    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background: transparent;
+    align-items: center;
+
 }
 
 /*Us Window*/
 
 .contenedor-us {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*Declarado en la parte superior*/
 }
 
 /*PESTAÑA SERVICES*/
 .contenedor-services {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*Declarado en la parte superior*/
 }
 
 /*PESTAÑA SERVICES - OPCION*/
 .contenedor-services-n {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /*Declarado en la parte superior*/
 }
 
 /*PROYECTO TIPO & SECTOR*/
 
 .contenedor-proyecto {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /*Declarado en la parte superior*/
 }
 
 /*PROYECTO TIPO & SECTOR - ELECCION*/
 
 .contenedor-eleccion-proyecto {
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /*Declarado en la parte superior*/
 }
 
 
 /*Contenedor-Blog*/
 .contenedor-blog {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
+    align-items: flex-start !important;
+    flex-direction: row !important;
+} 
 
 /*Contenedor-Blog-Selección*/
-.contenedor-blog-seleccion{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.contenedor-blog-seleccion {
+    /*Declarado en la parte superior*/
     gap: 50px;
-    user-select: none;
 }
 
 body {
     width: 100%;
     height: 100%;
-    background:#f2f2f2;
+    background: #f2f2f2;
+    user-select: none;
 }
-
-/*
-.contenedorPadre::-webkit-scrollbar{
-    width: 8px;
-    height: 8px;
-    display: none;
-}
-
-.contenedorPadre::-webkit-scrollbar-thumb{
-    background: #ccc;
-    border-radius: 4px;
-}
-
-.contenedorPadre::-webkit-scrollbar-thumb:hover{
-    background: #b3b3b3;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.contenedorPadre::-webkit-scrollbar-thumb:active{
-    background-color: #999999;
-}
-
-.contenedorPadre::-webkit-scrollbar-track{
-    background: #e1e1e1;
-    border-radius: 4px;
-}
-
-.contenedorPadre::-webkit-scrollbar-track:hover,
-.contenedorPadre::-webkit-scrollbar-track:active{
-    background: #d4d4d4;
-}
-
-*/
 
 .contenedorPadre {
     /*En mantenimiento...*/
@@ -194,4 +143,101 @@ body {
 .fa {
     color: #fff;
     font-size: 35px;
+}
+
+/*Imágenes Modales para los proyectos seleccionados*/
+
+#myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 1;
+}
+
+/* The Modal (background) */
+.modal {
+    visibility: hidden;
+    /*oculto por defecto*/
+    position: fixed !important;
+    /*Permanecer en su lugar*/
+    z-index: 100 !important;
+    /*traer al frente*/
+    padding-top: 100px !important;
+    /*localizado en la caja*/
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    /* Todo el ancho */
+    height: 100% !important;
+    /*Toda la altura*/
+    overflow: auto !important;
+    /*Permitir el scroll si es necesario*/
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto !important;
+    display: block !important;
+    width: 80% !important;
+    max-width: 700px !important;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto !important;
+    display: block !important;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    animation: zoom 0.5s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute !important;
+    top: 15px !important;
+    right: 35px !important;
+    color: #f1f1f1 !important;
+    font-size: 40px !important;
+    font-weight: bold !important;
+    transition: 0.3s !important;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100% !important;
+        ;
+    }
 }

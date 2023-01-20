@@ -66,7 +66,7 @@
                     </li>
                 </ul>
             </div>
-            <img src="vista/imagenes/proyectsandservices/servicios/planificacion/2015/planificacion.png" alt="">
+            <img src="vista/imagenes/extras/img-1.png" alt="">
         </div>
 
         <div class="content-services-2">

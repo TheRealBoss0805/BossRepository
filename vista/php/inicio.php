@@ -175,6 +175,7 @@
             </div>
 
             <div class="content-service contenedores">
+
                 <div class="service-1 div">
                     <a href="#" class="hola">
                         <div class="glass-div"></div>
@@ -189,18 +190,20 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #9b133e,
-            inset 5px 5px 7px #9b133e;">
+                    <div class="description-service"
+                        style="box-shadow: inset -5px -5px 7px #9b133e, inset 5px 5px 7px #9b133e;">
                         <h3 style="color: #253743;">PLANIFICACIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
                             numquam.</p>
                     </div>
+                    <img src="vista/imagenes/extras/munecos/2.png" alt="" class="muneco-service">
                 </div>
 
                 <div class="service-2 div">
                     <a href="#">
-                        <div class="glass-div"></div>
+                        <div class="glass-div">
+                        </div>
                         <span>
                             <img src="vista/imagenes/extras/img-1.png" alt="">
                         </span>
@@ -219,6 +222,7 @@
                             adipisicing elit. Necessitatibus repellat
                             numquam.</p>
                     </div>
+                    <img src="vista/imagenes/extras/munecos/7.png" alt="" class="muneco-service">
                 </div>
 
                 <div class="service-3 div">
@@ -242,6 +246,7 @@
                             adipisicing elit. Necessitatibus repellat
                             numquam.</p>
                     </div>
+                    <img src="vista/imagenes/extras/munecos/8.png" alt="" class="muneco-service">
                 </div>
 
                 <div class="service-4 div">
@@ -265,10 +270,9 @@
                             adipisicing elit. Necessitatibus repellat
                             numquam.</p>
                     </div>
+                    <img src="vista/imagenes/extras/munecos/9.png" alt="" class="muneco-service">
                 </div>
-
             </div>
-
         </div>
 
         <!--INICIO 3-->
