@@ -23,8 +23,7 @@
                     <div id="div-slider-top">
                         <section class="section-slider">
                             <div class="slider">
-                                <div class="slide active"
-                                    style="background-image: url('vista/imagenes/extras/img-1.png')">
+                                <div class="slide active" style="background-image: url('vista/imagenes/extras/img-1.png')">
                                     <div class="container">
                                         <div class="caption">
                                             <a href="#">
@@ -190,8 +189,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service"
-                        style="box-shadow: inset -5px -5px 7px #9b133e, inset 5px 5px 7px #9b133e;">
+                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #9b133e, inset 5px 5px 7px #9b133e;">
                         <h3 style="color: #253743;">PLANIFICACIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -311,7 +309,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession2">
                             <label for="name-profession2">
-                            <div class="icon-plus-1"></div>
+                                <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -331,7 +329,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession3">
                             <label for="name-profession3">
-                            <div class="icon-plus-1"></div>
+                                <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -351,7 +349,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession4">
                             <label for="name-profession4">
-                            <div class="icon-plus-1"></div>
+                                <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -371,7 +369,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession5">
                             <label for="name-profession5">
-                            <div class="icon-plus-1"></div>
+                                <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -391,7 +389,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession6">
                             <label for="name-profession6">
-                            <div class="icon-plus-1"></div>
+                                <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -411,7 +409,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession7">
                             <label for="name-profession7">
-                            <div class="icon-plus-1"></div>
+                                <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -431,7 +429,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession8">
                             <label for="name-profession8">
-                            <div class="icon-plus-1"></div>
+                                <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -451,7 +449,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession9">
                             <label for="name-profession9">
-                            <div class="icon-plus-1"></div>
+                                <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -866,6 +864,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="vista/js/inicio.js"></script>

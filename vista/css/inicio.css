@@ -9,6 +9,9 @@
     gap: 30px;
 }
 
+
+/*Estilos para el título*/
+
 .title-inicio {
     position: absolute;
     top: 0;
@@ -76,7 +79,7 @@
     position: relative;
 }
 
-.slider-top {
+.content-slider .slider-top {
     width: 100%;
     min-width: 800px;
     position: relative;
@@ -86,7 +89,7 @@
     align-items: center;
 }
 
-.slider-top #div-slider-top {
+.content-slider .slider-top #div-slider-top {
     width: 100%;
     height: 100%;
     display: flex;
@@ -94,15 +97,11 @@
     align-items: center;
 }
 
-.section-slider {
+.content-slider .slider-top #div-slider-top .section-slider {
     height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
-}
-
-.section-slider .slider {
-    /**/
 }
 
 .section-slider .slider img {
@@ -135,7 +134,7 @@
     }
 }
 
-.container {
+.section-slider .slide.active .container {
     position: absolute;
     left: 0;
     top: 0;
@@ -146,20 +145,20 @@
     align-items: center;
 }
 
-.section-slider .container {
+.section-slider .slide.active .container {
     flex-grow: 1;
 }
 
-.section-slider .caption {
+.section-slider .slide.active .container .caption {
     width: 100%;
     opacity: 0.9;
 }
 
-.section-slider .caption:hover {
+.section-slider .slide.active .container .caption:hover {
     opacity: 1;
 }
 
-.section-slider .caption a {
+.section-slider .slide.active .container .caption a {
     display: inline-block;
     height: 160px;
     width: 100%;
@@ -176,20 +175,20 @@
     padding: 25px;
 }
 
-.section-slider .caption a p {
+.section-slider .slide.active .container .caption a p {
     text-align: justify;
     z-index: 4;
     color: rgb(255, 255, 255);
     font-size: 1.2em;
 }
 
-.section-slider .caption a h1 {
+.section-slider .slide.active .container .caption a h1 {
     color: #851a3b;
     z-index: 4;
     font-size: 1.8em;
 }
 
-.section-slider .slide.active .caption a {
+.section-slider .slide.active .container .slide.active .caption a {
     opacity: 0;
     animation: captionText .5s ease forwards;
     animation-delay: 0.3s;
@@ -453,14 +452,6 @@
 
 /*INICIO 3*/
 
-/* === Google Font Import - Poppins === */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/*
-body{
-
-}*/
-
 .slide3 {
     position: relative;
     height: 100%;
@@ -472,7 +463,7 @@ body{
     align-items: center !important;
 }
 
-.swiper {
+.slide3 .swiper {
     width: 1000px;
     height: 70%;
     display: flex;
@@ -480,12 +471,12 @@ body{
     align-items: center;
 }
 
-.card {
+.slide3 .swiper .card {
     position: relative;
     background: #fff;
 }
 
-.card::before {
+.slide3 .swiper .card::before {
     content: "";
     position: absolute;
     height: 40%;
@@ -493,7 +484,7 @@ body{
     background: #253743;
 }
 
-.card .card-content {
+.slide3 .swiper .card .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -506,114 +497,24 @@ body{
 }
 
 .card #name-profession1,
-#name-profession2,
-#name-profession3,
-#name-profession4,
-#name-profession5,
-#name-profession6,
-#name-profession7,
-#name-profession8,
-#name-profession9 {
+.card #name-profession2,
+.card #name-profession3,
+.card #name-profession4,
+.card #name-profession5,
+.card #name-profession6,
+.card #name-profession7,
+.card #name-profession8,
+.card #name-profession9 {
     display: none;
 }
 
-.card label,
+.slide3 .swiper .card label,
 input:checked~#despegar-profession {
     height: 100%;
     width: 100%;
 }
 
-/*
-.card label,
-input:checked~#despegar-profession>.image {
-    height: 140px;
-    width: 90%;
-}*/
-
-/*
-.card #name-profession1:checked ~ #despegar-profession{     
-    height: 450px;    
-}
-
-.card #name-profession1:checked ~ #despegar-profession > .image{     
-    height: 140px;
-    width: 90%;    
-}
-
-.card #name-profession2:checked ~ #despegar-profession{     
-    height: 450px;    
-}
-
-.card #name-profession2:checked ~ #despegar-profession > .image{     
-    height: 140px;
-    width: 90%;    
-}
-
-.card #name-profession3:checked ~ #despegar-profession{     
-    height: 450px;    
-}
-
-.card #name-profession3:checked ~ #despegar-profession > .image{     
-    height: 140px;
-    width: 90%;    
-}
-
-.card #name-profession4:checked ~ #despegar-profession{     
-    height: 450px;    
-}
-
-.card #name-profession4:checked ~ #despegar-profession > .image{     
-    height: 140px;
-    width: 90%;    
-}
-
-.card #name-profession5:checked ~ #despegar-profession{     
-    height: 450px;    
-}
-
-.card #name-profession5:checked ~ #despegar-profession > .image{     
-    height: 140px;
-    width: 90%;    
-}
-
-.card #name-profession6:checked ~ #despegar-profession{     
-    height: 450px;    
-}
-
-.card #name-profession6:checked ~ #despegar-profession > .image{     
-    height: 140px;
-    width: 90%;    
-}
-
-.card #name-profession7:checked ~ #despegar-profession{     
-    height: 450px;    
-}
-
-.card #name-profession7:checked ~ #despegar-profession > .image{     
-    height: 140px;
-    width: 90%;    
-}
-
-.card #name-profession8:checked ~ #despegar-profession{     
-    height: 450px;    
-}
-
-.card #name-profession8:checked ~ #despegar-profession > .image{     
-    height: 140px;
-    width: 90%;    
-}
-
-.card #name-profession9:checked ~ #despegar-profession{     
-    height: 450px;    
-}
-
-.card #name-profession9:checked ~ #despegar-profession > .image{     
-    height: 140px;
-    width: 90%;    
-}
-*/
-
-.card .icon-plus-1 {
+.slide3 .swiper .card .icon-plus-1 {
     position: absolute;
     top: 0px;
     right: 0;
@@ -625,19 +526,10 @@ input:checked~#despegar-profession>.image {
     transition: all 0.2s ease-in;
 }
 
-.card .icon-plus-1:hover {
+.slide3 .swiper .card .icon-plus-1:hover {
     background: #fff;
     color: #942222;
 }
-
-/*.card .card-content:hover{
-    height: 400px;
-}
-
-.card .card-content:hover > .image{
-    height: 140px;
-    width: 90%;
-}*/
 
 .slide3 .card .image {
     height: 250px;
@@ -654,7 +546,7 @@ input:checked~#despegar-profession>.image {
     filter: contrast(1.4);
 }
 
-.card .name-profession {
+.slide3 .swiper .card .name-profession {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -732,7 +624,7 @@ input:checked~#despegar-profession>.image {
     border-radius: 12px;
 }
 
-.content4-ct0 .ct0-texto {
+.contenedor-4 .content4-ct0 .ct0-texto {
     height: 65%;
     width: 90%;
     display: flex;
@@ -743,7 +635,7 @@ input:checked~#despegar-profession>.image {
     gap: 30px;
 }
 
-.content4-ct0 .ct0-texto h2{
+.contenedor-4 .content4-ct0 .ct0-texto h2{
     font-size: 1.5em;
     letter-spacing: 2px;
 }
@@ -753,7 +645,7 @@ input:checked~#despegar-profession>.image {
     font-size: 1.2em;
 }
 
-.content4-ct0 .ct0-button {
+.contenedor-4 .content4-ct0 .ct0-button {
     height: 25%;
     width: 90%;
     display: flex;
@@ -761,7 +653,7 @@ input:checked~#despegar-profession>.image {
     align-items: center;
 }
 
-.content4-ct0 .ct0-button a {
+.contenedor-4 .content4-ct0 .ct0-button a {
     text-decoration: none;
     padding: 0.5em 1em;
     border: none;
@@ -777,14 +669,14 @@ input:checked~#despegar-profession>.image {
     outline: 2px solid #253743;
 }
 
-.content4-ct0 .ct0-button a:hover {
+.contenedor-4 .content4-ct0 .ct0-button a:hover {
     color: #ffffff;
     transform: scale(1.1);
     outline: 2px solid #253743;
     box-shadow: 4px 5px 17px -4px #253743;
 }
 
-.content4-ct0 .ct0-button a::before {
+.contenedor-4 .content4-ct0 .ct0-button a::before {
     content: "";
     position: absolute;
     left: -50px;
@@ -797,7 +689,7 @@ input:checked~#despegar-profession>.image {
     transition: width 1000ms;
 }
 
-.content4-ct0 .ct0-button a:hover::before {
+.contenedor-4 .content4-ct0 .ct0-button a:hover::before {
     width: 250%;
 }
 
@@ -895,48 +787,6 @@ input:checked~#despegar-profession>.image {
     font-size: 41px;
 }
 
-
-/*
-.child1-min .child1-img div{
-    width: 70%;
-    height: 10%;
-    background: #cccbcb;
-    border-radius: 0 10px 0 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 0 0 10px;
-}
-
-.child1-min .child1-img a{
-    width: 100%;
-    height: 90%;
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-}
-
-.child1-min .child1-img a img{
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s ease-in;
-}
-
-.child1-min .child1-img a img:hover{
-    transform: scale(1.2);
-}
-*/
-
-/*
-.child1-min .child1-img a p{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    color: #fff;
-    text-align: center;
-}
-*/
-
 /*INICIO 5*/
 
 .contenedor-5 {
@@ -956,7 +806,7 @@ input:checked~#despegar-profession>.image {
     height: 20%;
 }
 
-.content-5:nth-child(3) {
+.contenedor-5 .content-5:nth-child(3) {
     height: 50%;
     display: flex;
     justify-content: center;
@@ -964,7 +814,7 @@ input:checked~#despegar-profession>.image {
     flex-direction: column;
 }
 
-.content-5 .content-5-min1 {
+.contenedor-5 .content-5 .content-5-min1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -975,26 +825,26 @@ input:checked~#despegar-profession>.image {
     border-radius: 0 30px 30px 0;
 }
 
-.content-5 .content-5-min1:nth-child(2) {
+.contenedor-5 .content-5 .content-5-min1:nth-child(2) {
     border-radius: 30px 0 0 30px;
 }
 
-.content-5 .content-5-min1 p {
+.contenedor-5 .content-5 .content-5-min1 p {
     text-align: center;
     color: #fff;
     font-size: 1.7em;
     font-style: italic;
 }
 
-.content-5 .min2-1 {
+.contenedor-5 .content-5 .min2-1 {
     color: #D4393C;
 }
 
-.content-5 .min2-2 {
+.contenedor-5 .content-5 .min2-2 {
     color: #015496;
 }
 
-.content-5-min1 .valor1 {
+.contenedor-5 .content-5-min1 .valor1 {
     position: absolute;
     left: 0;
     top: -90px;
@@ -1008,7 +858,7 @@ input:checked~#despegar-profession>.image {
     width: 180px;
 }
 
-.content-5 .content-5-min2 {
+.contenedor-5 .content-5 .content-5-min2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1016,13 +866,13 @@ input:checked~#despegar-profession>.image {
     width: 40%;
 }
 
-.content-5 .content-5-min2 h1 {
+.contenedor-5 .content-5 .content-5-min2 h1 {
     font-size: 3.5em;
     font-style: italic;
     text-shadow: black 0.08em 0.08em 0.1em;
 }
 
-.content-5 .content-5-min3 {
+.contenedor-5 .content-5 .content-5-min3 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -1031,17 +881,17 @@ input:checked~#despegar-profession>.image {
     width: 100%;
 }
 
-.content-5 .content-5-min3 h1 {
+.contenedor-5 .content-5 .content-5-min3 h1 {
     font-size: 3.5em;
     font-style: italic;
     text-shadow: black 0.05em 0.05em 0.1em;
 }
 
-.content-5-min3:nth-child(2) {
+.contenedor-5 .content-5-min3:nth-child(2) {
     margin-top: 30px;
 }
 
-.content-5-min3:nth-child(2) {
+.contenedor-5 .content-5-min3:nth-child(2) {
     height: 20%;
 }
 
@@ -1166,26 +1016,6 @@ input:checked~#despegar-profession>.image {
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.5);
 }
-
-
-/*
-.content-5-min3 .value-circle{
-    height: 180px;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.content-5-min3 .value-circle img{
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    box-shadow:  5px 5px 13px #5a5a5a,
-    -5px -5px 13px #ffffff;
-}
-*/
 
 /*INICIO 6*/
 
