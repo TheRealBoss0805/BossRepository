@@ -463,17 +463,18 @@ body{
 
 .slide3 {
     position: relative;
-    height: 550px;
-    width: 1075px;
+    height: 100%;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    border: 3px solid red;
-    background: #444;
 }
 
 .swiper {
-    width: 950px;
+    width: 1000px;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -482,9 +483,6 @@ body{
 .card {
     position: relative;
     background: #fff;
-    border-radius: 20px;
-    margin: 20px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card::before {
@@ -493,16 +491,14 @@ body{
     height: 40%;
     width: 100%;
     background: #253743;
-    border-radius: 20px 20px 0 0;
 }
 
 .card .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
     position: relative;
-    z-index: 100;
+    z-index: 1;
     cursor: pointer;
     height: 185px;
     overflow: hidden;
@@ -523,14 +519,16 @@ body{
 
 .card label,
 input:checked~#despegar-profession {
-    height: 450px;
+    height: 100%;
+    width: 100%;
 }
 
+/*
 .card label,
 input:checked~#despegar-profession>.image {
     height: 140px;
     width: 90%;
-}
+}*/
 
 /*
 .card #name-profession1:checked ~ #despegar-profession{     
@@ -615,18 +613,22 @@ input:checked~#despegar-profession>.image {
 }
 */
 
-.card .vermas {
+.card .icon-plus-1 {
     position: absolute;
-    top: -20px;
+    top: 0px;
     right: 0;
     font-size: 30px;
-    border: 5px solid red;
+    background: #942222;
     color: #fff;
     z-index: 100;
     cursor: pointer;
+    transition: all 0.2s ease-in;
 }
 
-
+.card .icon-plus-1:hover {
+    background: #fff;
+    color: #942222;
+}
 
 /*.card .card-content:hover{
     height: 400px;
@@ -637,32 +639,31 @@ input:checked~#despegar-profession>.image {
     width: 90%;
 }*/
 
-
 .slide3 .card .image {
     height: 250px;
     width: 250px;
-    padding: 3px;
     background: #253743;
+    margin-top: 10px;
 }
 
 .slide3 .card .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border: 1px solid #fff;
-    cursor: pointer;
+    border: 2px solid rgb(193, 190, 190);
+    filter: contrast(1.4);
 }
 
 .card .name-profession {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #eeeedd;
     height: 100%;
     width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 7px;
+    padding: 15px;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 2px solid #253743;
 }
 
 .name-profession .name {
@@ -686,23 +687,28 @@ input:checked~#despegar-profession>.image {
 }
 
 .swiper-pagination-bullet {
-    height: 7px;
-    width: 26px;
+    height: 10px;
+    width: 40px;
     border-radius: 25px;
+    background: #253743;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    opacity: 0.7;
+    opacity: 1;
     color: #253743;
     transition: all 0.3s ease;
     font-weight: 800;
+    transform: scale(1.2);
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    opacity: 1;
-    color: #253743;
+    color: #851a3b;
+}
+
+.inicio-3 .muneco-major{
+    height: 90%;
 }
 
 /*INICIO 4*/

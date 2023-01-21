@@ -50,6 +50,10 @@
     background: transparent;
 }
 
+.inicio-3 {
+    justify-content: flex-start !important;
+}
+
 .inicio-2 {
     background: rgb(255, 255, 255);
     background: linear-gradient(45deg, rgba(255, 255, 255, 1) 51%, rgba(156, 56, 56, 1) 51%);

@@ -47,15 +47,15 @@
         <!--<a href="" class="logo">PIG LOVERS</a>-->
         <nav>
             <ul>
-                <li class="nav-li"><a href="inicio">Inicio</a></li>
-                <li class="nav-li">
+                <li class="nav-li" id="inicio"><a href="inicio">Inicio</a></li>
+                <li class="nav-li" id="nosotros">
                     <a href="">Nosotros</a><span class="icon-plus"></span>
                     <ul>
                         <li><a href="nosotros">Quiénes Somos</a></li>
                         <li><a href="nosotros" style="border-bottom: none;">Políticas de Gestión</a></li>
                     </ul>
                 </li>
-                <li class="nav-li">
+                <li class="nav-li" id="servicios">
                     <a href="">Servicios</a><span class="icon-plus"></span>
                     <ul>
                         <li><a href="servicios">Planificación</a></li>
@@ -64,7 +64,7 @@
                         <li><a href="servicios" style="border-bottom: none;">Supervisión</a></li>
                     </ul>
                 </li>
-                <li class="nav-li">
+                <li class="nav-li" id="proyectos">
                     <a href="">Proyectos</a><span class="icon-plus"></span>
                     <ul>
                         <li><a href="proyecto-tipo">Por Tipo</a></li>
@@ -73,10 +73,6 @@
                 </li>
                 <li class="nav-li"><a href="blog">Blog</a></li>
                 <li>
-                    <!--
-                    <span class="transition"></span>
-                    <span class="gradient"></span>
-                    <a href="contactanos" class="label">Contáctenos</a>-->
                     <a href="contactanos" class="contactanos">
                         <span class="label">Contáctenos</span>
                     </a>

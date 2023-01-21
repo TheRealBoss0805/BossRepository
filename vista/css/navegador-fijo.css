@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caramel&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100&display=swap');
 
-.info-fijo{
+.info-fijo {
     background: #f8f8f8;
     height: 60px;
     display: flex;
@@ -11,14 +11,14 @@
     user-select: none;
 }
 
-.info-fijo div:nth-child(1){
+.info-fijo div:nth-child(1) {
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.info-fijo div:nth-child(1) p{
+.info-fijo div:nth-child(1) p {
     color: #253743;
     font-size: 1.2em;
     font-weight: 600;
@@ -26,7 +26,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-.info-fijo div:nth-child(2){
+.info-fijo div:nth-child(2) {
     color: #253743;
     width: auto;
     display: flex;
@@ -36,7 +36,7 @@
 }
 
 
-.info-fijo div:nth-child(3){
+.info-fijo div:nth-child(3) {
     color: #253743;
     width: auto;
     display: flex;
@@ -46,7 +46,7 @@
     margin-right: 50px;
 }
 
-.info-fijo div:nth-child(2) div{
+.info-fijo div:nth-child(2) div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +56,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-.info-fijo div:nth-child(3) div{
+.info-fijo div:nth-child(3) div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,27 +73,27 @@ header.abajo {
     margin-top: -0px;
 }
 
-header.abajo ul{
+header.abajo ul {
     height: 50px;
 }
 
-header.abajo .contenedor-logo{
+header.abajo .contenedor-logo {
     transform: scale(0);
 }
 
-header.abajo nav ul .nav-li a{
+header.abajo nav ul .nav-li a {
     font-size: 12px;
 }
 
-header.abajo nav ul li .contactanos{
+header.abajo nav ul li .contactanos {
     padding: .5em .5em;
 }
 
-header.abajo nav ul li .contactanos .label{
+header.abajo nav ul li .contactanos .label {
     font-size: 12px;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -109,19 +109,19 @@ header{
     user-select: none;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-header nav ul li:hover > a:not(.label){
+header nav ul li:hover>a:not(.label) {
     color: #fff;
     transition: all 0.7s ease-out;
 }
 
-header ul{
+header ul {
     position: relative;
     display: flex;
     justify-content: center;
@@ -131,12 +131,12 @@ header ul{
     height: 90px;
 }
 
-header ul li{
+header ul li {
     list-style: none;
     color: #fff;
 }
 
-header ul .nav-li{
+header ul .nav-li {
     padding: 0px 0px 10px 0px;
     position: relative;
     overflow: hidden;
@@ -149,16 +149,16 @@ header ul .nav-li{
     border: 2px solid transparent;
 }
 
-header ul .nav-li span{
+header ul .nav-li span {
     font-size: 12px;
     color: #a5214b;
 }
 
-header ul .nav-li:hover{
+header ul .nav-li:hover {
     overflow: visible;
 }
 
-header ul .nav-li ul{
+header ul .nav-li ul {
     display: grid;
     /*padding: 10px 20px 10px 10px;*/
     position: absolute;
@@ -172,7 +172,7 @@ header ul .nav-li ul{
 
 }
 
-header ul .nav-li ul li{
+header ul .nav-li ul li {
     display: flex;
     list-style: none;
     justify-content: flex-start;
@@ -180,7 +180,7 @@ header ul .nav-li ul li{
 
 }
 
-header nav ul .nav-li ul li a{
+header nav ul .nav-li ul li a {
     text-decoration: none;
     font-size: 15px;
     width: 100%;
@@ -193,11 +193,11 @@ header nav ul .nav-li ul li a{
     border-bottom: 1px solid rgb(199, 197, 197);
 }
 
-header ul .nav-li ul li a:hover{
+header ul .nav-li ul li a:hover {
     background: #253743;
 }
 
-header ul .nav-li::before{
+header ul .nav-li::before {
     content: '';
     width: 0;
     height: 10%;
@@ -214,8 +214,13 @@ header ul .nav-li::before{
 header ul .nav-li:hover::before {
     width: 105%;
 }
-   
-header ul li a{
+
+ul>.nav-li.active>a {
+    background: yellow;
+    color: black;
+}
+
+header ul li a {
     position: relative;
     margin: 0 15px;
     text-decoration: none;
@@ -227,7 +232,7 @@ header ul li a{
 }
 
 
-header ul .contactanos{
+header ul .contactanos {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 500;
@@ -239,30 +244,30 @@ header ul .contactanos{
 
 }
 
-header ul .contactanos:hover{
-    background: rgb(73,29,42);
-    background: linear-gradient(0deg, rgb(92, 36, 53) 0%, rgba(133,26,59,1) 100%);
+header ul .contactanos:hover {
+    background: rgb(73, 29, 42);
+    background: linear-gradient(0deg, rgb(92, 36, 53) 0%, rgba(133, 26, 59, 1) 100%);
 }
 
-header ul .contactanos:hover .label{
+header ul .contactanos:hover .label {
     color: #fff;
 }
 
 .label {
     color: #c72357;
-   }
-   
+}
+
 .contactanos:active {
     transform: scale(0.97);
-   }
+}
 
-header ul .contactanos:hover{
+header ul .contactanos:hover {
     border: none;
 }
 
 /*Contendor Logo*/
 
-.contenedor-logo{
+.contenedor-logo {
     width: auto;
     display: flex;
     justify-content: center;
@@ -278,43 +283,43 @@ header ul .contactanos:hover{
     position: absolute;
 }*/
 
-header .svg-img a img:hover{
+header .svg-img a img:hover {
     animation: mover 1s linear;
 }
 
-@keyframes mover{
+@keyframes mover {
     0% {
-     -webkit-transform: translate(0);
-     transform: translate(0);
+        -webkit-transform: translate(0);
+        transform: translate(0);
     }
-   
-    20% {
-     -webkit-transform: translate(-5px, 5px);
-     transform: translate(-5px, 5px);
-    }
-   
-    40% {
-     -webkit-transform: translate(-5px, -5px);
-     transform: translate(-5px, -5px);
-    }
-   
-    60% {
-     -webkit-transform: translate(5px, 5px);
-     transform: translate(5px, 5px);
-    }
-   
-    80% {
-     -webkit-transform: translate(5px, -5px);
-     transform: translate(5px, -5px);
-    }
-   
-    100% {
-     -webkit-transform: translate(0);
-     transform: translate(0);
-    }
-   }
 
-header .svg-img img{
+    20% {
+        -webkit-transform: translate(-5px, 5px);
+        transform: translate(-5px, 5px);
+    }
+
+    40% {
+        -webkit-transform: translate(-5px, -5px);
+        transform: translate(-5px, -5px);
+    }
+
+    60% {
+        -webkit-transform: translate(5px, 5px);
+        transform: translate(5px, 5px);
+    }
+
+    80% {
+        -webkit-transform: translate(5px, -5px);
+        transform: translate(5px, -5px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+header .svg-img img {
     width: 290px;
     filter: drop-shadow(0 0 0.35rem #565958);
 }

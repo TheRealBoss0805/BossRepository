@@ -289,8 +289,9 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession1">
                             <label for="name-profession1">
-                                <div class="vermas">Ver +</div>
+                                <div class="icon-plus-1"></div>
                             </label>
+
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
                                     <img src="vista/imagenes/extras/img-1.png" alt="">
@@ -304,12 +305,13 @@
                                         especialidades.</span>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession2">
                             <label for="name-profession2">
-                                <div class="vermas">Ver +</div>
+                            <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -329,7 +331,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession3">
                             <label for="name-profession3">
-                                <div class="vermas">Ver +</div>
+                            <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -349,7 +351,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession4">
                             <label for="name-profession4">
-                                <div class="vermas">Ver +</div>
+                            <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -369,7 +371,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession5">
                             <label for="name-profession5">
-                                <div class="vermas">Ver +</div>
+                            <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -389,7 +391,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession6">
                             <label for="name-profession6">
-                                <div class="vermas">Ver +</div>
+                            <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -409,7 +411,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession7">
                             <label for="name-profession7">
-                                <div class="vermas">Ver +</div>
+                            <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -429,7 +431,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession8">
                             <label for="name-profession8">
-                                <div class="vermas">Ver +</div>
+                            <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -449,7 +451,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession9">
                             <label for="name-profession9">
-                                <div class="vermas">Ver +</div>
+                            <div class="icon-plus-1"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -472,6 +474,7 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </section>
+            <img src="vista/imagenes/extras/munecos/3.png" alt="" class="muneco-major">
         </div>
 
         <!--INICIO 4-->

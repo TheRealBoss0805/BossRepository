@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <?php
+    /*
     if(isset($_GET["ruta"])){
 
       if($_GET["ruta"] == "nosotros" ||
@@ -27,7 +28,7 @@
 
       echo '<title>inicio</title>';
 
-    }
+    }*/
   ?>
 
     <!--<title>IDC</title>-->
@@ -126,8 +127,11 @@
     include "php/footer.php";
 
     echo '</div>';
-
   ?>
+
+    <script src="vista/js/ruta-navegador.js"></script>
 </body>
-  <script src="vista/js/imagen-modal-seleccion.js"></script>
+
+<script src="vista/js/imagen-modal-seleccion.js"></script>
+
 </html>
