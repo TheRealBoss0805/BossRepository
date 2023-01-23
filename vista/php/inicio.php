@@ -213,8 +213,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #8011a4,
-            inset 5px 5px 7px #8011a4;">
+                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #8011a4, inset 5px 5px 7px #8011a4;">
                         <h3 style="color: #253743;">PRE-INVERSIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -237,8 +236,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #1289bc,
-            inset 5px 5px 7px #1289bc;">
+                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #1289bc, inset 5px 5px 7px #1289bc;">
                         <h3 style="color: #253743;">EXPEDIENTES DE OBRA</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -261,8 +259,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #aa8e1c,
-            inset 5px 5px 7px #aa8e1c;">
+                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #aa8e1c, inset 5px 5px 7px #aa8e1c;">
                         <h3 style="color: #253743;">SUPERVISIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -270,6 +267,7 @@
                     </div>
                     <img src="vista/imagenes/extras/munecos/9.png" alt="" class="muneco-service">
                 </div>
+                
             </div>
         </div>
 
@@ -593,24 +591,6 @@
                     </div>
                 </div>
                 <div class="content-5">
-                    <!--<div class="content-5-min3">
-                        <div class="value-circle">
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
-                            <h6>Pésimo</h6>
-                        </div>
-                        <div class="value-circle">
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
-                            <h6>Regular</h6>
-                        </div>
-                        <div class="value-circle">
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
-                            <h6>Bueno</h6>
-                        </div>
-                        <div class="value-circle">
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
-                            <h6>Excelente</h6>
-                        </div>
-                    </div>-->
                     <div class="contenedor-5-burbuja">
                         <div class="content-5-burbuja" style="--clr:#ff0f5b;">
                             <div class="burbuja-5">

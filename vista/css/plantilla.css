@@ -62,15 +62,36 @@
     height: 750px;
 }
 
+@media (max-width: 1300px){
+    .inicio-2 {
+        height: auto;
+    }
+}
+
 .inicio-6 {
     background: #1a1a1a;
     height: 700px !important;
+}
+
+@media (max-width: 1135px){
+    .inicio-5 {
+        height: auto !important;
+        border: 5px solid orange;
+    }
 }
 
 .inicio-5 {
     height: 850px !important;
     width: 100% !important;
 }
+
+@media (max-width: 1135px){
+    .inicio-5 {
+        height: auto !important;
+        border: 5px solid orange;
+    }
+}
+
 
 .inicio-8 {
     height: 340px !important;

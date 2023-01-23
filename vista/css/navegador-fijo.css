@@ -9,6 +9,7 @@
     align-items: center;
     gap: 30px;
     user-select: none;
+    width: 100%;
 }
 
 .info-fijo div:nth-child(1) {
@@ -20,7 +21,7 @@
 
 .info-fijo div:nth-child(1) p {
     color: #253743;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     font-weight: 600;
     font-style: italic;
     font-family: "Roboto", sans-serif;
@@ -52,7 +53,7 @@
     justify-content: center;
     align-items: flex-start;
     width: auto;
-    font-size: .85em;
+    font-size: 1vw;
     font-family: "Roboto", sans-serif;
 }
 
@@ -62,7 +63,7 @@
     justify-content: center;
     align-items: flex-start;
     width: auto;
-    font-size: .85em;
+    font-size: 1vw;
     font-family: "Roboto", sans-serif;
 }
 
@@ -99,14 +100,69 @@ header {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     transition: 0.7s;
     background-color: #222;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
     margin-top: 60px;
-    z-index: 10;
+    z-index: 5;
     user-select: none;
+}
+
+/*Contendor Logo*/
+
+.contenedor-logo {
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    z-index: 6;
+    transition: all .5s ease-in;
+}
+
+header .svg-img img {
+    width: 100%;
+    filter: drop-shadow(0 0 0.35rem #565958);
+}
+
+header .svg-img a img:hover {
+    animation: mover 1s linear;
+}
+
+@keyframes mover {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-5px, 5px);
+        transform: translate(-5px, 5px);
+    }
+
+    40% {
+        -webkit-transform: translate(-5px, -5px);
+        transform: translate(-5px, -5px);
+    }
+
+    60% {
+        -webkit-transform: translate(5px, 5px);
+        transform: translate(5px, 5px);
+    }
+
+    80% {
+        -webkit-transform: translate(5px, -5px);
+        transform: translate(5px, -5px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
 }
 
 nav {
@@ -126,9 +182,9 @@ header ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    width: 100%;
+    width: auto;
     height: 90px;
+    gap: 15px;
 }
 
 header ul li {
@@ -142,7 +198,6 @@ header ul .nav-li {
     overflow: hidden;
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
     transition: .3s;
     z-index: 1;
     font-family: inherit;
@@ -160,7 +215,6 @@ header ul .nav-li:hover {
 
 header ul .nav-li ul {
     display: grid;
-    /*padding: 10px 20px 10px 10px;*/
     position: absolute;
     top: 30px;
     height: auto;
@@ -182,7 +236,7 @@ header ul .nav-li ul li {
 
 header nav ul .nav-li ul li a {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1vw;
     width: 100%;
     margin: 0px !important;
     text-align: left;
@@ -225,7 +279,7 @@ header ul li a {
     margin: 0 15px;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
-    font-size: 17px;
+    font-size: 1vw;
     font-weight: 500;
     color: white;
     text-transform: uppercase;
@@ -234,7 +288,7 @@ header ul li a {
 
 header ul .contactanos {
     font-family: "Roboto", sans-serif;
-    font-size: 15px;
+    font-size: 1vw;
     font-weight: 500;
     border: 2px solid #851a3b;
     position: relative;
@@ -265,63 +319,9 @@ header ul .contactanos:hover {
     border: none;
 }
 
-/*Contendor Logo*/
 
-.contenedor-logo {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 20px;
-    top: -31px;
-    z-index: 1;
-    transition: all .5s ease-in;
-}
 
-/*header .svg-img svg{
-    position: absolute;
-}*/
 
-header .svg-img a img:hover {
-    animation: mover 1s linear;
-}
 
-@keyframes mover {
-    0% {
-        -webkit-transform: translate(0);
-        transform: translate(0);
-    }
+/*Responsive*/
 
-    20% {
-        -webkit-transform: translate(-5px, 5px);
-        transform: translate(-5px, 5px);
-    }
-
-    40% {
-        -webkit-transform: translate(-5px, -5px);
-        transform: translate(-5px, -5px);
-    }
-
-    60% {
-        -webkit-transform: translate(5px, 5px);
-        transform: translate(5px, 5px);
-    }
-
-    80% {
-        -webkit-transform: translate(5px, -5px);
-        transform: translate(5px, -5px);
-    }
-
-    100% {
-        -webkit-transform: translate(0);
-        transform: translate(0);
-    }
-}
-
-header .svg-img img {
-    width: 290px;
-    filter: drop-shadow(0 0 0.35rem #565958);
-}
-
-/*End Logo*/

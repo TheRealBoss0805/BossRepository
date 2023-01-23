@@ -79,9 +79,9 @@
                 </li>
             </ul>
         </nav>
+
     </header>
-
-
+    
 </body>
 <script src="vista/js/navegador-fijo.js"></script>
 

@@ -69,7 +69,7 @@
     CUERPO DOCUMENTO 
 ======================================-->
 
-<body>
+<body class="body">
 
     <?php
   if(isset($_GET["ruta"])){
