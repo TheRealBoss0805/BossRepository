@@ -46,7 +46,7 @@
             <ul class="ul-responsive">
                 <li class="nav-li" id="inicio"><a href="inicio">Inicio</a></li>
                 <li class="nav-li" id="nosotros">
-                    <a href="">Nosotros</a><span class="icon-plus no-responsive"></span>
+                    <a>Nosotros</a><span class="icon-plus no-responsive"></span>
                     <input type="checkbox" id="check2">
                     <label for="check2" class="label-check la">
                         <i class="icon-plus responsive"></i>
@@ -57,7 +57,7 @@
                     </ul>
                 </li>
                 <li class="nav-li" id="servicios">
-                    <a href="">Servicios</a><span class="icon-plus no-responsive"></span>
+                    <a>Servicios</a><span class="icon-plus no-responsive"></span>
                     <input type="checkbox" id="check3">
                     <label for="check3" class="label-check la">
                         <i class="icon-plus responsive"></i>
@@ -70,7 +70,7 @@
                     </ul>
                 </li>
                 <li class="nav-li" id="proyectos">
-                    <a href="">Proyectos</a><span class="icon-plus no-responsive"></span>
+                    <a>Proyectos</a><span class="icon-plus no-responsive"></span>
                     <input type="checkbox" id="check4">
                     <label for="check4" class="label-check la">
                         <i class="icon-plus responsive"></i>

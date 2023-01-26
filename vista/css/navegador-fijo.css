@@ -247,7 +247,7 @@ header nav ul .nav-li ul li a {
     text-transform: capitalize;
     font-weight: 500;
     padding: 15px 30px 15px 10px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #334d5e;
 }
 
 header ul .nav-li ul li a:hover {
@@ -403,6 +403,7 @@ header ul .contactanos:hover {
         padding-top: 30px;
         transition: all 0.3s ease-in;
         overflow: hidden;
+        gap: 0;
     }
 
     header nav .ul-responsive .nav-li a{
@@ -461,10 +462,10 @@ header ul .contactanos:hover {
 
     header ul .nav-li::before {
         width: 0;
-        height: 4px;
+        height: 3px;
         bottom: 0;
         position: absolute;
-        right: 92%;
+        right: 95%;
         transform: translate(100%);
         background: #851a3b;
         transition: .8s ease;
@@ -473,7 +474,7 @@ header ul .contactanos:hover {
     }
     
     header ul .nav-li:hover::before {
-        width: 83%;
+        width: 90%;
     }
 
     header ul .nav-li ul {
@@ -499,17 +500,16 @@ header ul .contactanos:hover {
 
     .responsive{
         display: block;
+        margin-top: 9px;
     }
 
     .la{
         position: absolute;
         right: 0;
         top: 0;
-        left: 0;
         bottom: 0;
         margin: auto;
         cursor: pointer;
-        border: 5px solid magenta;
     }
 
     .la .responsive{
