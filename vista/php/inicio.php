@@ -23,7 +23,8 @@
                     <div id="div-slider-top">
                         <section class="section-slider">
                             <div class="slider">
-                                <div class="slide active" style="background-image: url('vista/imagenes/extras/img-1.png')">
+                                <div class="slide active"
+                                    style="background-image: url('vista/imagenes/extras/img-1.png')">
                                     <div class="container">
                                         <div class="caption">
                                             <a href="#">
@@ -189,7 +190,8 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #9b133e, inset 5px 5px 7px #9b133e;">
+                    <div class="description-service"
+                        style="box-shadow: inset -5px -5px 7px #9b133e, inset 5px 5px 7px #9b133e;">
                         <h3 style="color: #253743;">PLANIFICACIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -213,7 +215,8 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #8011a4, inset 5px 5px 7px #8011a4;">
+                    <div class="description-service"
+                        style="box-shadow: inset -5px -5px 7px #8011a4, inset 5px 5px 7px #8011a4;">
                         <h3 style="color: #253743;">PRE-INVERSIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -236,7 +239,8 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #1289bc, inset 5px 5px 7px #1289bc;">
+                    <div class="description-service"
+                        style="box-shadow: inset -5px -5px 7px #1289bc, inset 5px 5px 7px #1289bc;">
                         <h3 style="color: #253743;">EXPEDIENTES DE OBRA</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -259,7 +263,8 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service" style="box-shadow: inset -5px -5px 7px #aa8e1c, inset 5px 5px 7px #aa8e1c;">
+                    <div class="description-service"
+                        style="box-shadow: inset -5px -5px 7px #aa8e1c, inset 5px 5px 7px #aa8e1c;">
                         <h3 style="color: #253743;">SUPERVISIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -267,7 +272,7 @@
                     </div>
                     <img src="vista/imagenes/extras/munecos/9.png" alt="" class="muneco-service">
                 </div>
-                
+
             </div>
         </div>
 
@@ -665,7 +670,7 @@
                                         <img src="vista/imagenes/isos/26.png">
                                     </div>
                                     <div class="textBx">
-                                        <h2>Aniversario<br><span>26 Años de servicio en todo el Perú</span></h2>
+                                        <h2>Aniversario<br><br><span>26 Años de servicio en todo el Perú</span></h2>
                                     </div>
                                 </div>
                             </div>
@@ -675,7 +680,7 @@
                                         <img src="vista/imagenes/isos/9001.png">
                                     </div>
                                     <div class="textBx">
-                                        <h2>ISO 9001:2015<br><span>Sistemas de Gestión de calidad (SGC)</span></h2>
+                                        <h2>ISO 9001:2015<br><br><span>Sistemas de Gestión de calidad (SGC)</span></h2>
                                     </div>
                                 </div>
                             </div>
@@ -685,7 +690,7 @@
                                         <img src="vista/imagenes/isos/14001.png">
                                     </div>
                                     <div class="textBx">
-                                        <h2>ISO 14001:2015<br><span>Sistemas de Gestión Ambiental (SGA)</span></h2>
+                                        <h2>ISO 14001:2015<br><br><span>Sistemas de Gestión Ambiental (SGA)</span></h2>
                                     </div>
                                 </div>
                             </div>
@@ -695,7 +700,7 @@
                                         <img src="vista/imagenes/isos/37001.png">
                                     </div>
                                     <div class="textBx">
-                                        <h2>ISO 37001:2016<br><span>Sistemas de Gestión Antisoborno</span></h2>
+                                        <h2>ISO 37001:2016<br><br><span>Sistemas de Gestión Antisoborno</span></h2>
                                     </div>
                                 </div>
                             </div>
@@ -705,7 +710,8 @@
                                         <img src="vista/imagenes/isos/45001.png">
                                     </div>
                                     <div class="textBx">
-                                        <h2>ISO 45001:2018<br><span>Sistemas de Gestión de la Seguridad y Salud en el
+                                        <h2>ISO 45001:2018<br><br><span>Sistemas de Gestión de la Seguridad y Salud en
+                                                el
                                                 Trabajo</span></h2>
                                     </div>
                                 </div>
@@ -713,6 +719,9 @@
                         </div>
                     </div>
                     <div class="contenedor-6-2">
+                        <div class="title-inicio-3">
+                            <h2 style="color: #fff">SOMOS INDECONSULT S.A</h2>
+                        </div>
                         <div class="content6-3">
                             <div class="padre-contador">
                                 <div class="hijo-contador hideee">
@@ -766,12 +775,7 @@
                         </div>
                         <div class="represent-img">
                             <img src="vista/imagenes/extras/mujer.jpg" alt="" class="img">
-                            <!--<div class="represent-think">
-                                <img src="vista/imagenes/extras/vineta.png" alt="">
-                                <p>" ¡Vive la Vida y no dejes que la Vida te Viva! "</p>
-                            </div>-->
                         </div>
-
                         <div class="represent-info">
                             <h3>Danitza Zulema Echandia Moreno</h3>
                             <h2>GERENTE GENERAL</h2>

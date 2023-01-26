@@ -165,6 +165,10 @@ header .svg-img a img:hover {
     }
 }
 
+header nav input, header nav .label-check{
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -204,13 +208,13 @@ header ul .nav-li {
     border: 2px solid transparent;
 }
 
+header ul .nav-li:hover {
+    overflow: visible;
+}
+
 header ul .nav-li span {
     font-size: 12px;
     color: #a5214b;
-}
-
-header ul .nav-li:hover {
-    overflow: visible;
 }
 
 header ul .nav-li ul {
@@ -231,7 +235,6 @@ header ul .nav-li ul li {
     list-style: none;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 header nav ul .nav-li ul li a {
@@ -244,7 +247,7 @@ header nav ul .nav-li ul li a {
     text-transform: capitalize;
     font-weight: 500;
     padding: 15px 30px 15px 10px;
-    border-bottom: 1px solid rgb(199, 197, 197);
+    border-bottom: 2px solid #fff;
 }
 
 header ul .nav-li ul li a:hover {
@@ -267,11 +270,6 @@ header ul .nav-li::before {
 
 header ul .nav-li:hover::before {
     width: 105%;
-}
-
-ul>.nav-li.active>a {
-    background: yellow;
-    color: black;
 }
 
 header ul li a {
@@ -319,9 +317,204 @@ header ul .contactanos:hover {
     border: none;
 }
 
+/*ICONO RESPONSIVO*/
 
-
+.responsive{
+    display: none;
+}
 
 
 /*Responsive*/
 
+
+@media (max-width: 1130px) {
+    header nav input, header nav .label-check{
+        display: block;
+    }
+
+    .info-fijo {
+        display: none;
+    }
+
+    header {
+        margin-top: 0px;
+    }
+    
+
+    header.abajo .contenedor-logo {
+        transform: scale(1);
+    }
+
+    header.abajo nav ul .nav-li a {
+        font-size: 14px;
+    }
+
+    header.abajo nav ul li .contactanos {
+        padding: 1em 1em;
+    }
+
+    header.abajo nav ul li .contactanos .label {
+        font-size: 13px;
+    }
+
+    header .contenedor-logo {
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 6;
+        transition: all .5s ease-in;
+    }
+
+    header .svg-img img {
+        filter: drop-shadow(0 0 0.35rem #474848);
+    }
+
+    header nav {
+        height: 90px;
+        position: relative;
+        justify-content: flex-end;
+        background: #222222;
+        box-shadow: inset -5px -5px 3px #0e0e0e,
+            inset 5px 5px 3px #363636;
+    }
+
+    header nav .icon-menu {
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    header nav .ul-responsive {
+        display: grid;
+        height: auto;
+        position: absolute;
+        background: #222222;
+        top: 90px;
+        right: -200px;
+        width: 200px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+    }
+
+    header nav .ul-responsive .nav-li a{
+        margin: 0px 0px;
+        display: flex;
+        width: 200px !important;
+        padding: 10px;
+    }
+
+    header ul .nav-li{
+        width: 200px;
+        padding: 0px 0px 0px 0px;
+        text-align: start;
+    }
+
+    header nav .ul-responsive li:nth-child(6) {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li a {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    header nav ul .nav-li ul li a {
+        font-size: 13px;
+        width: 200px;
+        background: #253743;
+        transition: all 0.1s ease-in !important;
+        text-indent: 20px;
+    }
+
+    header ul .nav-li ul li a:hover {
+        background: #fff;
+        color: #253743;
+    }
+
+    header ul .contactanos {
+        font-family: "Roboto", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        border: 2px solid #851a3b;
+        position: relative;
+    }
+
+    header nav input {
+        display: none;
+    }
+
+    header nav input:checked~.ul-responsive {
+        right: 0;
+    }
+
+    header ul .nav-li::before {
+        width: 0;
+        height: 4px;
+        bottom: 0;
+        position: absolute;
+        right: 92%;
+        transform: translate(100%);
+        background: #851a3b;
+        transition: .8s ease;
+        display: block;
+        z-index: -1;
+    }
+    
+    header ul .nav-li:hover::before {
+        width: 83%;
+    }
+
+    header ul .nav-li ul {
+        display: grid;
+        position: static;
+        margin-top: 10px;
+        height: 100%;
+        width: 100%;
+        gap: 0;
+        display: none;
+    }
+
+    .nav-li input:checked~ul{
+        display: block;
+    }
+
+    /*ICONOS NO RESPONSIVOS*/
+    .no-responsive{
+        display: none;
+    }
+
+    /*ICONOS RESPONSIVOS*/
+
+    .responsive{
+        display: block;
+    }
+
+    .la{
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        cursor: pointer;
+        border: 5px solid magenta;
+    }
+
+    .la .responsive{
+        color: #a5214b;
+        font-size: 18px;
+    }
+
+}

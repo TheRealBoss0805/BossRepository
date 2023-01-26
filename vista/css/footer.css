@@ -185,6 +185,10 @@ footer .div-on .on i{
     footer .container_2 .sec{
         margin-right: 0;
         margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     footer .container_2 .sec.aboutus,

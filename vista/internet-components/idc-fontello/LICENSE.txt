@@ -19,6 +19,15 @@ Font license info
    Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
+## Entypo
+
+   Copyright (C) 2012 by Daniel Bruce
+
+   Author:    Daniel Bruce
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://www.entypo.com
+
+
 ## Typicons
 
    (c) Stephen Hutchings 2012
@@ -37,15 +46,6 @@ Font license info
    Homepage:  http://somerandomdude.com/work/iconic/
 
 
-## Elusive
-
-   Copyright (C) 2013 by Aristeides Stathopoulos
-
-   Author:    Aristeides Stathopoulos
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://aristeides.com/
-
-
 ## Modern Pictograms
 
    Copyright (c) 2012 by John Caserta. All rights reserved.
@@ -55,22 +55,13 @@ Font license info
    Homepage:  http://thedesignoffice.org/project/modern-pictograms/
 
 
-## Web Symbols
+## Meteocons
 
-   Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
+   Copyright (C) 2012 by Alessio Atzeni
 
-   Author:    Just Be Nice studio
+   Author:    Alessio Atzeni
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.justbenicestudio.com/
-
-
-## Entypo
-
-   Copyright (C) 2012 by Daniel Bruce
-
-   Author:    Daniel Bruce
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.entypo.com
+   Homepage:  http://www.alessioatzeni.com
 
 
 ## MFG Labs
@@ -82,6 +73,15 @@ Font license info
    Homepage:  http://www.mfglabs.com/
 
 
+## Maki
+
+   Copyright (C) Mapbox, LCC
+
+   Author:    Mapbox
+   License:   BSD (https://github.com/mapbox/maki/blob/gh-pages/LICENSE.txt)
+   Homepage:  http://mapbox.com/maki/
+
+
 ## Zocial
 
    Copyright (C) 2012 by Sam Collins
@@ -91,13 +91,22 @@ Font license info
    Homepage:  http://zocial.smcllns.com/
 
 
-## Maki
+## Brandico
 
-   Copyright (C) Mapbox, LCC
+   (C) 2012 by Vitaly Puzrin
 
-   Author:    Mapbox
-   License:   BSD (https://github.com/mapbox/maki/blob/gh-pages/LICENSE.txt)
-   Homepage:  http://mapbox.com/maki/
+   Author:    Crowdsourced, for Fontello project
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  
+
+
+## Elusive
+
+   Copyright (C) 2013 by Aristeides Stathopoulos
+
+   Author:    Aristeides Stathopoulos
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://aristeides.com/
 
 
 ## Linecons
@@ -109,12 +118,12 @@ Font license info
    Homepage:  http://designmodo.com/linecons-free/
 
 
-## Brandico
+## Web Symbols
 
-   (C) 2012 by Vitaly Puzrin
+   Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
 
-   Author:    Crowdsourced, for Fontello project
+   Author:    Just Be Nice studio
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  
+   Homepage:  http://www.justbenicestudio.com/
 
 
