@@ -10,7 +10,7 @@
 <body>
     <div class="contenedor-proyecto">
         <div class="content-proyecto">
-            <img src="vista/imagenes/proyectsandservices/servicios/planificacion/2015/planificacion.png" alt="">
+            <img src="vista/imagenes/extras/img-1.png" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae aspernatur tempore eius? Architecto
                 libero mollitia atque animi maiores voluptatum. Beatae amet, quo eos magnam obcaecati nihil ratione
                 dolor ut eligendi?</p>
@@ -20,7 +20,7 @@
                 <p>Portafolio de Proyectos por Sector
                 </p>
             </div>
-            <div>
+            <div class="sector-style">
                 <a class="fancy" href="#">
                     <span class="top-key"></span>
                     <span class="text">Todos</span>
@@ -57,11 +57,11 @@
                     <span class="bottom-key-1"></span>
                     <span class="bottom-key-2"></span>
                 </a>
-                <form action="">
-                    <input type="search" placeholder="Buscar...">
-                    <input type="submit" value="Buscar">
-                </form>
             </div>
+            <form action="" class="buscador-tipo-2">
+                <input type="search" placeholder="Buscar...">
+                <input type="submit" value="Buscar">
+            </form>
         </div>
         <div class="content-proyecto">
             <div class="parent-button-div">

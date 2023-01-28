@@ -71,7 +71,7 @@
 header.abajo {
     background-color: #222;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
-    margin-top: -0px;
+    margin-top: -0px !important;
 }
 
 header.abajo ul {

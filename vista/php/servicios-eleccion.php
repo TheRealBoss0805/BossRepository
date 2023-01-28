@@ -9,6 +9,7 @@
 
     <body>
         <div class="contenedor-services-n">
+
             <div class="content-services-n">
                 <div>
                     <p>Lorem, ipsum dolorasas sit amet consectetur adipisicing elit
@@ -16,6 +17,7 @@
                     <img src="vista/imagenes/extras/img-1.png" alt="">
                 </div>
             </div>
+
             <div class="content-services-n">
                 <div class="services-n-description">
                     <span class="icon-location" style="color: #fff; font-size: 40px;"></span>
@@ -30,6 +32,7 @@
                     <p>Service - categoría</p>
                 </div>
             </div>
+
             <div class="content-services-n">
                 <div>
                     <img id="myImg" src="vista/imagenes/extras/img-1.png" alt="Imagen Seleccionada">
@@ -46,6 +49,7 @@
                         provident?</p>
                 </div>
             </div>
+
         </div>
     </body>
     <!--<script src="vista/js/imagen-modal-seleccion.js"></script>-->

@@ -26,7 +26,6 @@
                     </p>
                 </div>
             </div>
-            <img src="vista/imagenes/nosotros/medioambiente.png" alt="" class="img-us">
         </div>
 
         <div class="content-us">

@@ -143,6 +143,13 @@
     /*Declarado en la parte superior*/
 }
 
+@media (max-width: 1000px){
+    .content-us:nth-child(1){
+        margin-top: 90px;
+    }
+
+}
+
 /*PESTAÑA SERVICES*/
 .contenedor-services {
     /*Declarado en la parte superior*/
