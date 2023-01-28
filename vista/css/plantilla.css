@@ -179,6 +179,14 @@
     flex-direction: row !important;
 } 
 
+@media (max-width: 900px) {
+    .contenedor-blog{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
 /*Contenedor-Blog-Selección*/
 .contenedor-blog-seleccion {
     /*Declarado en la parte superior*/

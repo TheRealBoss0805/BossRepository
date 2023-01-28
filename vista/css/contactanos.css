@@ -1,17 +1,15 @@
 
 .contact .contacto-imagen{
-    width: 100%;
+    width: 95%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     border-radius: 20px;
     background: #ffffff;
     box-shadow: inset -50px 50px 90px #c4c4c4,
                 inset 50px -50px 90px #ffffff;
-    margin-bottom: 20px;
     border-left: 80px solid #253743;
     border-right: 80px solid #253743;
-    margin-top: 50px;
     position: relative;
     padding: 20px;
 }
@@ -63,7 +61,7 @@
   }
 
 .contact .imagen-contact-inicio{
-    width: 100%;
+    width: 95%;
     -moz-border-radius: 0 20% / 0 50%;
     -webkit-border-radius: 0 20% / 0 50%;
     border-radius: 0 20% / 0 50%;
@@ -77,42 +75,42 @@
 }
 
 .contact .contacto-p{
-    width: 70%;
-    text-align: center;
+    width: 100%;
+    text-align: start;
 }
 
 .contact .contacto-p p{
     color: #253743;
     font-family: "Montserrat", Sans-serif;
-    font-size: 70px;
+    font-size: 5.5vw;
     font-weight: 700;
-    line-height: 70px;
 }
 
 .contact .contacto-imagen img{
     width: 30%;
+    min-width: 150px;
     background: transparent;
     position: absolute;
     right: 0;
-    bottom: 40px;
+    top: -30px;
 }
 
 .contact{
     position: relative;
     min-height: 100vh;
-    padding: 0 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: #fff;
     width: 100% !important;
-    gap: 20px;
+    gap: 50px;
 }
 
 .contact .content{
     max-width: 800px;
     text-align: center;
+    width: 95%;
 }
 
 /*.contact .content h2{
@@ -123,7 +121,7 @@
 
 .contact .content p{
     color: #253743;
-    font-size: 1.5em;
+    font-size: 2vw;
     font-weight: 500;
     font-family: "Archivo", Sans-serif;
 }
@@ -131,11 +129,10 @@
 /*INFORMACIÓN DE CONTACTO*/
 
 .container{
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
 }
 
 .container .contactInfo{
@@ -318,28 +315,14 @@
     opacity: 1;
 }
 
-@media (max-width: 991px){
-    .contact{
-        padding: 50px;
-    }
-
-    .container{
-        flex-direction: column;
-    }
-
-    .container .contactInfo,
-    .container .contactForm{
-        width: 100%;
-    }
-}
-
 .contact .contact-mapBox{
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
-    width: 100%;
+    width: 95%;
     height: 500px;
+    padding-bottom: 40px;
 }
 
 .contact .contact-mapBox .mapBox{
@@ -354,4 +337,53 @@
 .mapBox iframe{
     width: 100%;
     height: 100%;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1130px){
+    .contact .imagen-contact-inicio{
+        margin-top: 90px;
+    }
+    .contact .content p{
+        font-size: 3vw;
+    }
+    .contact .container .contactInfo{
+        transform: scale(0.9);
+    }
+    .contact .container .contactForm{
+        min-width: 377px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .contact .container .contactInfo{
+        min-width: 571px;
+    }
+}
+
+@media (max-width: 960px){
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact .container .contactInfo{
+        min-width: 95% !important;
+    }
+    .contact .container .contactForm{
+        width: 70%;
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 650px){
+    .contact .content p{
+        font-size: 4vw;
+    }
+    .contact .contact-mapBox{
+        height: 350px;
+    }
+    .contact .container .contactForm{
+        min-width: 95%;
+    }
 }

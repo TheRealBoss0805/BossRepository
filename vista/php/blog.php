@@ -43,7 +43,7 @@
             </div>
 
 
-            <div class="blog-1">
+            <div class="blog-1 no-responsive">
                 <h1>Posteos Recientes</h1>
                 <div class="div-posteosR">
                     <div>
@@ -60,7 +60,7 @@
             </div>
 
 
-            <div class="blog-1">
+            <div class="blog-1 no-responsive">
                 <h1>Redes Sociales</h1>
                 <div>
                     <a href="#" class="icon-whatsapp" style="--color: #1d9337;" title="Whatsapp"></a>
@@ -75,7 +75,7 @@
         <div class="content-blog-2">
             <div class="blog-2">
                 <div>
-                    <h1>Archivos del Blog</h1>
+                    <h1>Archivos</h1>
                     <a href="#">Año 2023</a>
                     <a href="#">Año 2022</a>
                     <a href="#">Año 2021</a>
@@ -122,6 +122,36 @@
                 <video src="">
 
                 </video>
+            </div>
+        </div>
+        <div class="content-blog-1 responsive">
+            <div class="blog-1 no-responsive">
+            </div>
+
+            <div class="blog-1">
+                <h1>Posteos Recientes</h1>
+                <div class="div-posteosR">
+                    <div>
+                        <img src="vista/imagenes/extras/img-1.png" alt="" class="img-posteosR">
+                        <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Fuga, nihil corporis. Consequuntur ullam, repellat
+                            praesentium dignissimos eveniet perferendis ut.</a>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat expedita hic ad at
+                            soluta iste deleniti veli.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-1">
+                <h1>Redes Sociales</h1>
+                <div>
+                    <a href="#" class="icon-whatsapp" style="--color: #1d9337;" title="Whatsapp"></a>
+                    <a href="#" class="icon-twitter" style="--color: #2990be;" title="Twitter"></a>
+                    <a href="#" class="icon-linkedin-rect" style="--color: #00586e;" title="Linkedin"></a>
+                    <a href="#" class="icon-instagram" style="--color: #d33641;" title="Instagram"></a>
+                </div>
             </div>
         </div>
 
