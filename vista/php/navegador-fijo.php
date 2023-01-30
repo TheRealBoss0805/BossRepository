@@ -46,10 +46,11 @@
             <ul class="ul-responsive">
                 <li class="nav-li" id="inicio"><a href="inicio">Inicio</a></li>
                 <li class="nav-li" id="nosotros">
-                    <a>Nosotros</a><span class="icon-plus no-responsive"></span>
+                    <a>Nosotros</a>
+                    <span class="icon-plus no-responsive"></span>
                     <input type="checkbox" id="check2">
                     <label for="check2" class="label-check la">
-                        <i class="icon-plus responsive"></i>
+                        <i class="icon-plus responsive" id="forma"></i>
                     </label>
                     <ul>
                         <li><a href="nosotros">Quiénes Somos</a></li>
@@ -60,7 +61,7 @@
                     <a>Servicios</a><span class="icon-plus no-responsive"></span>
                     <input type="checkbox" id="check3">
                     <label for="check3" class="label-check la">
-                        <i class="icon-plus responsive"></i>
+                        <i class="icon-plus responsive" id="forma1"></i>
                     </label>
                     <ul>
                         <li><a href="servicios">Planificación</a></li>
@@ -73,7 +74,7 @@
                     <a>Proyectos</a><span class="icon-plus no-responsive"></span>
                     <input type="checkbox" id="check4">
                     <label for="check4" class="label-check la">
-                        <i class="icon-plus responsive"></i>
+                        <i class="icon-plus responsive" id="forma2"></i>
                     </label>
                     <ul>
                         <li><a href="proyecto-tipo">Por Tipo</a></li>
