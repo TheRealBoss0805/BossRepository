@@ -1,0 +1,128 @@
+.content-chatbot {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    box-shadow:  3px 3px 2px #a7a4a4, -2px 2px 1px #a7a4a4, -2px -2px 1px #a7a4a4, 2px -2px 1px #a7a4a4;
+}
+
+.contenedor-chatbot input#bossito {
+    display: none;
+}
+
+.contenedor-chatbot label.theBoss {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 9;
+}
+
+.contenedor-chatbot label img {
+    width: 100%;
+    filter: contrast(1.3);
+    cursor: pointer;
+}
+
+.contenedor-chatbot .content-chatbot {
+    visibility: hidden;
+}
+
+.contenedor-chatbot #bossito:checked~.content-chatbot {
+    visibility: visible;
+}
+
+.content-chatbot .options {
+    height: 60px;
+    width: 100%;
+    background: rgb(71, 17, 17);
+    background: radial-gradient(circle, rgba(71, 17, 17, 1) 0%, rgba(121, 8, 30, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.content-chatbot .options div, .content-chatbot .options button{
+    height: 40px;
+    background: rgb(118, 31, 31);
+    border-radius: 5px;
+}
+
+.content-chatbot .options div{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-chatbot .options div img{
+    height: 100%;
+}
+
+.content-chatbot .options div span{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.content-chatbot .options div label .green{
+    color: #379145;
+}
+
+.content-chatbot .options button{
+    width: 11%;
+    cursor: pointer;
+    border: none;
+}
+
+.content-chatbot .options button:hover{
+    filter: contrast(1.3);
+}
+
+.content-chatbot .options button i{
+    color: #fff;
+}
+
+.contenedor-chatbot .content-chatbot .viewMessages{
+    width: 100%;
+    height: 480px;
+    background: #fff;
+}
+
+.contenedor-chatbot .content-chatbot .interaction{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-chatbot .content-chatbot .interaction input{
+    width: 75%;
+    height: 40px;
+    background: rgb(234, 228, 228);
+    border: none;
+    padding: 10px;
+}
+
+.contenedor-chatbot .content-chatbot .interaction input:focus{
+    outline: none;
+}
+
+.contenedor-chatbot .content-chatbot .interaction span{
+    width: 12%;
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgb(118, 31, 31);
+    border-radius: 0 5px 5px 0;
+}
