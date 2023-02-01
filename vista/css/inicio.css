@@ -550,19 +550,23 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    border: 3px solid red;
 }
 
-.slide3 .swiper {
+.slide3 .maximum {
     width: 1000px;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid blue;
+    overflow: hidden;
 }
 
 .slide3 .swiper .card {
     position: relative;
     background: #fff;
+    border: 3px solid magenta;
 }
 
 .slide3 .swiper .card::before {
@@ -603,7 +607,7 @@ input:checked~#despegar-profession {
     width: 100%;
 }
 
-.slide3 .swiper .card .icon-plus-1 {
+.slide3 .swiper .card label div{
     position: absolute;
     top: 0px;
     right: 0;
@@ -615,7 +619,7 @@ input:checked~#despegar-profession {
     transition: all 0.2s ease-in;
 }
 
-.slide3 .swiper .card .icon-plus-1:hover {
+.slide3 .swiper .card label div.red{
     background: #fff;
     color: #942222;
 }
@@ -692,7 +696,26 @@ input:checked~#despegar-profession {
     height: 90%;
 }
 
-@media (max-width: 1100px) {}
+    .slide3 div.medium{
+        width: 660px !important;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid blue;
+        overflow: hidden;
+    }  
+
+    .slide3 div.minimum{
+        width: 330px !important;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid blue;
+        overflow: hidden;
+    } 
+
 
 /*INICIO 4*/
 

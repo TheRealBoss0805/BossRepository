@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="contenedor-inicio">
+    <div class="contenedor-inicio" id="inicioPadre">
 
         <!--INICIO 1-->
 
@@ -284,13 +284,13 @@
                 <p>Últimos trabajos realizados por la Empresa.</p>
             </div>
             <section class="slide3">
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper maximum" id="swiperGtfo">
                     <div class="swiper-wrapper content">
 
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession1">
                             <label for="name-profession1">
-                                <div class="icon-plus-1" id="icon-1"></div>
+                                <div class="icon-plus" id="icon-1"></div>
                             </label>
 
                             <div class="card-content" id="despegar-profession">
@@ -312,7 +312,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession2">
                             <label for="name-profession2">
-                                <div class="icon-plus-1" id="icon-2"></div>
+                                <div class="icon-plus" id="icon-2"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -332,7 +332,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession3">
                             <label for="name-profession3">
-                                <div class="icon-plus-1" id="icon-3"></div>
+                                <div class="icon-plus" id="icon-3"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -352,7 +352,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession4">
                             <label for="name-profession4">
-                                <div class="icon-plus-1" id="icon-4"></div>
+                                <div class="icon-plus" id="icon-4"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -372,7 +372,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession5">
                             <label for="name-profession5">
-                                <div class="icon-plus-1" id="icon-5"></div>
+                                <div class="icon-plus" id="icon-5"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -392,7 +392,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession6">
                             <label for="name-profession6">
-                                <div class="icon-plus-1" id="icon-6"></div>
+                                <div class="icon-plus" id="icon-6"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -412,7 +412,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession7">
                             <label for="name-profession7">
-                                <div class="icon-plus-1" id="icon-7"></div>
+                                <div class="icon-plus" id="icon-7"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -432,7 +432,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession8">
                             <label for="name-profession8">
-                                <div class="icon-plus-1" id="icon-8"></div>
+                                <div class="icon-plus" id="icon-8"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">
@@ -452,7 +452,7 @@
                         <div class="swiper-slide card">
                             <input type="checkbox" id="name-profession9">
                             <label for="name-profession9">
-                                <div class="icon-plus-1" id="icon-9"></div>
+                                <div class="icon-plus" id="icon-9"></div>
                             </label>
                             <div class="card-content" id="despegar-profession">
                                 <div class="image">

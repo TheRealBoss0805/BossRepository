@@ -1,55 +1,44 @@
-window.addEventListener("scroll", function () {
+
+/*para la cabecera fija*/
+
+const cabecera = () => {
     var header = document.querySelector("header");
     header.classList.toggle("abajo", window.scrollY > 0);
-})
-/*
-var now, then;
+}
 
-now = document.getElementsByClassName("responsive");
+window.addEventListener("scroll", cabecera);
 
-if(now.style.){
-
-}*/
 
 /*CODIGO PARA EL CAMBIO DE ICONO (+) (-) CUANDO EL INPUT ESTÉ CHECKEADO*/
 
+let checkbox = document.getElementById("check2");
+let checkbox2 = document.getElementById("check3");
+let checkbox3 = document.getElementById("check4");
 
-
-var checkbox = document.getElementById("check2");
-var forma = document.getElementById("forma");
-checkbox.addEventListener("click", validacheckbox, false);
-function validacheckbox(){
-    var checkeado = checkbox.checked;
-    if(checkeado){
-        forma.classList.replace("icon-plus","icon-minus");
-    }
-    else{
-        forma.classList.replace("icon-minus","icon-plus");
-    }
-}
-/*
-var checkbox1 = document.getElementById("check3");
-var forma1 = document.getElementById("forma1")
-checkbox1.addEventListener("change", validacheckbox1, false);
-function validacheckbox1(){
-    var checkeado = checkbox1.checked;
-    if(checkeado){
-        forma1.classList.replace("icon-plus","icon-minus");
-    }
-    else{
-        forma1.classList.replace("icon-minus","icon-plus");
-    }
+const validarcheck = () => {
+    let forma = document.getElementById("forma");
+    let checkeado = checkbox.checked;
+    checkeado ? forma.classList.replace("icon-plus", "icon-minus") : forma.classList.replace("icon-minus", "icon-plus");
 }
 
-var checkbox2 = document.getElementById("check4");
-var forma2 = document.getElementById("forma2")
-checkbox2.addEventListener("change", validacheckbox2, false);
-function validacheckbox2(){
-    var checkeado = checkbox2.checked;
-    if(checkeado){
-        forma2.classList.replace("icon-plus","icon-minus");
-    }
-    else{
-        forma2.classList.replace("icon-m9inus","icon-plus");
-    }
-}*/
+checkbox.addEventListener("change", validarcheck);
+
+
+const validarcheck2 = () => {
+    let forma = document.getElementById("forma1");
+    let checkeado = checkbox2.checked;
+    checkeado ? forma.classList.replace("icon-plus", "icon-minus") : forma.classList.replace("icon-minus", "icon-plus");
+}
+
+checkbox2.addEventListener("change", validarcheck2);
+
+
+const validarcheck3 = () => {
+    let forma = document.getElementById("forma2");
+    let checkeado = checkbox3.checked;
+    checkeado ? forma.classList.replace("icon-plus", "icon-minus") : forma.classList.replace("icon-minus", "icon-plus");
+}
+
+checkbox3.addEventListener("change", validarcheck3);
+
+
