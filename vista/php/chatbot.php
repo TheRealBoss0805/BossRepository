@@ -9,7 +9,7 @@
     <body>
         
         <div class="contenedor-chatbot">
-            <input type="checkbox" id="bossito">
+            <input type="checkbox" id="bossito" class="cambiarAspecto">
             <label for="bossito" class="theBoss">
                 <img src="vista/imagenes/chatbot/botIcono.png" alt="">
             </label>
@@ -25,7 +25,7 @@
                     <button>
                         <i class="icon-volume-off-4" id="volumen"></i>
                     </button>
-                    <button id="minimizar">
+                    <button class="cambiarAspecto">
                         <i class="icon-minus"></i>
                     </button>
                     <button>

@@ -152,7 +152,7 @@ const reziseWindow = () =>{
 }
 
 window.addEventListener("mouseover", reziseWindow);
-
+reziseWindow();
 
 
 var swiper = new Swiper(".mySwiper", hola = {
@@ -322,6 +322,7 @@ const desplegarCambiar4 = () =>{
     let desplegado = despliege4.checked;
     desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
     iconodesp.classList.toggle("red");
+    
 }
 
 despliege4.addEventListener("change", desplegarCambiar4);

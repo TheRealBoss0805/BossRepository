@@ -8,17 +8,38 @@
 </head>
 
 <body>
+    <?php
+        if(!isset($_GET["id"]) || $_GET["id"] > 4){
+            echo '<script>
+                window.location = "inicio";
+            </script>';
+            return;
+        }
+    ?>
 
     <div class="contenedor-services">
+
+        <?php
+    $item = "id_servicio";
+    $valor = $_GET["id"];
+    $respuesta = ControladorServicios::ctrMostrarServicio($item, $valor);
+    $separador = "<br>";
+    $cadena = $respuesta["descripcion"];
+    $stringSeparado = explode($separador, $cadena);
+
+    $respuesta1 = ControladorServicios::ctrMostrarItem($item, $valor);
+    ?>
 
         <div class="content-services-1">
             <div class="services">
                 <h2>Nuestros servicios</h2>
-                <h1>Planificación</h1>
-                <div>
-                    <p>Instituto de Consultoría S.A. colabora con las diferentes entidades en el desarrollo de políticas e instrumentos de planificación del territorio. Para ello desarrolla tres estrategias básicas: la planificación del uso de la tierra; equilibrio espacial en los proyectos de inversión social y económica; y la organización funcional y administrativa óptima del territorio.
-                        Para el desarrollo de estas actividades contamos con especialistas en Planificación Regional, Planificación Urbana, Zonificación, Edafología, Vulnerabilidad y Riesgos, Planificación económica y Ambiental, y especialistas en Sistemas de Información Geográfica.
-                    </p>
+                <h1><?=$respuesta["nombre"]?></h1>
+                <div class="content-p">
+                    <?php
+                        foreach($stringSeparado as $parrafo){
+                            echo "<p>".$parrafo."</p>";
+                        }
+                    ?>
                 </div>
                 <h2>Conoce Nuestros Proyectos</h2>
             </div>
@@ -66,32 +87,45 @@
                     </li>
                 </ul>
             </div>
-            <img src="vista/imagenes/extras/img-1.png" alt="">
+            <img src="<?=$respuesta["portada"]?>" alt="">
         </div>
+        <?php
+          foreach($respuesta1 as $item){
+            $cadena1 = $item["descripcion"];
+            $stringSeparado1 = explode($separador, $cadena1);
 
-        <div class="content-services-2">
+            $cad = $stringSeparado1[0];
 
+            $caracteres = 150;
 
-            <div class="services">
-                <div class="services-1">
-                    <div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            $cadenaAcortada = substr($cad, 0, $caracteres).'...';
+
+            $idServItem = $item["id_serv_item"];
+
+            echo "
+                <div class='content-services-2'>
+                    <div class='services'>
+                        <div class='services-1'>
+        
+                            <div>
+                                <p>".$item["titulo"]."</p>
+                            </div>
+            
+                            <div>
+                                <p>".$cadenaAcortada."</p>
+                            </div>
+                            <div>
+                                <a href='index.php?ruta=servicios-eleccion&idItem=$idServItem' class='btn-services'>Ver Proyecto</a>
+                            </div>
+                        </div>
+                        <div class='services-2'>
+                            <img src='".$item["foto"]."' alt''>
+                        </div>
                     </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div>
-                        <a href="servicios-eleccion" class="btn-services">Ver Proyecto</a>
-                    </div>
-                </div>
-                <div class="services-2">
-                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                </div>
-            </div>
 
-
-        </div>
-
+                </div>";
+        }
+        ?>
     </div>
 
 </body>

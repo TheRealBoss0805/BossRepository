@@ -8,13 +8,22 @@
     </head>
 
     <body>
+
+    <?php
+        $item = "id_serv_item";
+        $valor = $_GET["idItem"];
+        $respuesta = ControladorServicios::ctrMostrarItem($item, $valor);
+        $respItem = $respuesta[0];
+        $separador ="<br>";
+        $cadena = $respItem["descripcion"];
+        $stringSeparado = explode($separador, $cadena);
+    ?>
         <div class="contenedor-services-n">
 
             <div class="content-services-n">
                 <div>
-                    <p>Lorem, ipsum dolorasas sit amet consectetur adipisicing elit
-                        Explicabo deleniti.</p>
-                    <img src="vista/imagenes/extras/img-1.png" alt="">
+                    <p><?=$respItem["titulo"]?></p>
+                    <img src="<?=$respItem['foto']?>" alt="">
                 </div>
             </div>
 
@@ -35,7 +44,7 @@
 
             <div class="content-services-n">
                 <div>
-                    <img id="myImg" src="vista/imagenes/extras/img-1.png" alt="Imagen Seleccionada">
+                    <img id="myImg" src="<?=$respItem['foto']?>" alt="Imagen Seleccionada">
                     <div id="myModal" class="modal">
                         <span class="close">x</span>
                         <img class="modal-content" id="img01">
@@ -44,9 +53,13 @@
                 </div>
                 <div>
                     <h1>sobre el proyecto</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, iure sed ut repudiandae sit magni
-                        aliquam! Esse autem nesciunt ut libero! Consequatur enim ducimus minima vitae saepe, quae magnam
-                        provident?</p>
+                    
+                    <?php
+                        foreach($stringSeparado as $p){
+                            echo "<p>".$p."</p>";
+                        }
+                    ?>
+                    
                 </div>
             </div>
 

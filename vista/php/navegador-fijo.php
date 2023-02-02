@@ -64,10 +64,10 @@
                         <i class="icon-plus responsive" id="forma1"></i>
                     </label>
                     <ul>
-                        <li><a href="servicios">Planificación</a></li>
-                        <li><a href="servicios">Pre - Inversión</a></li>
-                        <li><a href="servicios">Expedientes de Obra</a></li>
-                        <li><a href="servicios" style="border-bottom: none;">Supervisión</a></li>
+                        <li><a href="index.php?ruta=servicios&id=1">Planificación</a></li>
+                        <li><a href="index.php?ruta=servicios&id=2">Pre - Inversión</a></li>
+                        <li><a href="index.php?ruta=servicios&id=3">Expedientes de Obra</a></li>
+                        <li><a href="index.php?ruta=servicios&id=4" style="border-bottom: none;">Supervisión</a></li>
                     </ul>
                 </li>
                 <li class="nav-li" id="proyectos">
