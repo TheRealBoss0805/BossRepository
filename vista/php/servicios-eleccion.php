@@ -44,7 +44,7 @@
 
             <div class="content-services-n">
                 <div>
-                    <img id="myImg" src="<?=$respItem['foto']?>" alt="Imagen Seleccionada">
+                    <img id="myImg" src="<?=$respItem['foto']?>" alt="<?=$respItem["titulo"]?>">
                     <div id="myModal" class="modal">
                         <span class="close">x</span>
                         <img class="modal-content" id="img01">

@@ -89,7 +89,8 @@
             </div>
             <img src="<?=$respuesta["portada"]?>" alt="">
         </div>
-        <?php
+        <div class="content-services-2">
+            <?php
           foreach($respuesta1 as $item){
             $cadena1 = $item["descripcion"];
             $stringSeparado1 = explode($separador, $cadena1);
@@ -101,9 +102,7 @@
             $cadenaAcortada = substr($cad, 0, $caracteres).'...';
 
             $idServItem = $item["id_serv_item"];
-
             echo "
-                <div class='content-services-2'>
                     <div class='services'>
                         <div class='services-1'>
         
@@ -121,11 +120,10 @@
                         <div class='services-2'>
                             <img src='".$item["foto"]."' alt''>
                         </div>
-                    </div>
-
-                </div>";
+                    </div>";
         }
         ?>
+        </div>
     </div>
 
 </body>

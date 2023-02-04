@@ -5,20 +5,86 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    z-index: 10;
-    box-shadow:  3px 3px 2px #a7a4a4, -2px 2px 1px #a7a4a4, -2px -2px 1px #a7a4a4, 2px -2px 1px #a7a4a4;
+    box-shadow:  3px 3px 2px #737373, -2px 2px 1px #636363, -2px -2px 1px #737373, 2px -2px 1px #818181;
 }
 
-.contenedor-chatbot input#bossito {
+/*EFECTO PARA LA IMAGEN DEL CHATBOT*/
+
+.button {
+  position: absolute;
+  border: none;
+  background: none;
+  }
+
+.button::before {
+  content: '';
+  border: 8px solid #e91e63;
+  box-shadow: 0 0 60px #e91e63;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+
+.button::after {
+  content: '';
+  border-radius: 100%;
+  border: 8px solid #e91e63;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  animation: ring 1.1s infinite;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 180px;
+    height: 180px;
+    opacity: 0;
+  }
+}
+
+/*END*/
+
+input#bossito {
     display: none;
 }
 
+label.theBoss {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label img {
+    width: 100%;
+    filter: contrast(1.3);
+    cursor: pointer;
+}
+
+/*.cambiarAspecto:checked~.contenedor-chatbot{
+    display: flex;
+}*/
+
+/*
 .contenedor-chatbot label.theBoss {
     width: 120px;
     height: 120px;
-    position: absolute;
-    z-index: 9;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
 }
 
 .contenedor-chatbot label img {
@@ -28,12 +94,12 @@
 }
 
 .contenedor-chatbot .content-chatbot {
-    visibility: hidden;
+    display: none;
 }
 
 .contenedor-chatbot #bossito:checked~.content-chatbot {
-    visibility: visible;
-}
+    display: flex;
+}*/
 
 .content-chatbot .options {
     height: 60px;
