@@ -38,7 +38,7 @@
             $respuesta1 = ControladorProyecto::ctrMostrarTipoSector($item1, $valor1);
             $clase = ($_GET["id"] == 2)? 'sector-style':'';
             echo "<div class='".$clase."'>
-            <a class='fancy' href='index.php?ruta=proyectos&id=".$valor1."'>
+            <a class='fancy btnTodos active' idCategoria=".$_GET["id"]."'>
                 <span class='top-key'></span>
                 <span class='text'>Todos</span>
                 <span class='bottom-key-1'></span>
@@ -47,7 +47,7 @@
 
             foreach($respuesta1 as $tipo){
                 echo"
-                <a class='fancy btnFiltro' idFiltro='".$tipo["id_proy_ts"]."'>
+                <a class='fancy btnFiltro' idFiltro='".$tipo["id_proy_ts"]." idCategoria='".$tipo["id_proyecto"]."'>
                 <span class='top-key'></span>
                 <span class='text'>".$tipo["nombre"]."</span>
                 <span class='bottom-key-1'></span>

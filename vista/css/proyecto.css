@@ -227,6 +227,33 @@
     right: 0;
     width: 0;
 }
+/*=====PERMITE PINTAR EL FILTRO SELECCIONADO =======*/
+.fancy.active {
+    color: white;
+    background: #253743;
+}
+
+.fancy.active::before {
+    width: 13px;
+    background: white;
+}
+
+.fancy.active .text {
+    color: white;
+    padding-left: 1.5em;
+}
+
+.fancy.active .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancy.active .bottom-key-1,
+.fancy.active .bottom-key-2 {
+    right: 0;
+    width: 0;
+}
+/*============*/
 
 /*END BUTTONS*/
 

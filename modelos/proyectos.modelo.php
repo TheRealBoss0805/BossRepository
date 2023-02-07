@@ -2,7 +2,7 @@
     require_once "conexion.php";
 
     class ModeloProyectos{
-        /*MOSTRAR PROYECTOS*/
+        /*MOSTRAR INFO DE POR TIPO O POR SECTOR*/
         
         static public function mdlMostrarProyectoSeccion($tabla, $item, $valor){
             if($item != null){
@@ -15,7 +15,7 @@
             $stmt = null;
         }
 
-        /*MOSTRAR ITEMS DE PROYECTOS*/
+        /*MOSTRAR LOS ITEMS*/
         static public function mdlMostrarItem($tabla, $item, $valor){
             if($item != null){
                 $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY id_proyec_item ASC");
@@ -27,7 +27,7 @@
             $stmt = null;
         }
 
-        /*MOSTRAR TIPOS Y SECTORES*/
+        /*MOSTRAR LOS FILTRO DE QUE HAY POR SECTO O POR TIPO*/
         static public function mdlMostrarTipoSector($tabla, $item, $valor){
             if($item != null){
                 $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY id_proy_ts ASC");
