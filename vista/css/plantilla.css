@@ -79,7 +79,7 @@
 }
 
 .inicio-3 {
-    justify-content: flex-start !important;
+    justify-content: center !important;
 }
 
 @media (max-width: 1120px){

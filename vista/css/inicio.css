@@ -288,11 +288,12 @@
     background-color: #851a3b;
 }
 
-@media (max-width: 850px){
-    .caption a h1{
+@media (max-width: 850px) {
+    .caption a h1 {
         font-size: 2.5vw !important;
     }
-    .caption a p{
+
+    .caption a p {
         font-size: 2vw !important;
     }
 
@@ -446,6 +447,7 @@
     padding: 15px;
     background: #fff;
     border-radius: 0 0 20px 20px;
+    box-shadow: inset -1px -1px 3px #3b3b3b, inset 1px 1px 3px #3b3b3b;
 }
 
 .description-service h3 {
@@ -531,11 +533,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 40px !important;
     }
 
     .inicio-2 {
-        background: rgb(250,250,250);
-        background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgb(247, 216, 222) 100%);
+        background: white;
     }
 }
 
@@ -550,7 +552,6 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    border: 3px solid red;
 }
 
 .slide3 .maximum {
@@ -559,14 +560,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid blue;
     overflow: hidden;
 }
 
 .slide3 .swiper .card {
     position: relative;
     background: #fff;
-    border: 3px solid magenta;
 }
 
 .slide3 .swiper .card::before {
@@ -607,21 +606,22 @@ input:checked~#despegar-profession {
     width: 100%;
 }
 
-.slide3 .swiper .card label div{
+.slide3 .swiper .card label div {
     position: absolute;
     top: 0px;
     right: 0;
     font-size: 30px;
-    background: #942222;
-    color: #fff;
+    background: #fff;
+    color: #942222;
     z-index: 100;
     cursor: pointer;
     transition: all 0.2s ease-in;
+    box-shadow: inset -1px -1px 2px #666666;
 }
 
-.slide3 .swiper .card label div.red{
-    background: #fff;
-    color: #942222;
+.slide3 .swiper .card label div.red {
+    background: #942222;
+    color: #fff;
 }
 
 .slide3 .card .image {
@@ -694,27 +694,43 @@ input:checked~#despegar-profession {
 
 .inicio-3 .muneco-major {
     height: 90%;
+    border: 2px solid purple;
 }
 
-    .slide3 div.medium{
-        width: 660px !important;
-        height: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 3px solid blue;
-        overflow: hidden;
-    }  
+.slide3 div.medium {
+    width: 660px !important;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
-    .slide3 div.minimum{
-        width: 330px !important;
-        height: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 3px solid blue;
-        overflow: hidden;
-    } 
+.slide3 div.minimum {
+    width: 330px !important;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (max-width: 1060px) {
+    .inicio-3 .muneco-major {
+        display: none;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .swiper-pagination-bullet {
+        height: 7px;
+        width: 30px;
+        border-radius: 25px;
+        background: #253743;
+    }
+
+}
 
 
 /*INICIO 4*/
@@ -1303,6 +1319,13 @@ input:checked~#despegar-profession {
         grid-template-columns: auto auto;
     }
 }
+
+@media (max-width: 650px) {
+    .contenedor-5 .content-5 .content-5-min1 p{
+        font-size: 2vw;
+    }
+}
+
 
 @media (max-width: 580px) {
     .contenedor-5-burbuja {

@@ -7,6 +7,15 @@
 </html>
 
 <body>
+    <?php
+        $item = "id_proyec_item";
+        $valor = $_GET["id"];
+        $respuesta = ControladorProyecto::ctrMostrarItem($item, $valor);
+        $respItem = $respuesta[0];
+        $separador = "<br>";
+        $cadena = $respItem["descripcion"];
+        $stringSeparado = explode($separador, $cadena);
+    ?>
     <div class="contenedor-eleccion-proyecto">
         <div class="content-eleccion-proyecto">
             <p>lorem quartium larala nomequitiuom re</p>
@@ -14,7 +23,7 @@
         </div>
         <div class="content-eleccion-proyecto">
             <div>
-                <img id="myImg" src="vista/imagenes/extras/img-1.png" alt="Imagen Seleccionada">
+                <img id="myImg" src="vista/imagenes/extras/img-1.png" alt="<?=$respItem["titulo"]?>">
                 <div id="myModal" class="modal">
                     <span class="close">x</span>
                     <img class="modal-content" id="img01">
@@ -22,12 +31,13 @@
                 </div>
             </div>
             <div>
-                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </h1>
+                <h1><?=$respItem["titulo"]?></h1>
                 <span class="linea-span"></span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur vel iure totam impedit recusandae
-                    quo debitis ratione dolores. Neque quia necessitatibus dolor ea laudantium quidem voluptatum
-                    provident vel iste omnis!</p>
+                <?php
+                    foreach($stringSeparado as $p){
+                            echo "<p>".$p."</p>";
+                    }
+                ?>
             </div>
         </div>
     </div>

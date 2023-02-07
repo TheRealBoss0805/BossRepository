@@ -77,8 +77,8 @@
                         <i class="icon-plus responsive" id="forma2"></i>
                     </label>
                     <ul>
-                        <li><a href="proyecto-tipo">Por Tipo</a></li>
-                        <li><a href="proyecto-sector" style="border-bottom: none;">Por Sector</a></li>
+                        <li><a href="index.php?ruta=proyectos&id=1">Por Tipo</a></li>
+                        <li><a href="index.php?ruta=proyectos&id=2" style="border-bottom: none;">Por Sector</a></li>
                     </ul>
                 </li>
                 <li class="nav-li"><a href="blog">Blog</a></li>

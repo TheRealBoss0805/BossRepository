@@ -2,7 +2,9 @@
 
 require_once "controlador/plantilla.controlador.php";
 require_once "controlador/servicios.controlador.php";
+require_once "controlador/proyectos.controlador.php";
 require_once "modelos/servicios.modelo.php";
+require_once "modelos/proyectos.modelo.php";
 /*require_once "controladores/usuarios.controlador.php";
 require_once "controladores/categorias.controlador.php";
 require_once "controladores/productos.controlador.php";

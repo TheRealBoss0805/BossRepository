@@ -190,8 +190,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service"
-                        style="box-shadow: inset -5px -5px 7px #9b133e, inset 5px 5px 7px #9b133e;">
+                    <div class="description-service">
                         <h3 style="color: #253743;">PLANIFICACIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -215,8 +214,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service"
-                        style="box-shadow: inset -5px -5px 7px #8011a4, inset 5px 5px 7px #8011a4;">
+                    <div class="description-service">
                         <h3 style="color: #253743;">PRE-INVERSIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -239,8 +237,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service"
-                        style="box-shadow: inset -5px -5px 7px #1289bc, inset 5px 5px 7px #1289bc;">
+                    <div class="description-service">
                         <h3 style="color: #253743;">EXPEDIENTES DE OBRA</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat
@@ -263,8 +260,7 @@
                             </div>
                         </div>
                     </a>
-                    <div class="description-service"
-                        style="box-shadow: inset -5px -5px 7px #aa8e1c, inset 5px 5px 7px #aa8e1c;">
+                    <div class="description-service">
                         <h3 style="color: #253743;">SUPERVISIÓN</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Necessitatibus repellat

@@ -56,6 +56,7 @@
   ======================================-->
 
     <!-- jQuery 3 -->
+    <script src="vista/bower_components/jquery/dist/jquery.min.js"></script>
 
     <!-- Bootstrap 3.3.7 -->
 
@@ -96,8 +97,7 @@
          $_GET["ruta"] == "contactanos" ||
          $_GET["ruta"] == "servicios" ||
          $_GET["ruta"] == "servicios-eleccion" ||
-         $_GET["ruta"] == "proyecto-tipo" ||
-         $_GET["ruta"] == "proyecto-sector" ||
+         $_GET["ruta"] == "proyectos" ||
          $_GET["ruta"] == "proyecto-eleccion" ||
          $_GET["ruta"] == "servicios-sector" ||
          $_GET["ruta"] == "blog" ||
@@ -152,5 +152,6 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="vista/js/inicio.js"></script>
 <script src="vista/js/imagen-modal-seleccion.js"></script>
+<script src="vista/js/proyecto.js"></script>
 
 </html>
