@@ -177,10 +177,15 @@
             <div class="content-service contenedores">
 
                 <div class="service-1 div">
-                    <a href="#" class="hola">
+                    <a href="index.php?ruta=servicios&id=1" class="hola">
                         <div class="glass-div"></div>
                         <span>
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                            <?php
+                $item = "id_servicio";
+                $valor = 1;
+                $respuesta = ControladorServicios::ctrMostrarServicio($item, $valor);
+            ?>
+                            <img src="<?=$respuesta["portada"]?>" alt="">
                         </span>
                         <div class="div-plus" style="background: #9b133e;">
                             <div class="icon-plus-1"></div>
@@ -200,11 +205,15 @@
                 </div>
 
                 <div class="service-2 div">
-                    <a href="#">
+                    <a href="index.php?ruta=servicios&id=2">
                         <div class="glass-div">
                         </div>
                         <span>
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                        <?php
+                $valor2 = 2;
+                $respuesta2 = ControladorServicios::ctrMostrarServicio($item, $valor2);
+            ?>
+                            <img src="<?=$respuesta2["portada"]?>" alt="">
                         </span>
                         <div class="div-plus" style="background: #8011a4;">
                             <div class="icon-plus-1"></div>
@@ -224,10 +233,14 @@
                 </div>
 
                 <div class="service-3 div">
-                    <a href="#">
+                    <a href="index.php?ruta=servicios&id=3">
                         <div class="glass-div"></div>
                         <span>
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                        <?php
+                $valor3 = 3;
+                $respuesta3 = ControladorServicios::ctrMostrarServicio($item, $valor3);
+            ?>
+                            <img src="<?=$respuesta3["portada"]?>" alt="">
                         </span>
                         <div class="div-plus" style="background: #1289bc;">
                             <div class="icon-plus-1"></div>
@@ -247,10 +260,14 @@
                 </div>
 
                 <div class="service-4 div">
-                    <a href="#">
+                    <a href="index.php?ruta=servicios&id=4">
                         <div class="glass-div"></div>
                         <span>
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
+                        <?php
+                $valor4 = 4;
+                $respuesta4 = ControladorServicios::ctrMostrarServicio($item, $valor4);
+            ?>
+                            <img src="<?=$respuesta4["portada"]?>" alt="">
                         </span>
                         <div class="div-plus" style="background: #aa8e1c;">
                             <div class="icon-plus-1"></div>
@@ -576,7 +593,7 @@
                 <div class="content-5">
                     <div class="content-5-min1">
                         <p>Promover la Inversión Pública y Privada en un marco<br> de Competencia y Eficiencia.</p>
-                        <img src="vista/imagenes/valores/Mision.png" alt="" class="valor1">
+                        <img src="vista/imagenes/inicio/valores/Mision.png" alt="" class="valor1">
                     </div>
                     <div class="content-5-min2 min2-1">
                         <h1>MISIÓN</h1>
@@ -588,7 +605,7 @@
                     </div>
                     <div class="content-5-min1">
                         <p>Convertirnos en la empresa líder en Consultoría de<br> Inversión Pública y Privada.</p>
-                        <img src="vista/imagenes/valores/vision.png" alt="" class="valor2">
+                        <img src="vista/imagenes/inicio/valores/vision.png" alt="" class="valor2">
                     </div>
                 </div>
                 <div class="content-5">
@@ -644,26 +661,26 @@
                     <div class="contenedor-6">
                         <div class="content6-1">
                             <div class="imgBx active" style="--i:1;" data-id="contenedor1">
-                                <img src="vista/imagenes/isos/26.png">
+                                <img src="vista/imagenes/inicio/isos/26.png">
                             </div>
                             <div class="imgBx" style="--i:2;" data-id="contenedor2">
-                                <img src="vista/imagenes/isos/9001.png">
+                                <img src="vista/imagenes/inicio/isos/9001.png">
                             </div>
                             <div class="imgBx" style="--i:3;" data-id="contenedor3">
-                                <img src="vista/imagenes/isos/14001.png">
+                                <img src="vista/imagenes/inicio/isos/14001.png">
                             </div>
                             <div class="imgBx" style="--i:4;" data-id="contenedor4">
-                                <img src="vista/imagenes/isos/37001.png">
+                                <img src="vista/imagenes/inicio/isos/37001.png">
                             </div>
                             <div class="imgBx" style="--i:5;" data-id="contenedor5">
-                                <img src="vista/imagenes/isos/45001.png">
+                                <img src="vista/imagenes/inicio/isos/45001.png">
                             </div>
                         </div>
                         <div class="content6-2">
                             <div class="contentBx active" id="contenedor1">
                                 <div class="card-content6-2">
                                     <div class="imgBx">
-                                        <img src="vista/imagenes/isos/26.png">
+                                        <img src="vista/imagenes/inicio/isos/26.png">
                                     </div>
                                     <div class="textBx">
                                         <h2>Aniversario<br><br><span>26 Años de servicio en todo el Perú</span></h2>
@@ -673,7 +690,7 @@
                             <div class="contentBx" id="contenedor2">
                                 <div class="card-content6-2">
                                     <div class="imgBx">
-                                        <img src="vista/imagenes/isos/9001.png">
+                                        <img src="vista/imagenes/inicio/isos/9001.png">
                                     </div>
                                     <div class="textBx">
                                         <h2>ISO 9001:2015<br><br><span>Sistemas de Gestión de calidad (SGC)</span></h2>
@@ -683,7 +700,7 @@
                             <div class="contentBx" id="contenedor3">
                                 <div class="card-content6-2">
                                     <div class="imgBx">
-                                        <img src="vista/imagenes/isos/14001.png">
+                                        <img src="vista/imagenes/inicio/isos/14001.png">
                                     </div>
                                     <div class="textBx">
                                         <h2>ISO 14001:2015<br><br><span>Sistemas de Gestión Ambiental (SGA)</span></h2>
@@ -693,7 +710,7 @@
                             <div class="contentBx" id="contenedor4">
                                 <div class="card-content6-2">
                                     <div class="imgBx">
-                                        <img src="vista/imagenes/isos/37001.png">
+                                        <img src="vista/imagenes/inicio/isos/37001.png">
                                     </div>
                                     <div class="textBx">
                                         <h2>ISO 37001:2016<br><br><span>Sistemas de Gestión Antisoborno</span></h2>
@@ -703,7 +720,7 @@
                             <div class="contentBx" id="contenedor5">
                                 <div class="card-content6-2">
                                     <div class="imgBx">
-                                        <img src="vista/imagenes/isos/45001.png">
+                                        <img src="vista/imagenes/inicio/isos/45001.png">
                                     </div>
                                     <div class="textBx">
                                         <h2>ISO 45001:2018<br><br><span>Sistemas de Gestión de la Seguridad y Salud en
@@ -785,7 +802,7 @@
                         <h2>ORGANIGRAMA DE LA EMPRESA</h2>
                     </div>
                     <div class="content7-orga">
-                        <img src="vista/imagenes/organigrama/organigrama.png" alt="">
+                        <img src="vista/imagenes/inicio/organigrama/organigrama.png" alt="">
                     </div>
                 </div>
             </div>
@@ -800,46 +817,46 @@
                 </div>
                 <div class="content8">
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/bitech.jpg" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/bitech.jpg" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/ibnet.jpg" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/ibnet.jpg" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/impacto.png" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/impacto.png" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/plaza-vea.png" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/plaza-vea.png" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/promart.png" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/promart.png" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/sodimac.png" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/sodimac.png" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/tailoy.jpg" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/tailoy.jpg" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/bitech.jpg" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/bitech.jpg" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/ibnet.jpg" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/ibnet.jpg" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/impacto.png" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/impacto.png" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/plaza-vea.png" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/plaza-vea.png" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/promart.png" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/promart.png" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/sodimac.png" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/sodimac.png" alt="">
                     </div>
                     <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/tailoy.jpg" alt="">
+                        <img src="vista/imagenes/inicio/proveedores/tailoy.jpg" alt="">
                     </div>
                 </div>
             </div>
