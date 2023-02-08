@@ -272,6 +272,10 @@ header ul .nav-li:hover::before {
     width: 105%;
 }
 
+header ul li.active::before {
+    width: 105%;
+}
+
 header ul li a {
     position: relative;
     margin: 0 15px;
@@ -363,11 +367,11 @@ header ul .contactanos:hover {
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 0;
+        left: 20px;
         top: 0;
-        right: 0;
         bottom: 0;
         margin: auto;
+        /*right: 0;*/
         z-index: 6;
         transition: all .5s ease-in;
     }
@@ -406,17 +410,17 @@ header ul .contactanos:hover {
         gap: 0;
     }
 
+    header nav .ul-responsive .nav-li{
+        width: 200px;
+        padding: 0px 0px 0px 0px;
+        text-align: start;
+    }
+
     header nav .ul-responsive .nav-li a{
         margin: 0px 0px;
         display: flex;
         width: 200px !important;
         padding: 10px;
-    }
-
-    header ul .nav-li{
-        width: 200px;
-        padding: 0px 0px 0px 0px;
-        text-align: start;
     }
 
     header nav .ul-responsive li:nth-child(6) {

@@ -457,6 +457,7 @@
         padding-left: 250px;
         width: 440px;
         gap: 20px;
+        box-shadow: 0px -3px 2px #5a5a5a, -5px 3px 2px #ffffff;
     }
 
     /*PROYECTO POR SECTOR*/

@@ -35,7 +35,7 @@
     <header>
         <div class="contenedor-logo">
             <div class="svg-img">
-                <a href="#"><img src="vista/imagenes/extras/idcLogo2.png"></a>
+                <a href="inicio"><img src="vista/imagenes/extras/idcLogo2.png"></a>
             </div>
         </div>
         <nav>
@@ -44,7 +44,11 @@
                 <i class="icon-menu"></i>
             </label>
             <ul class="ul-responsive">
-                <li class="nav-li" id="inicio"><a href="inicio">Inicio</a></li>
+                <!--1-->
+                <li class="nav-li" id="inicio">
+                    <a href="inicio">Inicio</a>
+                </li>
+                <!--2-->
                 <li class="nav-li" id="nosotros">
                     <a>Nosotros</a>
                     <span class="icon-plus no-responsive"></span>
@@ -57,6 +61,7 @@
                         <li><a href="nosotros" style="border-bottom: none;">Políticas de Gestión</a></li>
                     </ul>
                 </li>
+                <!--3-->
                 <li class="nav-li" id="servicios">
                     <a>Servicios</a><span class="icon-plus no-responsive"></span>
                     <input type="checkbox" id="check3">
@@ -70,6 +75,7 @@
                         <li><a href="index.php?ruta=servicios&id=4" style="border-bottom: none;">Supervisión</a></li>
                     </ul>
                 </li>
+                <!--4-->
                 <li class="nav-li" id="proyectos">
                     <a>Proyectos</a><span class="icon-plus no-responsive"></span>
                     <input type="checkbox" id="check4">
@@ -81,7 +87,9 @@
                         <li><a href="index.php?ruta=proyectos&id=2" style="border-bottom: none;">Por Sector</a></li>
                     </ul>
                 </li>
-                <li class="nav-li"><a href="blog">Blog</a></li>
+                <!--5-->
+                <li class="nav-li" id="blog">
+                    <a href="blog">Blog</a></li>
                 <li>
                     <a href="contactanos" class="contactanos">
                         <span class="label">Contáctenos</span>

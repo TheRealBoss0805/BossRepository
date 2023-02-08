@@ -18,13 +18,12 @@
 
         <div class="inicio-1">
             <div class="content-slider">
-                <img src="../../../../../Users/Usuario/AppData/Local/Temp/imagencab3.jpg" alt="" />
                 <div class="slider-top">
                     <div id="div-slider-top">
                         <section class="section-slider">
                             <div class="slider">
                                 <div class="slide active"
-                                    style="background-image: url('vista/imagenes/extras/img-1.png')">
+                                    style="background-image: url('vista/imagenes/inicio/inicio-slide/inicio-slider-1.jpg')">
                                     <div class="container">
                                         <div class="caption">
                                             <a href="#">
@@ -37,7 +36,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-2.png')">
+                                <div class="slide"
+                                    style="background-image: url('vista/imagenes/inicio/inicio-slide/inicio-slider-2.jpg')">
                                     <div class="container">
                                         <div class="caption">
                                             <a href="#">
@@ -50,7 +50,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-3.png')">
+                                <div class="slide"
+                                    style="background-image: url('vista/imagenes/inicio/inicio-slide/inicio-slider-3.jpg')">
                                     <div class="container">
                                         <div class="caption">
                                             <a href="#">
@@ -63,6 +64,77 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="slide"
+                                    style="background-image: url('vista/imagenes/inicio/inicio-slide/inicio-slider-4.jpg')">
+                                    <div class="container">
+                                        <div class="caption">
+                                            <a href="#">
+                                                <h1>Nombre de Servicio</h1>
+                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit.
+                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
+                                                    tenetur.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide"
+                                    style="background-image: url('vista/imagenes/inicio/inicio-slide/inicio-slider-5.jpg')">
+                                    <div class="container">
+                                        <div class="caption">
+                                            <a href="#">
+                                                <h1>Nombre de Servicio</h1>
+                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit.
+                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
+                                                    tenetur.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide"
+                                    style="background-image: url('vista/imagenes/inicio/inicio-slide/inicio-slider-6.jpg')">
+                                    <div class="container">
+                                        <div class="caption">
+                                            <a href="#">
+                                                <h1>Nombre de Servicio</h1>
+                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit.
+                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
+                                                    tenetur.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide"
+                                    style="background-image: url('vista/imagenes/inicio/inicio-slide/inicio-slider-7.jpg')">
+                                    <div class="container">
+                                        <div class="caption">
+                                            <a href="#">
+                                                <h1>Nombre de Servicio</h1>
+                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit.
+                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
+                                                    tenetur.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide"
+                                    style="background-image: url('vista/imagenes/inicio/inicio-slide/inicio-slider-8.jpg')">
+                                    <div class="container">
+                                        <div class="caption">
+                                            <a href="#">
+                                                <h1>Nombre de Servicio</h1>
+                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit.
+                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
+                                                    tenetur.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
                                 <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
                                     <div class="container">
                                         <div class="caption">
@@ -88,72 +160,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div>-->
                             </div>
                         </section>
                     </div>
@@ -209,7 +216,7 @@
                         <div class="glass-div">
                         </div>
                         <span>
-                        <?php
+                            <?php
                 $valor2 = 2;
                 $respuesta2 = ControladorServicios::ctrMostrarServicio($item, $valor2);
             ?>
@@ -236,7 +243,7 @@
                     <a href="index.php?ruta=servicios&id=3">
                         <div class="glass-div"></div>
                         <span>
-                        <?php
+                            <?php
                 $valor3 = 3;
                 $respuesta3 = ControladorServicios::ctrMostrarServicio($item, $valor3);
             ?>
@@ -263,7 +270,7 @@
                     <a href="index.php?ruta=servicios&id=4">
                         <div class="glass-div"></div>
                         <span>
-                        <?php
+                            <?php
                 $valor4 = 4;
                 $respuesta4 = ControladorServicios::ctrMostrarServicio($item, $valor4);
             ?>
@@ -805,6 +812,28 @@
                         <img src="vista/imagenes/inicio/organigrama/organigrama.png" alt="">
                     </div>
                 </div>
+                <button class="download-button">
+                    <div class="docs">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none"
+                            stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line y2="13" x2="8" y1="13" x1="16"></line>
+                            <line y2="17" x2="8" y1="17" x1="16"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg> Organigrama
+                    </div>
+                    <a href="https://drive.google.com/file/d/1GdRUQeoXNH0Nu1-CyK_HUQ46G9jD_n1h/view?usp=sharing" style="text-decoration: none; color: white;">
+                        <div class="download">
+                            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none"
+                                stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line y2="3" x2="12" y1="15" x1="12"></line>
+                            </svg>
+                        </div>
+                    </a>
+                </button>
             </div>
         </div>
 

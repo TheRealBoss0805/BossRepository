@@ -75,7 +75,7 @@
     <?php
   if(isset($_GET["ruta"])){
     
-    echo '<input type="hidden" class="ruta" value="'.$_GET["ruta"].'" >';
+    echo '<input type="hidden" class="ruta"  id="ruta" value="'.$_GET["ruta"].'" >';
     
   }
 
@@ -129,8 +129,6 @@
 
     echo '</div>';
   ?>
-    <script src="vista/js/ruta-navegador.js"></script>
-
     <!--Start of Tawk.to Script-->
     <!--<script type="text/javascript">
     /*var Tawk_API = Tawk_API || {},
@@ -153,5 +151,6 @@
 <script src="vista/js/inicio.js"></script>
 <script src="vista/js/imagen-modal-seleccion.js"></script>
 <script src="vista/js/proyecto.js"></script>
+<script src="vista/js/ruta-navegador.js"></script>
 
 </html>
