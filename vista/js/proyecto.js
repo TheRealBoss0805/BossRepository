@@ -2,8 +2,8 @@
 FILTRAR POR TIPO
 =============================================*/
 $(".content-proyecto").on("click", ".btnFiltro", function(){
-	let idFiltro = $(this).attr("idFiltro");
-	let datos = new FormData();
+	var idFiltro = $(this).attr("idFiltro");
+	var datos = new FormData();
 	datos.append("idFiltro", idFiltro);
 
 	$.ajax({
@@ -28,8 +28,8 @@ TRAER "TODOS" POR TIPO O POR SECTOR
 =============================================*/
 $(".content-proyecto").on("click", ".btnTodos", function(){
     
-	let idCategoria = $(this).attr("idCategoria");
-	let datos = new FormData();
+	var idCategoria = $(this).attr("idCategoria");
+	var datos = new FormData();
 	datos.append("idCategoria", idCategoria);
 
 	$.ajax({

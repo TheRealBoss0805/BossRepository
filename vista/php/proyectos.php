@@ -38,7 +38,7 @@
             $respuesta1 = ControladorProyecto::ctrMostrarTipoSector($item1, $valor1);
             $clase = ($_GET["id"] == 2)? 'sector-style':'';
             echo "<div class='".$clase."'>
-            <a class='fancy btnTodos active' idCategoria='".$_GET["id"]."'>
+            <a class='fancy btnTodos active' idCategoria=".$_GET["id"]."'>
                 <span class='top-key'></span>
                 <span class='text'>Todos</span>
                 <span class='bottom-key-1'></span>
@@ -47,7 +47,7 @@
 
             foreach($respuesta1 as $tipo){
                 echo"
-                <a class='fancy btnFiltro' idFiltro='".$tipo["id_proy_ts"]."' idCategoria='".$tipo["id_proyecto"]."'>
+                <a class='fancy btnFiltro' idFiltro='".$tipo["id_proy_ts"]." idCategoria='".$tipo["id_proyecto"]."'>
                 <span class='top-key'></span>
                 <span class='text'>".$tipo["nombre"]."</span>
                 <span class='bottom-key-1'></span>
@@ -67,13 +67,13 @@
         $respuesta2 = ControladorProyecto::ctrMostrarItem($item2, $valor2);
         echo " <div class='content-proyecto' id='items'>";
 
-        foreach($respuesta2 as $item){
+        foreach($respuesta2 as $item2){
      ?>
     <div class="parent-button-div">
-        <img src="vista/imagenes/extras/img-1.png" alt="">
+        <img src="<?=$item2["foto"]?>" alt="">
         <div class="button-div">
             <!--<a href="">Más info.</a>-->
-            <a class="c-button c-button--gooey" href="index.php?ruta=proyecto-eleccion&id=<?=$item["id_proyec_item"]?>"> Más info.
+            <a class="c-button c-button--gooey" href="index.php?ruta=proyecto-eleccion&id=<?=$item2["id_proyec_item"]?>"> Más info.
                 <div class="c-button__blobs">
                     <div></div>
                     <div></div>
@@ -90,7 +90,7 @@
                     </filter>
                 </defs>
             </svg>
-            <p><?=$item["titulo"]?></p>
+            <p><?=$item2["titulo"]?></p>
         </div>
     </div>
     <?php
