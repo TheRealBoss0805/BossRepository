@@ -65,12 +65,13 @@
         $item2 = "id_proyecto";
         $valor2 = $_GET["id"];
         $respuesta2 = ControladorProyecto::ctrMostrarItem($item2, $valor2);
+
         echo " <div class='content-proyecto' id='items'>";
 
         foreach($respuesta2 as $item){
      ?>
     <div class="parent-button-div">
-        <img src="vista/imagenes/extras/img-1.png" alt="">
+        <img src="<?=$item["foto"]?>">
         <div class="button-div">
             <!--<a href="">Más info.</a>-->
             <a class="c-button c-button--gooey" href="index.php?ruta=proyecto-eleccion&id=<?=$item["id_proyec_item"]?>"> Más info.

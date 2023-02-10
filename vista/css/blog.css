@@ -86,6 +86,12 @@
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
+/*Marcador de filtro*/
+.content-blog-1 .blog-1:nth-child(1) div a.active{
+
+    border-left: 8px solid crimson;
+   
+}
 
 /*button (a) -estilo-universe*/
 
@@ -480,6 +486,29 @@
 }
 
 .content-blog-2 .blog-2:nth-child(1) div:nth-child(1) a:where(:hover, :focus) {
+    color: #fff;
+}
+/*MARCAR EL AÑO AL PRESIONARLO CLASE ACTIVE*/
+.content-blog-2 .blog-2:nth-child(1) div:nth-child(1) a.active::after {
+    clip-path: polygon(
+            /* Top-left */
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+
+            calc(100% - var(--border-width)) var(--border-width),
+
+            /* top-right */
+            calc(100% - var(--border-width)) var(--border-width),
+
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+
+            /* bottom-right 2 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
+    transition: 200ms;
+}
+.content-blog-2 .blog-2:nth-child(1) div:nth-child(1) a.active{
     color: #fff;
 }
 

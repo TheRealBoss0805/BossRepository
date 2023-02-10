@@ -20,7 +20,7 @@ class AjaxProyectos{
         foreach($respuesta as $item){
 
         echo "<div class='parent-button-div'>
-        <img src='vista/imagenes/extras/img-1.png' alt=''>
+        <img src='".$item["foto"]."' alt=''>
         <div class='button-div'>
             <a class='c-button c-button--gooey' href='index.php?ruta=proyecto-eleccion&id=".$item["id_proyec_item"]."'> Más info.
                 <div class='c-button__blobs'>
@@ -44,6 +44,7 @@ class AjaxProyectos{
             </p>
         </div>
     </div>";
+    
 }
 	}
     
@@ -55,7 +56,7 @@ class AjaxProyectos{
         foreach($respuesta as $item){
 
         echo "<div class='parent-button-div'>
-        <img src='vista/imagenes/extras/img-1.png' alt=''>
+        <img src='".$item["foto"]."' alt=''>
         <div class='button-div'>
             <a class='c-button c-button--gooey' href='index.php?ruta=proyecto-eleccion&id=".$item["id_proyec_item"]."'> Más info.
                 <div class='c-button__blobs'>

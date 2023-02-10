@@ -63,7 +63,7 @@
 
     <!-- Plantilla -->
 
-
+    <script src="https://kit.fontawesome.com/624fdd2f11.js" crossorigin="anonymous"></script>
 </head>
 
 <!--=====================================
@@ -150,8 +150,10 @@
 
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/624fdd2f11.js" crossorigin="anonymous"></script>
 <script src="vista/js/inicio.js"></script>
 <script src="vista/js/imagen-modal-seleccion.js"></script>
 <script src="vista/js/proyecto.js"></script>
+<script src="vista/js/blog.js"></script>
 
 </html>
