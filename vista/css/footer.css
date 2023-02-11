@@ -143,6 +143,8 @@ footer p{
 
 /** Scroll para desplazarse hacia arriba **/
 
+/*CLASE ON*/
+
 footer .div-on .on{
     background: #fff;
     width: 60px;
@@ -161,17 +163,18 @@ footer .div-on .on{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
+footer .div-on .on .fi{
+    font-size: 20px;
+    color: #222222;
+}
+
 footer .div-on .on p{
     font-size: 12px;
     color: #222222;
     font-weight: 600;
 }
 
-footer .div-on .on i{
-    font-size: 15px;
-    color: #222222;
-}
-
+/*RESPONSIVE===========================*/
 
 @media (max-width: 991px){
     footer{

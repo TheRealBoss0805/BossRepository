@@ -9,36 +9,36 @@
 
 <body>
     <?php
-        if(!isset($_GET["id"]) || $_GET["id"] > 4){
-            echo '<script>
+    if (!isset($_GET["id"]) || $_GET["id"] > 4) {
+        echo '<script>
                 window.location = "inicio";
             </script>';
-            return;
-        }
+        return;
+    }
     ?>
 
     <div class="contenedor-services">
 
         <?php
-    $item = "id_servicio";
-    $valor = $_GET["id"];
-    $respuesta = ControladorServicios::ctrMostrarServicio($item, $valor);
-    $separador = "<br>";
-    $cadena = $respuesta["descripcion"];
-    $stringSeparado = explode($separador, $cadena);
+        $item = "id_servicio";
+        $valor = $_GET["id"];
+        $respuesta = ControladorServicios::ctrMostrarServicio($item, $valor);
+        $separador = "<br>";
+        $cadena = $respuesta["descripcion"];
+        $stringSeparado = explode($separador, $cadena);
 
-    $respuesta1 = ControladorServicios::ctrMostrarItem($item, $valor);
-    ?>
+        $respuesta1 = ControladorServicios::ctrMostrarItem($item, $valor);
+        ?>
 
         <div class="content-services-1">
             <div class="services">
                 <h2>Nuestros servicios</h2>
-                <h1><?=$respuesta["nombre"]?></h1>
+                <h1><?= $respuesta["nombre"] ?></h1>
                 <div class="content-p">
                     <?php
-                        foreach($stringSeparado as $parrafo){
-                            echo "<p>".$parrafo."</p>";
-                        }
+                    foreach ($stringSeparado as $parrafo) {
+                        echo "<p>" . $parrafo . "</p>";
+                    }
                     ?>
                 </div>
                 <h2>Conoce Nuestros Proyectos</h2>
@@ -87,45 +87,52 @@
                     </li>
                 </ul>
             </div>
-            <img src="<?=$respuesta["portada"]?>" alt="">
+            <img src="<?= $respuesta["portada"] ?>" alt="">
         </div>
         <div class="content-services-2">
             <?php
-          foreach($respuesta1 as $item){
-            $cadena1 = $item["descripcion"];
-            $stringSeparado1 = explode($separador, $cadena1);
+            foreach ($respuesta1 as $item) {
+                $cadena1 = $item["descripcion"];
+                $stringSeparado1 = explode($separador, $cadena1);
 
-            $cad = $stringSeparado1[0];
+                $cad = $stringSeparado1[0];
 
-            $caracteres = 150;
+                $caracteres = 150;
 
-            $cadenaAcortada = substr($cad, 0, $caracteres).'...';
+                $cadenaAcortada = substr($cad, 0, $caracteres) . '...';
 
-            $idServItem = $item["id_serv_item"];
-            echo "
+                $idServItem = $item["id_serv_item"];
+                echo "
                     <div class='services'>
                         <div class='services-1'>
         
                             <div>
-                                <p>".$item["titulo"]."</p>
+                                <p>" . $item["titulo"] . "</p>
                             </div>
             
                             <div>
-                                <p>".$cadenaAcortada."</p>
+                                <p>" . $cadenaAcortada . "</p>
                             </div>
                             <div>
-                                <a href='index.php?ruta=servicios-eleccion&idItem=$idServItem' class='btn-services'>Ver Proyecto</a>
+                                <a href='index.php?ruta=servicios-eleccion&idItem=$idServItem' class='button2'>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class='text'>Ver Proyecto</span>
+                                </a>
                             </div>
                         </div>
                         <div class='services-2'>
-                            <img src='".$item["foto"]."' alt''>
+                            <img src='" . $item["foto"] . "' alt''>
                         </div>
                     </div>";
-        }
-        ?>
+            }
+            ?>
         </div>
-    </div>
 
+    </div>
 </body>
 
 </html>

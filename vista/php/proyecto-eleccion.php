@@ -23,7 +23,7 @@
         </div>
         <div class="content-eleccion-proyecto">
             <div>
-                <img id="myImg" src="vista/imagenes/extras/img-1.png" alt="<?=$respItem["titulo"]?>">
+                <img id="myImg" src="<?=$respItem["foto"]?>" alt="<?=$respItem["titulo"]?>">
                 <div id="myModal" class="modal">
                     <span class="close">x</span>
                     <img class="modal-content" id="img01">

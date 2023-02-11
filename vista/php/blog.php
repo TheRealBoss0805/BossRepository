@@ -16,27 +16,27 @@
                     <h2>Todas las Categorías</h2>
                     <a href="#">
                         <span>Todos</span>
-                        <img src="vista/imagenes/blog/todo.png" alt="">
+                        <i class="fi fi-sr-layout-fluid"></i>
                     </a>
                     <a href="#">
                         <span>Construcción</span>
-                        <img src="vista/imagenes/blog/construccion.png" alt="">
+                        <i class="fi fi-sr-truck-tow"></i>
                     </a>
                     <a href="#">
                         <span>Economía</span>
-                        <img src="vista/imagenes/blog/economia.png" alt="">
+                        <i class="fi fi-sr-donate"></i>
                     </a>
                     <a href="#">
                         <span>Educación</span>
-                        <img src="vista/imagenes/blog/educacion.png" alt=""> 
+                        <i class="fi fi-sr-license"></i>
                     </a>
                     <a href="#">
                         <span>Indeconsult</span>
-                        <img src="vista/imagenes/blog/edificio.png" alt="">
+                        <i class="fi fi-sr-city"></i>
                     </a>
                     <a href="#">
                         <span>Salud</span>
-                        <img src="vista/imagenes/blog/salud.png" alt="">
+                        <i class="fi fi-sr-doctor"></i>
                     </a>
                 </div>
                 <img src="vista/imagenes/blog/blog.jpg" alt="" class="img-abs">
@@ -82,8 +82,8 @@
                 </div>
                 <div>
                     <form action="">
-                    <input type="search" placeholder="Buscar...">
-                    <input type="submit" value="Buscar">
+                        <input type="search" placeholder="Buscar...">
+                        <input type="submit" value="Buscar">
                     </form>
                 </div>
             </div>
@@ -99,7 +99,8 @@
                         <span>Categoría<i class="icon-plus"></i></span>
                     </div>
                     <div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, quidem corporis! Cum ad, iusto optio excepturi</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, quidem corporis! Cum ad,
+                            iusto optio excepturi</p>
                         <a href="blog-seleccion"><span>Leer más</span></a>
                     </div>
                 </div>

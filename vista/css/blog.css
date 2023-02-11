@@ -76,7 +76,7 @@
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    border-left: 8px solid #253743;
+    border-left: 10px solid #253743;
     background: rgb(233, 219, 223);
     background: linear-gradient(0deg, rgba(233, 219, 223, 1) 0%, rgba(255, 255, 255, 1) 100%);
     color: #253743;
@@ -172,8 +172,10 @@
     margin-left: 20px;
 }
 
-.content-blog-1 .blog-1:nth-child(1) div a img {
-    width: 40px;
+.content-blog-1 .blog-1:nth-child(1) div a .fi{
+    /*width: 40px;
+    margin-right: 20px;*/
+    font-size: 45px;
     margin-right: 20px;
 }
 

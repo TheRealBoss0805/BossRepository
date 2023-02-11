@@ -18,8 +18,6 @@ img.addEventListener("click", aparecerModal);
 // Get the <span> element that closes the modal
 let span = document.querySelector(".close");
 
-console.log(span);
-
 // When the user clicks on <span> (x), close the modal
 
 const desaparecerModal = function () {

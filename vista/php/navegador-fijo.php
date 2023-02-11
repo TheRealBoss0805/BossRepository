@@ -15,18 +15,18 @@
             <p>" Planificando, Desarrollando y Construyendo "</p>
         </div>
         <div>
-            <span class="icon-location" style="font-size: 35px; color: rgb(104, 102, 102);"></span>
-            <div>
+            <i class="fi-sr-earth-americas" style="font-size: 30px; color: rgb(104, 102, 102);"></i>
+            <span>
                 <p>Dirección</p>
                 <p>Jr. Monterosa 233 Of. 507, Santiago de Surco, Lima.</p>
-            </div>
+            </span>
         </div>
         <div>
-            <span class="icon-clock" style="font-size: 35px; color: rgb(104, 102, 102);"></span>
-            <div>
+            <i class="fi-sr-time-check" style="font-size: 30px; color: rgb(104, 102, 102);"></i>
+            <span>
                 <p>Horario</p>
                 <p>L-S de 08:00 a 20:00 Horas</p>
-            </div>
+            </span>
         </div>
     </div>
 
@@ -89,7 +89,8 @@
                 </li>
                 <!--5-->
                 <li class="nav-li" id="blog">
-                    <a href="blog">Blog</a></li>
+                    <a href="blog">Blog</a>
+                </li>
                 <li>
                     <a href="contactanos" class="contactanos">
                         <span class="label">Contáctenos</span>

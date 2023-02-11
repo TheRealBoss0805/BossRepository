@@ -62,14 +62,14 @@
             </div>
         </div>
         <div class="div-on">
-            <a id="toptop" class="on" href="#">
-                <i class="fa-solid fa-circle-arrow-up"></i>
+            <a id="toptop" class="on" href="">
+                <i class="fi fi-sr-caret-up"></i>
                 <p>SUBIR</p>
             </a>
         </div>
     </footer>
     <div class="copyrightText">
-        <p>Copyright © 2023 Rivera & Cipriani. Todos los derechos reservados.</p>
+        <p>Copyright © 2023 Rivera & Cipriani ft Polo. Todos los derechos reservados.</p>
     </div>
     <script src="vista/js/footer.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

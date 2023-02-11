@@ -17,6 +17,5 @@
             $respuesta = ModeloProyectos::mdlMostrarItem($tabla, $item, $valor);
             return $respuesta;
         }
-
     }
 ?>
