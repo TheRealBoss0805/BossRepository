@@ -16,20 +16,17 @@ window.setInterval(function () {
     } else {
         var d = 1;
     }
-    if (d < 1e3) {
+    console.log(d);
+    if (d < 2e3) {
         totop_button("off");
     } else {
         totop_button("on");
     }
-    console.log(b);
-    console.log(c);
 }, 0);
 
 $("#totop").click(function (e) {
     e.preventDefault();
-    $('body, html').animate({
-        scrollTop: 0
-    }, 800, 'easeOutExpo');
+    $('body, html').animate({scrollTop: 0}, 1200);
 });
 
 

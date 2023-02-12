@@ -89,15 +89,17 @@
 
   include "php/footer.php";
 
+  include "php/deslizador.php";
+
   echo '</div>';
   ?>
 
 </body>
 
+<script src="vista/js/deslizador.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="vista/js/inicio.js"></script>
 <script src="vista/js/imagen-modal-seleccion.js"></script>
 <script src="vista/js/proyecto.js"></script>
 <script src="vista/js/ruta-navegador.js"></script>
-
 </html>

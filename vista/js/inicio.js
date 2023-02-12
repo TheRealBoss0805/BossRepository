@@ -115,7 +115,6 @@ after.addEventListener('click', () => {
 let ancho = document.documentElement.clientWidth;
 let cambioWindow = document.getElementById("swiperGtfo");
 
-console.log(ancho);
 
 
 let slidesPerView = [3, 2, 1];
@@ -136,16 +135,13 @@ if(ancho >= 0 && ancho < 650){
 
 const reziseWindow = () =>{
     if(ancho >= 1200){
-        console.log("eres");
         mostrador = slidesPerView[0];
     }
     if(ancho >= 700 && ancho < 1200){
-        console.log("pato");
         mostrador = slidesPerView[1];
         cambioWindow.classList.replace("maximum", "medium");
     }
     if(ancho >= 0 && ancho < 700){
-        console.log("pasivo");
         mostrador = slidesPerView[2];
         cambioWindow.classList.replace("maximum", "minimum");
     }
@@ -172,7 +168,6 @@ var swiper = new Swiper(".mySwiper", hola = {
     },
 });
 
-console.log(mostrador);
 
 
 /*RULETA ISO*/

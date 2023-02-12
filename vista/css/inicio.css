@@ -466,6 +466,10 @@
     color: #253743;
 }
 
+.download-button{
+    display: none;
+}
+
 /*responsive*/
 
 @media (max-width: 1300px) {
