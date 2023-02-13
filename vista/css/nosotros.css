@@ -132,6 +132,7 @@ h3 {
   height: 380px;
   flex-direction: column;
   gap: 30px;
+  padding-bottom: 50px;
 }
 
 .content-us .title-us {
@@ -241,7 +242,6 @@ h3 {
 .content-us:nth-child(3) .us-mvsion .mvsion-div {
   height: 95%;
   width: 45%;
-  background: #222222;
   border-radius: 25px;
 }
 
@@ -250,21 +250,14 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: auto !important;
+  border: 3px solid red;
 }
 
-.mvsion-div:nth-child(1) div {
-  width: 95%;
-  height: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.mvsion-div:nth-child(1) p{
+  color: #666666;
   text-align: justify;
-  color: #fff;
-  padding: 20px;
-}
-
-.mvsion-div:nth-child(1) div:nth-child(2) {
-  height: 65%;
+  padding: 15px;
 }
 
 .mvsion-div:nth-child(2) {

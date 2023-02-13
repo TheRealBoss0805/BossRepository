@@ -54,22 +54,27 @@
             </div>
             <div class="us-mvsion">
                 <div class="mvsion-div">
-                    <div>
-                        <p>
-                            Instituto de Consultoría S.A. es una institución que desde su creación en 1995 viene contribuyendo al esfuerzo que los sectores público y privado realizan para el desarrollo de nuestro país.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Instituto de Consultoría S.A. participa en los siguientes tipos de proyectos de desarrollo:<br><br>
+                    <p>
+                        Instituto de Consultoría S.A. es una institución que desde su
+                        creación en 1995 viene contribuyendo al esfuerzo que los sectores
+                        público y privado realizan para el desarrollo de nuestro país.<br><br>
+                        Instituto de Consultoría S.A. participa en los siguientes tipos de
+                        royectos de desarrollo:<br><br>
 
-                            Mega Inversiones.<br>
-                            Inversión en Infraestructura Social.<br>
-                            Estudios de Transporte.<br>
-                            Estudios Territoriales Y Aplicaciones a Infraestructuras.<br>
-                            Estudios Económicos Sociales.<br>
-                            Estudios Ambientales.
-                        </p>
+                        Mega Inversiones.<br>
+                        Inversión en Infraestructura Social.<br>
+                        Estudios de Transporte.<br>
+                        Estudios Territoriales Y Aplicaciones a Infraestructuras.<br>
+                        Estudios Económicos Sociales.<br>
+                        Estudios Ambientales.
+                    </p>
+                    <div>
+                        <span class="fi fi-sr-sack-dollar"></span>
+                        <span class="fi fi-sr-envelope-open-dollar"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
                 <div class="mvsion-div">
