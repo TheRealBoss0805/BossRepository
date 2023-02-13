@@ -9,26 +9,18 @@
 
 <body>
     <div class="contenedor-us">
-
         <div class="content-us">
             <div class="us-description">
-                <img src="vista/imagenes/nosotros/politicas.jpg" alt="">
+                <img src="" alt="" id="imgWho">
                 <div class="header-div">
-                    <h1>Políticas de Gestión de INDECONSULT S.A.</h1>
-                    <h3>Comprometidos con la Seguridad, Salud Ocupacional, Calidad y Medio Ambiente.</h3>
+                    <h1 id="titles"></h1>
                 </div>
                 <div class="description-div">
-                    <p>Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Dolorum excepturi, dicta sint id
-                        numquam deleniti molestias voluptas delectus quo
-                        illo consequuntur iste, eligendi temporibus architecto
-                        amet odio ratione veritatis eius!
-                    </p>
+                    <p id="descriptions"></p>
                 </div>
             </div>
         </div>
-
-        <div class="content-us">
+        <div class="content-us" id="politicsInfo">
             <div class="title-us">
                 <h2>políticas de indeconsult s.a.</h2>
             </div>
@@ -36,39 +28,31 @@
                 <div>
                     <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
-                        <p>"Todo lo que sube, algún momento
-                            tiene que bajar"
+                        <p>"THE BEATLES"
                         </p>
                     </div>
                 </div>
                 <div>
                     <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
-                        <p>"Todo lo que sube, algún momento
-                            tiene que bajar"
+                        <p>"THE BEATLES"
                         </p>
                     </div>
                 </div>
                 <div>
                     <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
-                        <p>"Todo lo que sube, algún momento
-                            tiene que bajar"
+                        <p>"THE BEATLES"
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="content-us">
-
+        <div class="content-us" id="usInfo">
             <div class="title-us">
                 <h2>¿quiénes somos?</h2>
             </div>
-
             <div class="us-mvsion">
-
                 <div class="mvsion-div">
                     <div>
                         <p>
@@ -88,9 +72,7 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="mvsion-div">
-
                     <div class="card-mvsion">
                         <div class="mvsion-img">Misión</div>
                         <div class="mvsion-info">
@@ -99,7 +81,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="card-mvsion">
                         <div class="mvsion-img">Visión</div>
                         <div class="mvsion-info">
@@ -108,14 +89,11 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
-
-
     </div>
 </body>
+<script src="vista/js/nosotros.js"></script>
 
 </html>

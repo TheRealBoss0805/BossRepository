@@ -140,7 +140,8 @@
 /*Us Window*/
 
 .contenedor-us {
-    /*Declarado en la parte superior*/
+    gap: 50px;
+    background: #fff;
 }
 
 @media (max-width: 1000px){

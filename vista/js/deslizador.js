@@ -1,33 +1,32 @@
-/* scroll hacia arriba */
-function totop_button(a) {
-    var b = $("#totop");
-    b.removeClass("off on");
-    if (a == "on") {
-        b.addClass("on");
-    } else {
-        b.addClass("off");
-    }
+/*============SCROLL HACIA ARRIBA=================*/
+
+let b = document.querySelector("#totop");
+
+const botonTop = (a) => {
+    b.classList.remove("off", "on");
+    a == "on" ? b.classList.add("on") : b.classList.add("off");
 }
+
 window.setInterval(function () {
-    var b = $(this).scrollTop();
-    var c = $(this).height();
+    let b = $(this).scrollTop();
+    let c = $(this).height();
     if (b > 0) {
         var d = b + c / 2;
     } else {
         var d = 1;
     }
-    console.log(d);
+
     if (d < 2e3) {
-        totop_button("off");
+        botonTop("off");
     } else {
-        totop_button("on");
+        botonTop("on");
     }
+
 }, 0);
 
-$("#totop").click(function (e) {
+const funcionAnimar = (e) => {
     e.preventDefault();
-    $('body, html').animate({scrollTop: 0}, 1200);
-});
+    $('html').animate({ scrollTop: 0 }, 1500);
+}
 
-
-/* --- end scroll to top*/
+b.addEventListener("click", funcionAnimar);

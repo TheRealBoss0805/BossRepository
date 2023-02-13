@@ -3,13 +3,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #fff;
   position: relative;
 }
 
 .content-us:nth-child(1) {
   height: 650px;
-
 }
 
 .content-us:nth-child(1) .header-div {
@@ -38,7 +36,7 @@ h3 {
 }
 
 .content-us:nth-child(1) .us-description {
-  width: 100%;
+  width: 90%;
   height: 100%;
   position: relative;
   display: flex;
@@ -50,9 +48,59 @@ h3 {
 .content-us:nth-child(1) img {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
   filter: contrast(1.5);
+}
+
+:root {
+    --base:              #9afee0;
+    --bg-blend:          multiply;
+    --blur:              0px;
+    --fg-blend:          lighten;
+    --foreground:        #000000;
+    --opacity:           1;
+    --spacing:           0px;
+  }
+  .content-us:nth-child(1) .us-description{
+    background-color:    var(--base);
+    display:             flex;
+    overflow:            hidden;
+    padding:             var(--spacing);
+    position:            relative;
+  }
+  
+  .content-us:nth-child(1) .us-description img {
+    filter:              grayscale(100%) contrast(1) blur(var(--blur));
+    mix-blend-mode:      var(--bg-blend);
+    object-fit:          cover;
+    opacity:             var(--opacity);
+    position:            relative;
+  }
+  
+  .content-us:nth-child(1) .us-description::before {
+    background-color:    var(--foreground);
+    bottom:              0;
+    content:             '';
+    height:              100%;
+    left:                0;
+    mix-blend-mode:      var(--fg-blend);
+    position:            absolute;
+    right:               0;
+    top:                 0;
+    width:               100%;
+    z-index:             1;
+  }
+
+.content-us:nth-child(1) .us-description{
+    -moz-border-radius: 0 20% / 0 50%;
+    -webkit-border-radius: 0 20% / 0 50%;
+    border-radius: 0 20% / 0 50%;
+    background: #086587;
+    box-shadow:  5px 5px 10px #222222,
+    -5px -5px 10px #222222;
+}
+
+.content-us:nth-child(1) .us-description img{
+    background-size: cover;
 }
 
 .content-us:nth-child(1) .description-div {
@@ -64,26 +112,26 @@ h3 {
   align-items: center;
   bottom: 20%;
   border-radius: 40px;
-  opacity: 0.8;
 }
 
 .content-us:nth-child(1) .description-div p {
   height: 100%;
   width: 100%;
-  text-align: justify;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 1.7vw;
+  font-size: 1.9vw;
   padding: 50px;
-  background: #000;
   border-radius: 20px;
+  text-shadow: black 0.08em 0.08em 0.1em;
 }
 
 .content-us:nth-child(2) {
   height: 380px;
   flex-direction: column;
+  gap: 30px;
 }
 
 .content-us .title-us {

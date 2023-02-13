@@ -177,7 +177,7 @@ nav {
 
 header nav ul li:hover>a:not(.label) {
     color: #fff;
-    transition: all 0.7s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 header ul {
@@ -201,7 +201,7 @@ header ul .nav-li {
     overflow: hidden;
     text-align: center;
     text-transform: uppercase;
-    transition: .3s;
+    transition: all 0.3s ease-in;
     z-index: 1;
     font-family: inherit;
     border: 2px solid transparent;
@@ -212,7 +212,7 @@ header ul .nav-li:hover {
 }
 
 header ul .nav-li span {
-    font-size: 12px;
+    font-size: 15px;
     color: #a5214b;
 }
 
@@ -224,7 +224,7 @@ header ul .nav-li ul {
     width: auto;
     z-index: 2;
     border-radius: 0 0 7px 7px;
-    background: #222;
+    background: #222222;
     gap: 0;
 
 }
@@ -246,11 +246,12 @@ header nav ul .nav-li ul li a {
     text-transform: capitalize;
     font-weight: 500;
     padding: 15px 30px 15px 10px;
-    border-bottom: 2px solid #334d5e;
+    border-bottom: 2px solid #5a5e60;
 }
 
 header ul .nav-li ul li a:hover {
-    background: #253743;
+    background: #fff;
+    color: #253743;
 }
 
 header ul .nav-li::before {
@@ -275,6 +276,14 @@ header ul .nav-li:hover::before {
 
 header ul li.active::before {
     width: 105%;
+}
+
+header ul .nav-li ul li.changed{
+    background: #fff;
+}
+
+header ul .nav-li ul li.changed a{
+    color: #253743;
 }
 
 /*FIN*/
@@ -441,14 +450,8 @@ header ul .contactanos:hover {
     header nav ul .nav-li ul li a {
         font-size: 13px;
         width: 200px;
-        background: #253743;
         transition: all 0.1s ease-in !important;
         text-indent: 20px;
-    }
-
-    header ul .nav-li ul li a:hover {
-        background: #fff;
-        color: #253743;
     }
 
     header ul .contactanos {
@@ -492,6 +495,7 @@ header ul .contactanos:hover {
         width: 100%;
         gap: 0;
         display: none;
+        background: #253743;
     }
 
     .nav-li input:checked~ul{

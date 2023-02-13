@@ -57,8 +57,8 @@
                         <i class="icon-plus responsive" id="forma"></i>
                     </label>
                     <ul>
-                        <li><a href="nosotros">Quiénes Somos</a></li>
-                        <li><a href="nosotros" style="border-bottom: none;">Políticas de Gestión</a></li>
+                        <li id="us1"><a href="index.php?ruta=nosotros&1">Quiénes Somos</a></li>
+                        <li id="us2"><a href="index.php?ruta=nosotros&2" style="border-bottom: none;">Políticas de Gestión</a></li>
                     </ul>
                 </li>
                 <!--3-->
@@ -69,10 +69,10 @@
                         <i class="icon-plus responsive" id="forma1"></i>
                     </label>
                     <ul>
-                        <li><a href="index.php?ruta=servicios&id=1">Planificación</a></li>
-                        <li><a href="index.php?ruta=servicios&id=2">Pre - Inversión</a></li>
-                        <li><a href="index.php?ruta=servicios&id=3">Expedientes de Obra</a></li>
-                        <li><a href="index.php?ruta=servicios&id=4" style="border-bottom: none;">Supervisión</a></li>
+                        <li id="serv1"><a href="index.php?ruta=servicios&id=1">Planificación</a></li>
+                        <li id="serv2"><a href="index.php?ruta=servicios&id=2">Pre - Inversión</a></li>
+                        <li id="serv3"><a href="index.php?ruta=servicios&id=3">Expedientes de Obra</a></li>
+                        <li id="serv4"><a href="index.php?ruta=servicios&id=4" style="border-bottom: none;">Supervisión</a></li>
                     </ul>
                 </li>
                 <!--4-->
@@ -83,8 +83,8 @@
                         <i class="icon-plus responsive" id="forma2"></i>
                     </label>
                     <ul>
-                        <li><a href="index.php?ruta=proyectos&id=1">Por Tipo</a></li>
-                        <li><a href="index.php?ruta=proyectos&id=2" style="border-bottom: none;">Por Sector</a></li>
+                        <li id="proy1"><a href="index.php?ruta=proyectos&id=1">Por Tipo</a></li>
+                        <li id="proy2"><a href="index.php?ruta=proyectos&id=2" style="border-bottom: none;">Por Sector</a></li>
                     </ul>
                 </li>
                 <!--5-->
