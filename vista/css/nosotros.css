@@ -153,7 +153,6 @@ h3 {
   align-items: center;
   width: 90%;
   height: 80%;
-  background: #f8efd8;
   border-radius: 20px;
 }
 
@@ -181,7 +180,7 @@ h3 {
   content: '';
   position: absolute;
   width: 95px;
-  background-image: linear-gradient(180deg, rgb(30, 31, 31), rgb(225, 43, 27));
+  background-image: linear-gradient(180deg, rgb(146, 31, 20), rgb(146, 31, 20));
   height: 200%;
   animation: rotBGimg 4s linear infinite;
 }
@@ -199,7 +198,7 @@ h3 {
 .content-us .us-pdf .pdf-div::after {
   content: '';
   position: absolute;
-  background: rgb(199, 77, 69);
+  background: #253743;
   inset: 5px;
   border-radius: 15px;
 }
@@ -217,14 +216,13 @@ h3 {
 
 .content-us .us-pdf div .pdf-div p {
   z-index: 1;
-  width: 100%;
+  width: 90%;
   text-align: center;
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .content-us:nth-child(3) {
@@ -260,6 +258,7 @@ h3 {
   color: #666666;
   text-align: justify;
   padding: 15px;
+  font-size: 1.2vw;
 }
 
 .mvsion-div:nth-child(1) .us-tipos-proyectos {
@@ -339,7 +338,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid #d64a42;
+  border: 3px solid #8a1e18;
   border-radius: 10px;
 }
 
@@ -404,10 +403,15 @@ h3 {
 /*RESPONSIVE NOSOTROS*/
 
 @media (max-width: 1200px) {
+
   .content-us:nth-child(1) {
     height: 500px;
   }
 
+  .mvsion-div:nth-child(1) p {
+    font-size: 1.6vw;
+  }
+  
   .content-us:nth-child(1) .header-div h1 {
     font-size: 3.7vw;
 
@@ -455,9 +459,18 @@ h3 {
   .content-us:nth-child(1) {
     height: 350px;
   }
+
+  .mvsion-div:nth-child(1) p {
+    font-size: 1.9vw;
+  }
+
 }
 
 @media (max-width: 920px) {
+
+  .mvsion-div:nth-child(1) p {
+    font-size: 2.2vw;
+  }
 
   .content-us:nth-child(2) {
     height: auto;
@@ -505,5 +518,11 @@ h3 {
   .mvsion-div:nth-child(1) .us-tipos-proyectos div .fi:hover {
     font-size: 70px;
     color: var(--clr);
+  }
+}
+
+@media (max-width: 650px){
+  .mvsion-div:nth-child(1) p {
+    font-size: 2.6vw;
   }
 }

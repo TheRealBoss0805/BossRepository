@@ -54,7 +54,7 @@
                 foreach ($resp2registros as $publicacion) {
                     echo "<div class='div-posteosR'>
                     <div>
-                        <img src='vista/imagenes/extras/img-1.png' alt='' class='img-posteosR'>
+                        <img src=" . $publicacion["imagen"] . " alt='' class='img-posteosR'>
                         <a href='#'>" . $publicacion["titulo"] . "</a>
                     </div>
                     <div>
@@ -113,7 +113,7 @@
 
                     echo "
                     <div>
-                        <img src='vista/imagenes/extras/img-1.png' alt=''>
+                        <img src=" . $item["imagen"] . " alt=''>
                     </div>
                     <div>
                         <span>" . $dia . "-" . $mes . "_" . $anio . "<i class='fi fi-sr-calendar-clock'></i></span>
@@ -172,18 +172,22 @@
 
             <div class="blog-1">
                 <h1>Posteos Recientes</h1>
-                <div class="div-posteosR">
-                    <div>
-                        <img src="vista/imagenes/extras/img-1.png" alt="" class="img-posteosR">
-                        <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Fuga, nihil corporis. Consequuntur ullam, repellat
-                            praesentium dignissimos eveniet perferendis ut.</a>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat expedita hic ad at
-                            soluta iste deleniti veli.</p>
-                    </div>
-                </div>
+
+                <?php
+
+                $resp2registros = ControladorBlog::ctrMostrar2Publicaciones();
+                foreach ($resp2registros as $publicacion) {
+                    echo "<div class='div-posteosR'>
+                            <div>
+                                <img src=" . $publicacion["imagen"] . " alt='' class='img-posteosR'>
+                                <a href='#'>" . $publicacion["titulo"] . "</a>
+                            </div>
+                            <div>
+                                <p>" . $publicacion["descripcion"] . "</p>
+                            </div>
+                        </div>";
+                }
+                ?>
             </div>
 
             <div class="blog-1">

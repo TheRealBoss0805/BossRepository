@@ -28,21 +28,21 @@
                 <div>
                     <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
-                        <p>"THE BEATLES"
+                        <p>"POLÍTICA DE CALIDAD"
                         </p>
                     </div>
                 </div>
                 <div>
                     <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
-                        <p>"THE BEATLES"
+                        <p>"PÓLITICA DE MEDIO AMBIENTE"
                         </p>
                     </div>
                 </div>
                 <div>
                     <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
-                        <p>"THE BEATLES"
+                        <p>"POLÍTICA DE SEGURIDAD Y SALUD OCUPACIONAL"
                         </p>
                     </div>
                 </div>
