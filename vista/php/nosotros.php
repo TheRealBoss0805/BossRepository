@@ -58,23 +58,16 @@
                         Instituto de Consultoría S.A. es una institución que desde su
                         creación en 1995 viene contribuyendo al esfuerzo que los sectores
                         público y privado realizan para el desarrollo de nuestro país.<br><br>
-                        Instituto de Consultoría S.A. participa en los siguientes tipos de
-                        royectos de desarrollo:<br><br>
-
-                        Mega Inversiones.<br>
-                        Inversión en Infraestructura Social.<br>
-                        Estudios de Transporte.<br>
-                        Estudios Territoriales Y Aplicaciones a Infraestructuras.<br>
-                        Estudios Económicos Sociales.<br>
-                        Estudios Ambientales.
+                        <b>Instituto de Consultoría S.A. participa en los siguientes tipos de
+                        royectos de desarrollo:</b><br><br>
                     </p>
-                    <div>
-                        <span class="fi fi-sr-sack-dollar"></span>
-                        <span class="fi fi-sr-envelope-open-dollar"></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="us-tipos-proyectos">
+                        <div><span class="fi fi-sr-sack-dollar f1" style="--clr:#ffcf49;"></span><p class="p1">Mega Inversiones</p></div>
+                        <div><span class="fi fi-sr-people-carry-box f2" style="--clr:#321207;"></span><p class="p2">Inversión en Infraestructura Social</p></div>
+                        <div><span class="fi fi-sr-bus f3" style="--clr:#273765;"></span><p class="p3">Estudios de Transporte</p></div>
+                        <div><span class="fi fi-sr-map-marker f4" style="--clr:#923b27;"></span><p class="p4">Estudios Territoriales</p></div>
+                        <div><span class="fi fi-sr-chart-histogram f5" style="--clr:#ff5b4a;"></span><p class="p5">Estudios Económicos Sociales</p></div>
+                        <div><span class="fi fi-sr-flower-tulip f6" style="--clr:#006426;"></span><p class="p6">Estudios Ambientales</p></div>
                     </div>
                 </div>
                 <div class="mvsion-div">

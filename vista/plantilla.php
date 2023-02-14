@@ -102,4 +102,5 @@
 <script src="vista/js/imagen-modal-seleccion.js"></script>
 <script src="vista/js/proyecto.js"></script>
 <script src="vista/js/ruta-navegador.js"></script>
+<script src="vista/js/blog.js"></script>
 </html>
