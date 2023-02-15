@@ -553,6 +553,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     min-width: 854px;
+    border: 2px solid red;
+
 }
 
 .content-blog-2 .blog-2:nth-child(2) .div-archivos-blog {
@@ -577,7 +579,7 @@
 .content-blog-2 .blog-2:nth-child(2) .div-archivos-blog div:nth-child(1) img {
     width: 100%;
     height: 100%;
-    filter: contrast(1.5);
+    filter: contrast(1.3);
     transition: all .5s ease-in-out;
 }
 

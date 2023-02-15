@@ -35,7 +35,7 @@ class AjaxBlog
 
             foreach ($respuesta as $item) {
 
-                echo "<div class='div-archivos-blog'>";
+                echo "<div class='div-archivos-blog' id='idBlog'>";
                 $item4 = "id_blog_tipo";
                 $valor4 = $item["id_blog_tipo"];
                 $respuestaTipoZona = ControladorBlog::ctrTraerTipoZona($item4, $valor4);
@@ -73,7 +73,7 @@ class AjaxBlog
                     </span>
                     </div>
                     <div>
-                        <p>" . $item["titulo"] . "</p>
+                    <p class='articuloB'>" . $item["titulo"] . "</p>
                         <a href='index.php?ruta=blog-seleccion&id=" . $item["id_blog_pub"] . "'><span>Leer más</span></a>
                     </div>
                 </div>";

@@ -556,6 +556,7 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    border: 3px solid orange;
 }
 
 .slide3 .maximum {
@@ -707,6 +708,7 @@ input:checked~#despegar-profession {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 2px solid blue;
 }
 
 .slide3 div.minimum {
@@ -716,13 +718,13 @@ input:checked~#despegar-profession {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 2px solid red;
 }
 
 @media (max-width: 1060px) {
     .inicio-3 .muneco-major {
         display: none;
     }
-
 }
 
 @media (max-width: 650px) {

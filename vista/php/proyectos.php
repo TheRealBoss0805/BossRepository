@@ -57,7 +57,6 @@
         <form class="buscador-tipo-2">
             <label>Búsqueda:</label>
             <input type="text" placeholder="Proyectos" id="buscador" name="buscador">
-            <!--<input type="submit" value="Buscar" name ="btnBuscador">-->
         </form>
     </div>
     <?php

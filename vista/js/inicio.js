@@ -112,16 +112,8 @@ after.addEventListener('click', () => {
 
 /*CARRUSEL CON SWIPER*/
 
-let ancho = document.documentElement.clientWidth;
-let cambioWindow = document.getElementById("swiperGtfo");
-
-
-
-let slidesPerView = [3, 2, 1];
-let mostrador;
 
 /*if(ancho >= 1200){
-    console.log("si estaba bien");
     mostrador = slidesPerView[0];
 }
 if(ancho >= 650 && ancho < 1200){
@@ -132,28 +124,37 @@ if(ancho >= 0 && ancho < 650){
     mostrador = slidesPerView[2];
     cambioWindow.classList.replace("maximum", "minimum");
 }*/
+let cambioWindow = document.getElementById("swiperGtfo");
+let slidesPerView = [3, 2, 1];
+let mostrador;
 
-const reziseWindow = () =>{
-    if(ancho >= 1200){
+const reziseWindow = () => {
+
+    let ancho = document.documentElement.clientWidth;
+
+    if (ancho >= 1200) {
         mostrador = slidesPerView[0];
+        console.log("rivera");
+        console.log(ancho);
     }
-    if(ancho >= 700 && ancho < 1200){
+    if (ancho >= 755 && ancho < 1200) {
         mostrador = slidesPerView[1];
         cambioWindow.classList.replace("maximum", "medium");
+        console.log("rivera1");
+        console.log(ancho);
     }
-    if(ancho >= 0 && ancho < 700){
+    if (ancho >= 0 && ancho < 755) {
         mostrador = slidesPerView[2];
         cambioWindow.classList.replace("maximum", "minimum");
+        console.log("rivera2");
+        console.log(ancho);
     }
-
 }
 
-window.addEventListener("mouseover", reziseWindow);
-reziseWindow();
-
+window.addEventListener("resize", reziseWindow);
 
 var swiper = new Swiper(".mySwiper", hola = {
-    slidesPerView: mostrador,
+    slidesPerView: reziseWindow(),
     spaceBetween: 30,
     slidesPerGroup: 1,
     loop: false,
@@ -280,10 +281,10 @@ addEventListener('DOMContentLoaded', () => {
 
 let despliege1 = document.getElementById("name-profession1");
 
-const desplegarCambiar1 = () =>{
+const desplegarCambiar1 = () => {
     let iconodesp = document.getElementById("icon-1");
     let desplegado = despliege1.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
+    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus") : iconodesp.classList.replace("icon-minus", "icon-plus");
     iconodesp.classList.toggle("red");
 }
 
@@ -291,10 +292,10 @@ despliege1.addEventListener("change", desplegarCambiar1);
 
 let despliege2 = document.getElementById("name-profession2");
 
-const desplegarCambiar2 = () =>{
+const desplegarCambiar2 = () => {
     let iconodesp = document.getElementById("icon-2");
     let desplegado = despliege2.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
+    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus") : iconodesp.classList.replace("icon-minus", "icon-plus");
     iconodesp.classList.toggle("red");
 }
 
@@ -302,10 +303,10 @@ despliege2.addEventListener("change", desplegarCambiar2);
 
 let despliege3 = document.getElementById("name-profession3");
 
-const desplegarCambiar3 = () =>{
+const desplegarCambiar3 = () => {
     let iconodesp = document.getElementById("icon-3");
     let desplegado = despliege3.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
+    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus") : iconodesp.classList.replace("icon-minus", "icon-plus");
     iconodesp.classList.toggle("red");
 }
 
@@ -313,22 +314,22 @@ despliege3.addEventListener("change", desplegarCambiar3);
 
 let despliege4 = document.getElementById("name-profession4");
 
-const desplegarCambiar4 = () =>{
+const desplegarCambiar4 = () => {
     let iconodesp = document.getElementById("icon-4");
     let desplegado = despliege4.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
+    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus") : iconodesp.classList.replace("icon-minus", "icon-plus");
     iconodesp.classList.toggle("red");
-    
+
 }
 
 despliege4.addEventListener("change", desplegarCambiar4);
 
 let despliege5 = document.getElementById("name-profession5");
 
-const desplegarCambiar5 = () =>{
+const desplegarCambiar5 = () => {
     let iconodesp = document.getElementById("icon-5");
     let desplegado = despliege5.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
+    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus") : iconodesp.classList.replace("icon-minus", "icon-plus");
     iconodesp.classList.toggle("red");
 }
 
@@ -336,10 +337,10 @@ despliege5.addEventListener("change", desplegarCambiar5);
 
 let despliege6 = document.getElementById("name-profession6");
 
-const desplegarCambiar6 = () =>{
+const desplegarCambiar6 = () => {
     let iconodesp = document.getElementById("icon-6");
     let desplegado = despliege6.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
+    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus") : iconodesp.classList.replace("icon-minus", "icon-plus");
     iconodesp.classList.toggle("red");
 }
 
@@ -347,10 +348,10 @@ despliege6.addEventListener("change", desplegarCambiar6);
 
 let despliege7 = document.getElementById("name-profession7");
 
-const desplegarCambiar7 = () =>{
+const desplegarCambiar7 = () => {
     let iconodesp = document.getElementById("icon-7");
     let desplegado = despliege7.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
+    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus") : iconodesp.classList.replace("icon-minus", "icon-plus");
     iconodesp.classList.toggle("red");
 }
 
@@ -358,10 +359,10 @@ despliege7.addEventListener("change", desplegarCambiar7);
 
 let despliege8 = document.getElementById("name-profession8");
 
-const desplegarCambiar8 = () =>{
+const desplegarCambiar8 = () => {
     let iconodesp = document.getElementById("icon-8");
     let desplegado = despliege8.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
+    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus") : iconodesp.classList.replace("icon-minus", "icon-plus");
     iconodesp.classList.toggle("red");
 }
 
@@ -369,10 +370,10 @@ despliege8.addEventListener("change", desplegarCambiar8);
 
 let despliege9 = document.getElementById("name-profession9");
 
-const desplegarCambiar9 = () =>{
+const desplegarCambiar9 = () => {
     let iconodesp = document.getElementById("icon-9");
     let desplegado = despliege9.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
+    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus") : iconodesp.classList.replace("icon-minus", "icon-plus");
     iconodesp.classList.toggle("red");
 }
 

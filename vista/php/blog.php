@@ -84,7 +84,7 @@
                 </div>
                 <div>
                     <form action="">
-                        <input type="search" placeholder="Buscar...">
+                        <input type="text" placeholder="Archivos" id="buscadorB" name="buscadorB">
                         <label>Búsqueda:</label>
                     </form>
                 </div>
@@ -102,7 +102,7 @@
                 $respuesta = ControladorBlog::ctrMostrarPublicaciones($item, $valor, $itemdos, $valordos);
 
                 foreach ($respuesta as $item) {
-                    echo "<div class='div-archivos-blog'>";
+                    echo "<div class='div-archivos-blog' id='idBlog'>";
                     $item4 = "id_blog_tipo";
                     $valor4 = $item["id_blog_tipo"];
                     $respuestaTipoZona = ControladorBlog::ctrTraerTipoZona($item4, $valor4);
@@ -139,7 +139,7 @@
                         </span>
                     </div>
                     <div>
-                        <p>" . $item["titulo"] . "</p>
+                        <p class='articuloB'>" . $item["titulo"] . "</p>
                         <a href='index.php?ruta=blog-seleccion&id=" . $item["id_blog_pub"] . "'><span>Leer más</span></a>
                     </div>
                 </div>";
@@ -149,8 +149,8 @@
 
             <div class="blog-2">
                 <div>
-                    <a href=""><span class="icon-left-open"></span>Regresar</a>
-                    <a href="">Continuar<span class="icon-right-open"></span></a>
+                    <a href="javascript:prevPage()" id="btnBefore"><span class="icon-left-open"></span>Regresar</a>
+                    <a href="javascript:nextPage()" id="btnAfter">Continuar<span class="icon-right-open"></span></a>
                 </div>
                 <div>
                     <span>0</span>

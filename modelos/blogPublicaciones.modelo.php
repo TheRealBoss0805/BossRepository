@@ -8,14 +8,11 @@ class ModeloBlog
 
     static public function mdlMostrarPublicaciones($tabla, $item, $item2, $valor, $valor2)
     {
-        echo "<script>console.log('hola')</script>";
         if ($valor == null && $valor2 == null) {
-            echo "<script>console.log('hola1')</script>";
             $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY id_blog_pub ASC");
             $stmt->execute();
             return $stmt->fetchAll();
         } else if ($valor == null &&  $valor2 != null) {
-            echo "<script>console.log('hola2')</script>";
             $stmt = Conexion::conectar()->prepare("SELECT * FROM blog_publicaciones WHERE EXTRACT(YEAR FROM $item2)=:$item2");
             $stmt->bindParam(":" . $item2, $valor2, PDO::PARAM_STR);
             $stmt->execute();
@@ -30,7 +27,6 @@ class ModeloBlog
             $stmt->execute();
             return $stmt->fetchAll();
         } else {
-            echo "<script>console.log('hola4')</script>";
             //SELECT * FROM blog_publicaciones WHERE EXTRACT(YEAR FROM fecha)=2023;
             $stmt = Conexion::conectar()->prepare("SELECT * FROM blog_pub_cat pc JOIN blog_publicaciones p ON pc.id_blog_pub = p.id_blog_pub WHERE $item = :$item AND EXTRACT(YEAR FROM $item2)=:$item2");
             $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);

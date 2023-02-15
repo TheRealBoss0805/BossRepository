@@ -16,6 +16,7 @@
                     <h1 id="titles"></h1>
                 </div>
                 <div class="description-div">
+                    <img src="" id="imgUs">
                     <p id="descriptions"></p>
                 </div>
             </div>
@@ -50,7 +51,7 @@
         </div>
         <div class="content-us" id="usInfo">
             <div class="title-us">
-                <h2>¿quiénes somos?</h2>
+                <h2>BIENVENIDOS A INDECONSULT S.A. – INGENIEROS CONSULTORES.</h2>
             </div>
             <div class="us-mvsion">
                 <div class="mvsion-div">
