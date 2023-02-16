@@ -78,9 +78,9 @@
             <div class="blog-2">
                 <div>
                     <h1>Archivos</h1>
-                    <a class="btnAnio" anio="2023">Año 2023</a>
-                    <a class="btnAnio" anio="2022">Año 2022</a>
-                    <a class="btnAnio" anio="2021">Año 2021</a>
+                    <a class="btnAnio" anio="2017">Año 2017</a>
+                    <a class="btnAnio" anio="2016">Año 2016</a>
+                    <a class="btnAnio" anio="2015">Año 2015</a>
                 </div>
                 <div>
                     <form action="">
@@ -99,7 +99,19 @@
                 $itemdos = null;
                 $valordos = null;
 
-                $respuesta = ControladorBlog::ctrMostrarPublicaciones($item, $valor, $itemdos, $valordos);
+                $tamanio_pagina=2;
+                $pagina = 1;
+
+
+                $num_filas= ControladorBlog::ctrContarPublicaciones($item, $valor, $itemdos, $valordos);
+                
+                $total_paginas=ceil($num_filas/$tamanio_pagina);
+                $empezar_desde = ($pagina-1)*$tamanio_pagina;
+
+                $respuesta = ControladorBlog::ctrMostrarPublicaciones($item, $valor, $itemdos, $valordos, $empezar_desde, $tamanio_pagina);
+
+                echo "<input type='hidden' id='input_total_pages' value='$total_paginas'>";
+                echo "<input type='hidden' id='input_page' value='$pagina'>";
 
                 foreach ($respuesta as $item) {
                     echo "<div class='div-archivos-blog' id='idBlog'>";
@@ -116,7 +128,7 @@
                         <img src=" . $item["imagen"] . " alt=''>
                     </div>
                     <div>
-                        <span>" . $dia . "-" . $mes . "_" . $anio . "<i class='fi fi-sr-calendar-clock'></i></span>
+                        <span>" . $dia . "-" . $mes . "_" . $anio .$num_filas. "<i class='fi fi-sr-calendar-clock'></i></span>
                         <span>" . $respuestaTipoZona["nombre"] . "<i class='fi fi-sr-code-compare'></i></span>
                         <span>";
 
@@ -153,9 +165,9 @@
                     <a href="javascript:nextPage()" id="btnAfter">Continuar<span class="icon-right-open"></span></a>
                 </div>
                 <div>
-                    <span>0</span>
+                    <span id="page"><?=($total_paginas==0)?0:$pagina?></span>
                     <span>/</span>
-                    <span>0</span>
+                    <span id="total_pages"><?=$total_paginas?></span>
                 </div>
             </div>
 

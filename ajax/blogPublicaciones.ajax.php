@@ -12,6 +12,7 @@ class AjaxBlog
 
     public $idCategoria;
     public $valorAnio;
+    public $valorPagina;
 
     public function ajaxFiltrar()
     {
@@ -22,18 +23,33 @@ class AjaxBlog
         $item2 = "fecha";
         $valor2 = $this->valorAnio;
 
+        $pagina = $this->valorPagina;
+
         if ($valor == "") {
             $valor = null;
         } else if ($valor2 == "") {
             $valor2 = null;
         }
 
-        $respuesta = ControladorBlog::ctrMostrarPublicaciones($item, $item2, $valor, $valor2);
+        $tamanio_pagina=2;
+
+        $num_filas= ControladorBlog::ctrContarPublicaciones($item, $valor, $item2, $valor2);
+        
+        $total_paginas=ceil($num_filas/$tamanio_pagina);
+        $empezar_desde = ($pagina-1)*$tamanio_pagina;
+        
+        echo "<input type='hidden' id='input_total_pages' value='$total_paginas'>";
+        echo "<input type='hidden' id='input_page' value='$pagina'>";
+        $respuesta = ControladorBlog::ctrMostrarPublicaciones($item, $item2, $valor, $valor2, $empezar_desde, $tamanio_pagina);
+        
+       
+
         if (!$respuesta) {
             echo "No se encontraron resultados";
         } else {
 
             foreach ($respuesta as $item) {
+                //echo "<script>change(1);</script>";
 
                 echo "<div class='div-archivos-blog' id='idBlog'>";
                 $item4 = "id_blog_tipo";
@@ -49,7 +65,7 @@ class AjaxBlog
                     <img src=" . $item["imagen"] . " alt=''>
                 </div>
                 <div>
-                    <span>" . $dia . "-" . $mes . "_" . $anio . "<i class='fi fi-sr-calendar-clock'></i></span>
+                    <span>" . $dia . "-" . $mes . "_" . $anio. "<i class='fi fi-sr-calendar-clock'></i></span>
                     <span>" . $respuestaTipoZona["nombre"] . "<i class='fi fi-sr-code-compare'></i></span>
                     <span>";
 
@@ -88,9 +104,10 @@ class AjaxBlog
 TRAE LOS ITEMS DE ACUERDO A LOS FILTROS QUE SE APLIQUEN, YA SEA POR SECTOR O TIPO
 =============================================*/
 
-if (isset($_POST["idCategoria"]) && isset($_POST["valorAnio"])) {
+if (isset($_POST["idCategoria"]) && isset($_POST["valorAnio"]) && isset($_POST["pagina"])) {
     $filtro = new AjaxBlog();
     $filtro->idCategoria = $_POST["idCategoria"];
     $filtro->valorAnio = $_POST["valorAnio"];
+    $filtro->valorPagina = $_POST["pagina"];
     $filtro->ajaxFiltrar();
 }
