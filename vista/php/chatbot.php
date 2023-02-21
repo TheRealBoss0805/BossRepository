@@ -1,3 +1,7 @@
+<?php
+
+$_SESSION["pedirNombre"] = false;
+?>
 <!doctype html>
 <html>
 
@@ -33,12 +37,47 @@
                     <i class="icon-cancel" id="bossito2"></i>
                 </button>
             </div>
-            <div class="viewMessages">
-
+            
+            <div class="viewMessages" id="viewMessages">
+                <!-- <div class="container_msg_bot">
+                    <div class="container_img_bot"><img src="vista/imagenes/chatbot/botIcono.png" alt=""></div>
+                    <div class="msg_bot">
+                        Hola, mi nombre es TheBoss ¿en que puedo ayudarte?
+                        <div class="opciones">
+                            <a>Opción 1</a>
+                            <a>Opción 2</a>
+                            <a>Opción 3</a>
+                            <a>Opción 4</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="msg_client">
+                    Hola una consulta.
+                </div>
+                <div class="container_msg_bot">
+                    <div class="container_img_bot"><img src="vista/imagenes/chatbot/botIcono.png" alt=""></div>
+                    <div class="msg_bot">
+                        Buenos dias en que puedo ayudarte?
+                    </div>
+                </div>
+                
+                <div class="msg_client">
+                    Hola una consulta.
+                </div>
+                <div class="container_msg_bot">
+                    <div class="container_img_bot"><img src="vista/imagenes/chatbot/botIcono.png" alt=""></div>
+                    <div class="msg_bot">
+                        Buenos dias en que puedo ayudarte?
+                    </div>
+                </div> 
+                <div class="msg_client">
+                    Hola una consulta.
+                </div> -->
             </div>
             <div class="interaction">
-                <input type="text" placeholder="Escribe tu mensaje aquí.">
-                <span class="icon-direction-1"></span>
+                <input type="text" placeholder="Escribe tu mensaje aquí." id="inputMsg">
+                <span class="icon-direction-1" id="btnEnviar"></span>
             </div>
         </div>
     </div>

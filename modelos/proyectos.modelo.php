@@ -27,11 +27,21 @@
             $stmt = null;
         }
 
-        /*MOSTRAR TIPOS Y SECTORES*/
+        /*MOSTRAR CATEGORIAS POR CATEGORIAS TIPOS Y SECTORES*/
         static public function mdlMostrarTipoSector($tabla, $item, $valor){
             if($item != null){
                 $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY id_proy_ts ASC");
                 $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+                $stmt -> execute();
+                return $stmt -> fetchAll();
+            }
+            $stmt -> close();
+            $stmt = null;
+        }
+        //MUESTRA LA TABLA DE PROYECTOS 
+        static public function mdlMostrarTodoProyectos($tabla){
+            if($tabla != null){
+                $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY id_proyecto ASC");
                 $stmt -> execute();
                 return $stmt -> fetchAll();
             }

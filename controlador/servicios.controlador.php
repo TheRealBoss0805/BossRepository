@@ -13,6 +13,11 @@
             $respuesta = ModeloServicios::mdlMostrarItem($tabla, $item, $valor);
             return $respuesta;
         }
+        static public function ctrMostrarTodoServicios(){
+            $tabla = "servicios";
+            $respuesta = ModeloServicios::mdlMostrarTodoServicios($tabla);
+            return $respuesta;
+        }
 
 }
 ?>
