@@ -13,147 +13,34 @@
 
 <body>
     <div class="contenedor-inicio" id="inicioPadre">
-
         <!--INICIO 1-->
-
         <div class="inicio-1">
             <div class="content-slider">
-                <img src="../../../../../Users/Usuario/AppData/Local/Temp/imagencab3.jpg" alt="" />
                 <div class="slider-top">
                     <div id="div-slider-top">
                         <section class="section-slider">
                             <div class="slider">
-                                <div class="slide active"
-                                    style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
+                                <?php
+                                $portada = ControladorPortada::ctrMostrar8Portadas();
+                                $portadaReverse = array_replace($portada);
+                                foreach ($portadaReverse as $filtro) {
+                                    $anio = date("Y", strtotime($filtro["fecha"]));
+                                    $dia = date("d", strtotime($filtro["fecha"]));
+                                    $mes = date("m", strtotime($filtro["fecha"]));
+                                    echo "
+                                    <div class='slide' style='background-image: url(" . $filtro["imagen"] . ")'>
+                                    <div class='container'>
+                                        <div class='caption'>
+                                            <a href='https://www.facebook.com/institutodeconsultoriasa' target='blank'>
+                                                <h1>" . $dia . " / " . $mes . " / " . $anio . "</h1>
+                                                <p>" . $filtro["titulo"] . "</p>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-2.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-3.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide" style="background-image: url('vista/imagenes/extras/img-1.png')">
-                                    <div class="container">
-                                        <div class="caption">
-                                            <a href="#">
-                                                <h1>Nombre de Servicio</h1>
-                                                <p>Concepto o Nombre: Lorem ipsum dolor sit amet, consectetur
-                                                    adipisicing elit.
-                                                    Nam voluptates autem aliquid quia eum quod facere corrupti rem
-                                                    tenetur.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    ";
+                                }
+                                ?>
                             </div>
                         </section>
                     </div>
@@ -166,118 +53,51 @@
                 </div>
             </div>
         </div>
-
         <!--INICIO 2-->
-
         <div class="inicio-2">
             <div class="title-inicio">
                 <h2>NUESTROS SERVICIOS</h2>
             </div>
-
             <div class="content-service contenedores">
+                <?php
+                for ($i = 1; $i < 5; $i++) {
+                    $item = "id_servicio";
+                    $valor = $i;
+                    $respuesta = ControladorServicios::ctrMostrarServicio($item, $valor);
+                    $separador = "<br>";
+                    $cadena = $respuesta["descripcion"];
+                    $stringSeparado = explode($separador, $cadena);
+                    $cad = $stringSeparado[0];
+                    $caracteres = 142;
+                    $cadenaAcortada = substr($cad, 0, $caracteres) . '...';
+                    $id = $respuesta["id_servicio"];
 
-                <div class="service-1 div">
-                    <a href="#" class="hola">
-                        <div class="glass-div"></div>
-                        <span>
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
-                        </span>
-                        <div class="div-plus" style="background: #9b133e;">
-                            <div class="icon-plus-1"></div>
-                            <div class="div-plus-txt">
-                                <span class="icon-info-circled"></span>
-                                <span>Ver más</span>
+                    echo "
+                        <div class='service-$id div'>
+                            <a href='index.php?ruta=servicios&id=$id' class='hola'>
+                                <div class='glass-div'></div>
+                                <span>
+                                    <img src=" . $respuesta['portada'] . " alt=''>
+                                </span>
+                                <div class='div-plus' style=''>
+                                    <div class='icon-plus-1'></div>
+                                    <div class='div-plus-txt'>
+                                        <span class='icon-info-circled'></span>
+                                        <span>Ver más</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class='description-service'>
+                                <h3 style='color: #253743;'>" . $respuesta["nombre"] . "</h3>
+                                <p>" . $cadenaAcortada . "</p>
                             </div>
-                        </div>
-                    </a>
-                    <div class="description-service"
-                        style="box-shadow: inset -5px -5px 7px #9b133e, inset 5px 5px 7px #9b133e;">
-                        <h3 style="color: #253743;">PLANIFICACIÓN</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Necessitatibus repellat
-                            numquam.</p>
-                    </div>
-                    <img src="vista/imagenes/extras/munecos/2.png" alt="" class="muneco-service">
-                </div>
-
-                <div class="service-2 div">
-                    <a href="#">
-                        <div class="glass-div">
-                        </div>
-                        <span>
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
-                        </span>
-                        <div class="div-plus" style="background: #8011a4;">
-                            <div class="icon-plus-1"></div>
-                            <div class="div-plus-txt">
-                                <span class="icon-info-circled"></span>
-                                <span>Ver más</span>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="description-service"
-                        style="box-shadow: inset -5px -5px 7px #8011a4, inset 5px 5px 7px #8011a4;">
-                        <h3 style="color: #253743;">PRE-INVERSIÓN</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Necessitatibus repellat
-                            numquam.</p>
-                    </div>
-                    <img src="vista/imagenes/extras/munecos/7.png" alt="" class="muneco-service">
-                </div>
-
-                <div class="service-3 div">
-                    <a href="#">
-                        <div class="glass-div"></div>
-                        <span>
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
-                        </span>
-                        <div class="div-plus" style="background: #1289bc;">
-                            <div class="icon-plus-1"></div>
-                            <div class="div-plus-txt">
-                                <span class="icon-info-circled"></span>
-                                <span>Ver más</span>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="description-service"
-                        style="box-shadow: inset -5px -5px 7px #1289bc, inset 5px 5px 7px #1289bc;">
-                        <h3 style="color: #253743;">EXPEDIENTES DE OBRA</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Necessitatibus repellat
-                            numquam.</p>
-                    </div>
-                    <img src="vista/imagenes/extras/munecos/8.png" alt="" class="muneco-service">
-                </div>
-
-                <div class="service-4 div">
-                    <a href="#">
-                        <div class="glass-div"></div>
-                        <span>
-                            <img src="vista/imagenes/extras/img-1.png" alt="">
-                        </span>
-                        <div class="div-plus" style="background: #aa8e1c;">
-                            <div class="icon-plus-1"></div>
-                            <div class="div-plus-txt">
-                                <span class="icon-info-circled"></span>
-                                <span>Ver más</span>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="description-service"
-                        style="box-shadow: inset -5px -5px 7px #aa8e1c, inset 5px 5px 7px #aa8e1c;">
-                        <h3 style="color: #253743;">SUPERVISIÓN</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Necessitatibus repellat
-                            numquam.</p>
-                    </div>
-                    <img src="vista/imagenes/extras/munecos/9.png" alt="" class="muneco-service">
-                </div>
-
+                            <img src='vista/imagenes/extras/munecos/$i.png' alt='' class='muneco-service'>
+                        </div>";
+                }
+                ?>
             </div>
         </div>
-
         <!--INICIO 3-->
-
         <div class="inicio-3">
             <div class="title-inicio">
                 <h2>Trabajos recientes</h2>
@@ -286,292 +106,106 @@
             <section class="slide3">
                 <div class="swiper mySwiper maximum" id="swiperGtfo">
                     <div class="swiper-wrapper content">
+                        <?php
+                        for ($i = 1; $i < 5; $i++) {
+                            $item = "id_servicio";
+                            $valor = $i;
+                            $respuesta  = ControladorServicios::ctrMostrarServicio($item, $valor);
+                            $otherRespuesta = ControladorServicios::ctrMostrarItem($item, $valor);
+                            $separador = "<br>";
 
-                        <div class="swiper-slide card">
-                            <input type="checkbox" id="name-profession1">
-                            <label for="name-profession1">
-                                <div class="icon-plus" id="icon-1"></div>
-                            </label>
+                            $respuestaReverse = array_reverse($otherRespuesta);
+                            $filtro = [$respuestaReverse[0], $respuestaReverse[1], $respuestaReverse[2]];
 
-                            <div class="card-content" id="despegar-profession">
-                                <div class="image">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                </div>
-                                <div class="name-profession">
-                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
-                                        de Moquegua</span>
-                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
-                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
-                                        se desarrolló los anteproyectos y estudios definitivos de todas las
-                                        especialidades.</span>
-                                </div>
-                            </div>
+                            foreach ($filtro as $item) {
 
-                        </div>
+                                $cadena = $item["descripcion"];
+                                $stringSeparado = explode($separador, $cadena);
+                                $cad = $stringSeparado[0];
+                                $caracteres = 150;
+                                $cadenaAcortada = substr($cad, 0, $caracteres) . '...';
+                                $id = $item["id_serv_item"];
 
-                        <div class="swiper-slide card">
-                            <input type="checkbox" id="name-profession2">
-                            <label for="name-profession2">
-                                <div class="icon-plus" id="icon-2"></div>
-                            </label>
-                            <div class="card-content" id="despegar-profession">
-                                <div class="image">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                </div>
-                                <div class="name-profession">
-                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
-                                        de Moquegua</span>
-                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
-                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
-                                        se desarrolló los anteproyectos y estudios definitivos de todas las
-                                        especialidades.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide card">
-                            <input type="checkbox" id="name-profession3">
-                            <label for="name-profession3">
-                                <div class="icon-plus" id="icon-3"></div>
-                            </label>
-                            <div class="card-content" id="despegar-profession">
-                                <div class="image">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                </div>
-                                <div class="name-profession">
-                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
-                                        de Moquegua</span>
-                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
-                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
-                                        se desarrolló los anteproyectos y estudios definitivos de todas las
-                                        especialidades.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide card">
-                            <input type="checkbox" id="name-profession4">
-                            <label for="name-profession4">
-                                <div class="icon-plus" id="icon-4"></div>
-                            </label>
-                            <div class="card-content" id="despegar-profession">
-                                <div class="image">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                </div>
-                                <div class="name-profession">
-                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
-                                        de Moquegua</span>
-                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
-                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
-                                        se desarrolló los anteproyectos y estudios definitivos de todas las
-                                        especialidades.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide card">
-                            <input type="checkbox" id="name-profession5">
-                            <label for="name-profession5">
-                                <div class="icon-plus" id="icon-5"></div>
-                            </label>
-                            <div class="card-content" id="despegar-profession">
-                                <div class="image">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                </div>
-                                <div class="name-profession">
-                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
-                                        de Moquegua</span>
-                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
-                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
-                                        se desarrolló los anteproyectos y estudios definitivos de todas las
-                                        especialidades.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide card">
-                            <input type="checkbox" id="name-profession6">
-                            <label for="name-profession6">
-                                <div class="icon-plus" id="icon-6"></div>
-                            </label>
-                            <div class="card-content" id="despegar-profession">
-                                <div class="image">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                </div>
-                                <div class="name-profession">
-                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
-                                        de Moquegua</span>
-                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
-                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
-                                        se desarrolló los anteproyectos y estudios definitivos de todas las
-                                        especialidades.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide card">
-                            <input type="checkbox" id="name-profession7">
-                            <label for="name-profession7">
-                                <div class="icon-plus" id="icon-7"></div>
-                            </label>
-                            <div class="card-content" id="despegar-profession">
-                                <div class="image">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                </div>
-                                <div class="name-profession">
-                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
-                                        de Moquegua</span>
-                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
-                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
-                                        se desarrolló los anteproyectos y estudios definitivos de todas las
-                                        especialidades.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide card">
-                            <input type="checkbox" id="name-profession8">
-                            <label for="name-profession8">
-                                <div class="icon-plus" id="icon-8"></div>
-                            </label>
-                            <div class="card-content" id="despegar-profession">
-                                <div class="image">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                </div>
-                                <div class="name-profession">
-                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
-                                        de Moquegua</span>
-                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
-                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
-                                        se desarrolló los anteproyectos y estudios definitivos de todas las
-                                        especialidades.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide card">
-                            <input type="checkbox" id="name-profession9">
-                            <label for="name-profession9">
-                                <div class="icon-plus" id="icon-9"></div>
-                            </label>
-                            <div class="card-content" id="despegar-profession">
-                                <div class="image">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                </div>
-                                <div class="name-profession">
-                                    <span class="name">Expediente Técnico para la Ampliación y Mejoramiento del Hospital
-                                        de Moquegua</span>
-                                    <span class="profession">Por encargo del Ejecutor de la Obra se desarrolló el
-                                        Expediente Técnico para la ampliación y Mejoramiento del Hospital de Moquegua,
-                                        se desarrolló los anteproyectos y estudios definitivos de todas las
-                                        especialidades.</span>
-                                </div>
-                            </div>
-                        </div>
-
+                                echo "<div class='swiper-slide card'>
+                                
+                                    <div class='icon-plus icono-card' id='icon'></div>
+        
+                                    <div class='card-content' id='despegar-profession'>
+                                        <div class='image'>
+                                            <a href='index.php?ruta=servicios-eleccion&idItem=$id'>
+                                                <img src='" . $item["foto"] . "'>
+                                            </a>
+                                        </div>
+                                        <div class='name-profession'>
+                                            <span class='name'>" . $item["titulo"] . "</span>
+                                            <span class='profession'>" . $cadenaAcortada . "</span>
+                                        </div>
+                                    </div>";
+                                echo "
+                                        <div class='card-down' id='card-down'>
+                                            <i class='fi fi-sr-chevron-double-down'></i>
+                                        </div>
+                                </div>";
+                            }
+                        }
+                        ?>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </section>
-            <img src="vista/imagenes/extras/munecos/3.png" alt="" class="muneco-major">
+            <img src="vista/imagenes/extras/munecos/6.png" alt="" class="muneco-major">
         </div>
-
         <!--INICIO 4-->
-
         <div class="inicio-4">
             <div class="title-inicio">
-                <h2>Noticias sobre la empresa y el sector</h2>
+                <h2>Noticias sobre la Empresa y el Sector</h2>
             </div>
             <div class="contenedor-4">
                 <div class="content4-ct0">
                     <div class="ct0-texto">
                         <h2>¡NOTICIAS RECIENTES!</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Est in at aspernatur
-                            optio id ipsam illo veritatis tempore quod
-                            similique itaque, magni omnis inventore,
-                            qui consectetur neque cumque, voluptate.
+                        <p>Indeconsult S.A. Es una empresa
+                            dedicada a ofrecer soluciones a diversas
+                            necesidades de nuestros clientes, basándonos en la
+                            ética, honestidad, compromiso y buenos valores.
                         </p>
                     </div>
                     <div class="ct0-button">
-                        <a href="#">Ver más noticias</a>
+                        <a href="blog">Ver más noticias</a>
                     </div>
                 </div>
-
-
                 <div class="content4-ct">
-                    <div class="ct-child1">
-                        <div class="child1-min">
-
-                            <div class="child1-img">
-                                <!--<div>Día, Fecha y año</div>-->
-                                <div href="#" class="front">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                    <!--<p>título de la imagen</p>-->
-                                </div>
-                                <div class="back">
-                                    <h3>Título de la Imagen.</h3>
-                                    <p>Día, Mes y Año</p>
-                                    <a href="#" title="Ver más"><span class="icon-news"></span></a>
-                                </div>
+                    <?php
+                    $resp4registros = ControladorBlog::ctrMostrar4Publicaciones();
+                    $ultimos4Blog = array_reverse($resp4registros);
+                    foreach ($ultimos4Blog as $publicacion) {
+                        $anio = date("Y", strtotime($publicacion["fecha"]));
+                        $dia = date("d", strtotime($publicacion["fecha"]));
+                        $mes = date("m", strtotime($publicacion["fecha"]));
+                        echo "
+                        <div class='child1-min'>
+                        <div class='child1-img'>
+                            <div href='index.php?ruta=blog-seleccion&id=" . $publicacion["id_blog_pub"] . "' class='front'>
+                                <img src=" . $publicacion["imagen"] . " alt=''>
                             </div>
-
-                        </div>
-                        <div class="child1-min">
-                            <div class="child1-img">
-                                <!--<div>Día, Fecha y año</div>-->
-                                <div href="#" class="front">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                    <!--<p>título de la imagen</p>-->
-                                </div>
-                                <div class="back">
-                                    <h3>Título de la Imagen.</h3>
-                                    <p>Día, Mes y Año</p>
-                                    <a href="#" title="Ver más"><span class="icon-news"></span></a>
-                                </div>>
+                            <div class='back'>
+                                <h3>" . $publicacion["titulo"] . "</h3>
+                                <p>" . $dia . "-" . $mes . "-" . $anio . "</p>
+                                <a href='index.php?ruta=blog-seleccion&id=" . $publicacion["id_blog_pub"] . "' title='Ver más'>
+                                    <span class='icon-news'></span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="ct-child1">
-                        <div class="child1-min">
-                            <div class="child1-img">
-                                <!--<div>Día, Fecha y año</div>-->
-                                <div href="#" class="front">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                    <!--<p>título de la imagen</p>-->
-                                </div>
-                                <div class="back">
-                                    <h3>Título de la Imagen.</h3>
-                                    <p>Día, Mes y Año</p>
-                                    <a href="#" title="Ver más"><span class="icon-news"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="child1-min">
-                            <div class="child1-img">
-                                <!--<div>Día, Fecha y año</div>-->>
-                                <div href="#" class="front">
-                                    <img src="vista/imagenes/extras/img-1.png" alt="">
-                                    <!--<p>título de la imagen</p>-->
-                                </div>
-                                <div class="back">
-                                    <h3>Título de la Imagen.</h3>
-                                    <p>Día, Mes y Año</p>
-                                    <a href="#" title="Ver más"><span class="icon-news"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        ";
+                    }
+                    ?>
                 </div>
-
-
             </div>
         </div>
-
         <!--INICIO 5-->
-
         <div class="inicio-5">
             <div class="title-inicio">
                 <h2>Instituto de consultoría S.A</h2>
@@ -580,7 +214,7 @@
                 <div class="content-5">
                     <div class="content-5-min1">
                         <p>Promover la Inversión Pública y Privada en un marco<br> de Competencia y Eficiencia.</p>
-                        <img src="vista/imagenes/valores/Mision.png" alt="" class="valor1">
+                        <img src="vista/imagenes/inicio/valores/Mision.png" alt="" class="valor1">
                     </div>
                     <div class="content-5-min2 min2-1">
                         <h1>MISIÓN</h1>
@@ -592,39 +226,23 @@
                     </div>
                     <div class="content-5-min1">
                         <p>Convertirnos en la empresa líder en Consultoría de<br> Inversión Pública y Privada.</p>
-                        <img src="vista/imagenes/valores/vision.png" alt="" class="valor2">
+                        <img src="vista/imagenes/inicio/valores/vision.png" alt="" class="valor2">
                     </div>
                 </div>
                 <div class="content-5">
                     <div class="contenedor-5-burbuja">
-                        <div class="content-5-burbuja" style="--clr:#ff0f5b;">
-                            <div class="burbuja-5">
-                                <img src="vista/imagenes/extras/img-1.png" alt="">
-                                <p>Pésimo.</p>
-                                <a href="#">Ver más</a>
+                        <?php
+                        for ($i = 1; $i < 5; $i++) {
+                            echo "
+                            <div class='content-5-burbuja burbujaColor' style=''>
+                            <div class='burbuja-5'>
+                                <img src='vista/imagenes/inicio/valores/$i.jpg' alt=''>
+                                <p class='valor'></p>
                             </div>
                         </div>
-                        <div class="content-5-burbuja" style="--clr:#be01fe;">
-                            <div class="burbuja-5">
-                                <img src="vista/imagenes/extras/img-1.png" alt="">
-                                <p>Regular.</p>
-                                <a href="#">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="content-5-burbuja" style="--clr:#01b4ff;">
-                            <div class="burbuja-5">
-                                <img src="vista/imagenes/extras/img-1.png" alt="">
-                                <p>Bueno.</p>
-                                <a href="#">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="content-5-burbuja" style="--clr:#d1b957;">
-                            <div class="burbuja-5">
-                                <img src="vista/imagenes/extras/img-1.png" alt="">
-                                <p>Excelente.</p>
-                                <a href="#">Ver más</a>
-                            </div>
-                        </div>
+                            ";
+                        }
+                        ?>
                     </div>
                     <div class="content-5-min3">
                         <h1>NUESTROS VALORES</h1>
@@ -632,9 +250,7 @@
                 </div>
             </div>
         </div>
-
         <!--INICIO 6-->
-
         <div class="inicio-6">
             <div class="contenedor-inicio-6">
                 <div class="title-inicio">
@@ -647,75 +263,35 @@
                 <div class="contenedor-padre-6">
                     <div class="contenedor-6">
                         <div class="content6-1">
-                            <div class="imgBx active" style="--i:1;" data-id="contenedor1">
-                                <img src="vista/imagenes/isos/26.png">
-                            </div>
-                            <div class="imgBx" style="--i:2;" data-id="contenedor2">
-                                <img src="vista/imagenes/isos/9001.png">
-                            </div>
-                            <div class="imgBx" style="--i:3;" data-id="contenedor3">
-                                <img src="vista/imagenes/isos/14001.png">
-                            </div>
-                            <div class="imgBx" style="--i:4;" data-id="contenedor4">
-                                <img src="vista/imagenes/isos/37001.png">
-                            </div>
-                            <div class="imgBx" style="--i:5;" data-id="contenedor5">
-                                <img src="vista/imagenes/isos/45001.png">
-                            </div>
+                            <?php
+                            /*26, 9001, 14001,37001,45001*/
+                            for ($i = 1; $i < 6; $i++) {
+                                echo "
+                                <div class='imgBx' style='--i:$i;' data-id='contenedor$i'>
+                                    <img src='vista/imagenes/inicio/isos/$i.png'>
+                                </div>
+                                ";
+                            }
+                            ?>
                         </div>
                         <div class="content6-2">
-                            <div class="contentBx active" id="contenedor1">
-                                <div class="card-content6-2">
-                                    <div class="imgBx">
-                                        <img src="vista/imagenes/isos/26.png">
+                            <?php
+                            for ($i = 1; $i < 6; $i++) {
+                                echo "
+                                    <div class='contentBx' id='contenedor$i'>
+                                        <div class='card-content6-2'>
+                                            <div class='imgBx'>
+                                                <img src='vista/imagenes/inicio/isos/$i.png'>
+                                            </div>
+                                            <div class='textBx'>
+                                                <h2 class='iso'></h2>
+                                                <p class='isoInfo'></p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="textBx">
-                                        <h2>Aniversario<br><br><span>26 Años de servicio en todo el Perú</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contentBx" id="contenedor2">
-                                <div class="card-content6-2">
-                                    <div class="imgBx">
-                                        <img src="vista/imagenes/isos/9001.png">
-                                    </div>
-                                    <div class="textBx">
-                                        <h2>ISO 9001:2015<br><br><span>Sistemas de Gestión de calidad (SGC)</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contentBx" id="contenedor3">
-                                <div class="card-content6-2">
-                                    <div class="imgBx">
-                                        <img src="vista/imagenes/isos/14001.png">
-                                    </div>
-                                    <div class="textBx">
-                                        <h2>ISO 14001:2015<br><br><span>Sistemas de Gestión Ambiental (SGA)</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contentBx" id="contenedor4">
-                                <div class="card-content6-2">
-                                    <div class="imgBx">
-                                        <img src="vista/imagenes/isos/37001.png">
-                                    </div>
-                                    <div class="textBx">
-                                        <h2>ISO 37001:2016<br><br><span>Sistemas de Gestión Antisoborno</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contentBx" id="contenedor5">
-                                <div class="card-content6-2">
-                                    <div class="imgBx">
-                                        <img src="vista/imagenes/isos/45001.png">
-                                    </div>
-                                    <div class="textBx">
-                                        <h2>ISO 45001:2018<br><br><span>Sistemas de Gestión de la Seguridad y Salud en
-                                                el
-                                                Trabajo</span></h2>
-                                    </div>
-                                </div>
-                            </div>
+                                    ";
+                            }
+                            ?>
                         </div>
                     </div>
                     <div class="contenedor-6-2">
@@ -758,9 +334,7 @@
                 </div>
             </div>
         </div>
-
         <!--INICIO 7-->
-
         <div class="inicio-7">
             <div class="contenedor-7">
                 <div class="title-inicio">
@@ -771,7 +345,7 @@
                     <div class="content7-rep">
                         <div class="represent-think">
                             <img src="vista/imagenes/extras/vineta.png" alt="">
-                            <p>" ¡Vive la Vida y no dejes que la Vida te Viva! "</p>
+                            <p>" ¡Pienso, luego existo! "</p>
                         </div>
                         <div class="represent-img">
                             <img src="vista/imagenes/extras/mujer.jpg" alt="" class="img">
@@ -779,7 +353,7 @@
                         <div class="represent-info">
                             <h3>Danitza Zulema Echandia Moreno</h3>
                             <h2>GERENTE GENERAL</h2>
-                            <a href="#" title="Linkedin"><span class="icon-linkedin-rect"></span></a>
+                            <a href="https://pe.linkedin.com/" title="Linkedin"><span class="icon-linkedin-rect"></span></a>
                         </div>
                     </div>
 
@@ -789,62 +363,54 @@
                         <h2>ORGANIGRAMA DE LA EMPRESA</h2>
                     </div>
                     <div class="content7-orga">
-                        <img src="vista/imagenes/organigrama/organigrama.png" alt="">
+                        <img src="vista/imagenes/inicio/organigrama/organigrama.png" alt="">
                     </div>
                 </div>
+                <button class="download-button">
+                    <div class="docs">
+                        <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line y2="13" x2="8" y1="13" x1="16"></line>
+                            <line y2="17" x2="8" y1="17" x1="16"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg> Organigrama
+                    </div>
+                    <a href="https://drive.google.com/file/d/1GdRUQeoXNH0Nu1-CyK_HUQ46G9jD_n1h/view?usp=sharing" style="text-decoration: none; color: white;">
+                        <div class="download">
+                            <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line y2="3" x2="12" y1="15" x1="12"></line>
+                            </svg>
+                        </div>
+                    </a>
+                </button>
             </div>
         </div>
-
         <!--INICIO 8-->
-
         <div class="inicio-8">
             <div class="contenedor-8">
                 <div class="title-inicio">
                     <h2>NUESTROS PROVEEDORES</h2>
                 </div>
                 <div class="content8">
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/bitech.jpg" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/ibnet.jpg" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/impacto.png" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/plaza-vea.png" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/promart.png" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/sodimac.png" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/tailoy.jpg" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/bitech.jpg" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/ibnet.jpg" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/impacto.png" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/plaza-vea.png" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/promart.png" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/sodimac.png" alt="">
-                    </div>
-                    <div class="content8-slide">
-                        <img src="vista/imagenes/proveedores/tailoy.jpg" alt="">
-                    </div>
+                    <!--PROVEEDORES: bitech, ibnet, impacto, plaza-vea, promart, sodimac, tailoy-->
+                    <?php
+                    for ($j = 0; $j < 2; $j++) {
+                        for ($i = 1; $i < 8; $i++) {
+                            if ($i == 1 || $i == 2 || $i == 7) {
+                                $formato = "jpg";
+                            }
+                            if ($i == 3 || $i == 4 || $i == 5 || $i == 6) {
+                                $formato = "png";
+                            }
+                            echo "  <div class='content8-slide'>
+                                        <img src='vista/imagenes/inicio/proveedores/$i.$formato' alt=''>
+                                    </div>";
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </div>

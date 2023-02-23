@@ -9,26 +9,19 @@
 
 <body>
     <div class="contenedor-us">
-
         <div class="content-us">
             <div class="us-description">
-                <img src="vista/imagenes/nosotros/politicas.jpg" alt="">
+                <img src="" alt="" id="imgWho">
                 <div class="header-div">
-                    <h1>Políticas de Gestión de INDECONSULT S.A.</h1>
-                    <h3>Comprometidos con la Seguridad, Salud Ocupacional, Calidad y Medio Ambiente.</h3>
+                    <h1 id="titles"></h1>
                 </div>
                 <div class="description-div">
-                    <p>Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Dolorum excepturi, dicta sint id
-                        numquam deleniti molestias voluptas delectus quo
-                        illo consequuntur iste, eligendi temporibus architecto
-                        amet odio ratione veritatis eius!
-                    </p>
+                    <img src="" id="imgUs">
+                    <p id="descriptions"></p>
                 </div>
             </div>
         </div>
-
-        <div class="content-us">
+        <div class="content-us" id="politicsInfo">
             <div class="title-us">
                 <h2>políticas de indeconsult s.a.</h2>
             </div>
@@ -36,61 +29,49 @@
                 <div>
                     <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
-                        <p>"Todo lo que sube, algún momento
-                            tiene que bajar"
+                        <p>"POLÍTICA DE CALIDAD"
                         </p>
                     </div>
                 </div>
                 <div>
                     <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
-                        <p>"Todo lo que sube, algún momento
-                            tiene que bajar"
+                        <p>"PÓLITICA DE MEDIO AMBIENTE"
                         </p>
                     </div>
                 </div>
                 <div>
                     <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
-                        <p>"Todo lo que sube, algún momento
-                            tiene que bajar"
+                        <p>"POLÍTICA DE SEGURIDAD Y SALUD OCUPACIONAL"
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="content-us">
-
+        <div class="content-us" id="usInfo">
             <div class="title-us">
-                <h2>¿quiénes somos?</h2>
+                <h2>BIENVENIDOS A INDECONSULT S.A. – INGENIEROS CONSULTORES.</h2>
             </div>
-
             <div class="us-mvsion">
-
                 <div class="mvsion-div">
-                    <div>
-                        <p>
-                            Instituto de Consultoría S.A. es una institución que desde su creación en 1995 viene contribuyendo al esfuerzo que los sectores público y privado realizan para el desarrollo de nuestro país.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Instituto de Consultoría S.A. participa en los siguientes tipos de proyectos de desarrollo:<br><br>
-
-                            Mega Inversiones.<br>
-                            Inversión en Infraestructura Social.<br>
-                            Estudios de Transporte.<br>
-                            Estudios Territoriales Y Aplicaciones a Infraestructuras.<br>
-                            Estudios Económicos Sociales.<br>
-                            Estudios Ambientales.
-                        </p>
+                    <p>
+                        Instituto de Consultoría S.A. es una institución que desde su
+                        creación en 1995 viene contribuyendo al esfuerzo que los sectores
+                        público y privado realizan para el desarrollo de nuestro país.<br><br>
+                        <b>Instituto de Consultoría S.A. participa en los siguientes tipos de
+                        royectos de desarrollo:</b><br><br>
+                    </p>
+                    <div class="us-tipos-proyectos">
+                        <div><span class="fi fi-sr-sack-dollar f1" style="--clr:#ffcf49;"></span><p class="p1">Mega Inversiones</p></div>
+                        <div><span class="fi fi-sr-people-carry-box f2" style="--clr:#321207;"></span><p class="p2">Inversión en Infraestructura Social</p></div>
+                        <div><span class="fi fi-sr-bus f3" style="--clr:#273765;"></span><p class="p3">Estudios de Transporte</p></div>
+                        <div><span class="fi fi-sr-map-marker f4" style="--clr:#923b27;"></span><p class="p4">Estudios Territoriales</p></div>
+                        <div><span class="fi fi-sr-chart-histogram f5" style="--clr:#ff5b4a;"></span><p class="p5">Estudios Económicos Sociales</p></div>
+                        <div><span class="fi fi-sr-flower-tulip f6" style="--clr:#006426;"></span><p class="p6">Estudios Ambientales</p></div>
                     </div>
                 </div>
-
                 <div class="mvsion-div">
-
                     <div class="card-mvsion">
                         <div class="mvsion-img">Misión</div>
                         <div class="mvsion-info">
@@ -99,7 +80,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="card-mvsion">
                         <div class="mvsion-img">Visión</div>
                         <div class="mvsion-info">
@@ -108,14 +88,11 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
-
-
     </div>
 </body>
+<script src="vista/js/nosotros.js"></script>
 
 </html>

@@ -265,7 +265,7 @@
 .container .contactForm .inputBox input,
 .container .contactForm .inputBox textarea{
     width: 100%;
-    padding: 7px 0;
+    padding: 10px;
     font-size: 1.1em;
     margin: 10px 0;
     border: none;
@@ -277,9 +277,9 @@
 }
 
 
-.container .contactForm .inputBox span{
+.container .contactForm .inputBox label{
     position: absolute;
-    left: 0;
+    left: 10px;
     pointer-events: none;
     padding: 5px 0;
     margin: 10px 0;
@@ -289,10 +289,10 @@
 }
 
 
-.container .contactForm .inputBox input:focus ~ span,
-.container .contactForm .inputBox textarea:focus ~ span,
-.container .contactForm .inputBox input:valid ~ span,
-.container .contactForm .inputBox textarea:valid ~ span{
+.container .contactForm .inputBox input:focus ~ label,
+.container .contactForm .inputBox textarea:focus ~ label,
+.container .contactForm .inputBox input:valid ~ label,
+.container .contactForm .inputBox textarea:valid ~ label{
     color: #e91e63;
     font-size: 0.9em;
     transform: translateY(-20px);

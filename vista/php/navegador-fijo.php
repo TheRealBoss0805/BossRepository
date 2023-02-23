@@ -15,18 +15,18 @@
             <p>" Planificando, Desarrollando y Construyendo "</p>
         </div>
         <div>
-            <span class="icon-location" style="font-size: 35px; color: rgb(104, 102, 102);"></span>
-            <div>
+            <i class="fi-sr-earth-americas" style="font-size: 30px; color: rgb(104, 102, 102);"></i>
+            <span>
                 <p>Dirección</p>
                 <p>Jr. Monterosa 233 Of. 507, Santiago de Surco, Lima.</p>
-            </div>
+            </span>
         </div>
         <div>
-            <span class="icon-clock" style="font-size: 35px; color: rgb(104, 102, 102);"></span>
-            <div>
+            <i class="fi-sr-time-check" style="font-size: 30px; color: rgb(104, 102, 102);"></i>
+            <span>
                 <p>Horario</p>
                 <p>L-S de 08:00 a 20:00 Horas</p>
-            </div>
+            </span>
         </div>
     </div>
 
@@ -35,7 +35,7 @@
     <header>
         <div class="contenedor-logo">
             <div class="svg-img">
-                <a href="#"><img src="vista/imagenes/extras/idcLogo2.png"></a>
+                <a href="inicio"><img src="vista/imagenes/extras/idcLogo2.png"></a>
             </div>
         </div>
         <nav>
@@ -44,7 +44,11 @@
                 <i class="icon-menu"></i>
             </label>
             <ul class="ul-responsive">
-                <li class="nav-li" id="inicio"><a href="inicio">Inicio</a></li>
+                <!--1-->
+                <li class="nav-li" id="inicio">
+                    <a href="inicio">Inicio</a>
+                </li>
+                <!--2-->
                 <li class="nav-li" id="nosotros">
                     <a>Nosotros</a>
                     <span class="icon-plus no-responsive"></span>
@@ -53,10 +57,11 @@
                         <i class="icon-plus responsive" id="forma"></i>
                     </label>
                     <ul>
-                        <li><a href="nosotros">Quiénes Somos</a></li>
-                        <li><a href="nosotros" style="border-bottom: none;">Políticas de Gestión</a></li>
+                        <li id="us1"><a href="index.php?ruta=nosotros&1">Quiénes Somos</a></li>
+                        <li id="us2"><a href="index.php?ruta=nosotros&2" style="border-bottom: none;">Políticas de Gestión</a></li>
                     </ul>
                 </li>
+                <!--3-->
                 <li class="nav-li" id="servicios">
                     <a>Servicios</a><span class="icon-plus no-responsive"></span>
                     <input type="checkbox" id="check3">
@@ -64,12 +69,13 @@
                         <i class="icon-plus responsive" id="forma1"></i>
                     </label>
                     <ul>
-                        <li><a href="index.php?ruta=servicios&id=1">Planificación</a></li>
-                        <li><a href="index.php?ruta=servicios&id=2">Pre - Inversión</a></li>
-                        <li><a href="index.php?ruta=servicios&id=3">Expedientes de Obra</a></li>
-                        <li><a href="index.php?ruta=servicios&id=4" style="border-bottom: none;">Supervisión</a></li>
+                        <li id="serv1"><a href="index.php?ruta=servicios&id=1">Planificación</a></li>
+                        <li id="serv2"><a href="index.php?ruta=servicios&id=2">Pre - Inversión</a></li>
+                        <li id="serv3"><a href="index.php?ruta=servicios&id=3">Expedientes de Obra</a></li>
+                        <li id="serv4"><a href="index.php?ruta=servicios&id=4" style="border-bottom: none;">Supervisión</a></li>
                     </ul>
                 </li>
+                <!--4-->
                 <li class="nav-li" id="proyectos">
                     <a>Proyectos</a><span class="icon-plus no-responsive"></span>
                     <input type="checkbox" id="check4">
@@ -77,11 +83,14 @@
                         <i class="icon-plus responsive" id="forma2"></i>
                     </label>
                     <ul>
-                        <li><a href="proyecto-tipo">Por Tipo</a></li>
-                        <li><a href="proyecto-sector" style="border-bottom: none;">Por Sector</a></li>
+                        <li id="proy1"><a href="index.php?ruta=proyectos&id=1">Por Tipo</a></li>
+                        <li id="proy2"><a href="index.php?ruta=proyectos&id=2" style="border-bottom: none;">Por Sector</a></li>
                     </ul>
                 </li>
-                <li class="nav-li"><a href="blog">Blog</a></li>
+                <!--5-->
+                <li class="nav-li" id="blog">
+                    <a href="blog">Blog</a>
+                </li>
                 <li>
                     <a href="contactanos" class="contactanos">
                         <span class="label">Contáctenos</span>

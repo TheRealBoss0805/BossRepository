@@ -26,6 +26,15 @@ class ModeloServicios{
         $stmt -> close();
         $stmt = null;
     }
+    static public function mdlMostrarTodoServicios($tabla){
+        if($tabla != null){
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY id_servicio ASC");
+            $stmt -> execute();
+            return $stmt -> fetchAll();
+        }
+        $stmt -> close();
+        $stmt = null;
+    }
 }
 
 

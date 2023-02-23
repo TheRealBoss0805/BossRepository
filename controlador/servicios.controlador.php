@@ -9,8 +9,14 @@
         }
         static public function ctrMostrarItem($item, $valor){
             /*MOSTRAR ÍTEMS*/
+            
             $tabla = "serv_items";
             $respuesta = ModeloServicios::mdlMostrarItem($tabla, $item, $valor);
+            return $respuesta;
+        }
+        static public function ctrMostrarTodoServicios(){
+            $tabla = "servicios";
+            $respuesta = ModeloServicios::mdlMostrarTodoServicios($tabla);
             return $respuesta;
         }
 

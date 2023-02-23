@@ -7,14 +7,33 @@
 </html>
 
 <body>
-    <div class="contenedor-eleccion-proyecto">
+    <?php
+        $item = "id_proyec_item";
+        $valor = $_GET["id"];
+        $respuesta = ControladorProyecto::ctrMostrarItem($item, $valor);
+        $respItem = $respuesta[0];
+        $separador = "<br>";
+        $cadena = $respItem["descripcion"];
+        $stringSeparado = explode($separador, $cadena);
+
+        $item2 = "id_proy_ts";
+        $valor2 = $respItem["id_proy_ts"];
+        $respuesta2 = ControladorProyecto::ctrMostrarTipoSector($item2, $valor2);
+        $respItem2 = $respuesta2[0];
+
+        $item3 = "id_proyecto";
+        $valor3 = $respItem["id_proyecto"];
+        $respuesta3 = ControladorProyecto::ctrMostrarProyectoSeccion($item3, $valor3);
+    ?>
+    <div class="contenedor-eleccion-proyecto" id="<?=$respuesta3["id_proyecto"]?>">
         <div class="content-eleccion-proyecto">
-            <p>lorem quartium larala nomequitiuom re</p>
-            <img src="vista/imagenes/extras/img-1.png" alt="">
+            <p>Categoría <br> <?=$respItem2["nombre"]?></p>
+            <img src="vista/imagenes/proyectsandservices/proyectos/portadaParaItem/1.jpg" alt="CREACIÓN DEL SERVICIO DE ALTA COMPETENCIA DE GIMNASIA EN EL MALECÓN PÉREZ ARANIBAR, DISTRITO DE SAN ISIDRO, PROVINCIA Y REGIÓN DE LIMA" title="CREACIÓN DEL SERVICIO DE ALTA COMPETENCIA DE GIMNASIA EN EL MALECÓN PÉREZ ARANIBAR, DISTRITO DE SAN ISIDRO, PROVINCIA Y REGIÓN DE LIMA">
         </div>
+
         <div class="content-eleccion-proyecto">
             <div>
-                <img id="myImg" src="vista/imagenes/extras/img-1.png" alt="Imagen Seleccionada">
+                <img id="myImg" src="<?=$respItem["foto"]?>" alt="<?=$respItem["titulo"]?>">
                 <div id="myModal" class="modal">
                     <span class="close">x</span>
                     <img class="modal-content" id="img01">
@@ -22,12 +41,13 @@
                 </div>
             </div>
             <div>
-                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </h1>
+                <h1><?=$respItem["titulo"]?></h1>
                 <span class="linea-span"></span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur vel iure totam impedit recusandae
-                    quo debitis ratione dolores. Neque quia necessitatibus dolor ea laudantium quidem voluptatum
-                    provident vel iste omnis!</p>
+                <?php
+                    foreach($stringSeparado as $p){
+                            echo "<p>".$p."</p>";
+                    }
+                ?>
             </div>
         </div>
     </div>

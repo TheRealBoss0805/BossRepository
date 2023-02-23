@@ -1,7 +1,11 @@
+
 const slides = document.querySelector(".slider").children;
 const prev = document.querySelector(".icon-left-dir");
 const next = document.querySelector(".icon-right-dir");
 const indicator = document.querySelector(".indicator");
+
+slides[0].classList.add("active");
+
 let index = 0;
 
 prev.addEventListener("click", function () {
@@ -71,10 +75,10 @@ function changeSlide() {
     }
 
     if (index === -1) {
-        index = 9;
+        index = 7;
     }
 
-    if (index === 10) {
+    if (index === 8) {
         index = 0;
     }
 
@@ -93,67 +97,58 @@ function autoPlay() {
 
 let timer = setInterval(autoPlay, 6000);
 
+/*======INICIO 2 - SERVICIOS=======*/
 
-/*
-const before = document.querySelector('.before');
-const after = document.querySelector('.after');
-const carusel = document.querySelector('.slider-inicio-tercero');
+let colorServicio = document.querySelectorAll(".div-plus");
 
-before.addEventListener('click', () => {
-    carusel.scrollLeft -=400
-})
-
-after.addEventListener('click', () => {
-    carusel.scrollLeft += 400
-})
-*/
-
+for (let i = 0; i < 4; i++) {
+    switch (i) {
+        case 0:
+            colorServicio[i].style = "background: #9b133e;";
+            break;
+        case 1:
+            colorServicio[i].style = "background: #8011a4;";
+            break;
+        case 2:
+            colorServicio[i].style = "background: #1289bc;";
+            break;
+        case 3:
+            colorServicio[i].style = "background: #aa8e1c;";
+            break;
+    }
+}
 
 /*CARRUSEL CON SWIPER*/
 
-let ancho = document.documentElement.clientWidth;
 let cambioWindow = document.getElementById("swiperGtfo");
-
-console.log(ancho);
-
-
 let slidesPerView = [3, 2, 1];
 let mostrador;
 
-/*if(ancho >= 1200){
-    console.log("si estaba bien");
-    mostrador = slidesPerView[0];
-}
-if(ancho >= 650 && ancho < 1200){
-    mostrador = slidesPerView[1];
-    cambioWindow.classList.replace("maximum", "medium");
-}
-if(ancho >= 0 && ancho < 650){
-    mostrador = slidesPerView[2];
-    cambioWindow.classList.replace("maximum", "minimum");
-}*/
+const reziseWindow = () => {
 
-const reziseWindow = () =>{
-    if(ancho >= 1200){
-        console.log("eres");
+    let ancho = document.documentElement.clientWidth;
+
+    if (ancho >= 1395) {
         mostrador = slidesPerView[0];
+        /*console.log("rivera");
+        console.log(ancho);*/
     }
-    if(ancho >= 700 && ancho < 1200){
-        console.log("pato");
+    if (ancho >= 755 && ancho < 1395) {
         mostrador = slidesPerView[1];
         cambioWindow.classList.replace("maximum", "medium");
+        /*console.log("rivera1");
+        console.log(ancho);*/
     }
-    if(ancho >= 0 && ancho < 700){
-        console.log("pasivo");
+    if (ancho >= 0 && ancho < 755) {
         mostrador = slidesPerView[2];
         cambioWindow.classList.replace("maximum", "minimum");
+        /*console.log("rivera2");
+        console.log(ancho);*/
     }
-
 }
 
-window.addEventListener("mouseover", reziseWindow);
+window.addEventListener("resize", reziseWindow);
 reziseWindow();
-
 
 var swiper = new Swiper(".mySwiper", hola = {
     slidesPerView: mostrador,
@@ -171,13 +166,66 @@ var swiper = new Swiper(".mySwiper", hola = {
     },
 });
 
-console.log(mostrador);
+/*INICIO 5 - BURBUJAS*/
 
+let color = document.querySelectorAll(".burbujaColor");
+let valor = document.querySelectorAll(".valor");
+
+for (let i = 0; i < 4; i++) {
+    switch (i) {
+        case 0:
+            color[i].style = "--clr:#ff0f5b;";
+            valor[i].textContent = "Respeto";
+            break;
+        case 1:
+            color[i].style = "--clr:#be01fe;";
+            valor[i].textContent = "Honestidad";
+            break;
+        case 2:
+            color[i].style = "--clr:#01b4ff;";
+            valor[i].textContent = "Responsabilidad";
+            break;
+        case 3:
+            color[i].style = "--clr:#d1b957;";
+            valor[i].textContent = "Cumplimiento";
+            break;
+    }
+}
 
 /*RULETA ISO*/
 
+let iso = document.querySelectorAll(".iso");
+let isoInfo = document.querySelectorAll(".isoInfo");
+
+for (let i = 0; i < 5; i++) {
+    switch (i) {
+        case 0:
+            iso[i].textContent = "Aniversario";
+            isoInfo[i].textContent = "26 Años de servicio en todo el Perú";
+            break;
+        case 1:
+            iso[i].textContent = "ISO 9001:2015";
+            isoInfo[i].textContent = "Sistemas de Gestión de calidad (SGC)";
+            break;
+        case 2:
+            iso[i].textContent = "ISO 14001:2015";
+            isoInfo[i].textContent = "Sistemas de Gestión Ambiental (SGA)";
+            break;
+        case 3:
+            iso[i].textContent = "ISO 37001:2016";
+            isoInfo[i].textContent = "Sistemas de Gestión Antisoborno";
+            break;
+        case 4:
+            iso[i].textContent = "ISO 45001:2018";
+            isoInfo[i].textContent = "Sistemas de Gestión de la Seguridad y Salud ene el Trabajo";
+            break;
+    }
+}
+
 let imgBx = document.querySelectorAll('.imgBx');
 let contentBx = document.querySelectorAll('.contentBx');
+imgBx[0].classList.add("active");
+contentBx[0].classList.add("active");
 
 for (let i = 0; i < imgBx.length; i++) {
     imgBx[i].addEventListener('mouseover', function () {
@@ -192,68 +240,33 @@ for (let i = 0; i < imgBx.length; i++) {
     })
 }
 
-/*Modificar altura del carrusel de trabajos recientes*/
-
-
-/*Contador de proyecto, etc
-
-let count1 = document.getElementById('count1'),
-    count2 = document.getElementById('count2'),
-    count3 = document.getElementById('count3'),
-    count4 = document.getElementById('count4');
-let time = 50;
-let contador1 = 0, contador2 = 0, contador3 = 0, contador4 = 0;
-
-let tiempo1 = setInterval(() => {
-    count1.textContent = contador1 += 20
-    if (contador1 === 1500) {
-        clearInterval(tiempo1)
-    }
-}, `${time}`);
-
-let tiempo2 = setInterval(() => {
-    count2.textContent = contador2 += 19
-    if (contador2 === 1995) {
-        clearInterval(tiempo2)
-    }
-}, `${time}`);
-
-let tiempo3 = setInterval(() => {
-    count3.textContent = contador3 += 5
-    if (contador3 === 100) {
-        clearInterval(tiempo3)
-    }
-}, `${time}`);
-
-let tiempo4 = setInterval(() => {
-    count4.textContent = contador4 += 1
-    if (contador4 === 28) {
-        clearInterval(tiempo4)
-    }
-}, `${time}`);
-*/
-
-
 /*Bloque para que la animación se de cuando el scroll
 Muestre el sector respectivo en la pantalla*/
 
 addEventListener('DOMContentLoaded', () => {
     const contadorcitos = document.querySelectorAll('.count-cantidad')
     const rapidez = 1000
+    let valor_actual;
+    let incremento;
+    let cambio;
+    let cantidad_maxima;
 
     const animarContadores = () => {
         for (const contadorsote of contadorcitos) {
             const actualizar_contador = () => {
-                let cantidad_maxima = +contadorsote.dataset.cantidadTotal,
-                    valor_actual = +contadorsote.innerText,
-                    incremento = cantidad_maxima / rapidez
-
+                cantidad_maxima = parseInt(contadorsote.dataset.cantidadTotal);
+                valor_actual = parseInt(contadorsote.innerText);
+                cambio = cantidad_maxima / rapidez
+                incremento = (rapidez / cantidad_maxima) * 10;
                 if (valor_actual < cantidad_maxima) {
-                    contadorsote.innerText = Math.ceil(valor_actual + incremento)
-                    setTimeout(actualizar_contador, 100)
-                } else {
+                    contadorsote.innerText = +Math.ceil(valor_actual + cambio);
+                    console.log(contadorsote.innerText);
+                    setTimeout(actualizar_contador, incremento);
+                }
+                else if (valor_actual == cantidad_maxima) {
                     contadorsote.innerText = cantidad_maxima
                 }
+
             }
             actualizar_contador()
         }
@@ -271,7 +284,7 @@ addEventListener('DOMContentLoaded', () => {
     }
 
     const observer = new IntersectionObserver(mostrarContadores, {
-        threshold: 0.75 // 0 - 1
+        threshold: 0.75// 0 - 1
     })
 
     const elementosHTML = document.querySelectorAll('.hijo-contador')
@@ -282,107 +295,23 @@ addEventListener('DOMContentLoaded', () => {
 
 /*CODIGO PARA EL CAMBIO DE ICONO (+) (-) CUANDO EL INPUT ESTÉ CHECKEADO*/
 
-let despliege1 = document.getElementById("name-profession1");
-
-const desplegarCambiar1 = () =>{
-    let iconodesp = document.getElementById("icon-1");
-    let desplegado = despliege1.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
-    iconodesp.classList.toggle("red");
+function wait() {
+    $(".card-down").css("display", "block");
 }
 
-despliege1.addEventListener("change", desplegarCambiar1);
+$(".card").on("click", ".icon-plus", function () {
 
-let despliege2 = document.getElementById("name-profession2");
+    $(this).toggleClass("icon-minus");
 
-const desplegarCambiar2 = () =>{
-    let iconodesp = document.getElementById("icon-2");
-    let desplegado = despliege2.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
-    iconodesp.classList.toggle("red");
-}
-
-despliege2.addEventListener("change", desplegarCambiar2);
-
-let despliege3 = document.getElementById("name-profession3");
-
-const desplegarCambiar3 = () =>{
-    let iconodesp = document.getElementById("icon-3");
-    let desplegado = despliege3.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
-    iconodesp.classList.toggle("red");
-}
-
-despliege3.addEventListener("change", desplegarCambiar3);
-
-let despliege4 = document.getElementById("name-profession4");
-
-const desplegarCambiar4 = () =>{
-    let iconodesp = document.getElementById("icon-4");
-    let desplegado = despliege4.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
-    iconodesp.classList.toggle("red");
-    
-}
-
-despliege4.addEventListener("change", desplegarCambiar4);
-
-let despliege5 = document.getElementById("name-profession5");
-
-const desplegarCambiar5 = () =>{
-    let iconodesp = document.getElementById("icon-5");
-    let desplegado = despliege5.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
-    iconodesp.classList.toggle("red");
-}
-
-despliege5.addEventListener("change", desplegarCambiar5);
-
-let despliege6 = document.getElementById("name-profession6");
-
-const desplegarCambiar6 = () =>{
-    let iconodesp = document.getElementById("icon-6");
-    let desplegado = despliege6.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
-    iconodesp.classList.toggle("red");
-}
-
-despliege6.addEventListener("change", desplegarCambiar6);
-
-let despliege7 = document.getElementById("name-profession7");
-
-const desplegarCambiar7 = () =>{
-    let iconodesp = document.getElementById("icon-7");
-    let desplegado = despliege7.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
-    iconodesp.classList.toggle("red");
-}
-
-despliege7.addEventListener("change", desplegarCambiar7);
-
-let despliege8 = document.getElementById("name-profession8");
-
-const desplegarCambiar8 = () =>{
-    let iconodesp = document.getElementById("icon-8");
-    let desplegado = despliege8.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
-    iconodesp.classList.toggle("red");
-}
-
-despliege8.addEventListener("change", desplegarCambiar8);
-
-let despliege9 = document.getElementById("name-profession9");
-
-const desplegarCambiar9 = () =>{
-    let iconodesp = document.getElementById("icon-9");
-    let desplegado = despliege9.checked;
-    desplegado ? iconodesp.classList.replace("icon-plus", "icon-minus"): iconodesp.classList.replace("icon-minus", "icon-plus");
-    iconodesp.classList.toggle("red");
-}
-
-despliege9.addEventListener("change", desplegarCambiar9);
-
-
+    if ($(this).hasClass("icon-minus")) {
+        $(this).parent().children(".card-down").css("display", "none");
+        $(this).parent().children(".card-content").css("height", "100%");
+    }
+    else {
+        setTimeout(wait, 1e3);
+        $(this).parent().children(".card-content").css("height", "180px");
+    }
+});
 
 
 

@@ -79,7 +79,7 @@
 }
 
 .inicio-3 {
-    justify-content: flex-start !important;
+    justify-content: center !important;
 }
 
 @media (max-width: 1120px){
@@ -90,7 +90,7 @@
 
 .inicio-6 {
     background: #1a1a1a;
-    height: 700px !important;
+    height: 750px !important;
 }
 
 @media (max-width: 1000px){
@@ -140,7 +140,8 @@
 /*Us Window*/
 
 .contenedor-us {
-    /*Declarado en la parte superior*/
+    gap: 50px;
+    background: #fff;
 }
 
 @media (max-width: 1000px){
@@ -169,7 +170,7 @@
 /*PROYECTO TIPO & SECTOR - ELECCION*/
 
 .contenedor-eleccion-proyecto {
-    /*Declarado en la parte superior*/
+    gap: 150px;
 }
 
 
@@ -198,11 +199,16 @@
     bottom: 0;
     right: 20px;
     width: 400px;
-    height: 600px;
+    height: 640px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end; 
+    z-index: 20;
+    display: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
 }
 
 body {
@@ -210,6 +216,7 @@ body {
     height: 100%;
     background: #f2f2f2;
     user-select: none;
+
 
 }
 
@@ -219,7 +226,7 @@ body {
 
 .fa {
     color: #fff;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 /*Imágenes Modales para los proyectos seleccionados*/
@@ -318,3 +325,35 @@ body {
         ;
     }
 }
+
+#totop.on{
+    left: 10px;
+}
+
+#totop.off{
+    left: -69px;
+}
+
+#totop{
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #171799);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #171799); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 70%;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}   
+
+#totop .fi{
+    font-size: 22px;
+    color: #fff;
+}
+
