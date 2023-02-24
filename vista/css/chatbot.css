@@ -118,7 +118,7 @@ label img {
     border-radius: 5px;
 }
 
-.content-chatbot .options div{
+.content-chatbot .options div:nth-child(1){
     width: 40%;
     display: flex;
     justify-content: space-around;

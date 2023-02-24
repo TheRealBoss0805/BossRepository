@@ -17,6 +17,11 @@
             $respuesta = ModeloProyectos::mdlMostrarItem($tabla, $item, $valor);
             return $respuesta;
         }
+        static public function ctrMostrar3Item($item, $valor){
+            $tabla = "proyec_items";
+            $respuesta = ModeloProyectos::mdlMostrar3Item($tabla, $item, $valor);
+            return $respuesta;
+        }
         // MOSTRAR TODA LA TABLA PROYECTOS
         static public function ctrMostrarTodoProyectos(){
             $tabla = "proyectos";

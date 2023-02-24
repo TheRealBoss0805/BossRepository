@@ -1,6 +1,7 @@
 <?php
 
 $_SESSION["pedirNombre"] = false;
+$_SESSION["saludar"] = false;
 ?>
 <!doctype html>
 <html>

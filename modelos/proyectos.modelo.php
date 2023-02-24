@@ -26,6 +26,16 @@
             $stmt -> close();
             $stmt = null;
         }
+        static public function mdlMostrar3Item($tabla, $item, $valor){
+            if($item != null){
+                $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY id_proyec_item ASC LIMIT 3");
+                $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+                $stmt -> execute();
+                return $stmt -> fetchAll();
+            }
+            $stmt -> close();
+            $stmt = null;
+        }
 
         /*MOSTRAR CATEGORIAS POR CATEGORIAS TIPOS Y SECTORES*/
         static public function mdlMostrarTipoSector($tabla, $item, $valor){

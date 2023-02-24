@@ -89,6 +89,15 @@ class ModeloBlog
         $stmt->close();
         $stmt = null;
     }
+//===========SOLO MUESTRA 3 PUBLICACIONES DE UNA CATEGORIA ESPECIFIICADA
+    static public function mdlMostrar3Publicaciones($tabla, $item,$valor)
+    {
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM blog_pub_cat pc JOIN blog_publicaciones p ON pc.id_blog_pub = p.id_blog_pub WHERE $item = :$item LIMIT 3");
+        $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
+        //$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
 //=================================MOSTRAR UNA SOLA PUBLICACION EN ESPECIFICO PARA BLOG-SELECCION
     static public function mdlMostrar1Publicacion($tabla, $item, $valor){
 
@@ -121,10 +130,16 @@ class ModeloBlog
             $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
             $stmt->execute();
             return $stmt->fetch();
+        }else{
+            
+            $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY id_blog_cat ASC");
+            $stmt->execute();
+            return $stmt->fetchAll(); 
         }
         $stmt->close();
         $stmt = null;
     }
+
 
     /*=========================================MOSTRAR SI ES INTERNO O EXTERNO===================================*/
 

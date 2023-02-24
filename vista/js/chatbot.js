@@ -11,7 +11,7 @@ function detener(){
 	valor;
 	incremento = true;
 }
-
+//==================ABRIR CHAT===================
 const operacion = () =>{
     let cosoAbrir = document.querySelector("#ventanaChat");
         intervalo = setInterval(function(){
@@ -33,44 +33,47 @@ const operacion = () =>{
         }, 0);  
         ///INICIAR CHAT
             // var mensaje = $(this).attr("idFiltro");
-            setTimeout(() => {
-                var datos = new FormData();
-            datos.append("saludar", "saludar" );
-        
-            $.ajax({
-                url: "ajax/chatbot.ajax.php",
-                method: "POST",
-                cache: false,
-                data: datos,
-                contentType: false,
-                processData: false,
-                success: function (respuesta) {
-                    $("#viewMessages").append(respuesta);
-                    scrollAbajo();
-                }
-            });
-            }, "500");
-
-            setTimeout(function(){
-                var datos = new FormData();
-            datos.append("pedir", "pedirNombre" );
-            $.ajax({
-                url: "ajax/chatbot.ajax.php",
-                method: "POST",
-                cache: false,
-                data: datos,
-                contentType: false,
-                processData: false,
-                success: function (respuesta) {
-                    $("#viewMessages").append(respuesta);
-                    scrollAbajo();
-                }
-            });
-            }, "1500");
+            msgIniciarChat()
             
             
            
             
+}
+function msgIniciarChat(){
+    setTimeout(() => {
+        var datos = new FormData();
+    datos.append("saludar", true );
+
+    $.ajax({
+        url: "ajax/chatbot.ajax.php",
+        method: "POST",
+        cache: false,
+        data: datos,
+        contentType: false,
+        processData: false,
+        success: function (respuesta) {
+            $("#viewMessages").append(respuesta);
+            scrollAbajo();
+        }
+    });
+    }, "500");
+
+    setTimeout(function(){
+        var datos = new FormData();
+    datos.append("pedirNombre",true);
+    $.ajax({
+        url: "ajax/chatbot.ajax.php",
+        method: "POST",
+        cache: false,
+        data: datos,
+        contentType: false,
+        processData: false,
+        success: function (respuesta) {
+            $("#viewMessages").append(respuesta);
+            scrollAbajo();
+        }
+    });
+    }, "1500");
 }
 
 minimizar.addEventListener("click", operacion);
@@ -82,6 +85,24 @@ let minimizar2 = document.querySelector("#bossito2");
 const operacion2 = () =>{
     let cosoAbrir = document.querySelector("#ventanaChat");
         cosoAbrir.style.display = "none";
+        console.log("Me presionaste en la X");
+        var msg = "salir";
+        var medio = "desdeBoton";
+        var datos = new FormData();
+        datos.append("msg", msg);
+        datos.append("medio", medio);
+        $.ajax({
+            url: "ajax/chatbot.ajax.php",
+            method: "POST",
+            cache: false,
+            data: datos,
+            contentType: false,
+            processData: false,
+            success: function (respuesta) {
+                $("#viewMessages").html(respuesta);
+                scrollAbajo();
+            }
+    });
 }
 
 minimizar2.addEventListener("click", operacion2);
@@ -91,6 +112,7 @@ let minimizar3 = document.querySelector("#bossito3");
 const operacion3 = () =>{
     let cosoAbrir = document.querySelector("#ventanaChat");
         cosoAbrir.style.display = "none";
+        
 }
 
 minimizar3.addEventListener("click", operacion3);
