@@ -44,6 +44,10 @@
 
     echo '<input type="hidden" class="ruta"  id="ruta" value="' . $_GET["ruta"] . '" >';
   }
+  else{
+    echo '<input type="hidden" class="ruta"  id="ruta" value="inicio" >';
+  }
+
 
   echo '<div class="contenedorPadre">';
 

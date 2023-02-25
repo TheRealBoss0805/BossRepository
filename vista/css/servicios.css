@@ -1,15 +1,52 @@
-.content-services-1 {
+.padre-services-1 {
     width: 100%;
+    height: 600px;
+    margin-top: 60px;
+    box-shadow: -5px 5px 5px #222222,
+        5px -5px 5px #222222, 5px 5px 5px #222222,
+        -5px -5px 5px #222222;
     display: flex;
-    height: 650px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-services-1 {
+    width: 45%;
+    display: flex;
+    height: 90%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    box-shadow: -5px 5px 5px #222222,
-        5px -5px 5px #222222, 5px 5px 5px #222222,
-        -5px -5px 5px #222222;
-    margin-top: 60px;
+    order: 2;
+}
+
+.content-services-1-portada {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+
+.content-services-1-portada > div {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    overflow: hidden;
+    box-shadow:  5px 5px 3px #253743, -5px -5px 3px #253743;
+}
+
+.content-services-1-portada img {
+    object-fit: contain;
+    height: 100%;
+    filter: contrast(1.5);
 }
 
 .content-services-1 .services ul li select {
@@ -22,16 +59,15 @@
     height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .content-services-1 .services:nth-child(1) .content-p {
     width: 95%;
     /*background: #000000;*/
-    text-shadow: black 0.08em 0.08em 0.1em;
-    color: #fff;
+    color: #253743;
     padding: 7px;
     border-radius: 10px;
     opacity: 1;
@@ -39,109 +75,111 @@
 
 .content-services-1 .services:nth-child(1) .content-p>p {
     margin: 20px;
-    font-size: 1.3rem;
+    font-size: 1vw;
     text-align: justify;
 }
 
 
 .content-services-1 .services:nth-child(1) h1,
 .content-services-1 .services:nth-child(1) h2 {
-    color: #fff;
+    color: #253743;
     font-family: 'Staatliches', cursive;
-    text-shadow: black 0.08em 0.08em 0.1em;
     width: 90%;
     user-select: none;
 }
 
 .content-services-1 .services:nth-child(1) h1 {
-    font-size: 3em;
+    font-size: 1.5vw;
 }
 
 .content-services-1 .services:nth-child(1) h2 {
-    font-size: 2em;
+    font-size: 2vw;
     text-align: center;
 }
 
-.content-services-1 .services:nth-child(2) {
+.selectionRegionStatus{
     width: 100%;
-    height: 20%;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content-services-1 .services:nth-child(2) ul {
+.selectionRegionStatus .services{
     width: 100%;
-    height: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectionRegionStatus .services ul {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-.content-services-1 .services:nth-child(2) ul li {
+.selectionRegionStatus .services ul li {
     list-style: none;
     position: relative;
+    width: auto;
+
 }
 
-.content-services-1 .services:nth-child(2) ul li:nth-child(1) select,
-.content-services-1 .services:nth-child(2) ul li:nth-child(2) select {
+.selectionRegionStatus .services ul li:nth-child(1) select,
+.selectionRegionStatus .services ul li:nth-child(2) select {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid #851a3b;
-    padding: 17px;
+    border: 2px solid #686868;
+    padding: 20px 30px 20px 30px;
     background: #222222;
     color: #fff;
-    width: 280px;
     cursor: pointer;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363636, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363636, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 
-.content-services-1 .services:nth-child(2) ul li:nth-child(1) select option,
-.content-services-1 .services:nth-child(2) ul li:nth-child(2) select option {
-    background: transparent;
+.selectionRegionStatus .services ul li:nth-child(1) select option,
+.selectionRegionStatus .services ul li:nth-child(2) select option {
+    background: #0F2027;
     border-radius: 0px 0px 0px 0px !important;
     border: none !important;
 }
 
-.content-services-1 .services:nth-child(2) ul li:nth-child(1) select,
-.content-services-1 .services:nth-child(2) ul li:nth-child(2) select:focus {
+.selectionRegionStatus .services ul li:nth-child(1) select,
+.selectionRegionStatus .services ul li:nth-child(2) select:focus {
     outline: none;
 }
 
-.content-services-1 .services:nth-child(2) ul li:nth-child(1) select,
-.content-services-1 .services:nth-child(2) ul li:nth-child(2) select:active {
+.selectionRegionStatus .services ul li:nth-child(1) select,
+.selectionRegionStatus .services ul li:nth-child(2) select:active {
     outline: none;
 }
 
 
-.content-services-1 .services:nth-child(2) ul li button {
+.selectionRegionStatus .services ul li button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 30px 10px 30px;
-    letter-spacing: 3px;
+    padding: 20px;
     color: #fff;
-    background: #222222;
-    border: 3px solid #851a3b;
-    cursor: pointer;
-    width: 280px;
-    padding: 17px;
-}
-
-
-.content-services-1 img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    box-shadow: -5px 5px 5px #222222,
-        5px -5px 5px #222222, 5px 5px 5px #222222,
-        -5px -5px 5px #222222;
-    filter: brightness(0.8);
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363636, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363636, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 2px solid #686868;
 }
 
 .content-services-2 {
@@ -226,11 +264,11 @@
 
 /*Botón Services*/
 
-a{
+a {
     text-decoration: none;
-  }
+}
 
-.button2{
+.button2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
@@ -242,9 +280,9 @@ a{
     cursor: pointer;
     overflow: hidden;
     z-index: 0;
-  }
+}
 
-  .button2 span:not(:nth-child(6)) {
+.button2 span:not(:nth-child(6)) {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -255,33 +293,33 @@ a{
     border-radius: 50%;
     transition: .6s ease;
     z-index: -1;
-  }
-  
-  .button2 span:nth-child(1) {
+}
+
+.button2 span:nth-child(1) {
     transform: translate(-3.3em, -4em);
-  }
-  
-  .button2 span:nth-child(2) {
+}
+
+.button2 span:nth-child(2) {
     transform: translate(-6em, 1.3em);
-  }
-  
-  .button2 span:nth-child(3) {
+}
+
+.button2 span:nth-child(3) {
     transform: translate(-.2em, 1.8em);
-  }
-  
-  .button2 span:nth-child(4) {
+}
+
+.button2 span:nth-child(4) {
     transform: translate(3.5em, 1.4em);
-  }
-  
-  .button2 span:nth-child(5) {
+}
+
+.button2 span:nth-child(5) {
     transform: translate(3.5em, -3.8em);
-  }
-  
-  .button2:hover span:not(:nth-child(6)) {
+}
+
+.button2:hover span:not(:nth-child(6)) {
     transform: translate(-50%, -50%) scale(4);
     transition: 1.5s ease;
-  }
-  
+}
+
 
 /*RESPONSIVE SERVICIOS*/
 
@@ -291,48 +329,46 @@ a{
     }
 }
 
-@media (max-width: 1000px) {
-    .content-services-1 {
-        margin-top: 90px;
+@media (max-width: 1080px){
+    .content-services-1-portada > div {
+        width: 400px !important;
+        height: 400px !important;
     }
-
-    .content-services-1 .services:nth-child(2) ul li {
-        position: relative;
-        width: 30%;
-    }
-
-    .content-services-1 .services:nth-child(2) ul li:nth-child(1) select,
-    .content-services-1 .services:nth-child(2) ul li:nth-child(2) select {
-        width: 100%;
-
-    }
-
-    .content-services-1 .services:nth-child(2) ul li button {
-        width: 100%;
-    }
-
-    .content-services-1 .services:nth-child(1) .content-p p {
-
-        font-size: 2vw;
-    }
-
-    .content-services-1 .services:nth-child(1) h1 {
-        font-size: 5vw;
-    }
-
-    .content-services-1 .services:nth-child(1) h2 {
-        font-size: 4vw;
-    }
-
 }
 
-@media (max-width: 900px) {
-    .content-services-1 {
-        height: 550px;
-    }
-
-    .content-services-1 .services:nth-child(2) ul {
+@media (max-width: 925px){
+    .padre-services-1 {
+        margin-top: 90px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
+    }
+    .content-services-1 {
+        width: 95%;
+        height: 45%;
+    }
+    
+    .content-services-1-portada {
+        width: 95%;
+        height: 45%;
+    }
+    .content-services-1-portada > div {
+        width: 500px !important;
+        height: 500px !important;
+    }
+    .content-services-1 .services:nth-child(1) .content-p>p {
+        font-size: 1.5vw;
+    }
+    .content-services-1 .services:nth-child(1) h1 {
+        font-size: 2vw;
+    }
+    
+    .content-services-1 .services:nth-child(1) h2 {
+        font-size: 2.5vw;
+
     }
 }
 
@@ -368,7 +404,7 @@ a{
         padding: 0px;
     }
 
-    .content-services-2 .services-2{
+    .content-services-2 .services-2 {
         height: 60% !important;
     }
 }
@@ -382,5 +418,9 @@ a{
 @media (max-width: 500px) {
     .content-services-1 {
         height: 400px;
+    }
+    .content-services-1-portada > div {
+        width: 400px !important;
+        height: 400px !important;
     }
 }

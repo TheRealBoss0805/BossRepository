@@ -1,54 +1,59 @@
 
-/*let ubicacionServicio = document.querySelector("#ubicacionServicio");
-let estadoServicio = document.querySelector("#estadoServicio");
-let botonServicio = document.querySelector("#botonServicio");
+function calcularValoresRespuesta(e) {
+    let valorSelect1 = document.getElementById("ubicacionServicio").value;
+    let valorSelect2 = document.getElementById("estadoServicio").value;
+    let elemRespuesta = document.getElementById("botonServicio");
 
-
-
-
-const eventoUbicacion = () => {
-    let mostrarUbicacion = ubicacionServicio.value;
-    console.log(mostrarUbicacion);
-    return mostrarUbicacion;
-}
-
-const eventoEstado = () => {
-    let mostrarEstado = estadoServicio.value;
-    console.log(mostrarEstado);
-    return mostrarEstado
-}
-
-ubicacionServicio.addEventListener("change", eventoUbicacion); 
-estadoServicio.addEventListener("change", eventoEstado);*/
-
-/*
-document.addEventListener("change", e => {
-    if(e.target.matches("#ubicacionServicio")){
-        document.querySelectorAll(".item").forEach(servicio => {
-            let serviciox = servicio.parentElement;
-            if(servicio.getAttribute("valor").toLowerCase().includes(e.target.value.toLowerCase())){
-                serviciox.style.display = "flex";
-            }
-            else{
-                serviciox.style.display = "none";
-            }
-        });
+    if ((valorSelect1 != "" || valorSelect2 != "") && (valorSelect1 != "Ubicación" || valorSelect2 != "Estado")) {
+        elemRespuesta.innerText = "Se muestra el proyecto de " + valorSelect1 + " con estado " + valorSelect2;
     }
-})*/
-
-document.addEventListener("change", e => {
-    if(e.target.matches("#ubicacionServicio")){
-        document.querySelectorAll(".item").forEach(servicio => {
-            let serviciox = servicio.parentElement;
-            if(servicio.getAttribute("valor").toLowerCase().includes(e.target.value.toLowerCase())){
-                serviciox.style.display = "flex";
-            }
-            else{
-                serviciox.style.display = "none";
-            }
-        });
+    if(valorSelect1 == "Ubicación" && valorSelect2 != "Estado"){
+        elemRespuesta.innerText = "Se muestran todos los proyectos con estado " + valorSelect2;
     }
-})
+    if(valorSelect2 == "Estado" && valorSelect1 != "Ubicación"){
+        elemRespuesta.innerText = "Se muestra el proyecto de " + valorSelect1 + " con estado: En proceso y culminado";
+    }
+    if(valorSelect1 == "Ubicación" && valorSelect2 == "Estado"){
+        elemRespuesta.innerText = "Mostrando todos los proyectos";
+    }
 
+    let valoresSelect = valorSelect1.concat('', valorSelect2);
+
+    document.querySelectorAll(".item").forEach(item => {
+
+        let cadena1 = item.getAttribute("valor");
+        let cadena2 = item.getAttribute("valor2");
+        let valorContenedor = cadena1.concat('', cadena2);
+        let padreContenedor = item.parentElement;
+        let todoRegionItem = cadena1.concat('', "Estado");
+
+        if (valoresSelect == valorContenedor) {
+            padreContenedor.style.display = "flex";
+        }
+        if (valoresSelect != valorContenedor && valoresSelect != "UbicaciónEstado") {
+            padreContenedor.style.display = "none";
+        }
+        if (valoresSelect == "UbicaciónEstado") {
+            padreContenedor.style.display = "flex";
+        }
+        if (valoresSelect == "Ubicaciónen proceso") {
+            if (valorSelect2 == cadena2) {
+                padreContenedor.style.display = "flex";
+            }
+        }
+        if (valoresSelect == "Ubicaciónculminado") {
+            if (valorSelect2 == cadena2) {
+                padreContenedor.style.display = "flex";
+            }
+        }
+        if (valoresSelect == todoRegionItem) {
+            if (valorSelect1 == cadena1) {
+                padreContenedor.style.display = "flex";
+            }
+        }
+    })
+}
+document.getElementById("ubicacionServicio").addEventListener("change", calcularValoresRespuesta);
+document.getElementById("estadoServicio").addEventListener("change", calcularValoresRespuesta);
 
 

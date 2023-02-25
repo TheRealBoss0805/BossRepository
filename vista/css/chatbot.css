@@ -76,73 +76,80 @@ label img {
 .content-chatbot .options {
     height: 80px;
     width: 100%;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 15px;
 }
 
-.content-chatbot .options div, .content-chatbot .options button{
+.content-chatbot .options div,
+.content-chatbot .options button {
     height: 40px;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 5px;
 }
 
-.content-chatbot .options div{
+.content-chatbot .options div {
     width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.content-chatbot .options div img{
+.content-chatbot .options div img {
     height: 100%;
 }
 
-.content-chatbot .options div span{
+.content-chatbot .options div span {
     text-transform: uppercase;
     color: #fff;
     font-size: 13px;
     font-weight: 600;
 }
 
-.content-chatbot .options div label .green{
+.content-chatbot .options div label .green {
     color: #379145;
 }
 
-.content-chatbot .options button{
+.content-chatbot .options button {
     width: 11%;
     cursor: pointer;
     border: none;
 }
 
-.content-chatbot .options button:hover{
+.content-chatbot .options button:hover {
     filter: contrast(1.3);
 }
 
-.content-chatbot .options button i{
+.content-chatbot .options button i {
     color: #fff;
 }
 
-.contenedor-chatbot .content-chatbot .disenio-olas{
+.contenedor-chatbot .content-chatbot .disenio-olas {
     background: #fff;
     width: 100%;
     height: 80px;
 }
 
-.contenedor-chatbot .content-chatbot .viewMessages{
+.contenedor-chatbot .content-chatbot .viewMessages {
     width: 100%;
     height: 420px;
     background: #fff;
 }
 
-.contenedor-chatbot .content-chatbot .interaction{
+.contenedor-chatbot .content-chatbot .interaction {
     width: 100%;
     height: 60px;
     background: #fff;
@@ -151,7 +158,7 @@ label img {
     align-items: center;
 }
 
-.contenedor-chatbot .content-chatbot .interaction input{
+.contenedor-chatbot .content-chatbot .interaction input {
     width: 75%;
     height: 40px;
     background: rgb(234, 228, 228);
@@ -159,11 +166,11 @@ label img {
     padding: 10px;
 }
 
-.contenedor-chatbot .content-chatbot .interaction input:focus{
+.contenedor-chatbot .content-chatbot .interaction input:focus {
     outline: none;
 }
 
-.contenedor-chatbot .content-chatbot .interaction span{
+.contenedor-chatbot .content-chatbot .interaction span {
     width: 12%;
     height: 40px;
     font-size: 30px;
@@ -171,42 +178,55 @@ label img {
     justify-content: center;
     align-items: center;
     color: #fff;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
 
 /*ESTILOS PARA LOS MENSAJES ENVIADOS DENTRO DE LA CAJITA VIEWMESSAGES*/
 
-.container_msg_bot{
+.container_msg_bot {
     display: flex;
-    width: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
     background-color: #fff;
-    float: left;
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
+    border: 2px solid red;
+    gap: 10px;
 }
-.container_img_bot{
-    width: 3rem;
-    height: 3rem;
-    text-align: center;
-    margin:  .2rem .2rem .2rem 0;
-    overflow: hidden;
+
+.container_img_bot {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid orange;
 }
-.container_img_bot>img{
-    object-fit: contain;
-    width: 80%;
+
+.container_img_bot img {
+    width: 90%;
 }
-.msg_bot{
+
+.msg_bot {
     position: relative;
-    width: 80%;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
     padding: 15px;
     color: #fff;
@@ -217,14 +237,24 @@ label img {
     align-items: center;
     gap: 15px;
     text-align: justify;
+    border: 3px solid yellow;
+    width: auto;
 }
-.msg_bot>.opciones{
-    width: 100%;
+
+.msg_bot p{
+    width: 190px;
+    border: 2px solid red;
+}
+
+.msg_bot > .opciones {
+    width: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 3px solid magenta;
 }
-.msg_bot>.opciones >a{
+
+.msg_bot > .opciones > a {
     text-align: center;
     background-color: #eeeeee;
     width: 90%;
@@ -236,15 +266,23 @@ label img {
     font-size: 14px;
 }
 
-.msg_bot>.opciones >a:hover{
+.msg_bot > .opciones > a:hover {
     filter: brightness(92%);
 }
 
-.msg_client{
+.msg_bot ul {
+    width: 95%;
+    border: 3px solid red
+}
+
+.msg_client {
     width: 60%;
-    background: #D3CCE3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #D3CCE3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
     float: right;
     margin: 5px;
@@ -252,6 +290,7 @@ label img {
     font-size: 12px;
     color: #2a2a2a;
 }
-.viewMessages{
+
+.viewMessages {
     overflow-y: scroll;
 }

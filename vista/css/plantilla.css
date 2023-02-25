@@ -153,7 +153,8 @@
 
 /*PESTAÑA SERVICES*/
 .contenedor-services {
-    /*Declarado en la parte superior*/
+    gap: 30px;
+
 }
 
 /*PESTAÑA SERVICES - OPCION*/
