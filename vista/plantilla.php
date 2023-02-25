@@ -97,10 +97,6 @@
 
   echo '</div>';
 
-  if ($_GET["ruta"] == "servicios-eleccion" || $_GET["ruta"] == "proyecto-eleccion" || $_GET["ruta"] == "blog-seleccion") {
-    echo "<script src='vista/js/imagen-modal-seleccion.js'></script>";
-  }
-
   ?>
 
 </body>

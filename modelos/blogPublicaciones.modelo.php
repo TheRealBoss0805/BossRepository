@@ -9,7 +9,7 @@ class ModeloBlog
     static public function mdlMostrarPublicaciones($tabla, $item, $item2, $valor, $valor2, $empezar_desde, $tamanio_pagina)
     {
         if ($valor == null && $valor2 == null) {
-            
+
             $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY id_blog_pub ASC LIMIT $empezar_desde, $tamanio_pagina");
             $stmt->execute();
             return $stmt->fetchAll();
@@ -39,11 +39,11 @@ class ModeloBlog
         $stmt->close();
         $stmt = null;
     }
-//===============CONTABILIZA LAS PUBLICACIONES PARA EL TOTAL DE PAGINACION
+    //===============CONTABILIZA LAS PUBLICACIONES PARA EL TOTAL DE PAGINACION
     static public function mdlContarPublicaciones($tabla, $item, $valor, $item2, $valor2)
     {
         if ($valor == null && $valor2 == null) {
-            
+
             $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY id_blog_pub ASC");
             $stmt->execute(array());
             return $stmt->rowCount();
@@ -59,7 +59,7 @@ class ModeloBlog
             //HACEMOS UN JOIN DE AMBAS TABLAS
 
             $stmt = Conexion::conectar()->prepare("SELECT * FROM blog_pub_cat pc JOIN blog_publicaciones p ON pc.id_blog_pub = p.id_blog_pub WHERE $item = :$item");
-            $stmt->bindParam(":". $item, $valor, PDO::PARAM_STR);
+            $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
             //$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
             $stmt->execute();
             return $stmt->rowCount();
@@ -72,7 +72,7 @@ class ModeloBlog
             return $stmt->rowCount();
             $stmt->closeCursor();
         }
-        
+
         $stmt->close();
         $stmt = null;
     }
@@ -89,9 +89,21 @@ class ModeloBlog
         $stmt = null;
     }
 
+    //===========SOLO MUESTRA 3 PUBLICACIONES DE UNA CATEGORIA ESPECIFIICADA
+    
+    static public function mdlMostrar3Publicaciones($tabla, $item, $valor)
+    {
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM blog_pub_cat pc JOIN blog_publicaciones p ON pc.id_blog_pub = p.id_blog_pub WHERE $item = :$item LIMIT 3");
+        $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
+        //$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
     /*=========================MOSTRAR 4 PUBLICACIONES PARA EL MODULO "INICIO" DE LA WEB======================*/
 
-    static public function mdlMostrar4Publicaciones($tabla){
+    static public function mdlMostrar4Publicaciones($tabla)
+    {
         $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY id_blog_pub ASC LIMIT 4");
         $stmt->execute();
         return $stmt->fetchAll();
@@ -100,15 +112,16 @@ class ModeloBlog
         $stmt = null;
     }
 
-//=================================MOSTRAR UNA SOLA PUBLICACION EN ESPECIFICO PARA BLOG-SELECCION
-    static public function mdlMostrar1Publicacion($tabla, $item, $valor){
+    //=================================MOSTRAR UNA SOLA PUBLICACION EN ESPECIFICO PARA BLOG-SELECCION
+    static public function mdlMostrar1Publicacion($tabla, $item, $valor)
+    {
 
         $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
-        $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
-        $stmt ->execute();
-        return $stmt ->fetch();
-    
-        $stmt ->close();
+        $stmt->bindParam(":" . $item, $valor, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetch();
+
+        $stmt->close();
         $stmt = null;
     }
     /*=====================================MOSTRAR LOS ITEMS========================================*/

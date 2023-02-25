@@ -13,8 +13,7 @@ switch(urlcurrently){
         titles.textContent = "¿Quienes Somos?"; 
         descriptions.textContent = "INSTITUTO DE CONSULTORÍA S.A. es una institución que desde su creación en 1995 viene contribuyendo al esfuerzo que los sectores público y privado realizan para el desarrollo de nuestro país.";
         /*descriptions.textContent= "BIENVENIDOS A INDECONSULT S.A. – INGENIEROS CONSULTORES.";*/
-        imgWho.src = "vista/imagenes/nosotros/politicas.jpg";
-        imgUs.src = "vista/imagenes/nosotros/politicas.png";
+        imgWho.src = "vista/imagenes/nosotros/quienessomos.png";
         imgUs.classList.add("png2");
     break;
     
@@ -23,8 +22,7 @@ switch(urlcurrently){
         titles.textContent = "Políticas de Gestión de INDECONSULT S.A."
         descriptions.textContent = "INSTITUTO DE CONSULTORÍA S.A. en su decisión de brindar un servicio de excelencia a sus clientes y mejorar la calidad de vida de sus colaboradores y de la sociedad en general sigue las siguientes políticas:";
         /*descriptions.textContent = "COMPROMETIDOS CON LA SEGURIDAD, SALUD OCUPACIONAL, CALIDAD Y MEDIO AMBIENTE.";*/
-        imgWho.src = "vista/imagenes/nosotros/somos.jpg";
-        imgUs.src = "vista/imagenes/nosotros/somos.png";
+        imgWho.src = "vista/imagenes/nosotros/politicasdegestion.jpg";
         imgUs.classList.add("png1");
     break;
 }

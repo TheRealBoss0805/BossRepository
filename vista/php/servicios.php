@@ -42,16 +42,19 @@
                         }
                         ?>
                     </div>
-                    <h2>Conoce Nuestros Proyectos</h2>
+                    <!--<h2>Conoce Nuestros Proyectos</h2>-->
                 </div>
             </div>
             <div class="content-services-1-portada">
+
                 <div>
                     <img src="<?= $respuesta["portada"] ?>" alt="">
                 </div>
+                <img class="imagenService" src="vista/imagenes/proyectsandservices/servicios/service.png">
             </div>
         </div>
         <div class="selectionRegionStatus">
+            <h2>Conoce Nuestros Proyectos</h2>
             <div class="services">
                 <ul>
                     <li>

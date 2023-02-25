@@ -16,7 +16,6 @@
                     <h1 id="titles"></h1>
                 </div>
                 <div class="description-div">
-                    <img src="" id="imgUs">
                     <p id="descriptions"></p>
                 </div>
             </div>

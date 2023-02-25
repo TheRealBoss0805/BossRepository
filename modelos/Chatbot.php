@@ -1,8 +1,7 @@
 <?php
-class Chatbot
-{
+class Chatbot{
     private $opciones;
-
+    
     //  function setOpciones($opciones){
     //     $opciones = $this->opciones;
     //  }
@@ -12,30 +11,27 @@ class Chatbot
     // public function getIdMensaje(){
     //     return $this->idMensaje;
     // }
-    function getplantillaMsg($msgBot, $opciones)
-    {
+     function getplantillaMsg($msgBot, $opciones){
         $plantillaMsg = "<div class='container_msg_bot'>
-                            <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''>
-                            </div>
-                            <div class='msg_bot'>
-                                $msgBot
-                                <div class='opciones'>
-                                    $opciones
-                                </div>
-                            </div>
-                        </div>";
-        return $plantillaMsg;
-    }
-
-    function getplantilla2Msg($msgBot, $opciones)
-    {
+        <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
+        <div class='msg_bot'>
+        $msgBot
+        <div class='opciones'>
+            $opciones
+            </div>
+            </div>
+        </div>
+    </div>";
+    return $plantillaMsg;
+     }
+     
+     function getplantilla2Msg($msgBot, $opciones){
         $plantillaMsg = "<div class='container_msg_bot'>
-                            <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''>
-                            </div>
-                            <div class='msg_bot'>
-                                <ul>$opciones</ul>
-                            </div>
-                        </div>";
-        return $plantillaMsg;
-    }
+        <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
+        <div class='msg_bot'>
+        <ul>$opciones</ul>
+        </div>
+    </div>";
+    return $plantillaMsg;
+     }
 }

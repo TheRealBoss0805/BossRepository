@@ -14,7 +14,7 @@ $_SESSION["pedirNombre"] = false;
 <body>
     <input type="checkbox" id="bossito" class="cambiarAspecto">
     <label for="bossito" class="theBoss">
-        <button class="button"></button>
+
         <img src="vista/imagenes/chatbot/botIcono.png" alt="">
     </label>
     <div class="contenedor-chatbot" id="ventanaChat">

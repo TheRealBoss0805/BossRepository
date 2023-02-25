@@ -54,10 +54,10 @@
             }
                 ?>
         </div>
-        <form class="buscador-tipo-2">
+        <div class="buscador-tipo-2">
             <label>Búsqueda:</label>
             <input type="text" placeholder="Proyectos" id="buscador" name="buscador">
-        </form>
+        </div>
     </div>
     <?php
         $item2 = "id_proyecto";

@@ -26,6 +26,14 @@
             $respuesta = ModeloBlog::mdlMostrar2Publicaciones($tabla);
             return $respuesta;
         }
+        static public function ctrMostrar3Publicaciones($item, $valor){
+
+            /*MOSTRAR SOLO 3 REGISTROS*/
+
+            $tabla = "blog_publicaciones";
+            $respuesta = ModeloBlog::mdlMostrar3Publicaciones($tabla, $item, $valor);
+            return $respuesta;
+        }
 
         static public function ctrMostrar4Publicaciones(){
 

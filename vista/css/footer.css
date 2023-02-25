@@ -47,6 +47,7 @@ footer .container_2 h2::before{
 footer p{
     color: #999;
     text-align: justify;
+    font-size: 13px;
 }
 
 .sci_2{
@@ -94,6 +95,7 @@ footer p{
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
+    font-size: 13px;
 }
 
 .quickLinks ul li a:hover{
@@ -118,6 +120,9 @@ footer p{
     color: #fff;
     font-size: 20px;
     margin-right: 10px;
+}
+.contact_2 .info li span:nth-child(2){
+    font-size: 13px;
 }
 
 .contact_2 .info li span{

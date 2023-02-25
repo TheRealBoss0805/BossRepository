@@ -74,5 +74,6 @@
         </div>
     </div>
 </body>
+<script src='vista/js/imagen-modal-seleccion.js'></script>
 
 </html>

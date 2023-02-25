@@ -52,7 +52,7 @@
 /*END*/
 
 input#bossito {
-    display: none;
+    display: none !important;
 }
 
 label.theBoss {
@@ -216,6 +216,7 @@ label img {
 }
 
 .container_img_bot img {
+    object-fit: contain;
     width: 90%;
 }
 
@@ -238,16 +239,25 @@ label img {
     gap: 15px;
     text-align: justify;
     border: 3px solid yellow;
-    width: auto;
+    width: 80%;
 }
 
-.msg_bot p{
+.msg_bot ul{
     width: 190px;
     border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 900px;
+
+}
+
+.msg_bot ul li{
+    width: 300px;
+    border: 2px solid blue;
 }
 
 .msg_bot > .opciones {
-    width: 140px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
