@@ -524,8 +524,6 @@ class AjaxChatbot
     //==========CARRUSEL PARA LOS ITEMS DE BLOG====================
     public function ajaxMostrarCarrusel3()
     {   
-       // $_SESSION["pedirNombre"]=false;
-        //$_SESSION["nombre"] = $_POST["msg"];ç
         $msg = $this->msg;
         $opciones = "";
         

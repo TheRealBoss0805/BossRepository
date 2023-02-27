@@ -28,7 +28,7 @@
                                     $dia = date("d", strtotime($filtro["fecha"]));
                                     $mes = date("m", strtotime($filtro["fecha"]));
                                     echo "
-                                    <div class='slide' style='background-image: url(" . $filtro["imagen"] . ")'>
+                                <div class='slide' style='background-image: url(" . $filtro["imagen"] . ")'>
                                     <div class='container'>
                                         <div class='caption'>
                                             <a href='https://www.facebook.com/institutodeconsultoriasa' target='blank'>

@@ -267,7 +267,7 @@
 .content-proyecto:nth-child(3) .parent-button-div {
     height: 440px;
     width: 350px;
-    box-shadow: 5px 5px 6px #5a5a5a;
+    box-shadow: 5px 5px 6px #253743;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -294,18 +294,14 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: #ADA996;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .content-proyecto:nth-child(3) .parent-button-div .buttons-div-2 .articulo {
-    color: #253743 !important;
-    font-size: 16px;
+    color: #fff !important;
+    font-size: 14px;
     text-align: center;
     line-height: 1.5em;
 }

@@ -193,6 +193,11 @@
 .contenedor-blog-seleccion {
     /*Declarado en la parte superior*/
     gap: 50px;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
 }
 
 .contenedor-chatbot{

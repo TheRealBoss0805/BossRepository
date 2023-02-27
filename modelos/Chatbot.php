@@ -27,11 +27,19 @@ class Chatbot{
      
      function getplantilla2Msg($msgBot, $opciones){
         $plantillaMsg = "<div class='container_msg_bot'>
-        <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
-        <div class='msg_bot'>
-        <ul>$opciones</ul>
-        </div>
-    </div>";
+                            <div class='container_img_bot'>
+                            <img src='vista/imagenes/chatbot/botIcono.png' alt=''>
+                            </div>
+                            <div class='msg_bot'>
+                                    <div class='carusel'>
+                                        <ul class='listado'>$opciones</ul>
+                                    </div>  
+                                    <div class='controles'>
+                                        <div class='ctrl icon-left-dir'></div>
+                                        <div class='ctrl icon-right-dir'></div>
+                                    </div>                   
+                            </div>
+                        </div>";
     return $plantillaMsg;
      }
 }

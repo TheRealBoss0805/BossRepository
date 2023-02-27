@@ -221,7 +221,6 @@ label img {
 }
 
 .msg_bot {
-    position: relative;
     background: #0F2027;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
@@ -242,19 +241,90 @@ label img {
     width: 80%;
 }
 
-.msg_bot ul{
-    width: 190px;
-    border: 2px solid red;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 900px;
-
+.msg_bot .carusel{
+    overflow: hidden;
+    position: relative;
+    border: 3px solid black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 300px;
 }
 
-.msg_bot ul li{
-    width: 300px;
-    border: 2px solid blue;
+.msg_bot .carusel .listado{
+    width: 100%;
+    height: 100%;
 }
+
+.msg_bot .carusel li{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+    list-style: none;
+    gap: 20px;
+    border: 2px solid orange;
+}
+
+.msg_bot .carusel li.active {
+    display: flex;
+}
+
+.msg_bot .carusel li img{
+    width: 100%;
+    height: 75%;
+}
+
+.msg_bot .carusel li h1{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+}
+
+.msg_bot .carusel li h1{
+    font-size: 13px;
+}
+
+.msg_bot .controles{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    border: 3px solid burlywood;
+}
+
+.controles .ctrl{
+    color: #203A43;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .msg_bot > .opciones {
     width: 90%;
@@ -280,10 +350,6 @@ label img {
     filter: brightness(92%);
 }
 
-.msg_bot ul {
-    width: 95%;
-    border: 3px solid red
-}
 
 .msg_client {
     width: 60%;
