@@ -73,7 +73,7 @@
                     $id = $respuesta["id_servicio"];
 
                     echo "
-                        <div class='service-$id div'>
+                        <div class='service-$id div hijoInicio2'>
                             <a href='index.php?ruta=servicios&id=$id' class='hola'>
                                 <div class='glass-div'></div>
                                 <span>

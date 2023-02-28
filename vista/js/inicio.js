@@ -251,6 +251,10 @@ addEventListener('DOMContentLoaded', () => {
     let cambio;
     let cantidad_maxima;
 
+    const inicioDos = () => {
+        let initDos = document.querySelectorAll('.div');
+    }
+
     const animarContadores = () => {
         for (const contadorsote of contadorcitos) {
             const actualizar_contador = () => {
@@ -266,11 +270,11 @@ addEventListener('DOMContentLoaded', () => {
                 else if (valor_actual == cantidad_maxima) {
                     contadorsote.innerText = cantidad_maxima
                 }
-
             }
             actualizar_contador()
         }
     }
+
     //IntersectionObserver
 
     const mostrarContadores = elementos => {
@@ -283,18 +287,38 @@ addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const mostrarInicio2 = elementos2 => {
+        elementos2.forEach(elemento2 => {
+            if(elemento2.isIntersecting){
+                elemento2.target.classList.add("jugar");
+                elemento2.target.classList.remove("div");
+                setTimeout(inicioDos, 300)
+            }
+        
+    });
+}
+
     const observer = new IntersectionObserver(mostrarContadores, {
         threshold: 0.75// 0 - 1
     })
+
+    const observer2 = new IntersectionObserver(mostrarInicio2, {
+        threshold: 0.75// 0 - 1
+    })
+
 
     const elementosHTML = document.querySelectorAll('.hijo-contador')
     elementosHTML.forEach(elementoHTML => {
         observer.observe(elementoHTML)
     })
+
+    const elementosHTML2 = document.querySelectorAll('.hijoInicio2')
+    elementosHTML2.forEach(elementoHTML2 => {
+        observer.observe(elementoHTML2)
+    })
 })
 
 /*CODIGO PARA EL CAMBIO DE ICONO (+) (-) CUANDO EL INPUT ESTÉ CHECKEADO*/
-
 
 $(".card").on("click", ".icon-plus", function () {
 

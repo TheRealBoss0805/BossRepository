@@ -111,13 +111,6 @@
     position: relative;
 }
 
-/*
-.content-slider .slider-top #div-slider-top .section-slider .slider{
-    border: 30px solid green;
-    width: 100%;
-    height: 100%;
-}*/
-
 .section-slider .slide {
     position: absolute;
     width: 100%;
@@ -1460,6 +1453,10 @@
 
 .content6-3 .padre-contador .hijo-contador:nth-child(1) span img {
     width: 70px;
+}
+
+.inicio-2 .div{
+    opacity: 0;
 }
 
 .hideee {
