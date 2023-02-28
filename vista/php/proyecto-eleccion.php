@@ -27,30 +27,28 @@
     ?>
     <div class="contenedor-eleccion-proyecto" id="<?=$respuesta3["id_proyecto"]?>">
         <div class="content-eleccion-proyecto">
-            <p>Categoría <br> <?=$respItem2["nombre"]?></p>
-            <img src="vista/imagenes/proyectsandservices/proyectos/portadaParaItem/1.jpg" alt="CREACIÓN DEL SERVICIO DE ALTA COMPETENCIA DE GIMNASIA EN EL MALECÓN PÉREZ ARANIBAR, DISTRITO DE SAN ISIDRO, PROVINCIA Y REGIÓN DE LIMA" title="CREACIÓN DEL SERVICIO DE ALTA COMPETENCIA DE GIMNASIA EN EL MALECÓN PÉREZ ARANIBAR, DISTRITO DE SAN ISIDRO, PROVINCIA Y REGIÓN DE LIMA">
+            <h1><?=$respItem2["nombre"]?></h1>
+            <h2><?=$respItem["titulo"]?></h2>
+            <span></span>
         </div>
-
         <div class="content-eleccion-proyecto">
             <div>
-                <img id="myImg" src="<?=$respItem["foto"]?>" alt="<?=$respItem["titulo"]?>">
-                <div id="myModal" class="modal">
-                    <span class="close">x</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
-            </div>
-            <div>
-                <h1><?=$respItem["titulo"]?></h1>
-                <span class="linea-span"></span>
+                <h1>Sobre Nuestro Proyecto</h1>
                 <?php
                     foreach($stringSeparado as $p){
                             echo "<p>".$p."</p>";
                     }
                 ?>
+                <img class="servPng1" src="vista/imagenes/proyectsandservices/proyectos/pngServiciosItem.png" alt="">
+                <img class="servPng2" src="vista/imagenes/proyectsandservices/proyectos/pngServiciosItem.png" alt="">
+            </div>
+            <div>
+                <img src="<?=$respItem["foto"]?>" alt="">
+            </div>
+            <div class="pngPortada">
+            
             </div>
         </div>
     </div>
-
 </body>
 <script src='vista/js/imagen-modal-seleccion.js'></script>

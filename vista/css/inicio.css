@@ -11,28 +11,12 @@
 
 /*Estilos para el título*/
 
-.title-inicio {
-    position: absolute;
-    top: 0;
-    left: 30px;
-    color: #253743;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-}
-
 .title-inicio-2 {
     position: absolute;
     top: 0;
     right: 30px;
     color: #253743;
     z-index: 1;
-}
-
-.title-inicio-3 {
-    display: none;
 }
 
 .title-inicio-2 h2 {
@@ -55,6 +39,18 @@
     background: crimson;
 }
 
+.title-inicio {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    color: #253743;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
 .title-inicio p {
     font-size: 20px;
 }
@@ -72,6 +68,10 @@
     width: 100px;
     height: 4px;
     background: crimson;
+}
+
+.title-inicio-3 {
+    display: none;
 }
 
 /*INICIO 1*/
@@ -1462,26 +1462,6 @@
     width: 70px;
 }
 
-.hideee {
-    opacity: 0;
-}
-
-.jugar {
-    animation: nohideeen 1.3s;
-}
-
-@keyframes nohideeen {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .contenedor-6 {
     position: relative;
     width: 500px !important;
@@ -2243,5 +2223,76 @@
     100% {
         -webkit-transform: translateX(calc(-200px * 7));
         transform: translateX(calc(-200px * 7));
+    }
+}
+
+
+/*ESTILOS PARA LA ANIMACIÓN CUANDO SE RECARGA EL DOM*/
+
+.hideee {
+    opacity: 0;
+}
+
+.topY {
+    animation: nohideeen 1.3s;
+}
+
+@keyframes nohideeen {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.leftX {
+    animation: nohideeen2 1.3s;
+}
+
+@keyframes nohideeen2 {
+    0% {
+        opacity: 0;
+        transform: translatex(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+.rightX {
+    animation: nohideeen3 1.3s;
+}
+
+@keyframes nohideeen3 {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.botY {
+    animation: nohideeen4 1.3s;
+}
+
+@keyframes nohideeen4 {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

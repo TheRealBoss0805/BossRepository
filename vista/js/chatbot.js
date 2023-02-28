@@ -171,8 +171,8 @@ function sliderChat() {
 
     $(".listado").children("li").addClass("itemCarusel");
 
-    let slide = $(".listado .itemCarusel")
-    /*console.log($(".itemCarusel:first"));
+    /*let slide = $(".listado .itemCarusel")
+    console.log($(".itemCarusel:first"));
     slide[0].classList.add("active");
     $(".itemCarusel:first").css("display", "flex");*/
     $(".listado .itemCarusel").first().addClass("active");
@@ -180,17 +180,16 @@ function sliderChat() {
     let iterador = 0;
 
     $(".viewMessages").on("click", ".container_msg_bot .icon-left-dir", function () {
-        console.log("123456789")
         prevSlide2();
         resetTimer2();
     });
     $(".viewMessages").on("click", ".container_msg_bot .icon-right-dir", function () {
-        console.log("987654321")
         nextSlide2();
         resetTimer2();
     });
 
     function prevSlide2() {
+        let slide = $(".listado .itemCarusel")
         if (iterador === 0) {
             iterador = slide.length - 1;
         } else {
@@ -200,6 +199,7 @@ function sliderChat() {
     }
 
     function nextSlide2() {
+        let slide = $(".listado .itemCarusel")
         if (iterador === slide.length - 1) {
             iterador = 0;
         } else {
@@ -209,6 +209,7 @@ function sliderChat() {
     }
 
     function changeSlide2() {
+        let slide = $(".listado .itemCarusel")
         for (let i = 0; i < slide.length; i++) {
             $(".listado .itemCarusel").eq(i).removeClass("active");
             /*slide[i].classList.remove("active");*/
@@ -219,8 +220,8 @@ function sliderChat() {
         if (iterador === 4) {
             iterador = 0;
         }
-            $(".listado .itemCarusel").eq(iterador).addClass("active");
-            /*slide[iterador].classList.add("active");*/
+        $(".listado .itemCarusel").eq(iterador).addClass("active");
+        /*slide[iterador].classList.add("active");*/
     }
 
     function resetTimer2() {

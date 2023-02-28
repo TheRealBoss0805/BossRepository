@@ -263,28 +263,37 @@ label img {
     height: 100%;
     z-index: 1;
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     gap: 20px;
     border: 2px solid orange;
 }
 
+
 .msg_bot .carusel li.active {
     display: flex;
 }
 
-.msg_bot .carusel li img{
+.msg_bot .carusel li .slider-single-image{
     width: 100%;
     height: 75%;
 }
 
-.msg_bot .carusel li h1{
+.msg_bot .carusel li .h1-image{
     width: 100%;
     height: 25%;
     text-align: center;
+    font-size: 12px;
+    border: 5px solid red;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.msg_bot .carusel li h1{
-    font-size: 13px;
+.msg_bot .carusel li.active .h1-image{
+    display: flex;
 }
 
 .msg_bot .controles{
@@ -311,20 +320,6 @@ label img {
     width: 40px;
     height: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .msg_bot > .opciones {
     width: 90%;

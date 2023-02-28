@@ -1,6 +1,13 @@
 
-.contenedor-services-n {
-
+.contenedor-services-n .imgPortadaServicios{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../imagenes/proyectsandservices/servicios/fondoServicioItem.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(10%);
 }
 
 .contenedor-services-n .content-eleccion-servicio-1 {
@@ -89,7 +96,7 @@
 
 .contenedor-services-n .content-eleccion-servicio-2 h1 {
     text-transform: uppercase;
-    color: #fff;
+    color: #5da8da;
     letter-spacing: 3px;
     text-align: center;
     font-size: 25px;

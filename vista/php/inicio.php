@@ -73,7 +73,7 @@
                     $id = $respuesta["id_servicio"];
 
                     echo "
-                        <div class='service-$id div'>
+                        <div class='service-$id div VTop hideee'>
                             <a href='index.php?ruta=servicios&id=$id' class='hola'>
                                 <div class='glass-div'></div>
                                 <span>
@@ -126,7 +126,7 @@
                                 $cadenaAcortada = substr($cad, 0, $caracteres) . '...';
                                 $id = $item["id_serv_item"];
 
-                                echo "<div class='swiper-slide card'>
+                                echo "<div class='swiper-slide card HLeft hideee'>
                                 
                                         <div class='icon-plus icono-card' id='icon'>
                                         </div>
@@ -155,7 +155,7 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </section>
-            <img src="vista/imagenes/extras/munecos/6.png" alt="" class="muneco-major">
+            <img src="vista/imagenes/extras/munecos/6.png" alt="" class="muneco-major hideee HRight">
         </div>
         <!--INICIO 4-->
         <div class="inicio-4">
@@ -163,7 +163,7 @@
                 <h2>Noticias sobre la Empresa y el Sector</h2>
             </div>
             <div class="contenedor-4">
-                <div class="content4-ct0">
+                <div class="content4-ct0 HLeft hideee">
                     <div class="ct0-texto">
                         <h2>¡NOTICIAS RECIENTES!</h2>
                         <p>Indeconsult S.A. Es una empresa
@@ -185,7 +185,7 @@
                         $dia = date("d", strtotime($publicacion["fecha"]));
                         $mes = date("m", strtotime($publicacion["fecha"]));
                         echo "
-                        <div class='child1-min'>
+                        <div class='child1-min HRight hideee'>
                         <div class='child1-img'>
                             <div href='index.php?ruta=blog-seleccion&id=" . $publicacion["id_blog_pub"] . "' class='front'>
                                 <img src=" . $publicacion["imagen"] . " alt=''>
@@ -211,7 +211,7 @@
                 <h2>Instituto de consultoría S.A</h2>
             </div>
             <div class="contenedor-5">
-                <div class="content-5">
+                <div class="content-5 hideee HLeft">
                     <div class="content-5-min1">
                         <p>Promover la Inversión Pública y Privada en un marco<br> de Competencia y Eficiencia.</p>
                         <img src="vista/imagenes/inicio/valores/Mision.png" alt="" class="valor1">
@@ -220,7 +220,7 @@
                         <h1>MISIÓN</h1>
                     </div>
                 </div>
-                <div class="content-5">
+                <div class="content-5 hideee HRight">
                     <div class="content-5-min2 min2-2">
                         <h1>VISIÓN</h1>
                     </div>
@@ -229,7 +229,7 @@
                         <img src="vista/imagenes/inicio/valores/vision.png" alt="" class="valor2">
                     </div>
                 </div>
-                <div class="content-5">
+                <div class="content-5 hideee VBot">
                     <div class="contenedor-5-burbuja">
                         <?php
                         for ($i = 1; $i < 5; $i++) {
@@ -261,7 +261,7 @@
                     <h2 style="color: #fff">SOMOS INDECONSULT S.A</h2>
                 </div>
                 <div class="contenedor-padre-6">
-                    <div class="contenedor-6">
+                    <div class="contenedor-6 hideee HLeft">
                         <div class="content6-1">
                             <?php
                             /*26, 9001, 14001,37001,45001*/
@@ -340,7 +340,7 @@
                 <div class="title-inicio">
                     <h2>INFORMACIÓN GENERAL</h2>
                 </div>
-                <div class="content7-1">
+                <div class="content7-1 hideee HLeft">
 
                     <div class="content7-rep">
                         <div class="represent-think">
@@ -358,7 +358,7 @@
                     </div>
 
                 </div>
-                <div class="content7-2">
+                <div class="content7-2 hideee HRight">
                     <div class="content7-titulo">
                         <h2>ORGANIGRAMA DE LA EMPRESA</h2>
                     </div>
@@ -390,10 +390,10 @@
         </div>
         <!--INICIO 8-->
         <div class="inicio-8">
-            <div class="contenedor-8">
-                <div class="title-inicio">
-                    <h2>NUESTROS PROVEEDORES</h2>
-                </div>
+            <div class="title-inicio">
+                <h2>NUESTROS PROVEEDORES</h2>
+            </div>
+            <div class="contenedor-8 hideee VBot">
                 <div class="content8">
                     <!--PROVEEDORES: bitech, ibnet, impacto, plaza-vea, promart, sodimac, tailoy-->
                     <?php

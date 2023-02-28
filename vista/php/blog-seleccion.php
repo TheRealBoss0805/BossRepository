@@ -57,7 +57,6 @@
         </div>
     </div>
     <div class="imgPortadaBlog">
-    <!--<img src="vista/imagenes/proyectsandservices/blog/portada-blog-seleccion.jpg" alt="">-->
     </div>
     </div>
 </body>
