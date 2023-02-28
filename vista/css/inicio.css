@@ -109,7 +109,6 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    border: 3px solid red;
 }
 
 /*
@@ -128,7 +127,6 @@
     z-index: 1;
     display: none;
     animation: slide 2s ease;
-    border: 50px solid orange;
 }
 
 .section-slider .slide.active {
@@ -155,7 +153,6 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    border: 10px solid magenta;
 }
 
 .section-slider .slide.active .container .caption {
@@ -609,6 +606,8 @@
     color: #253743;
     text-shadow: black 0.04em 0.04em 0.05em;
     animation: arrowLow 1.5s infinite;
+    position: absolute;
+    bottom: 25%;
 }
 
 @keyframes arrowLow {

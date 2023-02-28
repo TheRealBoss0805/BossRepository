@@ -128,24 +128,24 @@
 
                                 echo "<div class='swiper-slide card'>
                                 
-                                    <div class='icon-plus icono-card' id='icon'></div>
-        
-                                    <div class='card-content' id='despegar-profession'>
-                                        <div class='image'>
-                                            <a href='index.php?ruta=servicios-eleccion&idItem=$id'>
-                                                <img src='" . $item["foto"] . "'>
-                                            </a>
+                                        <div class='icon-plus icono-card' id='icon'>
                                         </div>
-                                        <div class='name-profession'>
-                                            <span class='name'>" . $item["titulo"] . "</span>
-                                            <span class='profession'>" . $cadenaAcortada . "</span>
-                                        </div>
-                                    </div>";
+                                        <div class='card-content' id='despegar-profession'>
+                                            <div class='image'>
+                                                <a href='index.php?ruta=servicios-eleccion&idItem=$id'>
+                                                    <img src='" . $item["foto"] . "'>
+                                                </a>
+                                            </div>
+                                            <div class='name-profession'>
+                                                <span class='name'>" . $item["titulo"] . "</span>
+                                                <span class='profession'>" . $cadenaAcortada . "</span>
+                                            </div>
+                                        </div>";
                                 echo "
                                         <div class='card-down' id='card-down'>
                                             <i class='fi fi-sr-chevron-double-down'></i>
                                         </div>
-                                </div>";
+                                    </div>";
                             }
                         }
                         ?>

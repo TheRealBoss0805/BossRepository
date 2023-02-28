@@ -295,20 +295,17 @@ addEventListener('DOMContentLoaded', () => {
 
 /*CODIGO PARA EL CAMBIO DE ICONO (+) (-) CUANDO EL INPUT ESTÉ CHECKEADO*/
 
-function wait() {
-    $(".card-down").css("display", "block");
-}
 
 $(".card").on("click", ".icon-plus", function () {
 
     $(this).toggleClass("icon-minus");
 
     if ($(this).hasClass("icon-minus")) {
-        $(this).parent().children(".card-down").css("display", "none");
+        $(this).parent().children(".card-down").css("visibility", "hidden");
         $(this).parent().children(".card-content").css("height", "100%");
     }
     else {
-        setTimeout(wait, 1e3);
+        $(".card-down").css("visibility", "visible");
         $(this).parent().children(".card-content").css("height", "180px");
     }
 });
