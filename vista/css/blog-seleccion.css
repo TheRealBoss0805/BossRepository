@@ -91,7 +91,7 @@
   background: linear-gradient(to top, #242424, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   opacity: 0.9;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   min-width: 730px;
 }
@@ -124,7 +124,7 @@
 }
 
 .div-blog-seleccion-contenido p:nth-child(1) {
-  font-size: 14px;
+  font-size: 18px;
   text-shadow: black 0.03em 0.03em 0.05em;
   text-transform: uppercase;
   width: 100%;
@@ -137,9 +137,10 @@
 }
 
 .div-blog-seleccion-contenido p:nth-child(2) {
-  font-size: 12px;
+  font-size: 13px;
   text-align: justify;
   color: #fff;
+  line-height: 1.5em;
 }
 
 @media (max-width: 1200px) {

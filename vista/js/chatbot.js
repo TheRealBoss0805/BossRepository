@@ -189,9 +189,8 @@ function sliderChat() {
     });
 
     function prevSlide2() {
-        let slide = $(".listado .itemCarusel")
         if (iterador === 0) {
-            iterador = slide.length - 1;
+            iterador = $(".itemCarusel").length - 1;
         } else {
             iterador--;
         }
@@ -199,8 +198,7 @@ function sliderChat() {
     }
 
     function nextSlide2() {
-        let slide = $(".listado .itemCarusel")
-        if (iterador === slide.length - 1) {
+        if (iterador === $(".itemCarusel").length - 1) {
             iterador = 0;
         } else {
             iterador++;
@@ -209,8 +207,7 @@ function sliderChat() {
     }
 
     function changeSlide2() {
-        let slide = $(".listado .itemCarusel")
-        for (let i = 0; i < slide.length; i++) {
+        for (let i = 0; i < $(".itemCarusel").length; i++) {
             $(".listado .itemCarusel").eq(i).removeClass("active");
             /*slide[i].classList.remove("active");*/
         }
