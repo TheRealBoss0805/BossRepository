@@ -240,10 +240,12 @@ for (let i = 0; i < imgBx.length; i++) {
     })
 }
 
-/*Bloque para que la animación se de cuando el scroll
-Muestre el sector respectivo en la pantalla*/
+const {documentObserver} = require("vista/js/documentOberser.js")
 
-addEventListener('DOMContentLoaded', () => {
+/*Bloque para que la animación se de cuando el scroll
+Muestre el sector respectivo en la pantalla
+
+let ovservadorElementos = addEventListener('DOMContentLoaded', () => {
     const contadorcitos = document.querySelectorAll('.count-cantidad')
     const rapidez = 1000
     let valor_actual;
@@ -286,7 +288,6 @@ addEventListener('DOMContentLoaded', () => {
             actualizar_contador()
         }
     }
-    //IntersectionObserver
 
     const mostrarContadores = elementos => {
         elementos.forEach(elemento => {
@@ -338,8 +339,6 @@ addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /*INSTANCIAMOS LA CLASE*/
-
     const observer = new IntersectionObserver(mostrarContadores, {
         threshold: 0.75// 0 - 1
     })
@@ -359,8 +358,6 @@ addEventListener('DOMContentLoaded', () => {
     const observerHRight = new IntersectionObserver(mostrarHorizontalRight, {
         threshold: 0.75
     })
-
-    /*OBSERVADOR*/
 
     const elementosHTML = document.querySelectorAll('.hijo-contador')
     elementosHTML.forEach(elementoHTML => {
@@ -387,7 +384,7 @@ addEventListener('DOMContentLoaded', () => {
         observerHLeft.observe(elementoHTML)
     })
 
-})
+})*/
 
 /*CODIGO PARA EL CAMBIO DE ICONO (+) (-) CUANDO EL INPUT ESTÉ CHECKEADO*/
 

@@ -1,6 +1,7 @@
 /*=============================================
 FILTRAR POR TIPO
 =============================================*/
+
 $(".content-proyecto").on("click", ".btnFiltro", function () {
 	var idFiltro = $(this).attr("idFiltro");
 	var datos = new FormData();
@@ -14,14 +15,18 @@ $(".content-proyecto").on("click", ".btnFiltro", function () {
 		contentType: false,
 		processData: false,
 		success: function (respuesta) {
-			$("#items").html(respuesta);
+
+			function complete() {
+				$("#items").html(respuesta);
+			}
+			$("#items").fadeOut(500, "linear", complete);
+			$("#items").fadeIn(500, "linear", complete);
 		}
 	});
 	$(this).parent().children(".btnFiltro").removeClass("active");
 	$(this).parent().children(".btnTodos").removeClass("active");
 	$(this).addClass("active");
 })
-
 
 /*=============================================
 TRAER "TODOS" POR TIPO O POR SECTOR
@@ -40,14 +45,18 @@ $(".content-proyecto").on("click", ".btnTodos", function () {
 		contentType: false,
 		processData: false,
 		success: function (respuesta) {
-			$("#items").html(respuesta);
+			/*$("#items").html(respuesta);*/
+			function complete() {
+				$("#items").html(respuesta);
+			}
+			$("#items").fadeOut(500, "linear", complete);
+			$("#items").fadeIn(500, "linear", complete);
 		}
 	});
 	$(this).parent().children(".btnFiltro").removeClass("active");
 	$(this).removeClass("active");
 	$(this).addClass("active");
 })
-
 
 /*=========================================
 				BUSCADOR

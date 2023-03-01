@@ -34,11 +34,11 @@
                 </div>
                 <div class="agree-label">
                     <div class="services-n-description">
-                        <img src="vista/imagenes/proyectsandservices/servicios/local.png" alt="icono">
+                        <img src="vista/imagenes/proyectsandservices/servicios/localServiceItem.png" alt="icono">
                         <p><?= $respItem["lugar"] ?></p>
                     </div>
                     <div class="services-n-description">
-                        <img src="vista/imagenes/proyectsandservices/servicios/servicios.png" alt="icono">
+                        <img src="vista/imagenes/proyectsandservices/servicios/serviceItem.png" alt="icono">
                         <p>Servicios</p>
                     </div>
                     <div class="services-n-description">

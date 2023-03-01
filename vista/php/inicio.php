@@ -418,5 +418,6 @@
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="vista/js/inicio.js"></script>
+<script src="vista/js/documentObserver.js"></script>
 
 </html>

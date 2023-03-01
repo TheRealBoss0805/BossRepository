@@ -4,7 +4,7 @@ function prevPage() {
 	let input_current_page = $("#input_page");
 	let current_page = input_current_page.val();
 	let input_total_pages = $("#input_total_pages");
-	
+
 	if (current_page > 1) {
 		current_page--;
 		input_current_page.val(current_page);
@@ -53,7 +53,11 @@ function traerAjax(current_page) {
 		contentType: false,
 		processData: false,
 		success: function (respuesta) {
-			$("#publicaciones").html(respuesta);
+			function complete() {
+				$("#publicaciones").html(respuesta);
+			}
+			$("#publicaciones").fadeOut(500, "linear", complete);
+			$("#publicaciones").fadeIn(500, "linear", complete);
 			actualizarNroPagina()
 		}
 	});
