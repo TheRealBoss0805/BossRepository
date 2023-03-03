@@ -35,7 +35,7 @@
     <header>
         <div class="contenedor-logo">
             <div class="svg-img">
-                <a href="inicio"><img src="vista/imagenes/extras/idcLogo2.png"></a>
+                <a href="inicio"><img src="vista/imagenes/extras/Logo-Empresa.png"></a>
             </div>
         </div>
         <nav>

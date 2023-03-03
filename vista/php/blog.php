@@ -173,7 +173,7 @@
 
             <div class="blog-2">
                 <h1>Video Informativo de IDC</h1>
-                <video src="" poster="" preload="auto" controls>
+                <video src="vista/video/IDC-VIDEO.mp4" poster="" preload="auto" controls>
                 </video>
             </div>
         </div>
