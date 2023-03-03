@@ -5,7 +5,7 @@
     background: #f8f8f8;
     height: 50px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     gap: 30px;
     width: 100%;
@@ -41,7 +41,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
     gap: 20px;
 }
 
@@ -55,7 +54,8 @@
     font-family: "Roboto", sans-serif;
 }
 
-.info-fijo div:nth-child(2) i, .info-fijo div:nth-child(3) i{
+.info-fijo div:nth-child(2) i,
+.info-fijo div:nth-child(3) i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +72,7 @@
 }
 
 /*ESTILO MUY IMPORTANTE*/
+
 header.abajo {
     background-color: #222;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
@@ -83,7 +84,7 @@ header.abajo ul {
 }
 
 header.abajo .contenedor-logo {
-    transform: scale(0);
+    display: none;
 }
 
 header.abajo nav ul .nav-li a {
@@ -96,6 +97,10 @@ header.abajo nav ul li .contactanos {
 
 header.abajo nav ul li .contactanos .label {
     font-size: 12px;
+}
+
+header.abajo .panel{
+    display: none;
 }
 
 header {
@@ -114,16 +119,31 @@ header {
     user-select: none;
 }
 
+header .panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 172px;
+    transition: all .5s ease-in;
+}
+
+header .panel img {
+    width: 100%;
+    height: 100%;
+}
+
 /*Contendor Logo*/
 
 .contenedor-logo {
-    width: 10%;
+    width: 8%;
+    min-width: 107px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 15px;
-    top: 0;
+    left: 40px;
+    top: 10px;
     z-index: 6;
     transition: all .5s ease-in;
 }
@@ -169,7 +189,8 @@ header .svg-img a img:hover {
     }
 }
 
-header nav input, header nav .label-check{
+header nav input,
+header nav .label-check {
     display: none;
 }
 
@@ -284,11 +305,11 @@ header ul li.active::before {
     width: 105%;
 }
 
-header ul .nav-li ul li.changed{
+header ul .nav-li ul li.changed {
     background: #fff;
 }
 
-header ul .nav-li ul li.changed a{
+header ul .nav-li ul li.changed a {
     color: #253743;
 }
 
@@ -315,7 +336,6 @@ header ul .contactanos {
     border-radius: 0.6em;
     padding: 1em 1em;
     transition: all .5s ease;
-
 }
 
 header ul .contactanos:hover {
@@ -341,16 +361,20 @@ header ul .contactanos:hover {
 
 /*ICONO RESPONSIVO*/
 
-.responsive{
+.responsive {
     display: none;
 }
 
-
 /*Responsive*/
 
-
 @media (max-width: 1130px) {
-    header nav input, header nav .label-check{
+
+    header .panel {
+        display: none;
+    }
+
+    header nav input,
+    header nav .label-check {
         display: block;
     }
 
@@ -361,10 +385,10 @@ header ul .contactanos:hover {
     header {
         margin-top: 0px;
     }
-    
 
     header.abajo .contenedor-logo {
-        transform: scale(1);
+        display: flex;
+        transform: scale(0.65);
     }
 
     header.abajo nav ul .nav-li a {
@@ -380,7 +404,7 @@ header ul .contactanos:hover {
     }
 
     header .contenedor-logo {
-        width: 150px;
+        transform: scale(0.65);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -389,7 +413,6 @@ header ul .contactanos:hover {
         top: 0;
         bottom: 0;
         margin: auto;
-        /*right: 0;*/
         z-index: 6;
         transition: all .5s ease-in;
     }
@@ -428,13 +451,13 @@ header ul .contactanos:hover {
         gap: 0;
     }
 
-    header nav .ul-responsive .nav-li{
+    header nav .ul-responsive .nav-li {
         width: 200px;
         padding: 0px 0px 0px 0px;
         text-align: start;
     }
 
-    header nav .ul-responsive .nav-li a{
+    header nav .ul-responsive .nav-li a {
         margin: 0px 0px;
         display: flex;
         width: 200px !important;
@@ -488,7 +511,7 @@ header ul .contactanos:hover {
         display: block;
         z-index: -1;
     }
-    
+
     header ul .nav-li:hover::before {
         width: 90%;
     }
@@ -504,23 +527,24 @@ header ul .contactanos:hover {
         background: #253743;
     }
 
-    .nav-li input:checked~ul{
+    .nav-li input:checked~ul {
         display: block;
     }
 
     /*ICONOS NO RESPONSIVOS*/
-    .no-responsive{
+
+    .no-responsive {
         display: none;
     }
 
     /*ICONOS RESPONSIVOS*/
 
-    .responsive{
+    .responsive {
         display: block;
         margin-top: 9px;
     }
 
-    .la{
+    .la {
         position: absolute;
         right: 0;
         top: 0;
@@ -529,7 +553,7 @@ header ul .contactanos:hover {
         cursor: pointer;
     }
 
-    .la .responsive{
+    .la .responsive {
         color: #a5214b;
         font-size: 18px;
     }

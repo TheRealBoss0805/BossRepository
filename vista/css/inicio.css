@@ -187,6 +187,7 @@
     color: rgb(255, 255, 255);
     font-size: 1.1vw;
     height: auto;
+    line-height: 1.5em;
 }
 
 .section-slider .slide.active .container .caption a h1 {

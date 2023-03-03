@@ -240,6 +240,20 @@ for (let i = 0; i < imgBx.length; i++) {
     })
 }
 
+$(".card").on("click", ".icon-plus", function () {
+
+    $(this).toggleClass("icon-minus");
+
+    if ($(this).hasClass("icon-minus")) {
+        $(this).parent().children(".card-down").css("visibility", "hidden");
+        $(this).parent().children(".card-content").css("height", "100%");
+    }
+    else {
+        $(".card-down").css("visibility", "visible");
+        $(this).parent().children(".card-content").css("height", "180px");
+    }
+});
+
 const {documentObserver} = require("vista/js/documentOberser.js")
 
 /*Bloque para que la animación se de cuando el scroll
@@ -388,20 +402,6 @@ let ovservadorElementos = addEventListener('DOMContentLoaded', () => {
 
 /*CODIGO PARA EL CAMBIO DE ICONO (+) (-) CUANDO EL INPUT ESTÉ CHECKEADO*/
 
-
-$(".card").on("click", ".icon-plus", function () {
-
-    $(this).toggleClass("icon-minus");
-
-    if ($(this).hasClass("icon-minus")) {
-        $(this).parent().children(".card-down").css("visibility", "hidden");
-        $(this).parent().children(".card-content").css("height", "100%");
-    }
-    else {
-        $(".card-down").css("visibility", "visible");
-        $(this).parent().children(".card-content").css("height", "180px");
-    }
-});
 
 
 

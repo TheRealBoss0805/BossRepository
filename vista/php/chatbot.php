@@ -12,9 +12,19 @@ $_SESSION["pedirNombre"] = false;
 </head>
 
 <body>
+    <button type="button" class="btn messageInception">
+        <p>¡Hola! ¿Puedo ayudarte?</p>
+        <div id="container-stars">
+            <div id="stars"></div>
+        </div>
+
+        <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </button>
     <input type="checkbox" id="bossito" class="cambiarAspecto">
     <label for="bossito" class="theBoss">
-
         <img src="vista/imagenes/chatbot/botIcono.png" alt="">
     </label>
     <div class="contenedor-chatbot" id="ventanaChat">
@@ -27,9 +37,6 @@ $_SESSION["pedirNombre"] = false;
                         <span class="red green icon-circle"></span>
                     </label>
                 </div>
-                <!--<button>
-                    <i class="icon-volume-off-4" id="volumen"></i>
-                </button>-->
                 <button class="cambiarAspecto" id="bossito3">
                     <i class="icon-minus"></i>
                 </button>
@@ -37,14 +44,8 @@ $_SESSION["pedirNombre"] = false;
                     <i class="icon-cancel" id="bossito2"></i>
                 </button>
             </div>
-            <!--<div class="disenio-olas">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#203A43" fill-opacity="1" d="M0,128L80,122.7C160,117,320,107,480,138.7C640,171,800,245,960,277.3C1120,309,1280,299,1360,293.3L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
-                    </path>
-                </svg>
-            </div>-->
             <div class="viewMessages" id="viewMessages">
-
+                <!--AQUÍ VA TODO EL CONTENIDO DEL CHATBOT-->
             </div>
             <div class="interaction">
                 <input type="text" placeholder="Escribe tu mensaje aquí." id="inputMsg">

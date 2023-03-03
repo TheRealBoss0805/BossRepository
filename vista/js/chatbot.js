@@ -1,3 +1,25 @@
+
+//===============ANTES DE ABRIR EL CHAT==============//
+
+const closeMessage = function () {
+    let messageInception = document.querySelector(".messageInception");
+    messageInception.classList.remove("activado", "activado2");
+}
+
+const ChatInception = () => {
+    addEventListener("DOMContentLoaded", () => {
+        setTimeout(function () {
+            let messageInception = document.querySelector(".messageInception");
+            messageInception.classList.add("activado", "activado2");
+        }, 3e3);
+    });
+}
+
+ChatInception();
+
+
+//==================ABRIR CHAT===================
+
 let minimizar = document.querySelector("#bossito");
 var intervalo;
 var incremento = true;
@@ -6,8 +28,6 @@ function detener() {
     clearInterval(intervalo);
     incremento = true;
 }
-
-//==================ABRIR CHAT===================
 
 const operacion = () => {
     var valor;
@@ -24,11 +44,13 @@ const operacion = () => {
         if (valor == 1) {
             cosoAbrir.style.display = "flex";
             incremento = false;
+
         }
         else if (valor == 100 && !incremento) {
             detener()
         }
     }, 0);
+    closeMessage();
     msgIniciarChat();
 
 }
@@ -71,8 +93,6 @@ function msgIniciarChat() {
 }
 
 minimizar.addEventListener("click", operacion);
-
-
 
 let minimizar2 = document.querySelector("#bossito2");
 
@@ -175,10 +195,6 @@ function sliderChat() {
     console.log("Función SliderChat");
     $(".listado").children("li").addClass("itemCarusel");
 
-    /*let slide = $(".listado .itemCarusel")
-    console.log($(".itemCarusel:first"));
-    slide[0].classList.add("active");
-    $(".itemCarusel:first").css("display", "flex");*/
     $(".listado:last .itemCarusel").first().addClass("active");
 
     let iterador = 0;

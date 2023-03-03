@@ -33,6 +33,9 @@
     <!--NAVEGADOR-->
 
     <header>
+        <div class="panel">
+            <img src="vista/imagenes/extras/panel.png" alt="panel">
+        </div>
         <div class="contenedor-logo">
             <div class="svg-img">
                 <a href="inicio"><img src="vista/imagenes/extras/Logo-Empresa.png"></a>

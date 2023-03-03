@@ -34,15 +34,15 @@
                 </div>
                 <div class="agree-label">
                     <div class="services-n-description">
-                        <img src="vista/imagenes/proyectsandservices/servicios/localServiceItem.png" alt="icono">
+                        <img src="vista/imagenes/proyectsandservices/servicios/ubicacion.png" alt="icono">
                         <p><?= $respItem["lugar"] ?></p>
                     </div>
                     <div class="services-n-description">
-                        <img src="vista/imagenes/proyectsandservices/servicios/serviceItem.png" alt="icono">
+                        <img src="vista/imagenes/proyectsandservices/servicios/servicio.png" alt="icono">
                         <p>Servicios</p>
                     </div>
                     <div class="services-n-description">
-                        <img src="vista/imagenes/proyectsandservices/servicios/planificacion.png" alt="icono">
+                        <img src="vista/imagenes/proyectsandservices/servicios/planifica.png" alt="icono">
                         <p><?= $respuesta2["nombre"] ?></p>
                     </div>
                 </div>

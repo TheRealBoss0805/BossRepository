@@ -59,7 +59,7 @@
                         creación en 1995 viene contribuyendo al esfuerzo que los sectores
                         público y privado realizan para el desarrollo de nuestro país.<br><br>
                         <b>Instituto de Consultoría S.A. participa en los siguientes tipos de
-                        royectos de desarrollo:</b><br><br>
+                        proyectos de desarrollo:</b><br><br>
                     </p>
                     <div class="us-tipos-proyectos">
                         <div><span class="fi fi-sr-sack-dollar f1" style="--clr:#ffcf49;"></span><p class="p1">Mega Inversiones</p></div>
@@ -75,7 +75,7 @@
                         <div class="mvsion-img">Misión</div>
                         <div class="mvsion-info">
                             <p>
-                                Promover la Inversión Pública y Privada en una marco de Competencia y Eficiencia.
+                                "Promover la Inversión Pública y Privada en una marco de Competencia y Eficiencia"
                             </p>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                         <div class="mvsion-img">Visión</div>
                         <div class="mvsion-info">
                             <p>
-                                Convertirnos en la empresa Líder en Consultoría de Inversión Pública y Privada.
+                                "Convertirnos en la empresa Líder en Consultoría de Inversión Pública y Privada"
                             </p>
                         </div>
                     </div>

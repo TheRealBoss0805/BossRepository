@@ -21,7 +21,9 @@ class AjaxChatbot
     public $valorAnio;
     public $valorPagina;
     public $msg;
+
     //SALUDA AL ENTRAR A LA CHATBOT
+
     public function ajaxSaludar()
     {
         $_SESSION["saludar"] = true;
@@ -34,12 +36,13 @@ class AjaxChatbot
                     </div>
                 </div>";
     }
+
     //SOLICITA EL NOMBRE AL USUARIO
+
     public function ajaxPedirNombre()
     {
         $_SESSION["saludar"] = false;
         $_SESSION["pedirNombre"] = true;
-        //$_SESSION["esperarNombre"]=true;
         echo "<div class='container_msg_bot'>
                     <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
                     <div class='msg_bot'>
@@ -74,11 +77,13 @@ class AjaxChatbot
                     </div>
                 </div>";
     }
+
     //MUESTRA MENU DE OPCIONES 1
+
     public function ajaxMostrarMenu1()
     {
         $msg = $this->msg;
-        // $_SESSION["pedirNombre"]=false;
+
         if (!isset($_SESSION["nombre"])) {
             $_SESSION["nombre"] = $msg;
             $nombre = $msg;
@@ -92,6 +97,7 @@ class AjaxChatbot
 
         switch ($msg) {
             case "Proyectos, servicios y blog":
+
                 $arrayOpciones = ["Servicios", "Proyectos", "Blog"];
 
                 foreach ($arrayOpciones as $item) {
@@ -106,22 +112,17 @@ class AjaxChatbot
 
             case "Información de la empresa":
 
-                // foreach($respuesta as $item){
-                //     $opciones.="<a>".$item["nombre"]."</a>";
-                // }
-
                 $msgBot = $nombre . ", aqui mostramos la información";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
         }
-        //$this->ajaxMostrarMenu1();
     }
+
     //MUESTRA MENU DE OPCIONES 2
+
     public function ajaxMostrarMenu2()
     {
-        // $_SESSION["pedirNombre"]=false;
-        //$_SESSION["nombre"] = $_POST["msg"];ç
         $msg = $this->msg;
         $opciones = "";
 
@@ -201,12 +202,13 @@ class AjaxChatbot
                 break;
         }
     }
+
     //MUESTRA CARRUSEL DE ITEMS de SERVICIOS
+
     public function ajaxMostrarCarrusel()
     {
         $msg = $this->msg;
         $opciones = "";
-
 
         switch ($msg) {
             case "Planificación":
@@ -214,10 +216,11 @@ class AjaxChatbot
                 $valor = 1;
                 $respuesta = ControladorServicios::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idServItem = $item["id_serv_item"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
-                    <h1 class='h1-image'>" . $item["titulo"] . "</h1>
+                        <a class='urlImagenSlider' href='index.php?ruta=servicios-eleccion&idItem=$idServItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
+                        <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
                 }
@@ -238,10 +241,11 @@ class AjaxChatbot
                 $valor = 2;
                 $respuesta = ControladorServicios::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idServItem = $item["id_serv_item"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
-                    <h1 class='h1-image'>" . $item["titulo"] . "</h1>
+                        <a class='urlImagenSlider' href='index.php?ruta=servicios-eleccion&idItem=$idServItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
+                        <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
                 }
@@ -261,9 +265,10 @@ class AjaxChatbot
                 $valor = 3;
                 $respuesta = ControladorServicios::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idServItem = $item["id_serv_item"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=servicios-eleccion&idItem=$idServItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -284,9 +289,10 @@ class AjaxChatbot
                 $valor = 4;
                 $respuesta = ControladorServicios::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idServItem = $item["id_serv_item"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=servicios-eleccion&idItem=$idServItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -306,10 +312,10 @@ class AjaxChatbot
         $this->ajaxMostrarMenu0();
     }
     //=============CARRUSEL PARA LOS ITEM DE PROYECTOS==============
+
     public function ajaxMostrarCarrusel2()
     {
-        // $_SESSION["pedirNombre"]=false;
-        //$_SESSION["nombre"] = $_POST["msg"];ç
+
         $msg = $this->msg;
         $opciones = "";
         $idPorTipo = 1;
@@ -320,9 +326,10 @@ class AjaxChatbot
                 $valor = 1;
                 $respuesta = ControladorProyecto::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idProyItem = $item["id_proyec_item"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=proyecto-eleccion&id=$idProyItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -343,9 +350,10 @@ class AjaxChatbot
                 $valor = 2;
                 $respuesta = ControladorProyecto::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idProyItem = $item["id_proyec_item"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=proyecto-eleccion&id=$idProyItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -366,9 +374,10 @@ class AjaxChatbot
                 $valor = 3;
                 $respuesta = ControladorProyecto::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idProyItem = $item["id_proyec_item"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=proyecto-eleccion&id=$idProyItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -389,9 +398,10 @@ class AjaxChatbot
                 $valor = 4;
                 $respuesta = ControladorProyecto::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idProyItem = $item["id_proyec_item"];
                     $opciones .= "
                 <li>
-                <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                <a class='urlImagenSlider' href='index.php?ruta=proyecto-eleccion&id=$idProyItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                 <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                 </li>
             ";
@@ -412,9 +422,10 @@ class AjaxChatbot
                 $valor = 5;
                 $respuesta = ControladorProyecto::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idProyItem = $item["id_proyec_item"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=proyecto-eleccion&id=$idProyItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -435,9 +446,10 @@ class AjaxChatbot
                 $valor = 6;
                 $respuesta = ControladorProyecto::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idProyItem = $item["id_proyec_item"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=proyecto-eleccion&id=$idProyItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -458,9 +470,10 @@ class AjaxChatbot
                 $valor = 7;
                 $respuesta = ControladorProyecto::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idProyItem = $item["id_proyec_item"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=proyecto-eleccion&id=$idProyItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -481,9 +494,10 @@ class AjaxChatbot
                 $valor = 8;
                 $respuesta = ControladorProyecto::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idProyItem = $item["id_proyec_item"];
                     $opciones .= "
                 <li>
-                <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                <a class='urlImagenSlider' href='index.php?ruta=proyecto-eleccion&id=$idProyItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                 <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                 </li>
             ";
@@ -504,9 +518,10 @@ class AjaxChatbot
                 $valor = 9;
                 $respuesta = ControladorProyecto::ctrMostrar3Item($item, $valor);
                 foreach ($respuesta as $item) {
+                    $idProyItem = $item["id_proyec_item"];
                     $opciones .= "
                 <li>
-                <img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' />
+                <a class='urlImagenSlider' href='index.php?ruta=proyecto-eleccion&id=$idProyItem'><img class='slider-single-image' src='" . $item["foto"] . "' alt='1' style='width:100%;' /></a>
                 <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                 </li>
             ";
@@ -525,7 +540,9 @@ class AjaxChatbot
         }
         $this->ajaxMostrarMenu0();
     }
+
     //==========CARRUSEL PARA LOS ITEMS DE BLOG====================
+
     public function ajaxMostrarCarrusel3()
     {
         $msg = $this->msg;
@@ -538,9 +555,10 @@ class AjaxChatbot
                 $respuesta = ControladorBlog::ctrMostrar3Publicaciones($item, $valor);
 
                 foreach ($respuesta as $item) {
+                    $idBlogItem = $item["id_blog_pub"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["imagen"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=blog-seleccion&id=$idBlogItem'><img class='slider-single-image' src='" . $item["imagen"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -562,9 +580,10 @@ class AjaxChatbot
                 $respuesta = ControladorBlog::ctrMostrar3Publicaciones($item, $valor);
 
                 foreach ($respuesta as $item) {
+                    $idBlogItem = $item["id_blog_pub"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["imagen"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=blog-seleccion&id=$idBlogItem'><img class='slider-single-image' src='" . $item["imagen"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -586,9 +605,10 @@ class AjaxChatbot
                 $respuesta = ControladorBlog::ctrMostrar3Publicaciones($item, $valor);
 
                 foreach ($respuesta as $item) {
+                    $idBlogItem = $item["id_blog_pub"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["imagen"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=blog-seleccion&id=$idBlogItem'><img class='slider-single-image' src='" . $item["imagen"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -610,9 +630,10 @@ class AjaxChatbot
                 $respuesta = ControladorBlog::ctrMostrar3Publicaciones($item, $valor);
 
                 foreach ($respuesta as $item) {
+                    $idBlogItem = $item["id_blog_pub"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["imagen"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=blog-seleccion&id=$idBlogItem'><img class='slider-single-image' src='" . $item["imagen"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -634,9 +655,10 @@ class AjaxChatbot
                 $respuesta = ControladorBlog::ctrMostrar3Publicaciones($item, $valor);
 
                 foreach ($respuesta as $item) {
+                    $idBlogItem = $item["id_blog_pub"];
                     $opciones .= "
                     <li>
-                    <img class='slider-single-image' src='" . $item["imagen"] . "' alt='1' style='width:100%;' />
+                    <a class='urlImagenSlider' href='index.php?ruta=blog-seleccion&id=$idBlogItem'><img class='slider-single-image' src='" . $item["imagen"] . "' alt='1' style='width:100%;' /></a>
                     <h1 class='h1-image'>" . $item["titulo"] . "</h1>
                     </li>
                 ";
@@ -655,10 +677,13 @@ class AjaxChatbot
         }
         $this->ajaxMostrarMenu0();
     }
+
     //DA RESPUESTAS QUE NO ENTIENDE EL CHATBOT
+
     public function ajaxNoEncontro()
     {
         //PUEDE AGREGAR MÁS RESPUESTAS AL ARRAY Y SERÁN RESPONDIDAS DE MANERA ALEATORIA
+
         $array = ["Disculpa, no entendí", "¿Cómo?", "Vuelve a escribir, porfavor"];
         echo "<div class='container_msg_bot'>
                     <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
@@ -671,7 +696,9 @@ class AjaxChatbot
 
         $this->ajaxMostrarMenu1();
     }
+
     //PARA CERRAR LA SESIÓN Y EL BOT SE DESPIDE
+
     public function ajaxSalir()
     {
 
@@ -694,9 +721,6 @@ class AjaxChatbot
     }
 }
 
-/*=============================================
-
-=============================================*/
 //SALUDA AL USUARIO
 
 if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"])) {
@@ -706,12 +730,16 @@ if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"]
     if (isset($_SESSION["nombre"])) {
         $chatbot->ajaxMostrarMenu0();
     }
+
     //SOLICITA EL NOMBRE AL USUARIO
+
 } else if (isset($_POST["pedirNombre"]) && !isset($_POST["msg"]) && !isset($_SESSION["nombre"])) {
     echo "<script>console.log('Hola 2');</script>";
     $chatbot = new AjaxChatbot();
     $chatbot->ajaxPedirNombre();
+
     //MUESTRA EL MENU DE OPCIONES 1
+
 } else if (!$_SESSION["pedirNombre"] && isset($_POST["msg"]) && $_POST["msg"] != "salir" && !isset($_SESSION["nombre"])) {
     echo "<script>console.log('Hola 3');</script>";
     $chatbot = new AjaxChatbot();
@@ -720,6 +748,7 @@ if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"]
     $chatbot->ajaxPedirNombre();
 
     //MUESTRA MENU DE OPCIONES 0
+
 } else if (isset($_POST["msg"]) && !$_SESSION["pedirNombre"]) {
     if ($_POST["msg"] == "Proyectos, servicios y blog" || $_POST["msg"] == "Información de la empresa") {
         $chatbot = new AjaxChatbot();
@@ -734,7 +763,9 @@ if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"]
         } else {
             $chatbot->ajaxMostrarMenu2();
         }
+
         //MUESTRA EL CARRUSEL DE ITEMS
+
     } else if ($_POST["msg"] == "Planificación" || $_POST["msg"] == "Pre-Inversión" || $_POST["msg"] == "Expedientes de obra" || $_POST["msg"] == "Supervisión") {
         $chatbot = new AjaxChatbot();
         $chatbot->msg = $_POST["msg"];
@@ -784,7 +815,9 @@ if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"]
         $chatbot->msg = $_POST["msg"];
         $chatbot->ajaxSalir();
     } else {
+
         //MUESTRA PALABRAS QUE NO ENTIENDE EL CHATBOT
+
         echo "<script>console.log('Hola 5');</script>";
         $chatbot = new AjaxChatbot();
         $chatbot->ajaxNoEncontro();
@@ -797,7 +830,3 @@ if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"]
     $chatbot->ajaxMostrarMenu0();
     $_SESSION["pedirNombre"] =  false;
 }
-
-// if (isset($_POST["idCategoria"]) && isset($_POST["valorAnio"]) && isset($_POST["pagina"])) {
-    
-// }
