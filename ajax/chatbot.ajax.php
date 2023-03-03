@@ -1,5 +1,7 @@
 <?php
 session_start();
+$timezone = 'America/Lima';
+date_default_timezone_set($timezone);
 require_once "../controlador/servicios.controlador.php";
 require_once "../modelos/servicios.modelo.php";
 require_once "../controlador/proyectos.controlador.php";
@@ -27,6 +29,7 @@ class AjaxChatbot
                     <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
                     <div class='msg_bot'>
                     !Hola¡ Si necesita ayuda, estoy aquí para ayudarte
+                        <div class='print_hour'>".date('h:i:s a', time())."</div>
                         </div>
                     </div>
                 </div>";
@@ -41,7 +44,8 @@ class AjaxChatbot
                     <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
                     <div class='msg_bot'>
                     Antes de empezar, me gustaría saber tu nombre.
-                        </div>
+                        <div class='print_hour'>".date('h:i:s a', time())."</div> 
+                    </div>
                     </div>
                 </div>";
     }
@@ -65,6 +69,7 @@ class AjaxChatbot
                             <a>Proyectos, servicios y blog</a>
                             <a>Información de la empresa</a>
                         </div>
+                        <div class='print_hour'>".date('h:i:s a', time())."</div> 
                         </div>
                     </div>
                 </div>";
@@ -659,6 +664,7 @@ class AjaxChatbot
                     <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
                     <div class='msg_bot'>
                     " . $array[rand(0, count($array) - 1)] . "
+                    <div class='print_hour'>".date('h:i:s a', time())."</div>
                         </div>
                     </div>
                 </div>";
@@ -678,6 +684,7 @@ class AjaxChatbot
             <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
             <div class='msg_bot'>
             Un gusto ayudarte. Adiós...
+            <div class='print_hour'>".date('h:i:s a', time())."</div>
                 </div>
             </div>
         </div>";
@@ -792,6 +799,7 @@ if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"]
     $chatbot->ajaxMostrarMenu0();
     $_SESSION["pedirNombre"] =  false;
 }
+
 // if (isset($_POST["idCategoria"]) && isset($_POST["valorAnio"]) && isset($_POST["pagina"])) {
     
 // }

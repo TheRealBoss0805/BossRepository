@@ -228,7 +228,7 @@ label img {
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
-    padding: 15px;
+    padding: 15px 15px 5px 15px;
     color: #fff;
     font-size: 12px;
     display: flex;
@@ -239,6 +239,11 @@ label img {
     text-align: justify;
     border: 3px solid yellow;
     width: 80%;
+}
+.msg_bot .print_hour, .msg_client .print_hour{
+    width: 100%;
+    text-align: right;
+
 }
 
 .msg_bot .carusel{

@@ -19,6 +19,7 @@ class Chatbot{
         <div class='opciones'>
             $opciones
             </div>
+            <div class='print_hour'>".date('h:i:s a', time())."</div> 
             </div>
         </div>
     </div>";
@@ -37,7 +38,8 @@ class Chatbot{
                                     <div class='controles'>
                                         <div class='ctrl icon-left-dir'></div>
                                         <div class='ctrl icon-right-dir'></div>
-                                    </div>                   
+                                    </div> 
+                                    <div class='print_hour'>".date('h:i:s a', time())."</div>                   
                             </div>
                         </div>";
     return $plantillaMsg;
