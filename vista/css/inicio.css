@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    overflow: hidden;
 }
 
 /*Estilos para el título*/
@@ -450,17 +451,21 @@
     justify-content: space-around;
     align-self: center;
     padding: 15px;
-    background: #fff;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 0 0 20px 20px;
-    box-shadow: inset -1px -1px 3px #3b3b3b, inset 1px 1px 3px #3b3b3b;
+    box-shadow: inset -4px -4px 2px #0e0f0f;
+
 }
 
 .description-service h3 {
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: black 0.05em 0.05em 0.07em;
     text-transform: uppercase;
+    color: #fff !important;
+    font-size: 17px;
 }
 
 .description-service p {
@@ -469,7 +474,7 @@
     font-style: italic;
     font-weight: 200;
     font-size: 1em;
-    color: #253743;
+    color: #fff;
 }
 
 .download-button {

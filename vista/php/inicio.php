@@ -88,7 +88,7 @@
                                 </div>
                             </a>
                             <div class='description-service'>
-                                <h3 style='color: #253743;'>" . $respuesta["nombre"] . "</h3>
+                                <h3>" . $respuesta["nombre"] . "</h3>
                                 <p>" . $cadenaAcortada . "</p>
                             </div>
                             <img src='vista/imagenes/extras/munecos/$i.png' alt='' class='muneco-service'>
