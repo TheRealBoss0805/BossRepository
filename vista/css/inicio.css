@@ -326,9 +326,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 0 83px 20px 20px;
+    border-radius: 20px 83px 20px 20px;
     user-select: none;
     position: relative;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .content-service .muneco-service {
@@ -356,10 +357,9 @@
     height: 65%;
     width: 100%;
     position: relative;
-    border-radius: 25px 83px 0 0;
     overflow: hidden;
+    border-radius: 20px 83px 0 0;
 }
-
 
 .content-service .div a:hover .glass-div {
     backdrop-filter: inherit;
@@ -465,16 +465,15 @@
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: #fff !important;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .description-service p {
     text-align: justify;
-    font-family: 'Mulish';
-    font-style: italic;
     font-weight: 200;
-    font-size: 1em;
+    font-size: 0.8em;
     color: #fff;
+    line-height: 1.5em;
 }
 
 .download-button {
@@ -576,6 +575,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .slide3 .swiper .card {
@@ -674,19 +676,20 @@
 }
 
 .name-profession .name {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
-    font-style: italic;
+    text-transform: uppercase;
 }
 
 .name-profession .profession {
-    font-size: 15px;
+    font-size: 0.8em;
     font-weight: 500;
     text-align: justify;
     color: #fff;
+    line-height: 1.5em;
 }
 
 .swiper-pagination {
@@ -1355,8 +1358,6 @@
 
 @media (max-width: 580px) {
     .contenedor-5-burbuja {
-        height: auto;
-        display: grid;
         grid-template-columns: auto;
     }
 }

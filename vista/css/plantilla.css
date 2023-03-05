@@ -52,6 +52,10 @@
     background: transparent;
 }
 
+.inicio-1{
+    box-shadow: #222222 0px 12px 10px -10px;
+}
+
 @media (max-width: 850px) {
     .inicio-1 {
         height: 500px;
@@ -175,9 +179,9 @@
 /*PROYECTO TIPO & SECTOR - ELECCION*/
 
 .contenedor-eleccion-proyecto {
-    min-height: 700px;
+    flex-direction: row !important;
+    min-height: 750px;
     height: auto;
-    margin-top: 70px;
 }
 
 

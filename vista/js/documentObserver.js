@@ -101,7 +101,7 @@ let ovservadorElementos = addEventListener('DOMContentLoaded', () => {
     })
 
     const observerVTop = new IntersectionObserver(mostrarVerticalTop, {
-        threshold: 0.5
+        threshold: 0.2
     })
 
     const observerVBot = new IntersectionObserver(mostrarVerticalBottom, {

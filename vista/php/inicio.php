@@ -68,7 +68,7 @@
                     $cadena = $respuesta["descripcion"];
                     $stringSeparado = explode($separador, $cadena);
                     $cad = $stringSeparado[0];
-                    $caracteres = 142;
+                    $caracteres = 115;
                     $cadenaAcortada = substr($cad, 0, $caracteres) . '...';
                     $id = $respuesta["id_servicio"];
 
@@ -79,7 +79,7 @@
                                 <span>
                                     <img src=" . $respuesta['portada'] . " alt=''>
                                 </span>
-                                <div class='div-plus' style=''>
+                                <div class='div-plus' style='background: #232526;'>
                                     <div class='icon-plus-1'></div>
                                     <div class='div-plus-txt'>
                                         <span class='icon-info-circled'></span>
@@ -229,7 +229,7 @@
                         <img src="vista/imagenes/inicio/valores/vision.png" alt="" class="valor2">
                     </div>
                 </div>
-                <div class="content-5 hideee VBot">
+                <div class="content-5 hideee VTop">
                     <div class="contenedor-5-burbuja">
                         <?php
                         for ($i = 1; $i < 5; $i++) {

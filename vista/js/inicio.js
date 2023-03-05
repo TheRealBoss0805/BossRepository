@@ -97,26 +97,26 @@ function autoPlay() {
 
 let timer = setInterval(autoPlay, 6000);
 
-/*======INICIO 2 - SERVICIOS=======*/
+/*======INICIO 2 - SERVICIOS=======
 
 let colorServicio = document.querySelectorAll(".div-plus");
 
 for (let i = 0; i < 4; i++) {
     switch (i) {
         case 0:
-            colorServicio[i].style = "background: #9b133e;";
+            colorServicio[i].style = "background: #232526;";
             break;
         case 1:
-            colorServicio[i].style = "background: #8011a4;";
+            colorServicio[i].style = "background: #232526;";
             break;
         case 2:
-            colorServicio[i].style = "background: #1289bc;";
+            colorServicio[i].style = "background: #232526;";
             break;
         case 3:
-            colorServicio[i].style = "background: #aa8e1c;";
+            colorServicio[i].style = "background: #232526;";
             break;
     }
-}
+}*/
 
 /*CARRUSEL CON SWIPER*/
 
