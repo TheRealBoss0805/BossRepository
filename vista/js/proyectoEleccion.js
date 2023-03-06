@@ -35,3 +35,4 @@ function galeriaItem() {
 //EJECUTO LA FUNCIÓN
 
 galeriaItem();
+

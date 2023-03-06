@@ -27,6 +27,7 @@
   <!--=====================================
   PLUGINS DE JAVASCRIPT
   ======================================-->
+  
 
   <!-- jQuery 3 -->
   <script src="vista/bower_components/jquery/dist/jquery.min.js"></script>

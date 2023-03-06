@@ -38,7 +38,7 @@
             </div>
             <!--<span>#Algun disenio de flecha</span>-->
             <div class="content-itemProyecto">
-                <img src="<?= $respItem["foto"] ?>" alt="">
+                <img src="<?= $respItem["foto"] ?>" alt=""/>
                 <div>
                     <?php
                     foreach ($stringSeparado as $p) {
@@ -58,12 +58,12 @@
                     $i = 1;
                     foreach ($respuestaGalery as $itemGalery) {
 
-                        echo "<span class='electionItem' valor='" .$i. "'>
-                                <p class='pItem'>item: " .$i. "</p>
+                        echo "<span class='electionItem' valor='" . $i . "'>
+                                <p class='pItem'>item: " . $i . "</p>
                                 <i class='fi fi-sr-picture'></i>
                                 <img class='tagItem' src='vista/imagenes/proyectsandservices/proyectos/ejemploGaleriaProyecto/etiquetacerrada.png'>
                               </span>";
-                              $i++;
+                        $i++;
                     }
                     ?>
                 </div>
@@ -71,11 +71,11 @@
                     <?php
                     $j = 0;
                     foreach ($respuestaGalery as $itemGalery) {
-                        echo "<div class='itemGalery activate' valor='" .$j. "'>
+                        echo "<div class='itemGalery activate' valor='" . $j . "'>
                                 <img src='" . $itemGalery["foto"] . "' alt=''>
-                                <h3>". $itemGalery["descripcion"] . "</h3>
+                                <h3>" . $itemGalery["descripcion"] . "</h3>
                             </div>";
-                            $j++;
+                        $j++;
                     }
                     ?>
                 </div>
