@@ -65,7 +65,6 @@
     text-shadow: rgb(67, 63, 63) 0.02em 0.02em 0.05em;
     font-size: 2.5vw;
     color: #253743;
-    user-select: none;
     padding-left: 20px;
 }
 
@@ -139,7 +138,6 @@
     text-align: center;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
-    user-select: none;
     cursor: pointer;
 }
 
@@ -265,7 +263,7 @@
 }
 
 .content-proyecto:nth-child(3) .parent-button-div {
-    height: 440px;
+    height: 420px;
     width: 350px;
     box-shadow: 5px 5px 6px #253743;
     display: flex;
@@ -273,6 +271,8 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .content-proyecto:nth-child(3) .parent-button-div .button-div {
@@ -324,9 +324,7 @@
 
 .content-proyecto:nth-child(3) div div p {
     text-align: center;
-    /*color: #fff;*/
     font-size: 1.2em;
-    user-select: none;
 }
 
 /*BUTTON PARA EL INDIVIDUAL DE PROYECTOS*/

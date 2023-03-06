@@ -82,12 +82,6 @@
                     <a class="btnAnio" anio="2016">Año 2016</a>
                     <a class="btnAnio" anio="2015">Año 2015</a>
                 </div>
-                <div>
-                    <form action="">
-                        <input type="text" placeholder="Archivos" id="buscadorB" name="buscadorB">
-                        <label>Búsqueda:</label>
-                    </form>
-                </div>
             </div>
 
             <div class="blog-2" id="publicaciones">

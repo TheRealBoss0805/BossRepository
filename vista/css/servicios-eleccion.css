@@ -38,7 +38,7 @@
 .contenedor-services-n .content-eleccion-servicio-1 .content-png-imagen-servicio-1 img:nth-child(1){
     width: 100%;
     height: 100%;
-    filter: contrast(1.7);
+    filter: contrast(1.2);
     cursor: zoom-in !important;
     border-radius: 10px;
     border: 2px solid #898989;

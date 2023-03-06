@@ -88,8 +88,9 @@
                 </ul>
             </div>
         </div>
-        <div class="content-services-2">
+        <div class="content-services-2" id="showItemService">
             <?php
+            echo "<p class='nothingItem' style='display:none'>¡No se han encontrado Proyectos!</p>";
             foreach ($respuesta1 as $item) {
                 $cadena1 = $item["descripcion"];
 

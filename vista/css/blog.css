@@ -346,11 +346,11 @@
 /*content-blog-2*/
 
 .content-blog-2 .blog-2 {
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 .content-blog-2 .blog-2:nth-child(1) {
-    height: 200px;
+    height: 150px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -524,48 +524,6 @@
 }
 
 /*end*/
-
-.content-blog-2 .blog-2:nth-child(1) div:nth-child(2) {
-    height: 40%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-blog-2 .blog-2:nth-child(1) div:nth-child(2) form {
-    height: 100%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.content-blog-2 .blog-2:nth-child(1) div:nth-child(2) form label {
-    order: 1;
-    font-weight: 600;
-    font-size: 18px;
-    color: #6d6d6d;
-}
-
-.content-blog-2 .blog-2:nth-child(1) div:nth-child(2) form input {
-    border-radius: 7px;
-    color: #253743;
-    background: #fff;
-}
-
-.content-blog-2 .blog-2:nth-child(1) div:nth-child(2) form input:nth-child(1) {
-    border: 3px solid #304d60;
-    width: 70%;
-    height: 70%;
-    padding: 10px;
-    order: 2;
-}
-
-.content-blog-2 .blog-2:nth-child(1) div:nth-child(2) form input:nth-child(1):focus {
-    outline: none;
-}
 
 /*blog-2 (2)*/
 
@@ -759,14 +717,6 @@
     gap: 20px;
 }
 
-/*
-.content-blog-2 .blog-2:nth-child(3) div:nth-child(1) a.active {
-    filter: grayscale(1);
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-*/
-
 .desactivar{
     filter: grayscale(1);
     opacity: 0.5;
@@ -828,7 +778,6 @@
     font-weight: 500;
     font-size: 1.5em;
     color: #253743;
-    user-select: none;
 }
 
 /*blog-4 (4)*/
