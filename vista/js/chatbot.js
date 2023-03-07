@@ -157,9 +157,7 @@ function enviarMensaje(msg) {
                 scrollAbajo();
                 console.log("Existencia del carrusel: " + $("#viewMessages .container_msg_bot:last").prev().children(".msg_bot").children(".carusel").length);
                 if ($("#viewMessages .container_msg_bot:last").prev().children(".msg_bot").children(".carusel").length > 0) {
-
                     sliderChat();
-
                 }
             }
         });
@@ -175,6 +173,7 @@ $("#btnEnviar").on("click", function () {
         enviarMensaje(msg);
     }
 });
+
 $(document).ready(function () {
     $("#inputMsg").keypress(function (e) {
         if (e.keyCode == 13) {

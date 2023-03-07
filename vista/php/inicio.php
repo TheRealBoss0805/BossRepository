@@ -15,7 +15,7 @@
     <div class="contenedor-inicio" id="inicioPadre">
         <!--INICIO 1-->
         <div class="parentImageInicio">
-            <img src="vista/imagenes/inicio/backgroundMain.jpg" alt="">
+            <img src="vista/imagenes/inicio/backgroundMain." alt="">
         </div>
         <div class="inicio-1">
             <div class="content-slider">
