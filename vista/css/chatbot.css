@@ -31,16 +31,19 @@ input#bossito {
   bottom: 100px;
   z-index: 12;
   padding: 10px;
-  transition: all 1s ease-in !important;
   transform: scale(0);
+  transition-property: transform !important;
+  transition-duration: 0.8s !important;
+  transition-delay: 0.8s !important; 
+  transition-timing-function: ease-in-out !important; 
 }
 
 .activado {
+  will-change: transform;
   transform: scale(1);
-}
-
-.activado2 {
+  transform-style: preserve-3d;
   animation: mensajeInicio 1s alternate infinite;
+  animation-fill-mode: forwards;
 }
 
 @keyframes mensajeInicio {

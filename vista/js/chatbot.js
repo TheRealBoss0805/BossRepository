@@ -3,35 +3,32 @@
 
 const closeMessage = function () {
     let messageInception = document.querySelector(".messageInception");
-    messageInception.classList.remove("activado", "activado2");
+    messageInception.classList.remove("activado");
 }
 
-const ChatInception = () => {
-    addEventListener("DOMContentLoaded", () => {
-        setTimeout(function () {
-            let messageInception = document.querySelector(".messageInception");
-            messageInception.classList.add("activado", "activado2");
-        }, 3e3);
-    });
+let ChatInception = () => {
+    let messageInception = document.querySelector(".messageInception");
+    messageInception.classList.add("activado");
 }
-
-ChatInception();
-
 
 //==================ABRIR CHAT===================
 
-let minimizar = document.querySelector("#bossito");
+let theBoss = document.querySelector(".theBoss");
 var intervalo;
 var incremento = true;
+let numClicks = 0;
+let domContentLoadedTimeout;
 
-function detener() {
-    clearInterval(intervalo);
-    incremento = true;
-}
-
-const operacion = () => {
+theBoss.addEventListener("click", () => {
+    numClicks++;
     var valor;
     let cosoAbrir = document.querySelector("#ventanaChat");
+
+    function detener() {
+        clearInterval(intervalo);
+        incremento = true;
+    }
+
     intervalo = setInterval(function () {
         if (incremento) {
             valor = 1;
@@ -50,10 +47,37 @@ const operacion = () => {
             detener()
         }
     }, 0);
+
     closeMessage();
     msgIniciarChat();
 
-}
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Verificar si numClicks es mayor a 0 y si es así detener la ejecución de la función
+    if (numClicks > 0) {
+        return;
+    }
+
+    // Si numClicks es igual o menor a 0, esperar 3 segundos y luego ejecutar la función
+    setTimeout(() => {
+        if (numClicks === 0) {
+            ChatInception();
+        }
+    }, 3000);
+
+    // Establecer un temporizador de seguridad para la función
+    setTimeout(() => {
+        clearTimeout(domContentLoadedTimeout);
+    }, 5000);
+});
+// Establecer un temporizador de seguridad para el evento DOMContentLoaded
+domContentLoadedTimeout = setTimeout(() => {
+    // Si el evento DOMContentLoaded aún no se ha disparado, detener la ejecución del evento
+    document.removeEventListener("DOMContentLoaded", () => {
+        console.log("DOMContentLoaded se ha removido");
+    });
+}, 5000);
 
 function msgIniciarChat() {
     setTimeout(() => {
@@ -92,11 +116,9 @@ function msgIniciarChat() {
     }, "1500");
 }
 
-minimizar.addEventListener("click", operacion);
-
 let minimizar2 = document.querySelector("#bossito2");
 
-const operacion2 = () => {
+minimizar2.addEventListener("click", () => {
     let cosoAbrir = document.querySelector("#ventanaChat");
     cosoAbrir.style.display = "none";
     var msg = "salir";
@@ -116,19 +138,14 @@ const operacion2 = () => {
             scrollAbajo();
         }
     });
-}
-
-minimizar2.addEventListener("click", operacion2);
+});
 
 let minimizar3 = document.querySelector("#bossito3");
 
-const operacion3 = () => {
+minimizar3.addEventListener("click", () => {
     let cosoAbrir = document.querySelector("#ventanaChat");
     cosoAbrir.style.display = "none";
-
-}
-
-minimizar3.addEventListener("click", operacion3);
+});
 
 $(".viewMessages").on("click", ".container_msg_bot .opciones a", function () {
     console.log("Me presionaste");
@@ -162,7 +179,6 @@ function enviarMensaje(msg) {
             }
         });
     }, "1000");
-
 }
 
 $("#btnEnviar").on("click", function () {

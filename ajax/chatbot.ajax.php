@@ -78,6 +78,82 @@ class AjaxChatbot
                 </div>";
     }
 
+    public function ajaxMostrarMenuEleccion()
+    {
+        $msg = $this->msg;
+        $_SESSION["pedirNombre"] = false;
+        if (!isset($_SESSION["nombre"])) {
+            $_SESSION["nombre"] = $msg;
+            $nombre = $msg;
+        } else {
+            $nombre = $_SESSION["nombre"];
+        }
+        echo "<div class='container_msg_bot'>
+                    <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
+                    <div class='msg_bot'>
+                    <p><span class='nameRpta'>" . $nombre . ".</span><span>&#128522;</span>\n
+                    te encuentras en el apartado de Servicios ¿que acción deseas realizar?\n
+                    Selecciona una opción.</p>
+                        <div class='opciones'>
+                            <a>Continuar en Servicios</a>
+                            <a>Volver al Menú Principal</a>
+                        </div>
+                        <div class='print_hour'>" . date('h:i:s a', time()) . "</div> 
+                        </div>
+                    </div>
+                </div>";
+    }
+    public function ajaxMostrarMenuEleccion2()
+    {
+        $msg = $this->msg;
+        $_SESSION["pedirNombre"] = false;
+        if (!isset($_SESSION["nombre"])) {
+            $_SESSION["nombre"] = $msg;
+            $nombre = $msg;
+        } else {
+            $nombre = $_SESSION["nombre"];
+        }
+        echo "<div class='container_msg_bot'>
+                    <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
+                    <div class='msg_bot'>
+                    <p><span class='nameRpta'>" . $nombre . ".</span><span>&#128522;</span>\n
+                    te encuentras en el apartado de Proyectos ¿que acción deseas realizar?\n
+                    Selecciona una opción.</p>
+                        <div class='opciones'>
+                            <a>Continuar en Proyectos</a>
+                            <a>Volver al Menú Principal</a>
+                        </div>
+                        <div class='print_hour'>" . date('h:i:s a', time()) . "</div> 
+                        </div>
+                    </div>
+                </div>";
+    }
+    public function ajaxMostrarMenuEleccion3()
+    {
+        $msg = $this->msg;
+        $_SESSION["pedirNombre"] = false;
+        if (!isset($_SESSION["nombre"])) {
+            $_SESSION["nombre"] = $msg;
+            $nombre = $msg;
+        } else {
+            $nombre = $_SESSION["nombre"];
+        }
+        echo "<div class='container_msg_bot'>
+                    <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
+                    <div class='msg_bot'>
+                    <p><span class='nameRpta'>" . $nombre . ".</span><span>&#128522;</span>\n
+                    te encuentras en la sección, Blog ¿que acción deseas realizar?\n
+                    Selecciona una opción.</p>
+                        <div class='opciones'>
+                            <a>Continuar en Blog</a>
+                            <a>Volver al Menú Principal</a>
+                        </div>
+                        <div class='print_hour'>" . date('h:i:s a', time()) . "</div> 
+                        </div>
+                    </div>
+                </div>";
+    }
+
     //MUESTRA MENU DE OPCIONES 1
 
     public function ajaxMostrarMenu1()
@@ -104,7 +180,7 @@ class AjaxChatbot
                     $opciones .= "<a>" . $item . "</a>";
                 }
 
-                $msgBot = "<p><span class='nameRpta'>".$nombre . "</span> <span>&#128522;</span>, ofrecemos " . count($arrayOpciones) . " opciones. ¿En cuál de ellos está interesado?</p>";
+                $msgBot = "<p><span class='nameRpta'>" . $nombre . "</span> <span>&#128522;</span>, ofrecemos " . count($arrayOpciones) . " opciones. ¿En cuál de ellos está interesado?</p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
 
@@ -116,7 +192,7 @@ class AjaxChatbot
                 foreach ($arrayOpciones as $item) {
                     $opciones .= "<a>" . $item . "</a>";
                 }
-                $msgBot = "<p><span class='nameRpta'>".$nombre ."</span> <span>&#128522;</span>, aqui mostramos la información que solicitaste. Contamos con ".count($arrayOpciones)." opciones. ¿Cuál te interesa más?</p>";
+                $msgBot = "<p><span class='nameRpta'>" . $nombre . "</span> <span>&#128522;</span>, aqui mostramos la información que solicitaste. Contamos con " . count($arrayOpciones) . " opciones. ¿Cuál te interesa más?</p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
@@ -137,7 +213,7 @@ class AjaxChatbot
                 foreach ($respuesta as $serv) {
                     $opciones .= "<a>" . $serv["nombre"] . "</a>";
                 }
-                $msgBot = "<p><span class='nameRpta'>".$_SESSION["nombre"]."</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " tipos de servicios.</span> ¿En cuál de ellos está interesado?</p>";
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " tipos de servicios.</span> ¿En cuál de ellos está interesado?</p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
@@ -146,7 +222,7 @@ class AjaxChatbot
                 foreach ($respuesta as $serv) {
                     $opciones .= "<a>" . $serv["nombre"] . "</a>";
                 }
-                $msgBot = "<p><span class='nameRpta'>".$_SESSION["nombre"]."</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " tipos de proyectos.</span> ¿En cuál de ellos está interesado?</p>";
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " tipos de proyectos.</span> ¿En cuál de ellos está interesado?</p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
@@ -162,46 +238,46 @@ class AjaxChatbot
                     }
                     $opciones .= "<a>" . $item["nombre"] . $caracter . "</a>";
                 }
-                $msgBot = "<p><span class='nameRpta'>".$_SESSION["nombre"]."</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " categorías del Blog.</span> ¿En cuál de ellos está interesado?</p>";
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " categorías del Blog.</span> ¿En cuál de ellos está interesado?</p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
 
             case "Ubicación Legal":
-                $respuesta = ["Continuar", "Volver al Menú Principal"];
+                $respuesta = ["Continuar en Info de IDC", "Volver al Menú Principal"];
                 foreach ($respuesta as $ubicacion) {
                     $opciones .= "<a>" . $ubicacion . "</a>";
                 }
-                $msgBot = "<p> <span class='nameRpta'>".$_SESSION['nombre']."</span> <span>&#128522;</span>, nuestra Ubicación específica es: <span class='rpta'>JR. Monterosa Nro. 233 Int. 507 Urb. Chacarrilla Del Estanque 
+                $msgBot = "<p> <span class='nameRpta'>" . $_SESSION['nombre'] . "</span> <span>&#128522;</span>, nuestra Ubicación específica es: <span class='rpta'>JR. Monterosa Nro. 233 Int. 507 Urb. Chacarrilla Del Estanque 
                 (Altura cuadra 03 de Av. Primavera)</span></p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
             case "Teléfonos":
-                $respuesta = ["Continuar", "Volver al Menú Principal"];
+                $respuesta = ["Continuar en Info de IDC", "Volver al Menú Principal"];
                 foreach ($respuesta as $ubicacion) {
                     $opciones .= "<a>" . $ubicacion . "</a>";
                 }
-                $msgBot = "<p><span class='nameRpta'>".$_SESSION["nombre"]."</span> <span>&#128522;</span>, actualmente poseemos 2 números telefónicos:<br><span class='rpta'>(51) (1) 2439211<br>(51) (1) 2439212</span></p>";
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, actualmente poseemos 2 números telefónicos:<br><span class='rpta'>(51) (1) 2439211<br>(51) (1) 2439212</span></p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
             case "Correos":
-                $respuesta = ["Continuar", "Volver al Menú Principal"];
+                $respuesta = ["Continuar en Info de IDC", "Volver al Menú Principal"];
                 foreach ($respuesta as $ubicacion) {
                     $opciones .= "<a>" . $ubicacion . "</a>";
                 }
-                $msgBot = "<p><span class='nameRpta'>".$_SESSION["nombre"]."</span> <span>&#128522;</span>, contamos con diversos correos para fines específicos, estos son los
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, contamos con diversos correos para fines específicos, estos son los
                 siguientes:<br><span class='rpta'>Información:<br>secretaria@indeconsult.pe<br>Licitaciones:<br>comercial@indeconsult.pe<br>Ingeniería:<br>ingenieria@indeconsult.pe<br>Proyectos:<br>proyectos@indeconsult.pe<br>Administración:<br>administración@indeconsult.pe</span></p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
             case "Redes Sociales":
-                $respuesta = ["Continuar", "Volver al Menú Principal"];
+                $respuesta = ["Continuar en Info de IDC", "Volver al Menú Principal"];
                 foreach ($respuesta as $ubicacion) {
                     $opciones .= "<a>" . $ubicacion . "</a>";
                 }
-                $msgBot = "<p><span class='nameRpta'>".$_SESSION["nombre"]."</span> <span>&#128522;</span>, Actualmente contamos con una Red Social activa por parte de la Empresa, visítanos en
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, Actualmente contamos con una Red Social activa por parte de la Empresa, visítanos en
                 nuestro Facebook Oficial: <a href='https://www.facebook.com/institutodeconsultoriasa' target='_black'class='linkFaceBot'>Instituto de Consultoría S.A</a></p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
@@ -226,7 +302,7 @@ class AjaxChatbot
                     }
                     $opciones .= "<a>" . $item["nombre"] . $caracter . "</a>";
                 }
-                $msgBot = "<p><span class='nameRpta'>".$_SESSION["nombre"]. "</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " categorías respecto a Proyectos por Tipo.</span> ¿En cuál de ellos está interesado?</p>";
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " categorías respecto a Proyectos por Tipo.</span> ¿En cuál de ellos está interesado?</p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
@@ -238,7 +314,7 @@ class AjaxChatbot
                 foreach ($respuesta as $item) {
                     $opciones .= "<a>" . $item["nombre"] . "</a>";
                 }
-                $msgBot = "<p><span class='nameRpta'>".$_SESSION["nombre"] . "</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " categorías respecto a Proyectos por Sector.</span> ¿En cuál de ellos está interesado?</p>";
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " categorías respecto a Proyectos por Sector.</span> ¿En cuál de ellos está interesado?</p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
@@ -253,7 +329,7 @@ class AjaxChatbot
         $msgBot = "";
         $opciones = "";
         switch ($msg) {
-            case "Continuar":
+            case "Continuar en Info de IDC":
                 $arrayOpciones = ["Ubicación Legal", "Teléfonos", "Correos", "Redes Sociales"];
                 foreach ($arrayOpciones as $item) {
                     $opciones .= "<a>" . $item . "</a>";
@@ -373,8 +449,30 @@ class AjaxChatbot
                 echo $plantChat->getplantilla2Msg($msgBot, $opciones);
                 break;
         }
-        $this->ajaxMostrarMenu0();
+        $this->ajaxMostrarMenuEleccion();
     }
+
+    public function ajaxMostrarOpcionesItem1()
+    {
+        $msg = $this->msg;
+        $msgBot = "";
+        $opciones = "";
+        switch ($msg) {
+            case "Continuar en Servicios":
+                $respuesta = ControladorServicios::ctrMostrarTodoServicios();
+                foreach ($respuesta as $serv) {
+                    $opciones .= "<a>" . $serv["nombre"] . "</a>";
+                }
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " tipos de servicios.</span> ¿En cuál de ellos está interesado?</p>";
+                $plantChat = new Chatbot();
+                echo $plantChat->getplantillaMsg($msgBot, $opciones);
+                break;
+            case "Volver al Menú Principal":
+                $this->ajaxMostrarMenu0();
+                break;
+        }
+    }
+
     //=============CARRUSEL PARA LOS ITEM DE PROYECTOS==============
 
     public function ajaxMostrarCarrusel2()
@@ -602,7 +700,28 @@ class AjaxChatbot
                 echo $plantChat->getplantilla2Msg($msgBot, $opciones);
                 break;
         }
-        $this->ajaxMostrarMenu0();
+        $this->ajaxMostrarMenuEleccion2();
+    }
+
+    public function ajaxMostrarOpcionesItem2()
+    {
+        $msg = $this->msg;
+        $msgBot = "";
+        $opciones = "";
+        switch ($msg) {
+            case "Continuar en Proyectos":
+                $respuesta = ControladorProyecto::ctrMostrarTodoProyectos();
+                foreach ($respuesta as $serv) {
+                    $opciones .= "<a>" . $serv["nombre"] . "</a>";
+                }
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " tipos de proyectos.</span> ¿En cuál de ellos está interesado?</p>";
+                $plantChat = new Chatbot();
+                echo $plantChat->getplantillaMsg($msgBot, $opciones);
+                break;
+            case "Volver al Menú Principal":
+                $this->ajaxMostrarMenu0();
+                break;
+        }
     }
 
     //==========CARRUSEL PARA LOS ITEMS DE BLOG====================
@@ -739,7 +858,35 @@ class AjaxChatbot
                 echo $plantChat->getplantilla2Msg($msgBot, $opciones);
                 break;
         }
-        $this->ajaxMostrarMenu0();
+        $this->ajaxMostrarMenuEleccion3();
+    }
+
+    public function ajaxMostrarOpcionesItem3()
+    {
+        $msg = $this->msg;
+        $msgBot = "";
+        $opciones = "";
+        switch ($msg) {
+            case "Continuar en Blog":
+                $item = null;
+                $valor = null;
+                $respuesta = ControladorBlog::ctrTraerCategoria($item, $valor);
+                foreach ($respuesta as $item) {
+                    if ($item["nombre"] == "Salud") {
+                        $caracter = "*";
+                    } else {
+                        $caracter = "";
+                    }
+                    $opciones .= "<a>" . $item["nombre"] . $caracter . "</a>";
+                }
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, ofrecemos <span class='rpta'>" . count($respuesta) . " categorías del Blog.</span> ¿En cuál de ellos está interesado?</p>";
+                $plantChat = new Chatbot();
+                echo $plantChat->getplantillaMsg($msgBot, $opciones);
+                break;
+            case "Volver al Menú Principal":
+                $this->ajaxMostrarMenu0();
+                break;
+        }
     }
 
     //DA RESPUESTAS QUE NO ENTIENDE EL CHATBOT
@@ -839,10 +986,28 @@ if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"]
 
         //DATOS DE LA EMPRESA
 
-    } else if ($_POST["msg"] == "Continuar" || $_POST["msg"] == "Volver al Menú Principal") {
+    } else if ($_POST["msg"] == "Continuar en Info de IDC" || $_POST["msg"] == "Volver al Menú Principal") {
         $chatbot = new AjaxChatbot();
         $chatbot->msg = $_POST["msg"];
         $chatbot->ajaxMostrarOpcionesInfo();
+
+        //DATOS DE LOS ITEMS
+
+    } else if ($_POST["msg"] == "Continuar en Servicios" || $_POST["msg"] == "Volver al Menú Principal") {
+        $chatbot = new AjaxChatbot();
+        $chatbot->msg = $_POST["msg"];
+        $chatbot->ajaxMostrarOpcionesItem1();
+
+    } else if ($_POST["msg"] == "Continuar en Proyectos" || $_POST["msg"] == "Volver al Menú Principal") {
+        $chatbot = new AjaxChatbot();
+        $chatbot->msg = $_POST["msg"];
+        $chatbot->ajaxMostrarOpcionesItem2();
+    
+    } else if ($_POST["msg"] == "Continuar en Blog" || $_POST["msg"] == "Volver al Menú Principal"){
+        $chatbot = new AjaxChatbot();
+        $chatbot->msg = $_POST["msg"];
+        $chatbot->ajaxMostrarOpcionesItem3();
+
         //MUESTRA EL CARRUSEL DE ITEMS
 
     } else if ($_POST["msg"] == "Planificación" || $_POST["msg"] == "Pre-Inversión" || $_POST["msg"] == "Expedientes de obra" || $_POST["msg"] == "Supervisión") {
