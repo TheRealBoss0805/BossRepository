@@ -24,6 +24,17 @@ class AjaxChatbot
 
     //SALUDA AL ENTRAR A LA CHATBOT
 
+    public function ajaxLoader(){
+        $_SESSION["loader"] = true;
+        echo "<div class='container_msg_bot'>
+                    <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
+                        <div class='msg_bot'>
+                            <p>!Hola¡, YO SERÉ UN LOADER!!!!!!!!!!</p>
+                        </div>
+                    </div>
+                </div>";
+    }
+
     public function ajaxSaludar()
     {
         $_SESSION["saludar"] = true;
@@ -258,7 +269,7 @@ class AjaxChatbot
                 foreach ($respuesta as $ubicacion) {
                     $opciones .= "<a>" . $ubicacion . "</a>";
                 }
-                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, actualmente poseemos 2 números telefónicos:<br><span class='rpta'>(51) (1) 2439211<br>(51) (1) 2439212</span></p>";
+                $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, actualmente poseemos 2 números telefónicos:<br><span class='rpta'><span>&#128222;</span> (51) (1) 2439211<br><span>&#128222;</span> (51) (1) 2439212</span></p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
@@ -934,8 +945,11 @@ class AjaxChatbot
 
 //SALUDA AL USUARIO
 
-if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"])) {
-    echo "<script>console.log('Hola 1');</script>";
+if(isset($_POST["loader"])){
+    $chatbot = new AjaxChatbot();
+    $chatbot->ajaxLoader();
+    
+} else if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"])) {
     $chatbot = new AjaxChatbot();
     $chatbot->ajaxSaludar();
     if (isset($_SESSION["nombre"])) {
@@ -945,14 +959,12 @@ if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"]
     //SOLICITA EL NOMBRE AL USUARIO
 
 } else if (isset($_POST["pedirNombre"]) && !isset($_POST["msg"]) && !isset($_SESSION["nombre"])) {
-    echo "<script>console.log('Hola 2');</script>";
     $chatbot = new AjaxChatbot();
     $chatbot->ajaxPedirNombre();
 
     //MUESTRA EL MENU DE OPCIONES 1
 
 } else if (!$_SESSION["pedirNombre"] && isset($_POST["msg"]) && $_POST["msg"] != "salir" && !isset($_SESSION["nombre"])) {
-    echo "<script>console.log('Hola 3');</script>";
     $chatbot = new AjaxChatbot();
     $chatbot->msg = $_POST["msg"];
     $chatbot->ajaxSaludar();
@@ -1059,15 +1071,12 @@ if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"]
         $chatbot->msg = $_POST["msg"];
         $chatbot->ajaxSalir();
     } else {
-
         //MUESTRA PALABRAS QUE NO ENTIENDE EL CHATBOT
 
-        echo "<script>console.log('Hola 5');</script>";
         $chatbot = new AjaxChatbot();
         $chatbot->ajaxNoEncontro();
     }
 } else if (isset($_POST["msg"]) && $_SESSION["pedirNombre"] && $_POST["msg"] != "salir") {
-    echo "<script>console.log('Hola pedir nombre');</script>";
     $_SESSION["nombre"] = $_POST["msg"];
     $chatbot = new AjaxChatbot();
     $chatbot->msg = $_POST["msg"];

@@ -54,32 +54,50 @@ theBoss.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Verificar si numClicks es mayor a 0 y si es así detener la ejecución de la función
+
     if (numClicks > 0) {
         return;
     }
 
-    // Si numClicks es igual o menor a 0, esperar 3 segundos y luego ejecutar la función
     setTimeout(() => {
         if (numClicks === 0) {
             ChatInception();
         }
     }, 3000);
 
-    // Establecer un temporizador de seguridad para la función
     setTimeout(() => {
         clearTimeout(domContentLoadedTimeout);
     }, 5000);
 });
-// Establecer un temporizador de seguridad para el evento DOMContentLoaded
+
 domContentLoadedTimeout = setTimeout(() => {
-    // Si el evento DOMContentLoaded aún no se ha disparado, detener la ejecución del evento
+
     document.removeEventListener("DOMContentLoaded", () => {
         console.log("DOMContentLoaded se ha removido");
     });
 }, 5000);
 
 function msgIniciarChat() {
+
+    setTimeout(() => {
+        var datos = new FormData();
+        datos.append("loader", true);
+
+        $.ajax({
+            url: "ajax/chatbot.ajax.php",
+            method: "POST",
+            cache: false,
+            data: datos,
+            contentType: false,
+            processData: false,
+            success: function (respuesta) {
+                //Aquí iría el Loader.
+                $("#viewMessages").append(respuesta);
+                scrollAbajo();
+            }
+        });
+    }, "500");
+
     setTimeout(() => {
         var datos = new FormData();
         datos.append("saludar", true);
@@ -92,13 +110,14 @@ function msgIniciarChat() {
             contentType: false,
             processData: false,
             success: function (respuesta) {
+                //Aquí iría el Loader.
                 $("#viewMessages").append(respuesta);
                 scrollAbajo();
             }
         });
     }, "500");
 
-    setTimeout(function () {
+    setTimeout(() => {
         var datos = new FormData();
         datos.append("pedirNombre", true);
         $.ajax({
@@ -109,6 +128,7 @@ function msgIniciarChat() {
             contentType: false,
             processData: false,
             success: function (respuesta) {
+                //Aquí iría el Loader.
                 $("#viewMessages").append(respuesta);
                 scrollAbajo();
             }
@@ -148,7 +168,6 @@ minimizar3.addEventListener("click", () => {
 });
 
 $(".viewMessages").on("click", ".container_msg_bot .opciones a", function () {
-    console.log("Me presionaste");
     $(this).parent().parent().parent().parent().append("<div class='msg_client'>" + $(this).text() + "<div class = 'print_hour'>" + getHora() + "</div></div>");
     enviarMensaje($(this).text());
     scrollAbajo();
@@ -172,7 +191,6 @@ function enviarMensaje(msg) {
             success: function (respuesta) {
                 $("#viewMessages").append(respuesta);
                 scrollAbajo();
-                console.log("Existencia del carrusel: " + $("#viewMessages .container_msg_bot:last").prev().children(".msg_bot").children(".carusel").length);
                 if ($("#viewMessages .container_msg_bot:last").prev().children(".msg_bot").children(".carusel").length > 0) {
                     sliderChat();
                 }
