@@ -46,7 +46,7 @@ class AjaxChatbot
         echo "<div class='container_msg_bot'>
                     <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
                     <div class='msg_bot'>
-                        <p>Antes de empezar, me gustaría conocer tu nombre <span>&#128221;</span>&#128221;<span></span></p>
+                        <p>Antes de empezar, me gustaría saber tu nombre <span>&#128221;</span>&#128221;<span></span></p>
                         <div class='print_hour'>" . date('h:i:s a', time()) . "</div> 
                     </div>
                     </div>
@@ -249,7 +249,7 @@ class AjaxChatbot
                     $opciones .= "<a>" . $ubicacion . "</a>";
                 }
                 $msgBot = "<p> <span class='nameRpta'>" . $_SESSION['nombre'] . "</span> <span>&#128522;</span>, nuestra Ubicación específica es: <span class='rpta'>JR. Monterosa Nro. 233 Int. 507 Urb. Chacarrilla Del Estanque 
-                (Altura cuadra 03 de Av. Primavera)</span></p>";
+                (Altura cuadra 03 de Av. Primavera) Santiago de Surco.</span><br><br>Si deseas abrir la Ubicación en Google Maps, dé click al siguiente enlace: <a href='https://www.google.com/maps/place/INDECONSULT+SA/@-12.1118392,-76.9903176,15z/data=!4m6!3m5!1s0x9105c7ec7e400001:0xbdf539479d774ffb!8m2!3d-12.1118392!4d-76.9903176!16s%2Fg%2F11h42x8b3z' target='_blank' class='linkFaceBot'>Ubicación IDC <span>&#127757;</span> <span>&#127757;</span></a></p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
@@ -268,7 +268,7 @@ class AjaxChatbot
                     $opciones .= "<a>" . $ubicacion . "</a>";
                 }
                 $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, contamos con diversos correos para fines específicos, estos son los
-                siguientes:<br><span class='rpta'>Información:<br>secretaria@indeconsult.pe<br>Licitaciones:<br>comercial@indeconsult.pe<br>Ingeniería:<br>ingenieria@indeconsult.pe<br>Proyectos:<br>proyectos@indeconsult.pe<br>Administración:<br>administración@indeconsult.pe</span></p>";
+                siguientes:<br><br>Información:<br><span class='rpta'><a class='linkFaceBot' href='mailto:secretaria@indeconsult.pe'>secretaria@indeconsult.pe</a></span><br>Licitaciones:<br><span class='rpta'><a class='linkFaceBot' href='mailto:comercial@indeconsult.pe'>comercial@indeconsult.pe</a></span><br>Ingeniería:<br><span class='rpta'><a class='linkFaceBot' href='mailto:ingenieria@indeconsult.pe'>ingenieria@indeconsult.pe</a></span><br>Proyectos:<br><span class='rpta'><a class='linkFaceBot' href='mailto:proyectos@indeconsult.pe'>proyectos@indeconsult.pe</a></span><br>Administración:<br><span class='rpta'><a class='linkFaceBot' href='mailto:administracion@indeconsult.pe'>administracion@indeconsult.pe</a></span></p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;

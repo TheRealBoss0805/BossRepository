@@ -20,7 +20,7 @@
 
     echo "<div class='contenedor-blog-seleccion'>";
     ?>
-    <div class="content-blog-seleccion">
+    <div class="content-blog-seleccion cambioContent">
         <p>Categoría</p>
         <p>
             <?php
@@ -42,7 +42,8 @@
         </p>
         <p><?= $dia . " / " . $mes . " / " . $anio ?></p>
     </div>
-    <div class="content-blog-seleccion">
+    <div class="content-blog-seleccion cambioCaracter">
+
         <div class="div-blog-seleccion">
             <img id="myImg" src="<?= $respuesta["imagen"] ?>" alt="Imagen Seleccionada">
             <div id="myModal" class="modal">
@@ -51,15 +52,17 @@
                 <div id="caption"></div>
             </div>
         </div>
+
         <div class="div-blog-seleccion-contenido">
             <p><?= $respuesta["titulo"] ?></p>
-            <p><?= $respuesta["descripcion"] ?></p>
+            <p class="descriptionBlogSelection"><?= $respuesta["descripcion"] ?></p>
         </div>
+
     </div>
     <div class="imgPortadaBlog">
     </div>
     </div>
 </body>
 <script src='vista/js/imagen-modal-seleccion.js'></script>
-
+<script src='vista/js/blog-seleccion.js'></script>
 </html>

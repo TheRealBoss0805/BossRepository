@@ -27,18 +27,21 @@
     ?>
     <div class="contenedor-eleccion-proyecto" id="<?= $respuesta3["id_proyecto"] ?>">
         <div class="content-eleccion-proyecto">
-            <div class="description">
-                <h1><?= $respuesta3["nombre"] ?></h1>
-            </div>
-            <div class="description">
-                <h2><?= $respItem2["nombre"] ?></h2>
-            </div>
-            <div class="description">
-                <h3><?= $respItem["titulo"] ?></h3>
+
+            <div class="titleCategory">
+                <div class="description">
+                    <h1><?= $respuesta3["nombre"] ?></h1>
+                </div>
+                <div class="description">
+                    <h2><?= $respItem2["nombre"] ?></h2>
+                </div>
+                <div class="description">
+                    <h3><?= $respItem["titulo"] ?></h3>
+                </div>
             </div>
             <!--<span>#Algun disenio de flecha</span>-->
             <div class="content-itemProyecto">
-                <img src="<?= $respItem["foto"] ?>" alt=""/>
+                <img src="<?= $respItem["foto"] ?>" alt="" />
                 <div>
                     <?php
                     foreach ($stringSeparado as $p) {
@@ -46,11 +49,11 @@
                     }
                     ?>
                 </div>
-
             </div>
+            
         </div>
         <div class="content-eleccion-proyecto">
-            <div>
+            <div class="galeryItem">
                 <div class="child-itemProyecto contentItemGalery">
 
                     <?php
@@ -67,6 +70,7 @@
                     }
                     ?>
                 </div>
+
                 <div class="child-itemProyecto .child2">
                     <?php
                     $j = 0;
@@ -79,6 +83,9 @@
                     }
                     ?>
                 </div>
+            </div>
+            <div class="descriptionGalery">
+                <p>IMÁGENES RELACIONADAS AL PROYECTO</p>
             </div>
         </div>
     </div>
