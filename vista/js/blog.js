@@ -53,11 +53,12 @@ function traerAjax(current_page) {
 		contentType: false,
 		processData: false,
 		success: function (respuesta) {
-			function complete() {
+			/*function complete() {
 				$("#publicaciones").html(respuesta);
 			}
 			$("#publicaciones").fadeOut(500, "linear", complete);
-			$("#publicaciones").fadeIn(500, "linear", complete);
+			$("#publicaciones").fadeIn(500, "linear", complete);*/
+			$("#publicaciones").html(respuesta);
 			actualizarNroPagina()
 		}
 	});
@@ -121,7 +122,7 @@ $(".blog-2").on("click", ".btnAnio", function () {
 	traerAnioAjax(this);
 })
 
-/*========================BUSCADOR DEL BLOG================================*/
+/*========================BUSCADOR DEL BLOG================================
 document.addEventListener("keyup", async (e) => {
 	if (e.target.matches("#buscadorB")) {
 		if (e.key === "Escape") {
@@ -136,7 +137,7 @@ document.addEventListener("keyup", async (e) => {
 			}
 		});
 	}
-})
+})*/
 
 
 

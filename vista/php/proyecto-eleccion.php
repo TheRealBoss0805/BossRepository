@@ -50,7 +50,7 @@
                     ?>
                 </div>
             </div>
-            
+
         </div>
         <div class="content-eleccion-proyecto">
             <div class="galeryItem">
@@ -87,6 +87,8 @@
             <div class="descriptionGalery">
                 <p>IMÁGENES RELACIONADAS AL PROYECTO</p>
             </div>
+        </div>
+        <div class="imgPortadaProyecto">
         </div>
     </div>
 </body>

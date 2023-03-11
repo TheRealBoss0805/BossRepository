@@ -35,7 +35,7 @@
                                     <div class='container'>
                                         <div class='caption'>
                                             <a href='https://www.facebook.com/institutodeconsultoriasa' target='blank'>
-                                                <h1>" . $dia . " / " . $mes . " / " . $anio . "</h1>
+                                                <h1>Fecha de Realización: " . $dia . " / " . $mes . " / " . $anio . "</h1>
                                                 <p>" . $filtro["titulo"] . "</p>
                                             </a>
                                         </div>

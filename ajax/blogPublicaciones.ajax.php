@@ -45,7 +45,7 @@ class AjaxBlog
        
 
         if (!$respuesta) {
-            echo "No se encontraron resultados";
+            echo "<p class='notFoundBlog'>¡No se encontraron resultados!</p>";
         } else {
 
             foreach ($respuesta as $item) {
@@ -65,7 +65,7 @@ class AjaxBlog
                     <img src=" . $item["imagen"] . " alt=''>
                 </div>
                 <div>
-                    <span>" . $dia . "-" . $mes . "_" . $anio. "<i class='fi fi-sr-calendar-clock'></i></span>
+                    <span>" . $dia . " - " . $mes . " - " . $anio. "<i class='fi fi-sr-calendar-clock'></i></span>
                     <span>" . $respuestaTipoZona["nombre"] . "<i class='fi fi-sr-code-compare'></i></span>
                     <span>";
 

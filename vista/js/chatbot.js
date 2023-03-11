@@ -115,14 +115,14 @@ function msgIniciarChat() {
     }
 
     function loaderDesaparecer() {
-        document.addEventListener("DOMNodeInserted", function(event) {
+        document.addEventListener("DOMNodeInserted", function (event) {
             if (event.target.classList.contains("desaparecerLoader")) {
-              var tiempoEspera = Math.floor(Math.random() * 5000) + 1000;
-              setTimeout(function() {
-                event.target.style.display = "none";
-              }, tiempoEspera);
+                var tiempoEspera = Math.floor(Math.random() * 5000) + 1000;
+                setTimeout(function () {
+                    event.target.style.display = "none";
+                }, tiempoEspera);
             }
-          });
+        });
     }
 
     function saludar(callback) {
@@ -136,20 +136,24 @@ function msgIniciarChat() {
             contentType: false,
             processData: false,
             success: function (respuesta) {
-                loader()
+                setTimeout(() => {
+                    $("#viewMessages").append(respuesta);
+                    scrollAbajo();
+                }, 500);
+                /*loader()
                     .then(function () {
                         loaderDesaparecer();
                     });
                 setTimeout(() => {
                     $("#viewMessages").append(respuesta);
                     scrollAbajo();
-                }, 1e3);
+                }, 1e3);*/
 
             }
         });
         setTimeout(function () {
             callback();
-        }, 2000);
+        }, 1500);
     }
 
     function pedirNombre() {
@@ -163,14 +167,16 @@ function msgIniciarChat() {
             contentType: false,
             processData: false,
             success: function (respuesta) {
-                loader()
+                $("#viewMessages").append(respuesta);
+                scrollAbajo();
+                /*loader()
                     .then(function () {
                         loaderDesaparecer();
                     });
                 setTimeout(() => {
                     $("#viewMessages").append(respuesta);
                     scrollAbajo();
-                }, 1000);
+                }, 1000);*/
             }
         });
     }

@@ -122,7 +122,7 @@
                         <img src=" . $item["imagen"] . " alt=''>
                     </div>
                     <div>
-                        <span>" . $dia . "-" . $mes . "-" . $anio . "<i class='fi fi-sr-calendar-clock'></i></span>
+                        <span>" . $dia . " - " . $mes . " - " . $anio . "<i class='fi fi-sr-calendar-clock'></i></span>
                         <span>" . $respuestaTipoZona["nombre"] . "<i class='fi fi-sr-code-compare'></i></span>
                         <span>";
 

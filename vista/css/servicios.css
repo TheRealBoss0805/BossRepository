@@ -113,12 +113,14 @@
 }
 
 .content-services-1 .services:nth-child(1) h1 {
-    font-size: 17px;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .content-services-1 .services:nth-child(1) h2 {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .selectionRegionStatus {

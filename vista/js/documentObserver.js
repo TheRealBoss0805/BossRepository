@@ -31,7 +31,7 @@ let ovservadorElementos = addEventListener('DOMContentLoaded', () => {
                 cambio = cantidad_maxima / rapidez
                 incremento = (rapidez / cantidad_maxima) * 10;
                 if (valor_actual < cantidad_maxima) {
-                    contadorsote.innerText = +Math.ceil(valor_actual + cambio);
+                    contadorsote.innerText++;
                     setTimeout(actualizar_contador, incremento);
                 }
                 else if (valor_actual == cantidad_maxima) {
