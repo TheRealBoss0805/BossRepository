@@ -12,6 +12,7 @@ require_once "../modelos/Chatbot.php";
 
 class AjaxChatbot
 {
+    
 
     /*=============================================
 	TRAE LOS ITEMS DE ACUERDO A LOS FILTROS QUE SE APLIQUEN, YA SEA POR SECTOR O TIPO
@@ -26,10 +27,10 @@ class AjaxChatbot
 
     public function ajaxLoader(){
         $_SESSION["loader"] = true;
-        echo "<div class='container_msg_bot'>
+        echo "<div class='container_msg_bot desaparecerLoader'>
                     <div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div>
-                        <div class='msg_bot'>
-                            <p>!Hola¡, YO SERÉ UN LOADER!!!!!!!!!!</p>
+                        <div class='msg_bot contenedorLoader'>
+                            <div class='loader'></div>
                         </div>
                     </div>
                 </div>";

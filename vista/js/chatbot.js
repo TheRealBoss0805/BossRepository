@@ -77,9 +77,112 @@ domContentLoadedTimeout = setTimeout(() => {
     });
 }, 5000);
 
+/*function loaderDesaparecer() {
+    return new Promise(function (resolve, reject) {
+        loaderD = document.querySelector(".desaparecerLoader");
+        loaderD.classList.add("disappear")
+        resolve();
+    });
+}
+
+loaderDesaparecer()
+    .then(function(){
+        loader();
+    });*/
+
 function msgIniciarChat() {
 
-    setTimeout(() => {
+    function loader() {
+        return new Promise(function (resolve) {
+            var datos = new FormData();
+            datos.append("loader", true);
+
+            $.ajax({
+                url: "ajax/chatbot.ajax.php",
+                method: "POST",
+                cache: false,
+                data: datos,
+                contentType: false,
+                processData: false,
+                success: function (respuesta) {
+                    //Aquí iría el Loader.
+                    $("#viewMessages").append(respuesta);
+                    scrollAbajo();
+                }
+            });
+            resolve();
+        });
+    }
+
+    function loaderDesaparecer() {
+        document.addEventListener("DOMNodeInserted", function(event) {
+            if (event.target.classList.contains("desaparecerLoader")) {
+              var tiempoEspera = Math.floor(Math.random() * 5000) + 1000;
+              setTimeout(function() {
+                event.target.style.display = "none";
+              }, tiempoEspera);
+            }
+          });
+    }
+
+    function saludar(callback) {
+        var datos = new FormData();
+        datos.append("saludar", true);
+        $.ajax({
+            url: "ajax/chatbot.ajax.php",
+            method: "POST",
+            cache: false,
+            data: datos,
+            contentType: false,
+            processData: false,
+            success: function (respuesta) {
+                loader()
+                    .then(function () {
+                        loaderDesaparecer();
+                    });
+                setTimeout(() => {
+                    $("#viewMessages").append(respuesta);
+                    scrollAbajo();
+                }, 1e3);
+
+            }
+        });
+        setTimeout(function () {
+            callback();
+        }, 2000);
+    }
+
+    function pedirNombre() {
+        var datos = new FormData();
+        datos.append("pedirNombre", true);
+        $.ajax({
+            url: "ajax/chatbot.ajax.php",
+            method: "POST",
+            cache: false,
+            data: datos,
+            contentType: false,
+            processData: false,
+            success: function (respuesta) {
+                loader()
+                    .then(function () {
+                        loaderDesaparecer();
+                    });
+                setTimeout(() => {
+                    $("#viewMessages").append(respuesta);
+                    scrollAbajo();
+                }, 1000);
+            }
+        });
+    }
+
+    saludar(pedirNombre); //LLamamos a la función con su callback
+
+    /*loader().
+        then(function(){
+            loaderDesaparecer();
+        })*/
+
+    /*function loader() {
         var datos = new FormData();
         datos.append("loader", true);
 
@@ -96,12 +199,12 @@ function msgIniciarChat() {
                 scrollAbajo();
             }
         });
-    }, "500");
+    }*/
 
-    setTimeout(() => {
+    /*
+    function saludar(callback) {
         var datos = new FormData();
         datos.append("saludar", true);
-
         $.ajax({
             url: "ajax/chatbot.ajax.php",
             method: "POST",
@@ -110,14 +213,16 @@ function msgIniciarChat() {
             contentType: false,
             processData: false,
             success: function (respuesta) {
-                //Aquí iría el Loader.
                 $("#viewMessages").append(respuesta);
                 scrollAbajo();
             }
         });
-    }, "500");
+        setTimeout(function () {
+            callback();
+        }, 1000);
+    }
 
-    setTimeout(() => {
+    function pedirNombre() {
         var datos = new FormData();
         datos.append("pedirNombre", true);
         $.ajax({
@@ -128,12 +233,18 @@ function msgIniciarChat() {
             contentType: false,
             processData: false,
             success: function (respuesta) {
-                //Aquí iría el Loader.
                 $("#viewMessages").append(respuesta);
                 scrollAbajo();
             }
         });
-    }, "1500");
+    }
+
+    loader(function () {
+        saludar(function () {
+            pedirNombre();
+        });
+    });*/
+
 }
 
 let minimizar2 = document.querySelector("#bossito2");
