@@ -64,12 +64,13 @@ document.addEventListener("DOMContentLoaded", () => {
             ChatInception();
         }
     }, 3000);
-
+//CODIGO DE SEGURIDAD
     setTimeout(() => {
         clearTimeout(domContentLoadedTimeout);
     }, 5000);
 });
 
+//CODIGO DE SEGURIDAD
 domContentLoadedTimeout = setTimeout(() => {
 
     document.removeEventListener("DOMContentLoaded", () => {
@@ -77,26 +78,16 @@ domContentLoadedTimeout = setTimeout(() => {
     });
 }, 5000);
 
-/*function loaderDesaparecer() {
-    return new Promise(function (resolve, reject) {
-        loaderD = document.querySelector(".desaparecerLoader");
-        loaderD.classList.add("disappear")
-        resolve();
-    });
-}
-
-loaderDesaparecer()
-    .then(function(){
-        loader();
-    });*/
-
 function msgIniciarChat() {
 
-    function loader() {
-        return new Promise(function (resolve) {
+    //FUNCIÓN PARA MOSTRAR EN PANTALLA LA ANIMACIÓN DEL CHATBOT
+    //CUANDO SE OCULTE LA ANIMACIÓN SE RESOLVERÁ LA PROMESA.
+    //Y SE PROCEDERÁ A EJECUTAR LA FUNCIÓN SALUDAR()
+
+    function typingAnimation() {
+        return new Promise((resolve, reject) => {
             var datos = new FormData();
             datos.append("loader", true);
-
             $.ajax({
                 url: "ajax/chatbot.ajax.php",
                 method: "POST",
@@ -104,26 +95,28 @@ function msgIniciarChat() {
                 data: datos,
                 contentType: false,
                 processData: false,
-                success: function (respuesta) {
-                    //Aquí iría el Loader.
-                    $("#viewMessages").append(respuesta);
+                success: function ($respuesta) {
+                    $(document).on('DOMNodeInserted', '.desaparecerLoader', function (event) {
+                        setTimeout(function () {
+                            $(event.target).hide();
+                            resolve();
+                        }, 1500);
+                    });
+                    var $respuesta = $("<div class='container_msg_bot desaparecerLoader'><div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div><div class='msg_bot contenedorLoader'><div class='loader'></div></div></div></div>");
+                    $('#viewMessages').append($respuesta);
                     scrollAbajo();
+                },
+                error: function (error) {
+                    console.error(error);
+                    reject(error);
                 }
             });
-            resolve();
         });
     }
 
-    function loaderDesaparecer() {
-        document.addEventListener("DOMNodeInserted", function (event) {
-            if (event.target.classList.contains("desaparecerLoader")) {
-                var tiempoEspera = Math.floor(Math.random() * 5000) + 1000;
-                setTimeout(function () {
-                    event.target.style.display = "none";
-                }, tiempoEspera);
-            }
-        });
-    }
+    //FUNCIÓN QUE SALUDAR AL USUARIO QUE POSEE UN CALLBACK COMO ARGUMENTO
+    //CUYA FUNCIÓN ES ASEGURARSE DE QUE LA OPERACIÓN ACTUAL TERMINE DE EJECUTARSE 
+    //CORRECTAMENTE PARA LLAMAR DE NUEVO A LA FUNCIÓN TYPINGANIMATION()
 
     function saludar(callback) {
         var datos = new FormData();
@@ -136,25 +129,18 @@ function msgIniciarChat() {
             contentType: false,
             processData: false,
             success: function (respuesta) {
-                setTimeout(() => {
-                    $("#viewMessages").append(respuesta);
-                    scrollAbajo();
-                }, 500);
-                /*loader()
-                    .then(function () {
-                        loaderDesaparecer();
-                    });
-                setTimeout(() => {
-                    $("#viewMessages").append(respuesta);
-                    scrollAbajo();
-                }, 1e3);*/
-
+                $("#viewMessages").append(respuesta);
+                scrollAbajo();
+                callback();
+            },
+            error: function (error) {
+                console.error(error);
             }
         });
-        setTimeout(function () {
-            callback();
-        }, 1500);
     }
+
+    //UNA VEZ QUE NUEVAMENTE SE OCULTÓ LA ANIMACIÓN, SE PROCEDE A RESOLVER
+    //LA PROMESA Y SE EJECUTA RECIEN LA FUNCIÓN PEDIRNOMBRE()
 
     function pedirNombre() {
         var datos = new FormData();
@@ -169,91 +155,37 @@ function msgIniciarChat() {
             success: function (respuesta) {
                 $("#viewMessages").append(respuesta);
                 scrollAbajo();
-                /*loader()
-                    .then(function () {
-                        loaderDesaparecer();
-                    });
-                setTimeout(() => {
-                    $("#viewMessages").append(respuesta);
-                    scrollAbajo();
-                }, 1000);*/
+            },
+            error: function (error) {
+                console.error(error);
             }
         });
     }
 
-    saludar(pedirNombre); //LLamamos a la función con su callback
+    //AQUI UTILIZAMOS LAS 2 PROMESAS Y EL CALLBACK NECESARIOS
+    //PARA QUE LA SINCRONIZACIÓN SE RESUELVA CON ÉXITO. ATTE BIGPIG.
 
-    /*loader().
-        then(function(){
-            loaderDesaparecer();
-        })*/
-
-    /*function loader() {
-        var datos = new FormData();
-        datos.append("loader", true);
-
-        $.ajax({
-            url: "ajax/chatbot.ajax.php",
-            method: "POST",
-            cache: false,
-            data: datos,
-            contentType: false,
-            processData: false,
-            success: function (respuesta) {
-                //Aquí iría el Loader.
-                $("#viewMessages").append(respuesta);
-                scrollAbajo();
-            }
+    typingAnimation()
+        .then(() => {
+            return new Promise((resolve, reject) => {
+                saludar(() => {
+                    typingAnimation()
+                        .then(() => {
+                            pedirNombre();
+                            resolve();
+                        });
+                });
+            });
+        })
+        .catch((error) => {
+            console.error(error);
         });
-    }*/
-
-    /*
-    function saludar(callback) {
-        var datos = new FormData();
-        datos.append("saludar", true);
-        $.ajax({
-            url: "ajax/chatbot.ajax.php",
-            method: "POST",
-            cache: false,
-            data: datos,
-            contentType: false,
-            processData: false,
-            success: function (respuesta) {
-                $("#viewMessages").append(respuesta);
-                scrollAbajo();
-            }
-        });
-        setTimeout(function () {
-            callback();
-        }, 1000);
-    }
-
-    function pedirNombre() {
-        var datos = new FormData();
-        datos.append("pedirNombre", true);
-        $.ajax({
-            url: "ajax/chatbot.ajax.php",
-            method: "POST",
-            cache: false,
-            data: datos,
-            contentType: false,
-            processData: false,
-            success: function (respuesta) {
-                $("#viewMessages").append(respuesta);
-                scrollAbajo();
-            }
-        });
-    }
-
-    loader(function () {
-        saludar(function () {
-            pedirNombre();
-        });
-    });*/
 
 }
 
 let minimizar2 = document.querySelector("#bossito2");
+
+//CUANDO DAMOS (X) AL CHATBOT Y NOS SALIMOS SE CIERRA SESION
 
 minimizar2.addEventListener("click", () => {
     let cosoAbrir = document.querySelector("#ventanaChat");
@@ -279,6 +211,8 @@ minimizar2.addEventListener("click", () => {
 
 let minimizar3 = document.querySelector("#bossito3");
 
+//CUANDO MINIMIZAMOS EL CHATBOT
+
 minimizar3.addEventListener("click", () => {
     let cosoAbrir = document.querySelector("#ventanaChat");
     cosoAbrir.style.display = "none";
@@ -291,11 +225,47 @@ $(".viewMessages").on("click", ".container_msg_bot .opciones a", function () {
 });
 
 function scrollAbajo() {
-    $("#viewMessages").animate({ scrollTop: $("#viewMessages").prop("scrollHeight") }, 1e3 / 2);
+    $("#viewMessages").animate({
+        scrollTop: $("#viewMessages").prop("scrollHeight")
+    }, {
+        duration: 1e3 / 2,
+        easing: 'linear'
+    });
 }
+
 function enviarMensaje(msg) {
 
-    setTimeout(function () {
+    function typingAnimation() {
+        return new Promise((resolve, reject) => {
+            var datos = new FormData();
+            datos.append("loader", true);
+            $.ajax({
+                url: "ajax/chatbot.ajax.php",
+                method: "POST",
+                cache: false,
+                data: datos,
+                contentType: false,
+                processData: false,
+                success: function ($respuesta) {
+                    $(document).on('DOMNodeInserted', '.desaparecerLoader', function (event) {
+                        setTimeout(function () {
+                            $(event.target).hide();
+                            resolve();
+                        }, 1500);
+                    });
+                    var $respuesta = $("<div class='container_msg_bot desaparecerLoader'><div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div><div class='msg_bot contenedorLoader'><div class='loader'></div></div></div></div>");
+                    $('#viewMessages').append($respuesta);
+                    scrollAbajo();
+                },
+                error: function (error) {
+                    console.error(error);
+                    reject(error);
+                }
+            });
+        });
+    }
+
+    function arrojarMensaje(callback) {
         var datos = new FormData();
         datos.append("msg", msg);
         $.ajax({
@@ -311,9 +281,19 @@ function enviarMensaje(msg) {
                 if ($("#viewMessages .container_msg_bot:last").prev().children(".msg_bot").children(".carusel").length > 0) {
                     sliderChat();
                 }
+                callback();
             }
         });
-    }, "1000");
+    }
+
+    typingAnimation().
+        then(() => {
+            return new Promise((resolve, reject) => {
+                arrojarMensaje(() => {
+                    resolve()
+                })
+            })
+        })
 }
 
 $("#btnEnviar").on("click", function () {

@@ -26,21 +26,21 @@
             </div>
             <div class="us-pdf">
                 <div>
-                    <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
+                    <a href="vista/fields/doc1.pdf" target="_blank"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
                         <p>"POLÍTICA DE CALIDAD"
                         </p>
                     </div>
                 </div>
                 <div>
-                    <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
+                    <a href="vista/fields/doc2.pdf" target="_blank"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
                         <p>"PÓLITICA DE MEDIO AMBIENTE"
                         </p>
                     </div>
                 </div>
                 <div>
-                    <a href="#"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
+                    <a href="vista/fields/doc3.pdf" target="_blank"><img src="vista/imagenes/nosotros/pdf.png" alt=""></a>
                     <div class="pdf-div">
                         <p>"POLÍTICA DE SEGURIDAD Y SALUD OCUPACIONAL"
                         </p>

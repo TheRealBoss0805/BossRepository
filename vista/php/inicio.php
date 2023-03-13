@@ -379,7 +379,7 @@
                             <polyline points="10 9 9 9 8 9"></polyline>
                         </svg> Organigrama
                     </div>
-                    <a href="https://drive.google.com/file/d/1GdRUQeoXNH0Nu1-CyK_HUQ46G9jD_n1h/view?usp=sharing" style="text-decoration: none; color: white;">
+                    <a href="vista/imagenes/inicio/organigrama/organigramaIdc.pdf" style="text-decoration: none; color: white;" target="_blank">
                         <div class="download">
                             <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>

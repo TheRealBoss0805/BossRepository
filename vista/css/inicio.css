@@ -11,12 +11,13 @@
     position: relative;
 }
 
-.contenedor-inicio .parentImageInicio{
+.contenedor-inicio .parentImageInicio {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.contenedor-inicio .parentImageInicio img{
+
+.contenedor-inicio .parentImageInicio img {
     width: 100%;
     height: 100%;
 }
@@ -238,7 +239,8 @@
     height: 113px;
 }
 
-.slider-top .icon-left-dir, .slider-top .icon-right-dir{
+.slider-top .icon-left-dir,
+.slider-top .icon-right-dir {
     position: absolute;
     z-index: 2;
     height: 45%;
@@ -462,9 +464,12 @@
     justify-content: space-around;
     align-self: center;
     padding: 15px;
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 0 0 20px 20px;
     box-shadow: inset -4px -4px 2px #0e0f0f;
 
@@ -563,6 +568,10 @@
 
     .inicio-2 {
         background: white;
+    }
+
+    .download-button {
+        display: flex;
     }
 }
 
@@ -783,7 +792,10 @@
     justify-content: center;
     align-items: center;
     background: #e8f6f5;
+    box-shadow: inset 5px 5px 10px #dae7e6,
+        inset -5px -5px 10px #f6ffff;
     border-radius: 12px;
+
 }
 
 .contenedor-4 .content4-ct0 .ct0-texto {
@@ -893,7 +905,7 @@
 
 .child1-img .front,
 .back {
-    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: rgb(14, 30, 37) 0px 2px 4px 0px, rgb(14, 30, 37) 0px 2px 8px 0px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -915,7 +927,6 @@
 
 .child1-img .front {
     filter: contrast(1.5);
-    border: 2px solid #5c5e5f;
 }
 
 .child1-img .back {
@@ -1384,7 +1395,9 @@
     padding-top: 50px;
 }
 
-.contenedor-inicio-6 .title-inicio, .contenedor-inicio-6, .title-inicio-2{
+.contenedor-inicio-6 .title-inicio,
+.contenedor-inicio-6,
+.title-inicio-2 {
     margin-top: 30px;
 }
 
@@ -1739,6 +1752,7 @@
     .contentBx .card-content6-2 .textBx p {
         font-size: 1.5vw;
     }
+
     .title-inicio-2 {
         display: none;
     }
@@ -1907,7 +1921,6 @@
     background-size: cover;
     background: linear-gradient(45deg, #f0f0f0, #cacaca);
     filter: contrast(1.3);
-    cursor: pointer;
 }
 
 /*EFECTO DE BRILLO*/
@@ -1921,7 +1934,7 @@
     top: 0;
     left: -150px;
     transform: skewX(-30deg);
-    z-index: 100;
+    z-index: 5;
     animation: brillo 0.8s infinite alternate;
 }
 
@@ -2160,12 +2173,12 @@
         z-index: -1;
         border-radius: 4px;
         transform: translateY(0%);
-        border: solid 1px #991641;
+        border: solid 1px #690959;
         transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
     }
 
     .download {
-        background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+        background-image: linear-gradient(to right, #9a1283 0%, #840e70 51%, #710d60 100%);
     }
 
     .download-button:hover .download {

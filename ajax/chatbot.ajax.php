@@ -280,7 +280,7 @@ class AjaxChatbot
                     $opciones .= "<a>" . $ubicacion . "</a>";
                 }
                 $msgBot = "<p><span class='nameRpta'>" . $_SESSION["nombre"] . "</span> <span>&#128522;</span>, contamos con diversos correos para fines específicos, estos son los
-                siguientes:<br><br>Información:<br><span class='rpta'><a class='linkFaceBot' href='mailto:secretaria@indeconsult.pe'>secretaria@indeconsult.pe</a></span><br>Licitaciones:<br><span class='rpta'><a class='linkFaceBot' href='mailto:comercial@indeconsult.pe'>comercial@indeconsult.pe</a></span><br>Ingeniería:<br><span class='rpta'><a class='linkFaceBot' href='mailto:ingenieria@indeconsult.pe'>ingenieria@indeconsult.pe</a></span><br>Proyectos:<br><span class='rpta'><a class='linkFaceBot' href='mailto:proyectos@indeconsult.pe'>proyectos@indeconsult.pe</a></span><br>Administración:<br><span class='rpta'><a class='linkFaceBot' href='mailto:administracion@indeconsult.pe'>administracion@indeconsult.pe</a></span></p>";
+                siguientes:<br><br>Información:<br><span class='rpta'><a class='linkFaceBot' href='mailto:secretaria@indeconsult.pe'><span>&#128231;</span> secretaria@indeconsult.pe</a></span><br>Licitaciones:<br><span class='rpta'><a class='linkFaceBot' href='mailto:comercial@indeconsult.pe'><span>&#128231;</span> comercial@indeconsult.pe</a></span><br>Ingeniería:<br><span class='rpta'><a class='linkFaceBot' href='mailto:ingenieria@indeconsult.pe'><span>&#128231;</span> ingenieria@indeconsult.pe</a></span><br>Proyectos:<br><span class='rpta'><a class='linkFaceBot' href='mailto:proyectos@indeconsult.pe'><span>&#128231;</span> proyectos@indeconsult.pe</a></span><br>Administración:<br><span class='rpta'><a class='linkFaceBot' href='mailto:administracion@indeconsult.pe'><span>&#128231;</span> administracion@indeconsult.pe</a></span></p>";
                 $plantChat = new Chatbot();
                 echo $plantChat->getplantillaMsg($msgBot, $opciones);
                 break;
@@ -944,18 +944,20 @@ class AjaxChatbot
     }
 }
 
-//SALUDA AL USUARIO
+
 
 if(isset($_POST["loader"])){
     $chatbot = new AjaxChatbot();
     $chatbot->ajaxLoader();
+
+    //SALUDA AL USUARIO
     
 } else if (isset($_POST["saludar"]) && !isset($_POST["msg"]) && !isset($_POST["nombre"])) {
     $chatbot = new AjaxChatbot();
     $chatbot->ajaxSaludar();
-    if (isset($_SESSION["nombre"])) {
-        $chatbot->ajaxMostrarMenu0();
-    }
+    // if (isset($_SESSION["nombre"])) {
+    //     $chatbot->ajaxMostrarMenu0();
+    // }
 
     //SOLICITA EL NOMBRE AL USUARIO
 
@@ -1073,7 +1075,6 @@ if(isset($_POST["loader"])){
         $chatbot->ajaxSalir();
     } else {
         //MUESTRA PALABRAS QUE NO ENTIENDE EL CHATBOT
-
         $chatbot = new AjaxChatbot();
         $chatbot->ajaxNoEncontro();
     }
