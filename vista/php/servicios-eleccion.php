@@ -27,11 +27,6 @@
                     <img id="myImg" src="<?= $respItem['foto'] ?>" alt="<?= $respItem["titulo"] ?>">
                     <img src="vista/imagenes/proyectsandservices/servicios/borde-blogSeleccion.png" alt="">
                 </div>
-                <div id="myModal" class="modal">
-                    <span class="close">x</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
                 <div class="agree-label">
                     <div class="services-n-description">
                         <img src="vista/imagenes/proyectsandservices/servicios/ubicacion.png" alt="icono">
@@ -47,19 +42,25 @@
                     </div>
                 </div>
             </div>
-            <div class="content-eleccion-servicio-2">
+            <div class="content-eleccion-servicio-2 scrollText">
                 <h1><?= $respItem["titulo"] ?></h1>
                 <?php
                 foreach ($stringSeparado as $p) {
-                    echo "<p>" . $p . "</p>";
+                    echo "<p class='parrafoServicio'>" . $p . "</p>";
                 }
                 ?>
             </div>
             <div class="imgPortadaServicios">
 
             </div>
+            <div id="myModal" class="modal">
+            <span class="close" title="Cerrar">&#10006;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
         </div>
     </body>
     <script src='vista/js/imagen-modal-seleccion.js'></script>
+    <script src='vista/js/servicio-eleccion.js'></script>
 
     </html>

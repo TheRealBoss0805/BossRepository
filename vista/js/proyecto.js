@@ -62,7 +62,11 @@ $(".content-proyecto").on("click", ".btnTodos", function () {
 				BUSCADOR
 ===========================================*/
 
-document.addEventListener("keyup", e => {
+document.addEventListener("keyup", (e) => {
+
+	let nothingItem = document.querySelector(".nothingItem");
+	let arregloProyecto = [];
+
 	if (e.target.matches("#buscador")) {
 		if (e.key === "Escape") {
 			e.target.value = "";
@@ -71,11 +75,21 @@ document.addEventListener("keyup", e => {
 			let proyectox = proyecto.parentElement.parentElement;
 			if (proyecto.textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
 				proyectox.style.display = "flex";
-			} else {
+			} else if (!proyecto.textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
 				proyectox.style.display = "none";
 			}
+			let iteradorProyecto = proyecto.parentElement.parentElement.style.display;
+			arregloProyecto.push(iteradorProyecto);
 		});
+
+		if (arregloProyecto.every((item) => item == "none")) {
+			nothingItem.style.display = "grid";
+		}
+		else if (arregloProyecto.some((item) => item == "flex")) {
+			nothingItem.style.display = "none";
+		}
 	}
+
 })
 
 

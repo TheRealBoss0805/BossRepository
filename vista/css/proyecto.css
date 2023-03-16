@@ -251,15 +251,26 @@
 .content-proyecto:nth-child(3) {
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 40px;
     padding-bottom: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr !important;
     justify-items: center;
+    justify-content: center;
     align-items: center;
+    align-content: center;
     gap: 50px;
+    
+}
+
+.nothingItem {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: #242C39;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    font-family: Proxima Nova, Verdana, Avenir Next;
 }
 
 .content-proyecto:nth-child(3) .parent-button-div {
@@ -294,9 +305,12 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .content-proyecto:nth-child(3) .parent-button-div .buttons-div-2 .articulo {

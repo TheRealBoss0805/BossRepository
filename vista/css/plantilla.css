@@ -8,29 +8,40 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Estilos al Scrollbar
+/*Estilos al Scrollbar*/
 
+/* Personaliza la scrollbar */
 ::-webkit-scrollbar {
-    width: 0.3em;
-    background: rgb(139, 11, 54);
-    background: linear-gradient(0deg, rgba(185, 17, 73, 1) 0%, rgba(112, 17, 17, 1) 100%);
-}
+    width: 16px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 8px;
+    border: 2px solid #f5f5f5;
+  }
+  
+  /* Hover y focus styles */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a1a1a1;
+  }
+  
+  ::-webkit-scrollbar-thumb:focus {
+    background-color: #4e4e4e;
+    border: 2px solid #a1a1a1;
+  }
+  
+  /* Agrega un efecto de sombra a la scrollbar */
+  ::-webkit-scrollbar {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
 
-::-webkit-scrollbar-track {
-    background: #eee7cb;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #882a47;
-    border: .25em solid #882a47;
-}
-
-::-webkit-scrollbar:hover {
-    width: 1.5em;
-}*/
-
-
-/*END*/
 
 /*INICIO*/
 
@@ -156,7 +167,6 @@
 /*PESTAÑA SERVICES*/
 .contenedor-services {
     gap: 40px;
-
 }
 
 /*PESTAÑA SERVICES - OPCION*/
@@ -164,8 +174,8 @@
     flex-direction: row !important;
     min-height: 700px;
     height: auto;
-    padding: 50px;
-    gap: 20px;
+    padding: 70px 10px 50px 10px;
+    gap: 50px;
     margin-top: 90px;
 }
 
@@ -199,8 +209,8 @@
 }
 
 /*Contenedor-Blog-Selección*/
+
 .contenedor-blog-seleccion {
-    /*Declarado en la parte superior*/
     gap: 50px;
     display: flex;
     flex-direction: row !important;
@@ -210,7 +220,6 @@
     height: auto;
     margin-top: 90px;
     padding: 50px;
-
 }
 
 .contenedor-chatbot {
@@ -248,59 +257,43 @@ body {
 /*Imágenes Modales para los proyectos seleccionados*/
 
 #myImg {
-    cursor: pointer;
-    transition: 0.3s;
+    cursor: zoom-in;
 }
 
-#myImg:hover {
-    opacity: 1;
-}
-
-/* The Modal (background) */
 .modal {
-    visibility: hidden;
-    /*oculto por defecto*/
-    position: fixed !important;
-    /*Permanecer en su lugar*/
-    z-index: 100 !important;
-    /*traer al frente*/
-    padding-top: 100px !important;
-    /*localizado en la caja*/
-    left: 0 !important;
-    top: 0 !important;
-    width: 100% !important;
-    /* Todo el ancho */
-    height: 100% !important;
-    /*Toda la altura*/
-    overflow: auto !important;
-    /*Permitir el scroll si es necesario*/
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
 }
 
-/* Modal Content (image) */
 .modal-content {
-    margin: auto !important;
-    display: block !important;
-    width: 80% !important;
-    max-width: 700px !important;
+    width: 50%;
+    border-radius: 10px;
 }
 
-/* Caption of Modal Image */
 #caption {
-    margin: auto !important;
-    display: block !important;
-    width: 80%;
-    max-width: 700px;
+    width: 50%;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+    padding: 10px;
+    height: auto;
+    border: 2px solid #ccc;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 10px;
 }
 
-/* Add Animation */
 .modal-content,
 #caption {
     animation: zoom 0.5s;
@@ -316,15 +309,13 @@ body {
     }
 }
 
-/* The Close Button */
 .close {
-    position: absolute !important;
-    top: 15px !important;
-    right: 35px !important;
-    color: #f1f1f1 !important;
-    font-size: 40px !important;
-    font-weight: bold !important;
-    transition: 0.3s !important;
+    align-self: flex-end;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 30px;
+    height: auto;
 }
 
 .close:hover,
@@ -334,13 +325,21 @@ body {
     cursor: pointer;
 }
 
+.aparecerModal{
+    display: flex;
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
     .modal-content {
-        width: 100% !important;
-        ;
+        width: 95% !important;
+    }
+    #caption {
+        width: 95% !important;
     }
 }
+
+/*PARA EL DESLIZADOR*/
 
 #totop.on {
     left: 10px;

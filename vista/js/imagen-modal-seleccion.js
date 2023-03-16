@@ -1,29 +1,20 @@
-// Get the modal
-let modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-let img = document.getElementById("myImg");
-let modalImagen = document.getElementById("img01");
-let opcionTexto = document.getElementById("caption");
+document.addEventListener("DOMContentLoaded", () => {
 
-const aparecerModal = function () {
-    modal.style.visibility = "visible";
-    modalImagen.src = this.src;
-    modalImagen.alt = this.alt;
-    opcionTexto.innerHTML = this.alt;
-}
+    let modal = document.querySelector("#myModal");
+    let img = document.querySelector("#myImg");
+    let modalImagen = document.querySelector("#img01");
+    let opcionTexto = document.querySelector("#caption");
+    let span = document.querySelector(".close");
 
-img.addEventListener("click", aparecerModal);
+    img.addEventListener("click", (event) => {
+        modalImagen.src = event.target.src;
+        modalImagen.alt = event.target.alt;
+        opcionTexto.innerHTML = event.target.alt;
+        modal.classList.add("aparecerModal");
+    })
 
-// Get the <span> element that closes the modal
-let span = document.querySelector(".close");
-
-// When the user clicks on <span> (x), close the modal
-
-const desaparecerModal = function () {
-    modal.style.visibility = "hidden";
-}
-
-span.addEventListener("click", desaparecerModal);
-
-
+    span.addEventListener("click", () => {
+        modal.classList.remove("aparecerModal");
+    })
+})

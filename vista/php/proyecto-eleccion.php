@@ -41,56 +41,58 @@
             </div>
             <!--<span>#Algun disenio de flecha</span>-->
             <div class="content-itemProyecto">
-                <img src="<?= $respItem["foto"] ?>" alt="" />
-                <div>
+                <img id="myImg" src="<?= $respItem["foto"] ?>" alt="<?= $respItem["titulo"] ?>" />
+                <div class="scrollText">
                     <?php
                     foreach ($stringSeparado as $p) {
-                        echo "<p>" . $p . "</p>";
+                        echo "<p class='parrafoProyecto'>" . $p . "</p>";
                     }
                     ?>
                 </div>
             </div>
 
         </div>
-        <div class="content-eleccion-proyecto">
-            <div class="galeryItem">
-                <div class="child-itemProyecto contentItemGalery">
-
-                    <?php
-                    $respuestaGalery = ControladorProyecto::ctrMostrarGaleriaItem($item, $valor);
-                    $i = 1;
-                    foreach ($respuestaGalery as $itemGalery) {
-
-                        echo "<span class='electionItem' valor='" . $i . "'>
+        <?php
+        $respuestaGalery = ControladorProyecto::ctrMostrarGaleriaItem($item, $valor);
+        $i = 1;
+        if (!empty($respuestaGalery)) {
+            echo "<div class='content-eleccion-proyecto'>
+                <div class='galeryItem'>
+                    <div class='child-itemProyecto contentItemGalery'>";
+            foreach ($respuestaGalery as $itemGalery) {
+                echo "<span class='electionItem' valor='" . $i . "'>
                                 <p class='pItem'>item: " . $i . "</p>
                                 <i class='fi fi-sr-picture'></i>
                                 <img class='tagItem' src='vista/imagenes/proyectsandservices/proyectos/ejemploGaleriaProyecto/etiquetacerrada.png'>
                               </span>";
-                        $i++;
-                    }
-                    ?>
-                </div>
-
-                <div class="child-itemProyecto .child2">
-                    <?php
-                    $j = 0;
-                    foreach ($respuestaGalery as $itemGalery) {
-                        echo "<div class='itemGalery activate' valor='" . $j . "'>
+                $i++;
+            }
+            echo "</div>
+                <div class='child-itemProyecto .child2'>";
+            $j = 0;
+            foreach ($respuestaGalery as $itemGalery) {
+                echo "<div class='itemGalery activate' valor='" . $j . "'>
                                 <img src='" . $itemGalery["foto"] . "' alt=''>
                                 <h3>" . $itemGalery["descripcion"] . "</h3>
                             </div>";
-                        $j++;
-                    }
-                    ?>
-                </div>
+                $j++;
+            }
+            echo "</div>
             </div>
-            <div class="descriptionGalery">
+            <div class='descriptionGalery'>
                 <p>IMÁGENES RELACIONADAS AL PROYECTO</p>
             </div>
-        </div>
+        </div>";
+        }
+        ?>
         <div class="imgPortadaProyecto">
+        </div>
+        <div id="myModal" class="modal">
+        <span class="close" title="Cerrar">&#10006;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
         </div>
     </div>
 </body>
-<!--<script src='vista/js/imagen-modal-seleccion.js'></script>-->
+<script src='vista/js/imagen-modal-seleccion.js'></script>
 <script src='vista/js/proyectoEleccion.js'></script>
