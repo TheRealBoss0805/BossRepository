@@ -50,7 +50,7 @@
         </div>
         <div class="content-us" id="usInfo">
             <div class="title-us">
-                <h2>BIENVENIDOS A INDECONSULT S.A. – INGENIEROS CONSULTORES.</h2>
+                <h2>BIENVENIDOS A INDECONSULT S.A. INGENIEROS CONSULTORES.</h2>
             </div>
             <div class="us-mvsion">
                 <div class="mvsion-div">
@@ -59,15 +59,27 @@
                         creación en 1995 viene contribuyendo al esfuerzo que los sectores
                         público y privado realizan para el desarrollo de nuestro país.<br><br>
                         <b>Instituto de Consultoría S.A. participa en los siguientes tipos de
-                        proyectos de desarrollo:</b><br><br>
+                            proyectos de desarrollo:</b><br><br>
                     </p>
                     <div class="us-tipos-proyectos">
-                        <div><span class="fi fi-sr-sack-dollar f1" style="--clr:#ffcf49;"></span><p class="p1">Mega Inversiones</p></div>
-                        <div><span class="fi fi-sr-people-carry-box f2" style="--clr:#321207;"></span><p class="p2">Inversión en Infraestructura Social</p></div>
-                        <div><span class="fi fi-sr-bus f3" style="--clr:#273765;"></span><p class="p3">Estudios de Transporte</p></div>
-                        <div><span class="fi fi-sr-map-marker f4" style="--clr:#923b27;"></span><p class="p4">Estudios Territoriales</p></div>
-                        <div><span class="fi fi-sr-chart-histogram f5" style="--clr:#ff5b4a;"></span><p class="p5">Estudios Económicos Sociales</p></div>
-                        <div><span class="fi fi-sr-flower-tulip f6" style="--clr:#006426;"></span><p class="p6">Estudios Ambientales</p></div>
+                        <div><span class="fi fi-sr-sack-dollar f1" style="--clr:#ffcf49;"></span>
+                            <p class="p1">Mega Inversiones</p>
+                        </div>
+                        <div><span class="fi fi-sr-people-carry-box f2" style="--clr:#321207;"></span>
+                            <p class="p2">Inversión en Infraestructura Social</p>
+                        </div>
+                        <div><span class="fi fi-sr-bus f3" style="--clr:#273765;"></span>
+                            <p class="p3">Estudios de Transporte</p>
+                        </div>
+                        <div><span class="fi fi-sr-map-marker f4" style="--clr:#923b27;"></span>
+                            <p class="p4">Estudios Territoriales</p>
+                        </div>
+                        <div><span class="fi fi-sr-chart-histogram f5" style="--clr:#ff5b4a;"></span>
+                            <p class="p5">Estudios Económicos Sociales</p>
+                        </div>
+                        <div><span class="fi fi-sr-flower-tulip f6" style="--clr:#006426;"></span>
+                            <p class="p6">Estudios Ambientales</p>
+                        </div>
                     </div>
                 </div>
                 <div class="mvsion-div">
@@ -75,7 +87,7 @@
                         <div class="mvsion-img">Misión</div>
                         <div class="mvsion-info">
                             <p>
-                                "Promover la Inversión Pública y Privada en una marco de Competencia y Eficiencia"
+                                "Promover la Inversión y el desarrollo. Proyectando y Supervisando infraestructura requerida por las instituciones públicas ó privadas, a través de la consultoría en todas las etapas del Ciclo de Inversión."
                             </p>
                         </div>
                     </div>
@@ -83,7 +95,16 @@
                         <div class="mvsion-img">Visión</div>
                         <div class="mvsion-info">
                             <p>
-                                "Convertirnos en la empresa Líder en Consultoría de Inversión Pública y Privada"
+                                "Consolidarse como una de las principales consultoras de país y brindar el mejor servicio de asesoría en toda Latinoamérica, en temas de Desarrollo e Inversión de Proyectos Públicos y Privados, en todos los sectores.
+                                "
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-mvsion">
+                        <div class="mvsion-img">Nuestro Objetivo</div>
+                        <div class="mvsion-info">
+                            <p>
+                                "Asesorar a las entidades, gestores de inversión en el desarrollo de sus instrumentos a fin transitar por todo el ciclo de la inversión (Idea, Plan, Pre inversión, Expediente, Construcción, Operación) a fin de reducir la brecha de servicios."
                             </p>
                         </div>
                     </div>

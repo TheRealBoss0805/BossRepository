@@ -52,41 +52,6 @@
                 <img class="imagenService" src="vista/imagenes/proyectsandservices/servicios/service.png">
             </div>
         </div>
-        <div class="selectionRegionStatus">
-            <h2>Conoce Nuestros Proyectos</h2>
-            <div class="services">
-                <ul>
-                    <li>
-                        <select id="ubicacionServicio" required>
-                            <?php
-                            $array = array();
-                            $i = -1;
-                            foreach ($respuesta1 as $item2) {
-                                $i++;
-                                $array[$i] = $item2["lugar"];
-                            }
-                            $duplicado = array_unique($array);
-                            sort($duplicado);
-                            echo   "<option value='Ubicación'>Ubicación</option>";
-                            foreach ($duplicado as $arregloAlfa) {
-                                echo "<option value='" . $arregloAlfa . "'>" . $arregloAlfa . "</option>";
-                            }
-                            ?>
-                        </select>
-                    </li>
-                    <li>
-                        <select id="estadoServicio" required>
-                            <option value="Estado">Estado</option>
-                            <option value="en proceso">en proceso</option>
-                            <option value="culminado">culminado</option>
-                        </select>
-                    </li>
-                    <li>
-                        <button type="button" id="botonServicio">Mostrando todos los proyectos</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <div class="content-services-2" id="showItemService">
             <?php
             echo "<p class='nothingItem' style='display:none'>¡No se encontraron Proyectos!</p>";

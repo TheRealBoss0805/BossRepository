@@ -147,13 +147,16 @@ h3 {
 
 .content-us .title-us {
   height: 10%;
+  width: 100%;
 }
 
 .content-us .title-us h2 {
   text-transform: uppercase;
-  font-size: 1.7em;
+  font-size: 25px;
   text-shadow: black 0.03em 0.03em 0.07em;
   color: #253743;
+  width: 100%;
+  text-align: center;
 }
 
 .content-us:nth-child(2) .us-pdf {
@@ -235,22 +238,27 @@ h3 {
 }
 
 .content-us:nth-child(3) {
-  height: 500px;
+  min-height: 500px;
+  height: auto;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 50px;
 }
 
 .content-us:nth-child(3) .us-mvsion {
-  height: 85%;
-  width: 95%;
+  height: 100%;
+  width: 100%;
+  gap: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
 .content-us:nth-child(3) .us-mvsion .mvsion-div {
-  height: 95%;
+  height: 50%;
   border-radius: 25px;
+  width: 100%;
 }
 
 .mvsion-div:nth-child(1) {
@@ -267,7 +275,7 @@ h3 {
   color: #666666;
   text-align: justify;
   padding: 15px;
-  font-size: 1vw;
+  font-size: 14px;
 }
 
 .mvsion-div:nth-child(1) .us-tipos-proyectos {
@@ -275,7 +283,7 @@ h3 {
   display: grid;
   grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
   justify-items: center;
-  height: 170px;
+  height: 150px;
 }
 
 .mvsion-div:nth-child(1) .us-tipos-proyectos div {
@@ -344,8 +352,9 @@ h3 {
 /*CONTENT-US-3*/
 
 .card-mvsion {
-  width: 190px;
-  height: 254px;
+  width: 20%;
+  min-width: 298.08px;
+  height: 350px;
   background: #f5f5f5;
   overflow: visible;
   box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.1);
@@ -354,6 +363,8 @@ h3 {
   align-items: center;
   border: 3px solid #162f73;
   border-radius: 10px;
+  justify-content: flex-start;
+  position: relative;
 }
 
 .mvsion-info {
@@ -361,16 +372,17 @@ h3 {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 0 1rem;
+  position: absolute;
+  top: 30%;
+  line-height: 1.1em;
 }
 
 .mvsion-img {
-  --size: 100px;
+  --size: 130px;
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
-  transform: translateY(-50%);
-  background: #42caff;
+  transform: translateY(-40%);
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   position: relative;
   transition: all .3s ease-in-out;
@@ -378,6 +390,9 @@ h3 {
   justify-content: center;
   align-items: center;
   color: #fff;
+  text-align: center !important;
+  font-size: 22px;
+  line-height: 1.5em;
 }
 
 .mvsion-img::before {
@@ -389,27 +404,22 @@ h3 {
   width: 90%;
   height: 90%;
   transform: translate(-50%, -50%);
-  border: 1rem solid #222222;
+  border: 0.7rem solid #222222;
 }
 
 .mvsion-info p:nth-child(1) {
-  font-size: 0.8em;
+  font-size: 17px;
   text-align: center;
   color: #253743;
   font-weight: 400;
-  font-style: italic;
-}
-
-.mvsion-info p:nth-child(2) {
-  color: #253743;
-  font-weight: 600;
-  font-size: 1.2em;
-  border: 1px solid red;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 1.5em;
 }
 
 /*Hover*/
 .card-mvsion:hover .mvsion-img {
-  --size: 110px;
+  --size: 140px;
   width: var(--size);
   height: var(--size);
 }
@@ -420,10 +430,6 @@ h3 {
 
   .content-us:nth-child(1) {
     height: 600px;
-  }
-
-  .mvsion-div:nth-child(1) p {
-    font-size: 1.6vw;
   }
 
   .content-us:nth-child(1) .header-div h1 {
@@ -448,12 +454,12 @@ h3 {
   .content-us:nth-child(3) .us-mvsion {
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
   }
 
   .content-us:nth-child(3) .us-mvsion .mvsion-div {
     height: 95%;
     width: 95%;
+
   }
 
   .mvsion-div:nth-child(1) {
@@ -461,11 +467,24 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
   .mvsion-div:nth-child(2) {
-    height: 380px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    min-height: 380px !important;
+    height: auto;
+    gap: 80px;
+  }
+
+  .mvsion-div:nth-child(2) .card-mvsion:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
@@ -474,20 +493,12 @@ h3 {
     height: 550px;
   }
 
-  .mvsion-div:nth-child(1) p {
-    font-size: 1.9vw;
-  }
-
 }
 
 @media (max-width: 920px) {
   .content-us:nth-child(1) {
     height: 450px;
   }
-  .mvsion-div:nth-child(1) p {
-    font-size: 2.2vw;
-  }
-
   .content-us:nth-child(2) {
     height: auto;
     flex-direction: column;
@@ -503,6 +514,19 @@ h3 {
 
   .mvsion-div:nth-child(1) {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 723.2px){
+  .mvsion-div:nth-child(2) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 80px;
+  }
+
+  .mvsion-div:nth-child(2) .card-mvsion:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 1;
   }
 }
 
@@ -540,9 +564,6 @@ h3 {
 @media (max-width: 650px) {
   .content-us:nth-child(1) {
     height: 350px;
-  }
-  .mvsion-div:nth-child(1) p {
-    font-size: 2.6vw;
   }
   .content-us:nth-child(1) .description-div p {
     width: 95%;
