@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .parent-box{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            place-items: center;
+            place-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .parent-box .box-red{
+            box-shadow: rgb(60, 64, 67) 0px 1px 2px 0px, rgb(60, 64, 67) 0px 2px 6px 2px;
+            height: 40vw;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 35% 65%;
+            background: #730000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8d0909, #730000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8d0909, #730000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            overflow: hidden;
+        }
+
+        .parent-box .box-red div:nth-child(1){
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr;
+            align-items: flex-start;  
+            justify-content: center;
+            justify-items: center;     
+            padding: 20px;    
+        }
+
+        .parent-box .box-red div:nth-child(1) span{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        .parent-box .box-red div:nth-child(1) h2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: center;
+            color: #fff;
+        }
+        .parent-box .box-red div:nth-child(1) p{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: justify;
+            color: #fff;
+        }
+
+        .parent-box .box-red .box-location{
+            width: 100%;
+            height: 100%;
+        }
+
+        .parent-box .box-red .box-location iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+
+        }
+
+
+        
+    </style>
+    </head>
+    <body>
+        <div class="parent-box">
+            <div class="box-red">
+                <div>
+                    <span>&#128127;</span>
+                    <h2>Beneficios de nuestros Servicios</h1>
+                    <p>Nuestros Servicios le permitiran prevenir problemas
+                        comunes en el desarrollo de los proyectos.</p>
+                </div>
+                <div class="box-location">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.004572728743!2d-76.9925062856853!3d-12.111839191423954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ec7e400001%3A0xbdf539479d774ffb!2sINDECONSULT%20SA!5e0!3m2!1ses-419!2spe!4v1671832769734!5m2!1ses-419!2spe"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="box-red">
+                <div>
+                    <span>&#128127;</span>
+                    <h2>Supervisiones de Obras</h1>
+                    <p>Supervisamos todos tipo de obra y edificaciones
+                        complejas.</p>
+                </div>
+                <div class="box-location">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.004572728743!2d-76.9925062856853!3d-12.111839191423954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ec7e400001%3A0xbdf539479d774ffb!2sINDECONSULT%20SA!5e0!3m2!1ses-419!2spe!4v1671832769734!5m2!1ses-419!2spe"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="box-red">
+                <div>
+                    <span>&#128127;</span>
+                    <h2>Ubicación de Indeconsult S.A</h1>
+                    <p>Encuentre nuestros servicios, el mapa le indicara donde
+                        ubicarnos.</p>
+                </div>
+                <div class="box-location">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.004572728743!2d-76.9925062856853!3d-12.111839191423954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ec7e400001%3A0xbdf539479d774ffb!2sINDECONSULT%20SA!5e0!3m2!1ses-419!2spe!4v1671832769734!5m2!1ses-419!2spe"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+
+</script>
+</html>
