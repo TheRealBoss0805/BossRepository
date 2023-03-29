@@ -70,4 +70,68 @@
 // document.getElementById("ubicacionServicio").addEventListener("change", calcularValoresRespuesta);
 // document.getElementById("estadoServicio").addEventListener("change", calcularValoresRespuesta);
 
+document.addEventListener("DOMContentLoaded", () => {
+    const animarPalabra = document.querySelector(".p-animation");
+    let indexCaracter = 0;
+    let indexPalabra = 0;
+    let objetoPalabra = {
+        name1: "Planificación Regional.",
+        name2: "Planificación Urbana.",
+        name3: "Zonificación.",
+        name4: "Edafología.",
+        name5: "Vulnerabilidad y Riesgos.",
+        name6: "Planificación Económica y Ambiental.",
+        name7: "Sistemas de Información Geográfica."
+    }
+    let valoresObjeto = Object.values(objetoPalabra);
+    const pintarCaracter = () => {
+        return new Promise((resolve) => {
+            setTimeout(function () {
+                let valoresCaracter = valoresObjeto[indexPalabra].split("");
+                animarPalabra.innerHTML += valoresCaracter[indexCaracter];
+                if (indexCaracter < valoresCaracter.length) {
+                    //Si quedan caracteres, llamamos de nuevo a la función.
+                    pintarCaracter().then(resolve);
+                    indexCaracter++;
+                }
+                else if (indexCaracter == valoresCaracter.length) {
+                    let texto = animarPalabra.textContent;
+                    texto = texto.replace('undefined', '');
+                    animarPalabra.innerHTML = texto;
+                    //Si no quedan más caracteres, resolvemos la promesa.
+                    setTimeout(() => {
+                        resolve();
+                    }, 3000);
+                }
+            }, 150);
+        })
+    }
+    const cambiarPalabra = () => {
+        return new Promise((resolve) => {
+            animarPalabra.innerHTML = "";
+            indexPalabra++
+            //Reiniciamos el índice de los caracteres para la próxima palabra.
+            indexCaracter = 0;
+            resolve();
+        })
+    }
+    const animarNombres = () => {
+        if (indexPalabra < valoresObjeto.length) {
+            pintarCaracter()
+                .then(() => {
+                    return cambiarPalabra();
+                })
+                .then(() => {
+                    return animarNombres();
+
+                })
+        }
+        if (indexPalabra == valoresObjeto.length) {
+            indexPalabra = 0;
+            animarNombres();
+        }
+    }
+    animarNombres();
+})
+
 

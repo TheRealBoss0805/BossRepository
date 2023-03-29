@@ -43,9 +43,24 @@
                         ?>
                     </div>
                 </div>
+                <div class="services">
+                        <?php
+                        for($i = 4; $i > 0; $i--){
+                            $itemOther = "id_servicio";
+                            $valorOther = $i;
+                            $respuestaOther = ControladorServicios::ctrMostrarServicio($itemOther, $valorOther);
+                            $idOther = $respuestaOther["id_servicio"];
+                            echo "<div class='content-services-plugin'>
+                                    <a href='index.php?ruta=servicios&id=$idOther'>
+                                        <img src='". $respuestaOther['portada'] ."' alt=''>
+                                        <p>" . $respuestaOther["nombre"] . "</p>
+                                    </a>
+                                </div>";
+                        }
+                        ?>
+                </div>
             </div>
             <div class="content-services-1-portada">
-
                 <div>
                     <img src="<?= $respuesta["portada"] ?>" alt="">
                 </div>
@@ -53,8 +68,14 @@
             </div>
         </div>
         <div class="content-services-2" id="showItemService">
+            <div class="title-portafolio-service">
+                <h1>Portafolio de Servicios - <?= $respuesta["nombre"] ?></h1>
+                <div>
+                    <p>Somos especialistas en</p>
+                    <p class="p-animation"></p>
+                </div>
+            </div>
             <?php
-            echo "<p class='nothingItem' style='display:none'>¡No se encontraron Proyectos!</p>";
             foreach ($respuesta1 as $item) {
                 $cadena1 = $item["descripcion"];
 
@@ -67,36 +88,35 @@
                 $cadenaAcortada = substr($cad, 0, $caracteres) . '...';
 
                 $idServItem = $item["id_serv_item"];
-
-                echo "
-                    <div class='services'>
-                    <input type='hidden' class='item' valor='" . $item["lugar"] . "' valor2='" . $item["estado"] . "'>
-                        <div class='services-1'>
-        
-                            <div>
-                                <p>" . $item["titulo"] . "</p>
-                            </div>
-            
-                            <div>
-                                <p>" . $cadenaAcortada . "</p>
-                            </div>
-                            <div>
-                                <a href='index.php?ruta=servicios-eleccion&idItem=$idServItem' class='button2 servicios-item'>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span class='text'>Ver Proyecto</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class='services-2'>
-                            <img src='" . $item["foto"] . "' alt''>
-                        </div>
-                    </div>";
-            }
             ?>
+                <div class="item-eleccion-service">
+                    <div>
+                        <img src="<?= $respuesta["portada"] ?>" alt="" />
+                        <a href="index.php?ruta=servicios-eleccion&idItem=<?= $idServItem ?>" class='button2 servicios-item'>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span class='text'>Ver Proyecto</span>
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="<?= $item["foto"] ?>" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <p><?= $item["titulo"] ?></p>
+                    </div>
+                    <div>
+                        <span></span>
+                        <p><?= $item["lugar"] ?></p>
+                        <span></span>
+                        <p><?= $item["estado"] ?></p>
+                    </div>
+                </div>
+            <?php } ?>
         </div>
 
     </div>

@@ -14,19 +14,7 @@
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     gap: 20px;
-}
-
-.content-services-1 {
-    width: 45%;
-    display: flex;
-    height: 90%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    order: 2;
 }
 
 .content-services-1-portada {
@@ -39,7 +27,7 @@
     position: relative;
 }
 
-.content-services-1-portada .imagenService{
+.content-services-1-portada .imagenService {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -90,18 +78,34 @@
     gap: 10px;
 }
 
-.content-services-1 .services:nth-child(1) .content-p {
-    width: 95%;
-    color: #253743;
-    padding: 7px;
-    border-radius: 10px;
-    opacity: 1;
+.content-services-1 {
+    width: 45%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    order: 2;
+    padding: 10px;
+    gap: 20px;
 }
 
-.content-services-1 .services:nth-child(1) .content-p>p {
-    margin: 20px;
-    font-size: 13px;
+.content-services-1 .services:nth-child(1) .content-p {
+    width: 100%;
+    color: #253743;
+    opacity: 1;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content-services-1 .services:nth-child(1) .content-p p {
+    font-size: 14px;
     text-align: justify;
+    line-height: 1.5em;
 }
 
 
@@ -109,28 +113,83 @@
 .content-services-1 .services:nth-child(1) h2 {
     color: #253743;
     font-family: 'Staatliches', cursive;
-    width: 90%;
+    width: 100%;
 }
 
 .content-services-1 .services:nth-child(1) h1 {
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 2px;
 }
 
 .content-services-1 .services:nth-child(1) h2 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     letter-spacing: 2px;
 }
 
-.selectionRegionStatus {
+.content-services-1 .services:nth-child(2){
+    height: 20vw;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    place-content: center;
+    border-radius: 30%;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.content-services-1 .services:nth-child(2) .content-services-plugin{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(0, 0, 0) 0px 1px 3px, rgb(0, 0, 0) 0px 1px 2px;
+}
+.content-services-1 .services:nth-child(2) .content-services-plugin a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.content-services-1 .services:nth-child(2) .content-services-plugin a img:hover ~ p{
+    display: flex;
+}
+
+.content-services-1 .services:nth-child(2) .content-services-plugin a img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-services-1 .services:nth-child(2) .content-services-plugin a img:hover{
+    transform: scale(1.2);
+    filter: brightness(30%);
+}
+
+.content-services-1 .services:nth-child(2) .content-services-plugin a p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+}
+
+
+/* .selectionRegionStatus {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .selectionRegionStatus h2 {
@@ -206,7 +265,7 @@
     outline: none;
 }
 
-.selectionRegionStatus .services ul li:nth-child(3){
+.selectionRegionStatus .services ul li:nth-child(3) {
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -225,11 +284,11 @@
     font-size: 17px;
 }
 
-.selectionRegionStatus .services ul li button p span{
+.selectionRegionStatus .services ul li button p span {
     font-size: 17px;
     font-weight: 600;
     color: #2275ad;
-}
+} */
 
 .content-services-2 {
     width: 100%;
@@ -240,20 +299,97 @@
     justify-items: center;
     align-items: center;
     gap: 40px;
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 
-.content-services-2 .nothingItem{
+.content-services-2 .title-portafolio-service {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    height: 200px;
+}
+
+.content-services-2 .title-portafolio-service h1 {
+    width: auto;
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: #242C39;
+    font-weight: 600;
+    font-size: 2vw;
+    font-family: Proxima Nova, Verdana, Avenir Next;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    box-shadow: rgb(60, 64, 67) 0px 1px 2px 0px, rgb(60, 64, 67) 0px 2px 3px 2px;
+    border-radius: 20%;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-services-2 .title-portafolio-service div {
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    height: 50%;
+    background: #44A08D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #105455, #44A08D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #105455, #44A08D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgb(60, 64, 67) 0px 1px 2px 0px, rgb(60, 64, 67) 0px 2px 3px 2px;
+}
+
+.content-services-2 .title-portafolio-service div p {
+    color: #dddddd;
+    font-weight: 600;
+    font-family: Proxima Nova, Verdana, Avenir Next;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 2vw;
+}
+
+.content-services-2 .title-portafolio-service div .p-animation {
+    font-weight: 600;
+    font-family: Proxima Nova, Verdana, Avenir Next;
+    padding-left: 20px;
+    position: relative;
+    font-size: 2vw;
+    color: #fff;
+}
+
+.content-services-2 .title-portafolio-service div .p-animation::after {
+    content: "\2710";
+    position: absolute;
+    right: -50px;
+    font-size: 50px;
+    transform: rotate(180deg);
+}
+
+/* .content-services-2 .nothingItem {
     grid-column-start: 1;
     grid-column-end: 3;
     color: #242C39;
     font-weight: 600;
     font-size: 30px;
     text-align: center;
-    font-family: Proxima Nova,Verdana,Avenir Next;
-}
+    font-family: Proxima Nova, Verdana, Avenir Next;
+} */
 
-.content-services-2 .services {
+/* .content-services-2 .services {
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
@@ -320,9 +456,130 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
-}
+} */
 
 /*Botón Services*/
+.item-eleccion-service {
+    height: 40vw;
+    width: 55%;
+    border-radius: 10px;
+    position: relative;
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    overflow: hidden;
+    box-shadow: 7px 5px 10px rgb(0, 0, 0);
+}
+
+.item-eleccion-service div:nth-child(1) {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #a73737;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7a2828, #a73737);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.item-eleccion-service div:nth-child(1) img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: rgb(0, 0, 0) 0px 3px 6px, rgb(0, 0, 0) 0px 3px 6px;
+}
+
+.item-eleccion-service div:nth-child(1) a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.item-eleccion-service div:nth-child(2) {
+    height: 55.5%;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid rgb(93, 93, 93);
+}
+
+.item-eleccion-service div:nth-child(2) div {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item-eleccion-service div:nth-child(2) div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-eleccion-service div:nth-child(2) div img:hover {
+    transform: scale(1.2);
+}
+
+.item-eleccion-service div:nth-child(3) {
+    height: 17.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(93, 93, 93);
+}
+
+.item-eleccion-service div:nth-child(3) p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    text-shadow: black 0.03em 0.03em 0.05em;
+    color: #fff;
+    padding: 10px;
+}
+
+.item-eleccion-service div:nth-child(4) {
+    height: 12%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    place-content: center;
+    padding: 10px;
+}
+
+.item-eleccion-service div:nth-child(4) span {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    background: #a73737;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7a2828, #a73737);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.item-eleccion-service div:nth-child(4) p {
+    color: #fff;
+    font-size: 13px;
+}
+
 
 a {
     text-decoration: none;
@@ -424,7 +681,7 @@ a {
     }
 }
 
-@media (max-width: 871.2px){
+@media (max-width: 871.2px) {
     .selectionRegionStatus .services ul {
         grid-template-columns: auto auto !important;
     }
@@ -465,6 +722,7 @@ a {
     .content-services-1 {
         height: 430px;
     }
+
     .content-services-1-portada {
         padding-top: 10px;
     }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' href="vista/css/practica3.css">
+
+    </head>
+    <body>
+        <div id="sun">
+            <div class="planet" id="planet1"></div>
+            <div class="planet" id="planet2"></div>
+            <div class="planet" id="planet3"></div>
+            <div class="planet" id="planet4"></div>
+            <div class="planet" id="planet5"></div>
+          </div>
+
+        <script>
+var planets = document.querySelectorAll('.planet');
+var numPlanets = planets.length;
+var angleBetweenPlanets = 2 * Math.PI / numPlanets;
+var radius = 100; // ajusta el valor del radio aquí para que los planetas estén más lejos o más cerca del sol
+var angle = 0;
+
+function orbit() {
+  for (var i = 0; i < numPlanets; i++) {
+    var x = radius * Math.cos(angle + i * angleBetweenPlanets);
+    var y = radius * Math.sin(angle + i * angleBetweenPlanets);
+    
+    planets[i].style.left = (x + 50) + '%';
+    planets[i].style.top = (y + 50) + '%';
+  }
+  
+  angle += 0.01; // ajusta el valor aquí para cambiar la velocidad de rotación
+}
+
+setInterval(orbit, 10);
+        </script>
+    </body>
+</html>

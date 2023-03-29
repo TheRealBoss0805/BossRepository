@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.content-proyecto:nth-child(1) {
+/* .content-proyecto:nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +11,7 @@
     box-shadow: -5px 5px 5px #222222,
         5px -5px 5px #222222, 5px 5px 5px #222222,
         -5px -5px 5px #222222;
+    border: 5px solid brown;
 }
 
 .content-proyecto:nth-child(1) p {
@@ -36,7 +37,198 @@
     height: 100%;
     filter: brightness(50%);
     z-index: 1;
+} */
+
+
+.content-proyecto:nth-child(1) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
+.section-one {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.section-one a {
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    border: 2px solid rgb(88, 88, 88);
+    border-radius: 7px;
+    padding: 10px 20px 10px 20px;
+}
+
+.section-two {
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 78%;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+}
+
+.section-two .quiclky-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.quiclky-links div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 5px;
+}
+
+.quiclky-links div:nth-child(1) a {
+    text-decoration: none;
+    background: #222;
+    padding: 10px 10px 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.quiclky-links div:nth-child(1) a:hover{
+    filter: brightness(70%);
+}
+
+.quiclky-links div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.quiclky-links div:nth-child(2) span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 7px;
+    background: rgb(198, 152, 35);
+    color: #fff;
+}
+
+.section-two .properities-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    place-items: center;
+    place-content: center;
+}
+
+.properities-content div:nth-child(1) {
+    gap: 20px;
+    background: rgb(234, 234, 234);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.properities-content div:nth-child(1) p {
+    width: 60%;
+    color: rgb(88, 88, 88);
+}
+
+.properities-content div:nth-child(1) p:nth-child(1) {
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-shadow: #000000 0.02em 0.02em 0.05em;
+    color: #000;
+}
+
+.properities-content div:nth-child(1) p:nth-child(2) {
+    font-size: 15px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.properities-content div:nth-child(2) {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.properities-content div:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+}
+
+.properities-content div:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.properities-content div:nth-child(3) {
+    padding: 20px;
+}
+
+.properities-content div:nth-child(3) p {
+    text-align: justify;
+    line-height: 1.5em;
+    color: rgb(88, 88, 88);
+}
+
+.properities-content div:nth-child(1),
+.properities-content div:nth-child(2),
+.properities-content div:nth-child(3) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-cabecera {
+    width: 100%;
+    height: 25vw;
+}
+
+.parent-cabecera .section-zero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.parent-cabecera .section-zero img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.parent-cabecera .section-zero p {
+    position: absolute;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-shadow: #000000 0.02em 0.02em 0.05em;
+    color: #fff;
+    left: 5%;
+    bottom: 10%;
+}
+
 
 .content-proyecto:nth-child(2) {
     display: flex;
@@ -260,7 +452,7 @@
     align-items: center;
     align-content: center;
     gap: 50px;
-    
+
 }
 
 .nothingItem {

@@ -22,8 +22,46 @@
     ?>
     <div class="contenedor-proyecto">
         <div class="content-proyecto">
-            <img src="<?= $respuesta["portada"] ?>" alt="">
-            <p><?= $respuesta["descripcion"] ?></p>
+            <div class="parent-cabecera">
+                <div class="section-zero">
+                    <img src="https://thumbs.dreamstime.com/b/el-new-york-city-w-c%C3%A9ntrico-la-torre-de-la-libertad-23798380.jpg" alt="">
+                    <p>PROYECTOS</p>
+                </div>
+            </div>
+            <div class="section-one">
+                <a href="">Inicio</a>
+                >
+                <a href="">Servicios</a>
+            </div>
+            <div class="section-two">
+                <div class="quiclky-links">
+                    <div>
+                        <a href="">Inicio</a>
+                        <a href="">La
+                            empresa</a>
+                        <a href="">Políticas
+                            de Gestión</a>
+                        <a href="">Contáctenos</a>
+                    </div>
+                    <div>
+                        <h2 style="color: rgb(110, 110, 110); text-align:
+                            center;">BROCHURES 2018</h2>
+                        <span>JS.doc</span>
+                    </div>
+                </div>
+                <div class="properities-content">
+                    <div>
+                        <p>Proyecto <?=$respuesta["nombre"]?></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero iure asperiores, beatae, hic nostrum velit ab dolor tenetur expedita minima adipisci nam officiis. Repudiandae, amet totam similique voluptatem laboriosam veritatis.</p>
+                    </div>
+                    <div>
+                        <img src=<?=$respuesta["portada"]?> alt="">
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id doloribus omnis, a, dolorum rem neque dignissimos quibusdam, ipsa debitis reiciendis culpa iste natus ab distinctio quidem error adipisci aperiam voluptatem..</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="content-proyecto">
             <div>
