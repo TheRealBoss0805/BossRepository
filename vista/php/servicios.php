@@ -33,7 +33,6 @@
         <div class="padre-services-1">
             <div class="content-services-1">
                 <div class="services">
-                    <h2>Nuestros servicios</h2>
                     <h1><?= $respuesta["nombre"] ?></h1>
                     <div class="content-p">
                         <?php
@@ -42,22 +41,23 @@
                         }
                         ?>
                     </div>
+                    <h2>Nuestros servicios</h2>
                 </div>
                 <div class="services">
-                        <?php
-                        for($i = 4; $i > 0; $i--){
-                            $itemOther = "id_servicio";
-                            $valorOther = $i;
-                            $respuestaOther = ControladorServicios::ctrMostrarServicio($itemOther, $valorOther);
-                            $idOther = $respuestaOther["id_servicio"];
-                            echo "<div class='content-services-plugin'>
+                    <?php
+                    for ($i = 4; $i > 0; $i--) {
+                        $itemOther = "id_servicio";
+                        $valorOther = $i;
+                        $respuestaOther = ControladorServicios::ctrMostrarServicio($itemOther, $valorOther);
+                        $idOther = $respuestaOther["id_servicio"];
+                        echo "<div class='content-services-plugin'>
                                     <a href='index.php?ruta=servicios&id=$idOther'>
-                                        <img src='". $respuestaOther['portada'] ."' alt=''>
-                                        <p>" . $respuestaOther["nombre"] . "</p>
+                                        <img src='" . $respuestaOther['portada'] . "' alt=''class='img-plugin'>
+                                        <p>" . $respuestaOther["nombre"] . "</p>             
                                     </a>
                                 </div>";
-                        }
-                        ?>
+                    }
+                    ?>
                 </div>
             </div>
             <div class="content-services-1-portada">

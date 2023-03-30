@@ -75,7 +75,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .content-services-1 {
@@ -116,18 +116,19 @@
     width: 100%;
 }
 
-.content-services-1 .services:nth-child(1) h1 {
-    font-size: 25px;
+.content-services-1 .services:nth-child(1) > h1 {
+    font-size: 35px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
-.content-services-1 .services:nth-child(1) h2 {
-    font-size: 30px;
+.content-services-1 .services:nth-child(1) h2{
+    font-size: 20px;
     text-align: center;
     letter-spacing: 2px;
 }
 
-.content-services-1 .services:nth-child(2){
+.content-services-1 .services:nth-child(2) {
     height: 20vw;
     width: 50%;
     display: grid;
@@ -140,15 +141,16 @@
     overflow: hidden;
 }
 
-.content-services-1 .services:nth-child(2) .content-services-plugin{
+.content-services-1 .services:nth-child(2) .content-services-plugin {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgb(0, 0, 0) 0px 1px 3px, rgb(0, 0, 0) 0px 1px 2px;
+    box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgb(0, 0, 0) 0px 2px 4px;
 }
-.content-services-1 .services:nth-child(2) .content-services-plugin a{
+
+.content-services-1 .services:nth-child(2) .content-services-plugin a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -158,27 +160,56 @@
     position: relative;
 }
 
-.content-services-1 .services:nth-child(2) .content-services-plugin a img:hover ~ p{
-    display: flex;
-}
-
-.content-services-1 .services:nth-child(2) .content-services-plugin a img{
+.content-services-1 .services:nth-child(2) .content-services-plugin a img {
     width: 100%;
     height: 100%;
     transition: all 0.3s ease-in-out;
 }
 
-.content-services-1 .services:nth-child(2) .content-services-plugin a img:hover{
+.content-services-1 .services:nth-child(2) .content-services-plugin a img:hover {
     transform: scale(1.2);
     filter: brightness(30%);
 }
 
-.content-services-1 .services:nth-child(2) .content-services-plugin a p{
-    position: absolute;
+.content-services-1 .services:nth-child(2) .content-services-plugin a img:hover~p {
+    display: flex;
     width: 100%;
     height: 100%;
+    border-color: #fff;
+    animation: borde 0.8s ease forwards;
+}
+
+.content-services-1 .services:nth-child(2) .content-services-plugin a p {
+    position: absolute;
+    color: #fff;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 2px solid transparent;
     display: none;
-    z-index: 1;
+}
+
+@keyframes borde {
+    0% {
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+    }
+
+    50% {
+        border-bottom-color: transparent;
+        border-right-color: #fff;
+        border-left-color: #fff;
+        border-top-color: transparent;
+    }
+
+    100% {
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+    }
 }
 
 
@@ -317,10 +348,13 @@
 
 .content-services-2 .title-portafolio-service h1 {
     width: auto;
-    background: #ADA996;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: #242C39;
     font-weight: 600;
     font-size: 2vw;

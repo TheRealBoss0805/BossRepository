@@ -23,11 +23,13 @@
 
   <!-- Plantilla -->
   <link rel="stylesheet" href="vista/css/plantilla.css">
+  <!--Uicons Avanzado-->
+  <link rel="stylesheet" href="vista/internet-components/uicons-avanzado/css/uicons-solid-straight.css">
 
   <!--=====================================
   PLUGINS DE JAVASCRIPT
   ======================================-->
-  
+
 
   <!-- jQuery 3 -->
   <script src="vista/bower_components/jquery/dist/jquery.min.js"></script>
@@ -44,8 +46,7 @@
   if (isset($_GET["ruta"])) {
 
     echo '<input type="hidden" class="ruta"  id="ruta" value="' . $_GET["ruta"] . '" >';
-  }
-  else{
+  } else {
     echo '<input type="hidden" class="ruta"  id="ruta" value="inicio" >';
   }
 
