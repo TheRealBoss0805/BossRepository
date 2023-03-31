@@ -103,28 +103,28 @@
                 <div class="circle-email">
                     <i class="fi fi-ss-id-card-clip-alt"></i>
                 </div>
-                <p class="change-email">Área de Proyectos</p>
+                <p class="change-email"></p>
             </div>
             <div class="card wallet">
                 <div class="overlay"></div>
                 <div class="circle-email">
                     <i class="fi fi-ss-id-card-clip-alt"></i>
                 </div>
-                <p class="change-email">Área de licitaciones</p>
+                <p class="change-email"></p>
             </div>
             <div class="card wallet">
                 <div class="overlay"></div>
                 <div class="circle-email">
                     <i class="fi fi-ss-id-card-clip-alt"></i>
                 </div>
-                <p class="change-email">Área de Ingeniería</p>
+                <p class="change-email"></p>
             </div>
             <div class="card wallet">
                 <div class="overlay"></div>
                 <div class="circle-email">
                     <i class="fi fi-ss-id-card-clip-alt"></i>
                 </div>
-                <p class="change-email">Área Administrativa</p>
+                <p class="change-email"></p>
             </div>
         </div>
     </section>
