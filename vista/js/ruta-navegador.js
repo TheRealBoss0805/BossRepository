@@ -5,7 +5,7 @@ let URLactual = window.location.search;
 let prueba = document.getElementById("ruta");
 let ruta = prueba.getAttribute("value");
 let ruta2 = "";
-let eleccionServicio = document.querySelector(".content-eleccion-servicio");
+let eleccionServicio = document.querySelector(".content-services");
 let eleccionProyecto = document.querySelector(".content-eleccion-proyecto");
 
 const urlServicioItem = () => {
@@ -89,6 +89,9 @@ const urlMarcadoPadre = () => {
     }
     else if (ruta == "blog" || ruta == "blog-seleccion") {
         ruta = "blog"
+    }
+    else if (ruta == "contactanos"){
+        ruta = "contactanos";
     }
     else if (ruta == "nosotros") {
         urlMarcadoHijo();

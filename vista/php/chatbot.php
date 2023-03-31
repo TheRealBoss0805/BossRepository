@@ -17,7 +17,6 @@ $_SESSION["pedirNombre"] = false;
         <div id="container-stars">
             <div id="stars"></div>
         </div>
-
         <div id="glow">
             <div class="circle"></div>
             <div class="circle"></div>
@@ -25,7 +24,9 @@ $_SESSION["pedirNombre"] = false;
     </button>
     <input type="checkbox" id="bossito" class="cambiarAspecto">
     <label for="bossito" class="theBoss">
-        <img src="vista/imagenes/chatbot/botIcono.png" alt="">
+        <!-- <img src="vista/imagenes/chatbot/botIcono.png" alt=""> -->
+        <img src="vista/imagenes/chatbot/chatbot-burbuja.png" alt="">
+        <!-- <i class="fi fi-sr-comment"></i> -->
     </label>
     <div class="contenedor-chatbot" id="ventanaChat">
         <div class="content-chatbot">

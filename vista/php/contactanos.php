@@ -91,6 +91,7 @@
                 </div>
             </div>
             <div class="contact-mapBox">
+                <h1>Nuestra Ubicación</h1>
                 <div class="mapBox">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.004572728743!2d-76.9925062856853!3d-12.111839191423954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ec7e400001%3A0xbdf539479d774ffb!2sINDECONSULT%20SA!5e0!3m2!1ses-419!2spe!4v1671832769734!5m2!1ses-419!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
@@ -98,33 +99,34 @@
             </div>
         </div>
         <div class="emailsImportant">
+            <h1>Nuestros Correos Institucionales</h1>
             <div class="card wallet">
                 <div class="overlay"></div>
                 <div class="circle-email">
                     <i class="fi fi-ss-id-card-clip-alt"></i>
                 </div>
-                <p class="change-email"></p>
+                <a class="a-email"><p class="change-email"></p></a>
             </div>
             <div class="card wallet">
                 <div class="overlay"></div>
                 <div class="circle-email">
                     <i class="fi fi-ss-id-card-clip-alt"></i>
                 </div>
-                <p class="change-email"></p>
+                <a class="a-email"><p class="change-email"></p></a>
             </div>
             <div class="card wallet">
                 <div class="overlay"></div>
                 <div class="circle-email">
                     <i class="fi fi-ss-id-card-clip-alt"></i>
                 </div>
-                <p class="change-email"></p>
+                <a class="a-email"><p class="change-email"></p></a>
             </div>
             <div class="card wallet">
                 <div class="overlay"></div>
                 <div class="circle-email">
                     <i class="fi fi-ss-id-card-clip-alt"></i>
                 </div>
-                <p class="change-email"></p>
+                <a class="a-email"><p class="change-email"></p></a>
             </div>
         </div>
     </section>

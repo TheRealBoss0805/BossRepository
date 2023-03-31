@@ -22,41 +22,41 @@
         $respuesta2 = ControladorServicios::ctrMostrarServicio($item2, $valor2);
         ?>
         <div class="contenedor-services-n" id="<?= $respuesta2["id_servicio"] ?>">
-            <div class="content-eleccion-servicio-1 content-eleccion-servicio">
-                <div class="content-png-imagen-servicio-1">
-                    <img id="myImg" src="<?= $respItem['foto'] ?>" alt="<?= $respItem["titulo"] ?>">
-                    <img src="vista/imagenes/proyectsandservices/servicios/borde-blogSeleccion.png" alt="">
+            <div class="content-services">
+                <img src="" alt="">
+                <p>Nuestros Servicios</p>
+            </div>
+            <div class="content-services">
+                <p><?= $respuesta2["nombre"] ?></p>
+            </div>
+            <div class="content-services">
+                <p class="service-title"><?= $respItem["titulo"] ?></p>
+                <div class="services-img">
+                    <img src="" alt="">
                 </div>
-                <div class="agree-label">
-                    <div class="services-n-description">
-                        <img src="vista/imagenes/proyectsandservices/servicios/ubicacion.png" alt="icono">
-                        <p><?= $respItem["lugar"] ?></p>
+                <div class="services-concept">
+                    <div class="parrafoServicio">
+                        <?php
+                        foreach ($stringSeparado as $p) {
+                            echo "<p>" . $p . "</p>";
+                        }
+                        ?>
                     </div>
-                    <div class="services-n-description">
-                        <img src="vista/imagenes/proyectsandservices/servicios/servicio.png" alt="icono">
-                        <p>Servicios</p>
-                    </div>
-                    <div class="services-n-description">
-                        <img src="vista/imagenes/proyectsandservices/servicios/planifica.png" alt="icono">
-                        <p><?= $respuesta2["nombre"] ?></p>
-                    </div>
+                    <span>
+                        <div>
+                            <img src="vista/imagenes/proyectsandservices/servicios/servicio.png" alt="icono">
+                            <p style="color: #fff">Servicio</p>
+                        </div>
+                    </span>
+                    <p><?= $respuesta2["nombre"] ?></p>
+                    <span>
+                        <div>
+                            <img src="vista/imagenes/proyectsandservices/servicios/ubicacion.png" alt="icono">
+                            <p style="color: #fff">Ámbito Geográfico</p>
+                        </div>
+                    </span>
+                    <p><?= $respItem["lugar"] ?></p>
                 </div>
-            </div>
-            <div class="content-eleccion-servicio-2 scrollText">
-                <h1><?= $respItem["titulo"] ?></h1>
-                <?php
-                foreach ($stringSeparado as $p) {
-                    echo "<p class='parrafoServicio'>" . $p . "</p>";
-                }
-                ?>
-            </div>
-            <div class="imgPortadaServicios">
-
-            </div>
-            <div id="myModal" class="modal">
-            <span class="close" title="Cerrar">&#10006;</span>
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
             </div>
         </div>
     </body>
