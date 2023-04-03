@@ -32,7 +32,7 @@
             <div class="content-services">
                 <p class="service-title"><?= $respItem["titulo"] ?></p>
                 <div class="services-img">
-                    <img src="" alt="">
+                    <img src="<?= $respItem["foto"] ?>" alt="<?= $respItem["titulo"] ?>">
                 </div>
                 <div class="services-concept">
                     <div class="parrafoServicio">

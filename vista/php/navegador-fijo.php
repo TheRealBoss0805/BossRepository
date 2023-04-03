@@ -95,7 +95,7 @@
                     <a href="blog">Blog</a>
                 </li>
                 <li>
-                    <a href="contactanos" class="contactanos">
+                    <a href="contactanos" id="contactanos" class="contactanos">
                         <span class="label">Contáctenos</span>
                     </a>
                 </li>

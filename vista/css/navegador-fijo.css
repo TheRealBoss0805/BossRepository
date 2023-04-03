@@ -337,12 +337,12 @@ header ul .contactanos {
     transition: all .5s ease;
 }
 
-header ul .contactanos:hover {
+header ul .contactanos.active {
     background: rgb(73, 29, 42);
     background: linear-gradient(0deg, rgb(92, 36, 53) 0%, rgba(133, 26, 59, 1) 100%);
 }
 
-header ul .contactanos:hover .label {
+header ul .contactanos.active .label {
     color: #fff;
 }
 
@@ -354,7 +354,7 @@ header ul .contactanos:hover .label {
     transform: scale(0.97);
 }
 
-header ul .contactanos:hover {
+header ul .contactanos.active {
     border: none;
 }
 

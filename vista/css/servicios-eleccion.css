@@ -44,7 +44,7 @@
 .contenedor-services-n .content-services:nth-child(2) p{
     font-weight: 600;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
     background: #222;
     padding: 10px 15px 10px 15px;
@@ -79,7 +79,6 @@
 .contenedor-services-n .content-services:nth-child(3) .services-img img{
     width: 100%;
     height: 100%;
-    background: #222;
 }
 
 .contenedor-services-n .content-services:nth-child(3) .services-concept{
