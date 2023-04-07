@@ -2,61 +2,82 @@
 FILTRAR POR TIPO
 =============================================*/
 
-$(".content-proyecto").on("click", ".btnFiltro", function () {
-	var idFiltro = $(this).attr("idFiltro");
-	var datos = new FormData();
-	datos.append("idFiltro", idFiltro);
+let contenedorItems = document.querySelectorAll(".content-proyecto");
 
-	$.ajax({
-		url: "ajax/proyectos.ajax.php",
-		method: "POST",
-		data: datos,
-		cache: false,
-		contentType: false,
-		processData: false,
-		success: function (respuesta) {
-
-			function complete() {
-				$("#items").html(respuesta);
+contenedorItems.forEach((element) => {
+	let botonProyecto = element.querySelectorAll(".btnFiltro");
+	botonProyecto.forEach((boton) => {
+		boton.addEventListener("click", async () => {
+			let idFiltro = boton.getAttribute("idFiltro");
+			let datos = new FormData();
+			datos.append("idFiltro", idFiltro);
+			try {
+				const response = await fetch("ajax/proyectos.ajax.php", {
+					method: "POST",
+					body: datos,
+				})
+				if (response.ok) {
+					const respuesta = await response.text();
+					document.querySelector("#items").innerHTML = respuesta;
+					Array.from(boton.parentElement.children).forEach((elemento) => {
+						if (elemento.classList.contains("btnFiltro")) {
+							elemento.classList.remove("active");
+						}
+						if (elemento.classList.contains("btnTodos")) {
+							elemento.classList.remove("active");
+						}
+					})
+					boton.classList.add("active");
+				}
+				else {
+					throw new Error(`Error ${response.status}: ${response.statusText}`);
+				}
+			} catch (error) {
+				console.log(error);
 			}
-			$("#items").fadeOut(500, "linear", complete);
-			$("#items").fadeIn(500, "linear", complete);
-		}
-	});
-	$(this).parent().children(".btnFiltro").removeClass("active");
-	$(this).parent().children(".btnTodos").removeClass("active");
-	$(this).addClass("active");
+		})
+	})
 })
 
-/*=============================================
-TRAER "TODOS" POR TIPO O POR SECTOR
-=============================================*/
-$(".content-proyecto").on("click", ".btnTodos", function () {
+contenedorItems.forEach((contenedor) => {
+	let botonTodos = contenedor.querySelectorAll(".btnTodos");
+	botonTodos.forEach((btnTodos) => {
+		btnTodos.addEventListener("click", async () => {
+			let idCategoria = btnTodos.getAttribute("idCategoria");
+			let datos = new FormData();
+			datos.append("idCategoria", idCategoria);
 
-	var idCategoria = $(this).attr("idCategoria");
-	var datos = new FormData();
-	datos.append("idCategoria", idCategoria);
+			try {
+				const response = await fetch("ajax/proyectos.ajax.php", {
+					method: "POST",
+					body: datos,
+				});
 
-	$.ajax({
-		url: "ajax/proyectos.ajax.php",
-		method: "POST",
-		data: datos,
-		cache: false,
-		contentType: false,
-		processData: false,
-		success: function (respuesta) {
-			/*$("#items").html(respuesta);*/
-			function complete() {
-				$("#items").html(respuesta);
+				if (response.ok) {
+					const respuesta = await response.text();
+					document.querySelector("#items").innerHTML = respuesta;
+
+					Array.from(btnTodos.parentElement.children).forEach((elemento) => {
+						if (elemento.classList.contains("btnFiltro")) {
+							elemento.classList.remove("active");
+						}
+					})
+					btnTodos.classList.add("active");
+				} else {
+					throw new Error(`Error ${response.status}: ${response.statusText}`);
+				}
+			} catch (error) {
+				console.error(error);
 			}
-			$("#items").fadeOut(500, "linear", complete);
-			$("#items").fadeIn(500, "linear", complete);
-		}
+		});
 	});
-	$(this).parent().children(".btnFiltro").removeClass("active");
-	$(this).removeClass("active");
-	$(this).addClass("active");
-})
+});
+
+// 			function complete() {
+// 				$("#items").html(respuesta);
+// 			}
+// 			$("#items").fadeOut(500, "linear", complete);
+// 			$("#items").fadeIn(500, "linear", complete);
 
 /*=========================================
 				BUSCADOR

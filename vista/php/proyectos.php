@@ -51,11 +51,11 @@
                 </div>
                 <div class="properities-content">
                     <div>
-                        <p>Proyecto <?=$respuesta["nombre"]?></p>
+                        <p>Proyecto <?= $respuesta["nombre"] ?></p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero iure asperiores, beatae, hic nostrum velit ab dolor tenetur expedita minima adipisci nam officiis. Repudiandae, amet totam similique voluptatem laboriosam veritatis.</p>
                     </div>
                     <div>
-                        <img src=<?=$respuesta["portada"]?> alt="">
+                        <img src=<?= $respuesta["portada"] ?> alt="">
                     </div>
                     <div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id doloribus omnis, a, dolorum rem neque dignissimos quibusdam, ipsa debitis reiciendis culpa iste natus ab distinctio quidem error adipisci aperiam voluptatem..</p>
@@ -68,7 +68,9 @@
                 <p>Portafolio de Proyectos <?= $respuesta["nombre"] ?></p>
             </div>
             <?php
+
             /*TRAEMO LOS DATOS PARA LOS FILTROS POR TIPO O SECTOR*/
+
             $item1 = "id_proyecto";
             $valor1 = $_GET["id"];
             $respuesta1 = ControladorProyecto::ctrMostrarTipoSector($item1, $valor1);
@@ -101,7 +103,7 @@
     $item2 = "id_proyecto";
     $valor2 = $_GET["id"];
     $respuesta2 = ControladorProyecto::ctrMostrarItem($item2, $valor2);
-    echo "<div class='content-proyecto' id='items'>
+    echo "<div class='content-proyecto' id='items' class='items'>
     <p class='nothingItem' style='display:none'>¡No se encontraron Proyectos!</p>";
     foreach ($respuesta2 as $item2) {
     ?>
