@@ -99,25 +99,6 @@ let timer = setInterval(autoPlay, 6000);
 
 /*======INICIO 2 - SERVICIOS=======
 
-let colorServicio = document.querySelectorAll(".div-plus");
-
-for (let i = 0; i < 4; i++) {
-    switch (i) {
-        case 0:
-            colorServicio[i].style = "background: #232526;";
-            break;
-        case 1:
-            colorServicio[i].style = "background: #232526;";
-            break;
-        case 2:
-            colorServicio[i].style = "background: #232526;";
-            break;
-        case 3:
-            colorServicio[i].style = "background: #232526;";
-            break;
-    }
-}*/
-
 /*CARRUSEL CON SWIPER*/
 
 let cambioWindow = document.getElementById("swiperGtfo");
@@ -240,167 +221,37 @@ for (let i = 0; i < imgBx.length; i++) {
     })
 }
 
-$(".card").on("click", ".icon-plus", function () {
-
-    $(this).toggleClass("icon-minus");
-
-    if ($(this).hasClass("icon-minus")) {
-        $(this).parent().children(".card-down").css("visibility", "hidden");
-        $(this).parent().children(".card-content").css("height", "100%");
-    }
-    else {
-        $(".card-down").css("visibility", "visible");
-        $(this).parent().children(".card-content").css("height", "180px");
-    }
+document.querySelectorAll(".card").forEach(element => {
+    let icono = element.querySelector(".icon-plus");
+    icono.addEventListener("click", () => {
+        icono.classList.toggle("icon-minus");
+        if (icono.classList.contains("icon-minus")) {
+            Array.from(icono.parentElement.children).forEach((elemento) => {
+                if (elemento.classList.contains("card-down")) {
+                    elemento.style.visibility = "hidden";
+                }
+                if (elemento.classList.contains("card-content")) {
+                    elemento.style.height = "100%";
+                }
+            })
+        }
+        else if (!icono.classList.contains("icon-minus")) {
+            Array.from(icono.parentElement.children).forEach((elemento) => {
+                if (elemento.classList.contains("card-down")) {
+                    elemento.style.visibility = "visible";
+                }
+                if (elemento.classList.contains("card-content")) {
+                    elemento.style.height = "180px";
+                }
+            })
+        }
+    })
 });
 
-const {documentObserver} = require("vista/js/documentOberser.js")
 
-/*Bloque para que la animación se de cuando el scroll
-Muestre el sector respectivo en la pantalla
 
-let ovservadorElementos = addEventListener('DOMContentLoaded', () => {
-    const contadorcitos = document.querySelectorAll('.count-cantidad')
-    const rapidez = 1000
-    let valor_actual;
-    let incremento;
-    let cambio;
-    let cantidad_maxima;
+const { documentObserver } = require("vista/js/documentOberser.js")
 
-    const verticalTop = () => {
-        document.querySelectorAll(".VTop");
-    }
-
-    const horizontalLeft = () => {
-        document.querySelectorAll(".HLeft");
-    }
-
-    const horizontalRight = () => {
-        document.querySelectorAll(".HRight");
-    }
-
-    const verticalBottom = () => {
-        document.querySelectorAll(".VBot");
-    }
-
-    const animarContadores = () => {
-        for (const contadorsote of contadorcitos) {
-            const actualizar_contador = () => {
-                cantidad_maxima = parseInt(contadorsote.dataset.cantidadTotal);
-                valor_actual = parseInt(contadorsote.innerText);
-                cambio = cantidad_maxima / rapidez
-                incremento = (rapidez / cantidad_maxima) * 10;
-                if (valor_actual < cantidad_maxima) {
-                    contadorsote.innerText = +Math.ceil(valor_actual + cambio);
-                    setTimeout(actualizar_contador, incremento);
-                }
-                else if (valor_actual == cantidad_maxima) {
-                    contadorsote.innerText = cantidad_maxima
-                }
-
-            }
-            actualizar_contador()
-        }
-    }
-
-    const mostrarContadores = elementos => {
-        elementos.forEach(elemento => {
-            if (elemento.isIntersecting) {
-                elemento.target.classList.add('topY')
-                elemento.target.classList.remove('hideee')
-                setTimeout(animarContadores, 300)
-            }
-        });
-    }
-
-    const mostrarVerticalTop = elementos => {
-        elementos.forEach(elemento => {
-            if (elemento.isIntersecting) {
-                elemento.target.classList.add('topY');
-                elemento.target.classList.remove('hideee');
-                setTimeout(verticalTop, 300)
-            }
-        });
-    }
-
-    const mostrarVerticalBottom = elementos => {
-        elementos.forEach(elemento => {
-            if (elemento.isIntersecting) {
-                elemento.target.classList.add('botY');
-                elemento.target.classList.remove('hideee');
-                setTimeout(verticalBottom, 300)
-            }
-        });
-    }
-
-    const mostrarHorizontalLeft = elementos => {
-        elementos.forEach(elemento => {
-            if (elemento.isIntersecting) {
-                elemento.target.classList.add('leftX');
-                elemento.target.classList.remove('hideee');
-                setTimeout(horizontalLeft, 300)
-            }
-        });
-    }
-
-    const mostrarHorizontalRight = elementos => {
-        elementos.forEach(elemento => {
-            if (elemento.isIntersecting) {
-                elemento.target.classList.add('rightX');
-                elemento.target.classList.remove('hideee');
-                setTimeout(horizontalRight, 300)
-            }
-        });
-    }
-
-    const observer = new IntersectionObserver(mostrarContadores, {
-        threshold: 0.75// 0 - 1
-    })
-
-    const observerVTop = new IntersectionObserver(mostrarVerticalTop, {
-        threshold: 0.5
-    })
-
-    const observerVBot = new IntersectionObserver(mostrarVerticalBottom, {
-        threshold: 0.75
-    })
-
-    const observerHLeft = new IntersectionObserver(mostrarHorizontalLeft, {
-        threshold: 0.75
-    })
-
-    const observerHRight = new IntersectionObserver(mostrarHorizontalRight, {
-        threshold: 0.75
-    })
-
-    const elementosHTML = document.querySelectorAll('.hijo-contador')
-    elementosHTML.forEach(elementoHTML => {
-        observer.observe(elementoHTML)
-    })
-
-    const elementosVTop = document.querySelectorAll('.VTop')
-    elementosVTop.forEach(elementoHTML => {
-        observerVTop.observe(elementoHTML)
-    })
-
-    const elementosVBot = document.querySelectorAll('.VBot')
-    elementosVBot.forEach(elementoHTML => {
-        observerVBot.observe(elementoHTML)
-    })
-
-    const elementosHRight = document.querySelectorAll('.HRight')
-    elementosHRight.forEach(elementoHTML => {
-        observerHRight.observe(elementoHTML)
-    })
-
-    const elementosHLeft = document.querySelectorAll('.HLeft')
-    elementosHLeft.forEach(elementoHTML => {
-        observerHLeft.observe(elementoHTML)
-    })
-
-})*/
-
-/*CODIGO PARA EL CAMBIO DE ICONO (+) (-) CUANDO EL INPUT ESTÉ CHECKEADO*/
 
 
 

@@ -39,6 +39,10 @@ contenedorItems.forEach((element) => {
 	})
 })
 
+/*=============================================
+FILTRAR TODOS
+=============================================*/
+
 contenedorItems.forEach((contenedor) => {
 	let botonTodos = contenedor.querySelectorAll(".btnTodos");
 	botonTodos.forEach((btnTodos) => {
@@ -46,17 +50,14 @@ contenedorItems.forEach((contenedor) => {
 			let idCategoria = btnTodos.getAttribute("idCategoria");
 			let datos = new FormData();
 			datos.append("idCategoria", idCategoria);
-
 			try {
 				const response = await fetch("ajax/proyectos.ajax.php", {
 					method: "POST",
 					body: datos,
 				});
-
 				if (response.ok) {
 					const respuesta = await response.text();
 					document.querySelector("#items").innerHTML = respuesta;
-
 					Array.from(btnTodos.parentElement.children).forEach((elemento) => {
 						if (elemento.classList.contains("btnFiltro")) {
 							elemento.classList.remove("active");
