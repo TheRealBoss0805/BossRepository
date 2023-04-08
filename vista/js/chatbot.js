@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ChatInception();
         }
     }, 3000);
-//CODIGO DE SEGURIDAD
+    //CODIGO DE SEGURIDAD
     setTimeout(() => {
         clearTimeout(domContentLoadedTimeout);
     }, 5000);
@@ -368,13 +368,13 @@ function sliderChat() {
 
 }
 function getHora() {
-    var date = new Date();
-    var hours = date.getHours();
-    var minutes = date.getMinutes();
-    var seconds = date.getSeconds();
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
 
     // Check whether AM or PM
-    var newformat = hours >= 12 ? 'pm' : 'am';
+    let newformat = hours >= 12 ? 'pm' : 'am';
 
     // Find current hour in AM-PM Format
     hours = hours % 12;
@@ -386,7 +386,7 @@ function getHora() {
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
 
-    var hora = hours + ':' + minutes + ':' + seconds + ' ' + newformat;
+    let hora = hours + ':' + minutes + ':' + seconds + ' ' + newformat;
     return hora;
 
 }

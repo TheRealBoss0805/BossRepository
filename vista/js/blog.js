@@ -1,143 +1,236 @@
 
 
 function prevPage() {
-	let input_current_page = $("#input_page");
-	let current_page = input_current_page.val();
-	let input_total_pages = $("#input_total_pages");
+	let input_current_page = document.querySelector("#input_page");
+	let current_page = input_current_page.value;
+	let input_total_pages = document.querySelector("#input_total_pages");
 
 	if (current_page > 1) {
 		current_page--;
-		input_current_page.val(current_page);
-		cajaIdCategoria = $("#idCategoria");
-		cajaValorAnio = $("#valorAnio");
-		traerAjax(current_page);
+		input_current_page.value = current_page;
+		cajaIdCategoria = document.querySelector("#idCategoria");
+		cajaValorAnio = document.querySelector("#valorAnio");
+		traerAjax(current_page, cajaIdCategoria, cajaValorAnio);
 	}
 }
 
 //AVANZAR EN PAGINACION
 
 function nextPage() {
-	let input_current_page = $("#input_page");
-	let current_page = input_current_page.val();
-	let input_total_pages = $("#input_total_pages");
-	let total_pages = input_total_pages.val();
+	let input_current_page = document.querySelector("#input_page");
+	let current_page = input_current_page.value;
+	let input_total_pages = document.querySelector("#input_total_pages");
+	let total_pages = input_total_pages.value;
 	if (current_page < total_pages) {
 		current_page++;
-		input_current_page.val(current_page);
-		cajaIdCategoria = $("#idCategoria");
-		cajaValorAnio = $("#valorAnio");
-		traerAjax(current_page);
+		input_current_page.value = current_page;
+		cajaIdCategoria = document.querySelector("#idCategoria");
+		cajaValorAnio = document.querySelector("#valorAnio");
+		traerAjax(current_page, cajaIdCategoria, cajaValorAnio);
 	}
 }
 //ACTUALIZA LA POSICION DE LA PAGINA Y EL NUMERO TOTAL DEL MISMO  EJM 3/4
 
 function actualizarNroPagina() {
-	$("#total_pages").html($("#input_total_pages").val())
-	$("#page").html(($("#input_total_pages").val() == 0) ? '0' : $("#input_page").val());
+	document.querySelector("#total_pages").innerHTML = document.querySelector("#input_total_pages").value;
+	document.querySelector("#page").innerHTML = (document.querySelector("#input_total_pages").value == 0) ? "0" : document.querySelector("#input_page").value;
 }
 
 //FUNCIONES AJAX 
 
-function traerAjax(current_page) {
-	var datos = new FormData();
-
-	datos.append("idCategoria", cajaIdCategoria.val());
-	datos.append("valorAnio", cajaValorAnio.val());
+async function traerAjax(current_page, cajaIdCategoria, cajaValorAnio) {
+	let datos = new FormData();
+	datos.append("idCategoria", cajaIdCategoria.value);
+	datos.append("valorAnio", cajaValorAnio.value);
 	datos.append("pagina", current_page);
 
-	$.ajax({
-		url: "ajax/blogPublicaciones.ajax.php",
-		method: "POST",
-		data: datos,
-		cache: false,
-		contentType: false,
-		processData: false,
-		success: function (respuesta) {
-			/*function complete() {
-				$("#publicaciones").html(respuesta);
-			}
-			$("#publicaciones").fadeOut(500, "linear", complete);
-			$("#publicaciones").fadeIn(500, "linear", complete);*/
-			$("#publicaciones").html(respuesta);
+	try {
+		const response = await fetch("ajax/blogPublicaciones.ajax.php", {
+			method: "POST",
+			body: datos,
+		})
+		if (response.ok) {
+			const respuesta = await response.text();
+			document.querySelector("#publicaciones").innerHTML = respuesta;
 			actualizarNroPagina()
 		}
-	});
+		else {
+			throw new Error(`Error ${response.status}: ${response.statusText}`);
+		}
+	} catch (error) {
+		console.log(error);
+	}
 }
+
 function traerCategoriaAjax(btn) {
 
-	cajaIdCategoria = $(btn).parent().parent().children("#idCategoria");
-	cajaValorAnio = $(btn).parent().parent().children("#valorAnio");
-	cajaIdCategoria.val($(btn).attr("idCategoria"));
-	traerAjax(1);
-	$(btn).parent().children(".btnCategoria").removeClass("active");
-	$(btn).parent().children(".btnTodos").removeClass("active");
-	$(btn).addClass("active");
+	let cajaIdCategoria
+	let cajaValorAnio
 
+	Array.from(btn.parentElement.parentElement.children).forEach((elemento) => {
+		if (elemento.getAttribute("id") == "idCategoria") {
+			cajaIdCategoria = elemento;
+			cajaIdCategoria.value = btn.getAttribute("idCategoria")
+		}
+	})
+	Array.from(btn.parentElement.parentElement.children).forEach((elemento) => {
+		if (elemento.getAttribute("id") == "valorAnio") {
+			cajaValorAnio = elemento;
+		}
+	})
+
+	traerAjax(1, cajaIdCategoria, cajaValorAnio);
+
+	Array.from(btn.parentElement.children).forEach((elemento) => {
+		if (elemento.classList.contains("btnCategoria")) {
+			elemento.classList.remove("active");
+		}
+	})
+	Array.from(btn.parentElement.children).forEach((elemento) => {
+		if (elemento.classList.contains("btnTodos")) {
+			elemento.classList.remove("active");
+		}
+	})
+	btn.classList.add("active");
 }
 
 function traerTodosAjax(btn) {
 
-	cajaIdCategoria = $(btn).parent().parent().children("#idCategoria");
-	cajaValorAnio = $(btn).parent().parent().children("#valorAnio");
-	cajaIdCategoria.val("");
-	cajaValorAnio.val("");
-	traerAjax(1);
-	$(btn).parent().children(".btnCategoria").removeClass("active");
-	$(btn).parent().children(".btnTodos").removeClass("active");
-	$(btn).parent().parent().parent().parent().children(".content-blog-2").children(".blog-2").children("div").children(".btnAnio").removeClass("active");
-	$(btn).addClass("active");
+	let cajaIdCategoria;
+	let cajaValorAnio;
+
+	Array.from(btn.parentElement.parentElement.children).forEach((elemento) => {
+		if (elemento.getAttribute("id") == "idCategoria") {
+			cajaIdCategoria = elemento;
+			cajaIdCategoria.value = "";
+		}
+	})
+	Array.from(btn.parentElement.parentElement.children).forEach((elemento) => {
+		if (elemento.getAttribute("id") == "valorAnio") {
+			cajaValorAnio = elemento;
+			cajaValorAnio.value = "";
+		}
+	})
+
+	traerAjax(1, cajaIdCategoria, cajaValorAnio);
+
+	Array.from(btn.parentElement.children).forEach((elemento) => {
+		if (elemento.classList.contains("btnCategoria")) {
+			elemento.classList.remove("active");
+		}
+	})
+	Array.from(btn.parentElement.children).forEach((elemento) => {
+		if (elemento.classList.contains("btnTodos")) {
+			elemento.classList.remove("active");
+		}
+	})
+
+	Array.from(btn.parentElement.parentElement.parentElement.parentElement.children).forEach((elemento) => {
+		if (elemento.classList.contains("content-blog-2")) {
+			Array.from(elemento.children).forEach((elemento) => {
+				if (elemento.classList.contains("blog-2")) {
+					Array.from(elemento.children).forEach((elemento) => {
+						if (elemento.tagName === "DIV") {
+							Array.from(elemento.children).forEach((elemento) => {
+								if (elemento.classList.contains("btnAnio")) {
+									elemento.classList.remove("active");
+								}
+							})
+						}
+					})
+				}
+			})
+		}
+	})
+
+	btn.classList.add("active");
 }
 
 function traerAnioAjax(btn) {
 
-	cajaIdCategoria = $(btn).parent().parent().parent().parent().children(".content-blog-1").children(".blog-1").children("#idCategoria");
-	cajaValorAnio = $(btn).parent().parent().parent().parent().children(".content-blog-1").children(".blog-1").children("#valorAnio");
-	cajaValorAnio.val($(btn).attr("anio"));
-	traerAjax(1);
-	$(btn).parent().children(".btnAnio").removeClass("active");
-	$(btn).addClass("active");
+	let cajaIdCategoria;
+	let cajaValorAnio;
 
+	Array.from(btn.parentElement.parentElement.parentElement.parentElement.children).forEach((elemento) => {
+		if (elemento.classList.contains("content-blog-1")) {
+			Array.from(elemento.children).forEach((elemento) => {
+				if (elemento.classList.contains("blog-1")) {
+					Array.from(elemento.children).forEach((elemento) => {
+						if (elemento.getAttribute("id") == "idCategoria") {
+							cajaIdCategoria = elemento;
+						}
+					})
+				}
+			})
+		}
+	})
+	Array.from(btn.parentElement.parentElement.parentElement.parentElement.children).forEach((elemento) => {
+		if (elemento.classList.contains("content-blog-1")) {
+			Array.from(elemento.children).forEach((elemento) => {
+				if (elemento.classList.contains("blog-1")) {
+					Array.from(elemento.children).forEach((elemento) => {
+						if (elemento.getAttribute("id") == "valorAnio") {
+							cajaValorAnio = elemento;
+							cajaValorAnio.value = btn.getAttribute("anio");
+						}
+					})
+				}
+			})
+		}
+	})
+
+	traerAjax(1, cajaIdCategoria, cajaValorAnio);
+
+	Array.from(btn.parentElement.children).forEach((elemento) => {
+		if (elemento.classList.contains("btnAnio")) {
+			elemento.classList.remove("active");
+		}
+	})
+
+	btn.classList.add("active");
 }
 
 /*=============================================
 FILTRAR POR CATEGORIA
 =============================================*/
-$(".blog-1").on("click", ".btnCategoria", function () {
-	traerCategoriaAjax(this);
+
+document.querySelectorAll(".blog-1").forEach((elemento) => {
+	let btnCategoria = elemento.querySelectorAll(".btnCategoria");
+	btnCategoria.forEach((element) => {
+		element.addEventListener("click", () => {
+			traerCategoriaAjax(element);
+		})
+	})
 })
 
 
 /*=============================================
 TRAER "TODOS CATEGORIA"
 =============================================*/
-$(".blog-1").on("click", ".btnTodos", function () {
-	traerTodosAjax(this);
+
+document.querySelectorAll(".blog-1").forEach((elemento) => {
+	let btnTodos = elemento.querySelectorAll(".btnTodos");
+	btnTodos.forEach((element) => {
+		element.addEventListener("click", () => {
+			traerTodosAjax(element);
+		})
+	})
 })
 
 
 /*=============================================
 FILTRAR POR AÑO
 =============================================*/
-$(".blog-2").on("click", ".btnAnio", function () {
-	traerAnioAjax(this);
+
+document.querySelectorAll(".blog-2").forEach((elemento) => {
+	let btnAnio = elemento.querySelectorAll(".btnAnio");
+	btnAnio.forEach((element) => {
+		element.addEventListener("click", () => {
+			traerAnioAjax(element);
+		})
+	})
 })
 
-/*========================BUSCADOR DEL BLOG================================
-document.addEventListener("keyup", async (e) => {
-	if (e.target.matches("#buscadorB")) {
-		if (e.key === "Escape") {
-			e.target.value = "";
-		}
-		document.querySelectorAll(".articuloB").forEach(blog => {
-			let blogx = blog.parentElement.parentElement;
-			if (blog.textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
-				blogx.style.display = "flex";
-			} else {
-				blogx.style.display = "none";
-			}
-		});
-	}
-})*/
 
 
 
