@@ -244,15 +244,28 @@ function enviarMensaje(msg) {
                 body: datos,
             })
             if (response.ok) {
-                let respuesta = await response.text();
-                const div = document.createElement('div');
-                div.innerHTML = respuesta.trim();
-                const container = div.firstChild;
-                container.classList.add('desaparecerLoader');
-                document.querySelector('#viewMessages').appendChild(container);
-                setTimeout(() => {
-                  container.style.display = 'none';
-                }, 1500);
+
+                const respuesta = await response.text();
+                const contenedorPadre = document.querySelector("#viewMessages")
+                contenedorPadre.insertAdjacentHTML("beforeend", respuesta);
+                const config = { childList: true }
+
+                const observer = new MutationObserver((mutations) => {
+                    console.log(mutations);
+                    mutations.forEach((mutation) => {
+                        if (mutation.addedNodes) {
+                            console.log(mutation.addedNodes);
+                            mutation.addedNodes.forEach((node) => {
+                                if (node.nodeType === 1 && node.classList.contains('desaparecerLoader')) {
+                                    setTimeout(function () {
+                                        node.style.display = 'none';
+                                    }, 1500);
+                                }
+                            });
+                        }
+                    });
+                });
+                observer.observe(contenedorPadre, config);
                 scrollAbajo();
             }
             else {
@@ -293,36 +306,70 @@ function enviarMensaje(msg) {
     //     });
     // }
 
-    function arrojarMensaje(callback) {
-        var datos = new FormData();
+    const arrojarMensaje = async () => {
+        let datos = new FormData();
         datos.append("msg", msg);
-        console.log(msg);
-        $.ajax({
-            url: "ajax/chatbot.ajax.php",
-            method: "POST",
-            cache: false,
-            data: datos,
-            contentType: false,
-            processData: false,
-            success: function (respuesta) {
-                $("#viewMessages").append(respuesta);
+        try {
+            const response = await fetch("ajax/chatbot.ajax.php", {
+                method: "POST",
+                body: datos,
+            })
+            if (response.ok) {
+                const respuesta = await response.text();
+                const contenedorPadre = document.querySelector("#viewMessages")
+                contenedorPadre.insertAdjacentHTML("beforeend", respuesta);
+                let lastChild = document.querySelector("#viewMessages").lastElementChild;
+                let previousLastChild = lastChild.previousElementSibling;
+                Array.from(previousLastChild.children).forEach((element) => {
+                    if (element.classList.contains("msg_bot")) {
+                        Array.from(element.children).forEach((element) => {
+                            if (element.classList.contains("carusel")) {
+                                sliderChat();
+                            }
+                        })
+                    }
+                })
+
                 scrollAbajo();
-                if ($("#viewMessages .container_msg_bot:last").prev().children(".msg_bot").children(".carusel").length > 0) {
-                    sliderChat();
-                }
-                callback();
             }
-        });
+            else {
+                throw new Error(`Error ${response.status}: ${response.statusText}`);
+            }
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    typingAnimation().
-        then(() => {
-            return new Promise((resolve, reject) => {
-                arrojarMensaje(() => {
-                    resolve()
-                })
-            })
-        })
+    // function arrojarMensaje(callback) {
+    //     var datos = new FormData();
+    //     datos.append("msg", msg);
+    //     console.log(msg);
+    //     $.ajax({
+    //         url: "ajax/chatbot.ajax.php",
+    //         method: "POST",
+    //         cache: false,
+    //         data: datos,
+    //         contentType: false,
+    //         processData: false,
+    //         success: function (respuesta) {
+    //             $("#viewMessages").append(respuesta);
+    //             scrollAbajo();
+    //             if ($("#viewMessages .container_msg_bot:last").prev().children(".msg_bot").children(".carusel").length > 0) {
+    //                 sliderChat();
+    //             }
+    //             callback();
+    //         }
+    //     });
+    // }
+
+    // typingAnimation().
+    //     then(() => {
+    //         return new Promise((resolve, reject) => {
+    //             arrojarMensaje(() => {
+    //                 resolve()
+    //             })
+    //         })
+    //     })
 }
 
 // $("#btnEnviar").on("click", function () {
