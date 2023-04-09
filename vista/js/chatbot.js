@@ -235,39 +235,68 @@ function scrollAbajo() {
 
 function enviarMensaje(msg) {
 
-    function typingAnimation() {
-        return new Promise((resolve, reject) => {
-            var datos = new FormData();
-            datos.append("loader", true);
-            $.ajax({
-                url: "ajax/chatbot.ajax.php",
+    const typingAnimation = async () => {
+        let datos = new FormData();
+        datos.append("loader", true);
+        try {
+            const response = await fetch("ajax/chatbot.ajax.php", {
                 method: "POST",
-                cache: false,
-                data: datos,
-                contentType: false,
-                processData: false,
-                success: function ($respuesta) {
-                    $(document).on('DOMNodeInserted', '.desaparecerLoader', function (event) {
-                        setTimeout(function () {
-                            $(event.target).hide();
-                            resolve();
-                        }, 1500);
-                    });
-                    var $respuesta = $("<div class='container_msg_bot desaparecerLoader'><div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div><div class='msg_bot contenedorLoader'><div class='loader'></div></div></div></div>");
-                    $('#viewMessages').append($respuesta);
-                    scrollAbajo();
-                },
-                error: function (error) {
-                    console.error(error);
-                    reject(error);
-                }
-            });
-        });
+                body: datos,
+            })
+            if (response.ok) {
+                let respuesta = await response.text();
+                const div = document.createElement('div');
+                div.innerHTML = respuesta.trim();
+                const container = div.firstChild;
+                container.classList.add('desaparecerLoader');
+                document.querySelector('#viewMessages').appendChild(container);
+                setTimeout(() => {
+                  container.style.display = 'none';
+                }, 1500);
+                scrollAbajo();
+            }
+            else {
+                throw new Error(`Error ${response.status}: ${response.statusText}`);
+            }
+        } catch (error) {
+            console.log(error);
+        }
     }
+
+    // function typingAnimation() {
+    //     return new Promise((resolve, reject) => {
+    //         var datos = new FormData();
+    //         datos.append("loader", true);
+    //         $.ajax({
+    //             url: "ajax/chatbot.ajax.php",
+    //             method: "POST",
+    //             cache: false,
+    //             data: datos,
+    //             contentType: false,
+    //             processData: false,
+    //             success: function ($respuesta) {
+    //                 $(document).on('DOMNodeInserted', '.desaparecerLoader', function (event) {
+    //                     setTimeout(function () {
+    //                         $(event.target).hide();
+    //                         resolve();
+    //                     }, 1500);
+    //                 });
+    //                 var $respuesta = $("<div class='container_msg_bot desaparecerLoader'><div class='container_img_bot'><img src='vista/imagenes/chatbot/botIcono.png' alt=''></div><div class='msg_bot contenedorLoader'><div class='loader'></div></div></div></div>");
+    //                 $('#viewMessages').append($respuesta);
+    //                 scrollAbajo();
+    //             },
+    //             error: function (error) {
+    //                 console.error(error);
+    //                 reject(error);
+    //             }
+    //         });
+    //     });
+    // }
 
     function arrojarMensaje(callback) {
         var datos = new FormData();
         datos.append("msg", msg);
+        console.log(msg);
         $.ajax({
             url: "ajax/chatbot.ajax.php",
             method: "POST",
@@ -296,28 +325,53 @@ function enviarMensaje(msg) {
         })
 }
 
-$("#btnEnviar").on("click", function () {
-    if ($("#inputMsg").val().trim() != "") {
-        var msg = $("#inputMsg").val().trim();
-        $("#inputMsg").val("");
-        $("#viewMessages").append("<div class='msg_client'>" + msg + "<div class='print_hour'>" + getHora() + "</div></div>");
+// $("#btnEnviar").on("click", function () {
+//     if ($("#inputMsg").val().trim() != "") {
+//         var msg = $("#inputMsg").val().trim();
+//         $("#inputMsg").val("");
+//         $("#viewMessages").append("<div class='msg_client'>" + msg + "<div class='print_hour'>" + getHora() + "</div></div>");
+//         enviarMensaje(msg);
+//     }
+// });
+
+document.querySelector("#btnEnviar").addEventListener("click", () => {
+    if (document.querySelector("#inputMsg").value.trim() != "") {
+        let msg = document.querySelector("#inputMsg").value.trim();
+        document.querySelector("#inputMsg").value = "";
+        let contenidoEnviado = `<div class="msg_client">"${msg}<div class="print_hour">${getHora()}</div></div>`;
+        document.querySelector("#viewMessages").insertAdjacentHTML("beforeend", contenidoEnviado);
         enviarMensaje(msg);
     }
-});
+})
 
-$(document).ready(function () {
-    $("#inputMsg").keypress(function (e) {
-        if (e.keyCode == 13) {
-            if ($("#inputMsg").val().trim() != "") {
-                var msg = $("#inputMsg").val().trim();
-                $("#inputMsg").val("");
-                $("#viewMessages").append("<div class='msg_client'>" + msg + "<div class='print_hour'>" + getHora() + "</div>");
+// $(document).ready(function () {
+//     $("#inputMsg").keypress(function (e) {
+//         if (e.keyCode == 13) {
+//             if ($("#inputMsg").val().trim() != "") {
+//                 var msg = $("#inputMsg").val().trim();
+//                 $("#inputMsg").val("");
+//                 $("#viewMessages").append("<div class='msg_client'>" + msg + "<div class='print_hour'>" + getHora() + "</div>");
+//                 enviarMensaje(msg);
+//                 scrollAbajo();
+//             }
+//         }
+//     });
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("#inputMsg").addEventListener("keypress", (e) => {
+        if (e.key == "Enter") {
+            if (document.querySelector("#inputMsg").value.trim() != "") {
+                let msg = document.querySelector("#inputMsg").value.trim();
+                document.querySelector("#inputMsg").value = "";
+                let contenidoEnviado = `<div class="msg_client">"${msg}<div class="print_hour">${getHora()}</div></div>`;
+                document.querySelector("#viewMessages").insertAdjacentHTML("beforeend", contenidoEnviado);
                 enviarMensaje(msg);
                 scrollAbajo();
             }
         }
-    });
-});
+    })
+})
 
 /*=============SLIDER CHATBOT===============*/
 
